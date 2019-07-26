@@ -1,0 +1,8 @@
+/usr/bin/clr-cli		--	gen_context(system_u:object_r:clr_exec_t,s0)
+/usr/sbin/clrd		--	gen_context(system_u:object_r:clr_exec_t,s0)
+/usr/lib(64)?/clr/clrd		--	gen_context(system_u:object_r:clr_exec_t,s0)
+
+/etc/clr(/.*)?		gen_context(system_u:object_r:clr_conf_t,s0)
+/var/lib/clr(/.*)?		gen_context(system_u:object_r:clr_var_lib_t,s0)
+
+(/var)?/run/clrd(/.*)?   gen_context(system_u:object_r:clr_var_run_t,s0)

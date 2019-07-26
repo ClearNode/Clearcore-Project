@@ -1,0 +1,36 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/clr_bg.qm</file>
+        <file alias="ca">locale/clr_ca.qm</file>
+        <file alias="cs">locale/clr_cs.qm</file>
+        <file alias="da">locale/clr_da.qm</file>
+        <file alias="de">locale/clr_de.qm</file>
+        <file alias="en">locale/clr_en.qm</file>
+        <file alias="en_US">locale/clr_en_US.qm</file>
+        <file alias="eo">locale/clr_eo.qm</file>
+        <file alias="es">locale/clr_es.qm</file>
+        <file alias="es_ES">locale/clr_es_ES.qm</file>
+        <file alias="fi">locale/clr_fi.qm</file>
+        <file alias="fr_FR">locale/clr_fr_FR.qm</file>
+        <file alias="hi_IN">locale/clr_hi_IN.qm</file>
+        <file alias="hr">locale/clr_hr.qm</file>
+        <file alias="hr_HR">locale/clr_hr_HR.qm</file>
+        <file alias="it">locale/clr_it.qm</file>
+        <file alias="ja">locale/clr_ja.qm</file>
+        <file alias="ko_KR">locale/clr_ko_KR.qm</file>
+        <file alias="lt_LT">locale/clr_lt_LT.qm</file>
+        <file alias="nl">locale/clr_nl.qm</file>
+        <file alias="pl">locale/clr_pl.qm</file>
+        <file alias="pt">locale/clr_pt.qm</file>
+        <file alias="pt_BR">locale/clr_pt_BR.qm</file>
+        <file alias="ro_RO">locale/clr_ro_RO.qm</file>
+        <file alias="ru">locale/clr_ru.qm</file>
+        <file alias="sk">locale/clr_sk.qm</file>
+        <file alias="sv">locale/clr_sv.qm</file>
+        <file alias="tr">locale/clr_tr.qm</file>
+        <file alias="uk">locale/clr_uk.qm</file>
+        <file alias="vi">locale/clr_vi.qm</file>
+        <file alias="zh_CN">locale/clr_zh_CN.qm</file>
+        <file alias="zh_TW">locale/clr_zh_TW.qm</file>
+    </qresource>
+</RCC>
