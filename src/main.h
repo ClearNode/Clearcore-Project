@@ -70,43 +70,43 @@ inline int64_t GetMasterNodeCollateral(int nHeight){
     } else if (nHeight <= 30000 && nHeight > 20000) {
         return 750;
     } else if (nHeight <= 40000 && nHeight > 30000) {
-        return 1000;
+        return 250;
     } else if (nHeight <= 50000 && nHeight > 40000) {
-        return 1500;
+        return 375;
     } else if (nHeight <= 60000 && nHeight > 50000) {
-        return 3000;
+        return 750;
     } else if (nHeight <= 70000 && nHeight > 60000) {
-        return 4500;
+        return 1125;
     } else if (nHeight <= 80000 && nHeight > 70000) {
-        return 7000;
+        return 1750;
     } else if (nHeight <= 90000 && nHeight > 80000) {
-        return 15000;
+        return 3750;
     } else if (nHeight <= 100000 && nHeight > 90000) {
-        return 25000;
+        return 6250;
     } else if (nHeight <= 120000 && nHeight > 100000) {
-        return 50000;
+        return 12500;
     } else if (nHeight <= 140000 && nHeight > 120000) {
-        return 75000;
+        return 18750;
     } else if (nHeight <= 160000 && nHeight > 140000) {
-        return 100000;
+        return 25000;
     } else if (nHeight <= 180000 && nHeight > 160000) {
-        return 125000;
+        return 31250;
     } else if (nHeight <= 200000 && nHeight > 180000) {
-        return 150000;
+        return 37500;
     } else if (nHeight <= 250000 && nHeight > 200000) {
-        return 200000;
+        return 50000;
     } else if (nHeight <= 300000 && nHeight > 250000) {
-        return 250000;
+        return 62500;
     } else if (nHeight <= 350000 && nHeight > 300000) {
-        return 300000;
+        return 75000;
     } else if (nHeight <= 400000 && nHeight > 350000) {
-        return 350000;
+        return 87500;
     } else if (nHeight <= 450000 && nHeight > 400000) {
-        return 400000;
+        return 100000;
     } else if (nHeight <= 500000 && nHeight > 450000) {
-        return 450000;
+        return 112500;
     }
-    return 500000;
+    return 125000;
 }
 
 /** Default for -blockmaxsize and -blockminsize, which control the range of sizes the mining code will create **/

@@ -56,11 +56,12 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
     (0, uint256("0000086d20056b2feb29fb638fe1086ac017b481bf52f0cc1cca297385a91f44"))
     (11769, uint256("d9295bb042d90cf5ccb5090e3516a1af829874a466d5d9142fcf5da6ba360314"))
+    (28449, uint256("4c4efb8362969f24d0c78a9c72b34a07cd56b03baaf5a02482ee55bbcd9497d7"))
     ;
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1562858389, // * UNIX timestamp of last checkpoint block
-    23029,    // * total number of transactions between genesis and last checkpoint
+    1564882497, // * UNIX timestamp of last checkpoint block
+    56427,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
 };
@@ -231,10 +232,7 @@ public:
 
         nBudget_Fee_Confirmations = 6; // Number of confirmations for the finalization fee
 
-        //burn function added
-        listBurnAddresses = std::set<std::string>{
-            "CM1tz6Pk2aJbTrUX5pPAdzEpy8g81fTivh",
-        };
+
     }
 
     const Checkpoints::CCheckpointData& Checkpoints() const
