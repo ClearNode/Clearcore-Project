@@ -129,116 +129,116 @@ Explorer http://explorer.clearnodes.com
  </tr>
     
  <tr height=21 style='mso-height-source:userset;height:15.75pt'>
-  <td height=21 class=xl6417252 style='height:15.75pt'>80001-90000</td>
-  <td class=xl6617252>31.25</td>
+  <td height=21 class=xl6417252 style='height:15.75pt'>80001-100000</td>
+  <td class=xl6617252>15</td>
   <td class=xl6617252>99.98</td>
   <td class=xl6617252>0.02</td>
-  <td class=xl6717252 align=right>31.24375</td>
-  <td class=xl6817252 align=right>0.00625</td>
+  <td class=xl6717252 align=right>14.997</td>
+  <td class=xl6817252 align=right>0.003</td>
  </tr>
  <tr height=21 style='mso-height-source:userset;height:15.75pt'>
-  <td height=21 class=xl6417252 style='height:15.75pt'>90001-100000</td>
+  <td height=21 class=xl6417252 style='height:15.75pt'>100001-120000</td>
+  <td class=xl6617252>18</td>
+  <td class=xl6617252>99.98</td>
+  <td class=xl6617252>0.02</td>
+  <td class=xl6717252 align=right>17.9964</td>
+  <td class=xl6817252 align=right>0.0036</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6417252 style='height:15.75pt'>120001-145000</td>
+  <td class=xl6617252>20</td>
+  <td class=xl6617252>99.98</td>
+  <td class=xl6617252>0.02</td>
+  <td class=xl6717252 align=right>19.996</td>
+  <td class=xl6817252 align=right>0.004</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6417252 style='height:15.75pt'>145001-170000</td>
+  <td class=xl6617252>22</td>
+  <td class=xl6617252>99.98</td>
+  <td class=xl6617252>0.02</td>
+  <td class=xl6717252 align=right>21.9956</td>
+  <td class=xl6817252 align=right>0.0044</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6417252 style='height:15.75pt'>170001-200000</td>
+  <td class=xl6617252>25</td>
+  <td class=xl6617252>99.98</td>
+  <td class=xl6617252>0.02</td>
+  <td class=xl6717252 align=right>24.995</td>
+  <td class=xl6817252 align=right>0.005</td>
+ </tr>
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6417252 style='height:15.75pt'>200000-230000</td>
+  <td class=xl6617252>25</td>
+  <td class=xl6617252>99.98</td>
+  <td class=xl6617252>0.02</td>
+  <td class=xl6717252 align=right>24.995</td>
+  <td class=xl6817252 align=right>0.005</td>
+ </tr> 
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6417252 style='height:15.75pt'>230001-265000</td>
+  <td class=xl6617252>28</td>
+  <td class=xl6617252>99.98</td>
+  <td class=xl6617252>0.02</td>
+  <td class=xl6717252 align=right>27.9944</td>
+  <td class=xl6817252 align=right>0.0056</td>
+ </tr> 
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6417252 style='height:15.75pt'>265001-300000</td>
+  <td class=xl6617252>30</td>
+  <td class=xl6617252>99.98</td>
+  <td class=xl6617252>0.02</td>
+  <td class=xl6717252 align=right>29.994</td>
+  <td class=xl6817252 align=right>0.006</td>
+ </tr> 
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6417252 style='height:15.75pt'>300001-350000</td>
+  <td class=xl6617252>30</td>
+  <td class=xl6617252>99.98</td>
+  <td class=xl6617252>0.02</td>
+  <td class=xl6717252 align=right>29.994</td>
+  <td class=xl6817252 align=right>0.006</td>
+ </tr> 
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6417252 style='height:15.75pt'>350001-400000</td>
+  <td class=xl6617252>35</td>
+  <td class=xl6617252>99.98</td>
+  <td class=xl6617252>0.02</td>
+  <td class=xl6717252 align=right>34.993</td>
+  <td class=xl6817252 align=right>0.007</td>
+ </tr> 
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6417252 style='height:15.75pt'>400001-450000</td>
+  <td class=xl6617252>35</td>
+  <td class=xl6617252>99.98</td>
+  <td class=xl6617252>0.02</td>
+  <td class=xl6717252 align=right>34.993</td>
+  <td class=xl6817252 align=right>0.007</td>
+ </tr> 
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6417252 style='height:15.75pt'>450001-500000</td>
+  <td class=xl6617252>40</td>
+  <td class=xl6617252>99.98</td>
+  <td class=xl6617252>0.02</td>
+  <td class=xl6717252 align=right>39.992</td>
+  <td class=xl6817252 align=right>0.008</td>
+ </tr> 
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6417252 style='height:15.75pt'>500000-550000</td>
+  <td class=xl6617252>45</td>
+  <td class=xl6617252>99.98</td>
+  <td class=xl6617252>0.02</td>
+  <td class=xl6717252 align=right>44.991</td>
+  <td class=xl6817252 align=right>0.009</td>
+ </tr> 
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6417252 style='height:15.75pt'>550001-</td>
   <td class=xl6617252>50</td>
   <td class=xl6617252>99.98</td>
   <td class=xl6617252>0.02</td>
   <td class=xl6717252 align=right>49.99</td>
   <td class=xl6817252 align=right>0.01</td>
- </tr>
- <tr height=21 style='mso-height-source:userset;height:15.75pt'>
-  <td height=21 class=xl6417252 style='height:15.75pt'>100001-120000</td>
-  <td class=xl6617252>100</td>
-  <td class=xl6617252>99.98</td>
-  <td class=xl6617252>0.02</td>
-  <td class=xl6717252 align=right>99.98</td>
-  <td class=xl6817252 align=right>0.02</td>
- </tr>
- <tr height=21 style='mso-height-source:userset;height:15.75pt'>
-  <td height=21 class=xl6417252 style='height:15.75pt'>120001-140000</td>
-  <td class=xl6617252>150</td>
-  <td class=xl6617252>99.98</td>
-  <td class=xl6617252>0.02</td>
-  <td class=xl6717252 align=right>149.97</td>
-  <td class=xl6817252 align=right>0.03</td>
- </tr>
- <tr height=21 style='mso-height-source:userset;height:15.75pt'>
-  <td height=21 class=xl6417252 style='height:15.75pt'>140001-160000</td>
-  <td class=xl6617252>200</td>
-  <td class=xl6617252>99.98</td>
-  <td class=xl6617252>0.02</td>
-  <td class=xl6717252 align=right>199.96</td>
-  <td class=xl6817252 align=right>0.04</td>
- </tr>
- <tr height=21 style='mso-height-source:userset;height:15.75pt'>
-  <td height=21 class=xl6417252 style='height:15.75pt'>160000-180000</td>
-  <td class=xl6617252>250</td>
-  <td class=xl6617252>99.98</td>
-  <td class=xl6617252>0.02</td>
-  <td class=xl6717252 align=right>249.95</td>
-  <td class=xl6817252 align=right>0.05</td>
- </tr> 
- <tr height=21 style='mso-height-source:userset;height:15.75pt'>
-  <td height=21 class=xl6417252 style='height:15.75pt'>180001-200000</td>
-  <td class=xl6617252>312.5</td>
-  <td class=xl6617252>99.98</td>
-  <td class=xl6617252>0.02</td>
-  <td class=xl6717252 align=right>312.4375</td>
-  <td class=xl6817252 align=right>0.0625</td>
- </tr> 
- <tr height=21 style='mso-height-source:userset;height:15.75pt'>
-  <td height=21 class=xl6417252 style='height:15.75pt'>200001-250000</td>
-  <td class=xl6617252>375</td>
-  <td class=xl6617252>99.98</td>
-  <td class=xl6617252>0.02</td>
-  <td class=xl6717252 align=right>374.925</td>
-  <td class=xl6817252 align=right>0.075</td>
- </tr> 
- <tr height=21 style='mso-height-source:userset;height:15.75pt'>
-  <td height=21 class=xl6417252 style='height:15.75pt'>250001-300000</td>
-  <td class=xl6617252>500</td>
-  <td class=xl6617252>99.98</td>
-  <td class=xl6617252>0.02</td>
-  <td class=xl6717252 align=right>499.9</td>
-  <td class=xl6817252 align=right>0.1</td>
- </tr> 
- <tr height=21 style='mso-height-source:userset;height:15.75pt'>
-  <td height=21 class=xl6417252 style='height:15.75pt'>300001-350000</td>
-  <td class=xl6617252>625</td>
-  <td class=xl6617252>99.98</td>
-  <td class=xl6617252>0.02</td>
-  <td class=xl6717252 align=right>624.875</td>
-  <td class=xl6817252 align=right>0.125</td>
- </tr> 
- <tr height=21 style='mso-height-source:userset;height:15.75pt'>
-  <td height=21 class=xl6417252 style='height:15.75pt'>350001-400000</td>
-  <td class=xl6617252>750</td>
-  <td class=xl6617252>99.98</td>
-  <td class=xl6617252>0.02</td>
-  <td class=xl6717252 align=right>749.85</td>
-  <td class=xl6817252 align=right>0.15</td>
- </tr> 
- <tr height=21 style='mso-height-source:userset;height:15.75pt'>
-  <td height=21 class=xl6417252 style='height:15.75pt'>400001-450000</td>
-  <td class=xl6617252>875</td>
-  <td class=xl6617252>99.98</td>
-  <td class=xl6617252>0.02</td>
-  <td class=xl6717252 align=right>874.825</td>
-  <td class=xl6817252 align=right>0.175</td>
- </tr> 
- <tr height=21 style='mso-height-source:userset;height:15.75pt'>
-  <td height=21 class=xl6417252 style='height:15.75pt'>450000-500000</td>
-  <td class=xl6617252>1000</td>
-  <td class=xl6617252>99.98</td>
-  <td class=xl6617252>0.02</td>
-  <td class=xl6717252 align=right>999.8</td>
-  <td class=xl6817252 align=right>0.2</td>
- </tr> 
- <tr height=21 style='mso-height-source:userset;height:15.75pt'>
-  <td height=21 class=xl6417252 style='height:15.75pt'>500001-</td>
-  <td class=xl6617252>1125</td>
-  <td class=xl6617252>99.98</td>
-  <td class=xl6617252>0.02</td>
-  <td class=xl6717252 align=right>1124.775</td>
-  <td class=xl6817252 align=right>0.225</td>
  </tr> 
  </table>
 

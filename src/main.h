@@ -79,34 +79,30 @@ inline int64_t GetMasterNodeCollateral(int nHeight){
         return 1125;
     } else if (nHeight <= 80000 && nHeight > 70000) {
         return 1750;
-    } else if (nHeight <= 90000 && nHeight > 80000) {
-        return 3750;
-    } else if (nHeight <= 100000 && nHeight > 90000) {
-        return 6250;
+    } else if (nHeight <= 100000 && nHeight > 80000) {
+        return 2500;
     } else if (nHeight <= 120000 && nHeight > 100000) {
-        return 12500;
-    } else if (nHeight <= 140000 && nHeight > 120000) {
-        return 18750;
-    } else if (nHeight <= 160000 && nHeight > 140000) {
-        return 25000;
-    } else if (nHeight <= 180000 && nHeight > 160000) {
-        return 31250;
-    } else if (nHeight <= 200000 && nHeight > 180000) {
-        return 37500;
-    } else if (nHeight <= 250000 && nHeight > 200000) {
-        return 50000;
-    } else if (nHeight <= 300000 && nHeight > 250000) {
-        return 62500;
+        return 3500;
+    } else if (nHeight <= 145000 && nHeight > 120000) {
+        return 5000;
+    } else if (nHeight <= 170000 && nHeight > 145000) {
+        return 6500;
+    } else if (nHeight <= 200000 && nHeight > 170000) {
+        return 8000;
+    } else if (nHeight <= 230000 && nHeight > 200000) {
+        return 10000;
+    } else if (nHeight <= 265000 && nHeight > 230000) {
+        return 12000;
+    } else if (nHeight <= 300000 && nHeight > 265000) {
+        return 15000;
     } else if (nHeight <= 350000 && nHeight > 300000) {
-        return 75000;
+        return 20000;
     } else if (nHeight <= 400000 && nHeight > 350000) {
-        return 87500;
-    } else if (nHeight <= 450000 && nHeight > 400000) {
-        return 100000;
-    } else if (nHeight <= 500000 && nHeight > 450000) {
-        return 112500;
+        return 35000;
+    } else if (nHeight <= 550000 && nHeight > 400000) {
+        return 50000;
     }
-    return 125000;
+    return 50000;
 }
 
 /** Default for -blockmaxsize and -blockminsize, which control the range of sizes the mining code will create **/

@@ -1905,36 +1905,28 @@ int64_t GetBlockValue(int nHeight)
         nSubsidy = 6.25 * COIN;
     } else if (nHeight <= 70000 && nHeight > 60000) {
         nSubsidy = 8.75 * COIN;
-    } else if (nHeight <= 80000 && nHeight > 70000) {
+    }else if (nHeight <= 100000 && nHeight > 70000) {
         nSubsidy = 15 * COIN;
-    } else if (nHeight <= 90000 && nHeight > 80000) {
-        nSubsidy = 31.25 * COIN;
-    } else if (nHeight <= 100000 && nHeight > 90000) {
-        nSubsidy = 50 * COIN;
-    } else if (nHeight <= 120000 && nHeight > 100000) {
-        nSubsidy = 100 * COIN;
-    } else if (nHeight <= 140000 && nHeight > 120000) {
-        nSubsidy = 150 * COIN;
-    } else if (nHeight <= 160000 && nHeight > 140000) {
-        nSubsidy = 200 * COIN;
-    } else if (nHeight <= 180000 && nHeight > 160000) {
-        nSubsidy = 250 * COIN;
-    } else if (nHeight <= 200000 && nHeight > 180000) {
-        nSubsidy = 312.5 * COIN;
-    } else if (nHeight <= 250000 && nHeight > 200000) {
-        nSubsidy = 375 * COIN;
-    } else if (nHeight <= 300000 && nHeight > 250000) {
-        nSubsidy = 500 * COIN;
-    } else if (nHeight <= 350000 && nHeight > 300000) {
-        nSubsidy = 625 * COIN;
-    } else if (nHeight <= 400000 && nHeight > 350000) {
-        nSubsidy = 750 * COIN;
-    } else if (nHeight <= 450000 && nHeight > 400000) {
-        nSubsidy = 875 * COIN;
+    }else if (nHeight <= 120000 && nHeight > 100000) {
+        nSubsidy = 18 * COIN;
+    } else if (nHeight <= 145000 && nHeight > 120000) {
+        nSubsidy = 20 * COIN;
+    } else if (nHeight <= 170000 && nHeight > 145000) {
+        nSubsidy = 22 * COIN;
+    } else if (nHeight <= 230000 && nHeight > 170000) {
+        nSubsidy = 25 * COIN;
+    } else if (nHeight <= 265000 && nHeight > 230000) {
+        nSubsidy = 28 * COIN;
+    } else if (nHeight <= 350000 && nHeight > 265000) {
+        nSubsidy = 30 * COIN;
+    } else if (nHeight <= 450000 && nHeight > 350000) {
+        nSubsidy = 35 * COIN;
     } else if (nHeight <= 500000 && nHeight > 450000) {
-        nSubsidy = 1000 * COIN;
+        nSubsidy = 40 * COIN;
+    } else if (nHeight <= 550000 && nHeight > 500000) {
+        nSubsidy = 45 * COIN;
     } else {
-        nSubsidy = 1125 * COIN;
+        nSubsidy = 50 * COIN;
     }
     return nSubsidy;
 }
@@ -6640,12 +6632,12 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
 int ActiveProtocol()
 {
     // SPORK_14 is used for 70913 (v3.1.0+)
-    if (IsSporkActive(SPORK_14_NEW_PROTOCOL_ENFORCEMENT))
-            return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
+    //if (IsSporkActive(SPORK_14_NEW_PROTOCOL_ENFORCEMENT))
+    //      return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
 
     // SPORK_15 was used for 70912 (v3.0.5+), commented out now.
-    //if (IsSporkActive(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2))
-    //        return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
+    if (IsSporkActive(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2))
+            return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
 
     return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT;
 }
