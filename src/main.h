@@ -99,10 +99,30 @@ inline int64_t GetMasterNodeCollateral(int nHeight){
         return 20000;
     } else if (nHeight <= 400000 && nHeight > 350000) {
         return 35000;
-    } else if (nHeight <= 550000 && nHeight > 400000) {
+    } else if (nHeight <= 630000 && nHeight > 400000) {
         return 50000;
+    } else if (nHeight <= 650000 && nHeight > 630000) {
+        return 200000;
+    } else if (nHeight <= 670000 && nHeight > 400000) {
+        return 230000;
+    } else if (nHeight <= 690000 && nHeight > 400000) {
+        return 260000;
+    } else if (nHeight <= 710000 && nHeight > 400000) {
+        return 300000;
+    } else if (nHeight <= 740000 && nHeight > 400000) {
+        return 350000;
+    } else if (nHeight <= 770000 && nHeight > 400000) {
+        return 400000;
+    } else if (nHeight <= 800000 && nHeight > 400000) {
+        return 450000;
+    } else if (nHeight <= 850000 && nHeight > 400000) {
+        return 500000;
+    } else if (nHeight <= 900000 && nHeight > 400000) {
+        return 550000;
+    } else if (nHeight <= 1000000 && nHeight > 400000) {
+        return 600000;
     }
-    return 50000;
+    return 650000;
 }
 
 /** Default for -blockmaxsize and -blockminsize, which control the range of sizes the mining code will create **/

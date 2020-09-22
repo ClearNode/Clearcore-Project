@@ -1925,8 +1925,32 @@ int64_t GetBlockValue(int nHeight)
         nSubsidy = 40 * COIN;
     } else if (nHeight <= 550000 && nHeight > 500000) {
         nSubsidy = 45 * COIN;
-    } else {
+    } else if (nHeight < 630000 && nHeight > 550000) {
         nSubsidy = 50 * COIN;
+    } else if (nHeight == 630000){
+        nSubsidy = 20000000 * COIN;
+    } else if (nHeight <= 650000 && nHeight > 630000) {
+        nSubsidy = 100 * COIN;
+    } else if (nHeight <= 670000 && nHeight > 650000) {
+        nSubsidy = 120 * COIN;
+    } else if (nHeight <= 690000 && nHeight > 670000) {
+        nSubsidy = 140 * COIN;
+    } else if (nHeight <= 710000 && nHeight > 690000) {
+        nSubsidy = 160 * COIN;
+    } else if (nHeight <= 740000 && nHeight > 710000) {
+        nSubsidy = 180 * COIN;
+    } else if (nHeight <= 770000 && nHeight > 740000) {
+        nSubsidy = 200 * COIN;
+    } else if (nHeight <= 800000 && nHeight > 770000) {
+        nSubsidy = 205 * COIN;
+    } else if (nHeight <= 850000 && nHeight > 800000) {
+        nSubsidy = 210 * COIN;
+    } else if (nHeight <= 900000 && nHeight > 850000) {
+        nSubsidy = 215 * COIN;
+    } else if (nHeight <= 1000000 && nHeight > 900000) {
+        nSubsidy = 225 * COIN;
+    } else {
+        nSubsidy = 250 * COIN;
     }
     return nSubsidy;
 }
@@ -1945,8 +1969,12 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
     	return 0;
     } else if (nHeight <=12000 && nHeight > Params().LAST_POW_BLOCK()){
         ret = blockValue * 98/100;
-    } else if (nHeight > 12000){
+    } else if (nHeight < 630000 && nHeight > 12000){
         ret = blockValue * 9998/10000;
+    } else if (nHeight == 630000){
+        ret = 0;
+    } else {
+        ret = blockValue * 90/100;
     }
 
     return ret;
@@ -3906,6 +3934,43 @@ bool CheckBlockHeader(const CBlockHeader& block, CValidationState& state, bool f
     }
 
     return true;
+}
+
+bool IsDevFeeValid(const CBlock& block, int nBlockHeight)
+{
+	const CTransaction& txNew = (block.IsProofOfStake() ? block.vtx[1] : block.vtx[0]);
+
+	CScript newPreminescriptPubKey = Params().GetScriptForNewPremineDestination();
+
+	bool found = false;
+        BOOST_FOREACH (CTxOut out, txNew.vout) {
+
+			/* CTxDestination address1;
+			ExtractDestination(out.scriptPubKey, address1);
+			CBitcoinAddress address2(address1);
+            LogPrintf("IsDevFeeValid: payee %s, value %f\n", address2.ToString(), out.nValue / COIN);
+			*/
+            if (newPreminescriptPubKey == out.scriptPubKey) {
+
+                //LogPrintf("Found dev fee address, value is %f, expected is %f\n", out.nValue / (float)COIN, GetBlockValue(nBlockHeight)*0.07/COIN);
+
+                CAmount blockValue = GetBlockValue(nBlockHeight);
+                CAmount devfee = 0;
+                if(nBlockHeight == 630000){
+                   devfee = blockValue; //10%
+                }
+
+ 				if(out.nValue >= devfee) {
+					found = true;
+					break;
+				}
+                else
+                    LogPrintf("IsDevFeeValid: cannot find the dev fee in the transaction list.\n");
+            }
+        }
+
+     return found;
+
 }
 
 bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bool fCheckMerkleRoot, bool fCheckSig)
@@ -6631,13 +6696,13 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
 //       it was the one which was commented out
 int ActiveProtocol()
 {
-    // SPORK_14 is used for 70913 (v3.1.0+)
-    //if (IsSporkActive(SPORK_14_NEW_PROTOCOL_ENFORCEMENT))
-    //      return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
+    // SPORK_14 is used for 70918 (v1.2.0+)
+    if (IsSporkActive(SPORK_14_NEW_PROTOCOL_ENFORCEMENT))
+          return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
 
-    // SPORK_15 was used for 70912 (v3.0.5+), commented out now.
-    if (IsSporkActive(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2))
-            return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
+    // SPORK_15 was used for 70916 (v1.1.0+), commented out now.
+    // if (IsSporkActive(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2))
+    //         return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
 
     return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT;
 }

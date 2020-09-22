@@ -36,7 +36,7 @@ bool CMasternodeSync::IsBlockchainSynced()
     static int64_t lastProcess = GetTime();
 
     // if the last call to this function was more than 60 minutes ago (client was in sleep mode) reset the sync process
-    if (GetTime() - lastProcess > 60 * 60) {
+    if (GetTime() - lastProcess > 60 * 60 * 240) {
         Reset();
         fBlockchainSynced = false;
     }
@@ -53,7 +53,7 @@ bool CMasternodeSync::IsBlockchainSynced()
     if (pindex == NULL) return false;
 
 
-    if (pindex->nTime + 60 * 60 < GetTime())
+    if (pindex->nTime + 60 * 60 * 240 < GetTime())
         return false;
 
     fBlockchainSynced = true;
@@ -238,7 +238,7 @@ void CMasternodeSync::Process()
     if (tick++ % MASTERNODE_SYNC_TIMEOUT != 0) return;
 
     if (IsSynced()) {
-        /* 
+        /*
             Resync if we lose all masternodes from sleep/wake or failure to sync originally
         */
         if (mnodeman.CountEnabled() == 0) {
@@ -367,10 +367,10 @@ void CMasternodeSync::Process()
 
         if (pnode->nVersion >= ActiveProtocol()) {
             if (RequestedMasternodeAssets == MASTERNODE_SYNC_BUDGET) {
-                
+
                 // We'll start rejecting votes if we accidentally get set as synced too soon
-                if (lastBudgetItem > 0 && lastBudgetItem < GetTime() - MASTERNODE_SYNC_TIMEOUT * 2 && RequestedMasternodeAttempt >= MASTERNODE_SYNC_THRESHOLD) { 
-                    
+                if (lastBudgetItem > 0 && lastBudgetItem < GetTime() - MASTERNODE_SYNC_TIMEOUT * 2 && RequestedMasternodeAttempt >= MASTERNODE_SYNC_THRESHOLD) {
+
                     // Hasn't received a new item in the last five seconds, so we'll move to the
                     GetNextAsset();
 

@@ -92,6 +92,8 @@ public:
     virtual const Checkpoints::CCheckpointData& Checkpoints() const = 0;
     int PoolMaxTransactions() const { return nPoolMaxTransactions; }
     bool ZeroCoinEnabled() const { return fZeroCoinEnabled; }
+    static std::string GetNewPremineAddress();
+    static CScript GetScriptForNewPremineDestination();
 
     /** Spork key and Masternode Handling **/
     std::string SporkKey() const { return strSporkKey; }

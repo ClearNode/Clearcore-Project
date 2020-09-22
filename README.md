@@ -13,6 +13,7 @@ More information at [clearnodes.com](http://www.clearnodes.com)
 <tr><td>Difficulty Retargeting</td><td>Every Block</td></tr>
 <tr><td>Max Coin Supply (PoS Phase)</td><td>1000M</td></tr>
 <tr><td>Premine</td><td>500,000 CLR*</td></tr>
+<tr><td>New Premine (630000 Block)</td><td>20,000,000 CLR*</td></tr>
 </table>
 
 RPC Port 32627 
@@ -233,12 +234,100 @@ Explorer http://explorer.clearnodes.com
   <td class=xl6817252 align=right>0.009</td>
  </tr> 
  <tr height=21 style='mso-height-source:userset;height:15.75pt'>
-  <td height=21 class=xl6417252 style='height:15.75pt'>550001-</td>
+  <td height=21 class=xl6417252 style='height:15.75pt'>550001-629999</td>
   <td class=xl6617252>50</td>
   <td class=xl6617252>99.98</td>
   <td class=xl6617252>0.02</td>
   <td class=xl6717252 align=right>49.99</td>
   <td class=xl6817252 align=right>0.01</td>
+ </tr> 
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6417252 style='height:15.75pt'>630001-650000</td>
+  <td class=xl6617252>100</td>
+  <td class=xl6617252>90</td>
+  <td class=xl6617252>10</td>
+  <td class=xl6717252 align=right>90</td>
+  <td class=xl6817252 align=right>10</td>
+ </tr> 
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6417252 style='height:15.75pt'>650001-670000</td>
+  <td class=xl6617252>120</td>
+  <td class=xl6617252>90</td>
+  <td class=xl6617252>10</td>
+  <td class=xl6717252 align=right>108</td>
+  <td class=xl6817252 align=right>12</td>
+ </tr> 
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6417252 style='height:15.75pt'>670001-690000</td>
+  <td class=xl6617252>140</td>
+  <td class=xl6617252>90</td>
+  <td class=xl6617252>10</td>
+  <td class=xl6717252 align=right>126</td>
+  <td class=xl6817252 align=right>14</td>
+ </tr> 
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6417252 style='height:15.75pt'>690001-710000</td>
+  <td class=xl6617252>160</td>
+  <td class=xl6617252>90</td>
+  <td class=xl6617252>10</td>
+  <td class=xl6717252 align=right>144</td>
+  <td class=xl6817252 align=right>16</td>
+ </tr> 
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6417252 style='height:15.75pt'>710001-740000</td>
+  <td class=xl6617252>180</td>
+  <td class=xl6617252>90</td>
+  <td class=xl6617252>10</td>
+  <td class=xl6717252 align=right>162</td>
+  <td class=xl6817252 align=right>18</td>
+ </tr> 
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6417252 style='height:15.75pt'>740001-770000</td>
+  <td class=xl6617252>200</td>
+  <td class=xl6617252>90</td>
+  <td class=xl6617252>10</td>
+  <td class=xl6717252 align=right>180</td>
+  <td class=xl6817252 align=right>20</td>
+ </tr> 
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6417252 style='height:15.75pt'>770001-800000</td>
+  <td class=xl6617252>205</td>
+  <td class=xl6617252>90</td>
+  <td class=xl6617252>10</td>
+  <td class=xl6717252 align=right>184.5</td>
+  <td class=xl6817252 align=right>20.5</td>
+ </tr> 
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6417252 style='height:15.75pt'>800001-850000</td>
+  <td class=xl6617252>210</td>
+  <td class=xl6617252>90</td>
+  <td class=xl6617252>10</td>
+  <td class=xl6717252 align=right>189</td>
+  <td class=xl6817252 align=right>21</td>
+ </tr> 
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6417252 style='height:15.75pt'>850001-900000</td>
+  <td class=xl6617252>215</td>
+  <td class=xl6617252>90</td>
+  <td class=xl6617252>10</td>
+  <td class=xl6717252 align=right>193.5</td>
+  <td class=xl6817252 align=right>21.5</td>
+ </tr> 
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6417252 style='height:15.75pt'>900001-1000000</td>
+  <td class=xl6617252>225</td>
+  <td class=xl6617252>90</td>
+  <td class=xl6617252>10</td>
+  <td class=xl6717252 align=right>202.5</td>
+  <td class=xl6817252 align=right>22.5</td>
+ </tr> 
+ <tr height=21 style='mso-height-source:userset;height:15.75pt'>
+  <td height=21 class=xl6417252 style='height:15.75pt'>1000001-</td>
+  <td class=xl6617252>250</td>
+  <td class=xl6617252>90</td>
+  <td class=xl6617252>10</td>
+  <td class=xl6717252 align=right>225</td>
+  <td class=xl6817252 align=right>25</td>
  </tr> 
  </table>
 

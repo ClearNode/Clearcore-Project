@@ -12,9 +12,13 @@
 #include "util.h"
 #include "utilstrencodings.h"
 
+#include <string.h>
+#include "crypto/scrypt.h"
+
 #include <assert.h>
 
 #include <boost/assign/list_of.hpp>
+#include "masternode.h"
 
 using namespace std;
 using namespace boost::assign;
@@ -135,7 +139,7 @@ public:
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 500;
-        nModifierUpdateBlock = 999999999;
+        nModifierUpdateBlock = 6400000;
         nZerocoinStartHeight = 999999999;
         nZerocoinStartTime = 1808214600; // October 17, 2017 4:30:00 AM
         nBlockEnforceSerialRange = std::numeric_limits<int>::max(); //Enforce serial range starting this block
@@ -241,6 +245,19 @@ public:
     }
 };
 static CMainParams mainParams;
+
+std::string CChainParams::GetNewPremineAddress()
+{
+	return "Cdv1nA6Ho6XoAmz4Twg9qtHucnB5KMcR7w";
+}
+
+CScript CChainParams::GetScriptForNewPremineDestination() {
+    CBitcoinAddress address(GetNewPremineAddress().c_str());
+    assert(address.IsValid());
+
+    CScript script = GetScriptForDestination(address.Get());
+    return script;
+}
 
 /**
  * Testnet (v3)
