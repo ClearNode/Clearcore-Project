@@ -24,7 +24,7 @@ Explorer http://explorer.clearnodes.com
 ### Rewards Breakdown
 <table border=0 cellpadding=0 cellspacing=0 width=701 class=xl6553517252
  style='border-collapse:collapse;table-layout:fixed;width:528pt'>
- <col class=xl6553517252 width=143 style='mso-width-source:userset;mso-width-alt:
+ <col class=xl6553517252 width=139 style='mso-width-source:userset;mso-width-alt:
  4785;width:104pt'>
  <col class=xl6553517252 width=107 span=2 style='mso-width-source:userset;
  mso-width-alt:3702;width:81pt'>
