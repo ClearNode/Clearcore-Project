@@ -315,7 +315,7 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, int64_t nFe
 
     CAmount devfee = 0;
     bool newpremine = false;
-    if (pindexPrev->nHeight + 1 == 630000)
+    if (pindexPrev->nHeight + 1 == 635000)
     {
         blockValue = GetBlockValue(pindexPrev->nHeight + 1);
         masternodePayment = GetMasternodePayment(pindexPrev->nHeight + 1, blockValue, 0, fZCLRStake);

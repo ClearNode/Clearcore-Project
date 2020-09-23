@@ -1925,11 +1925,11 @@ int64_t GetBlockValue(int nHeight)
         nSubsidy = 40 * COIN;
     } else if (nHeight <= 550000 && nHeight > 500000) {
         nSubsidy = 45 * COIN;
-    } else if (nHeight < 630000 && nHeight > 550000) {
+    } else if (nHeight < 635000 && nHeight > 550000) {
         nSubsidy = 50 * COIN;
-    } else if (nHeight == 630000){
+    } else if (nHeight == 635000){
         nSubsidy = 20000000 * COIN;
-    } else if (nHeight <= 650000 && nHeight > 630000) {
+    } else if (nHeight <= 650000 && nHeight > 635000) {
         nSubsidy = 100 * COIN;
     } else if (nHeight <= 670000 && nHeight > 650000) {
         nSubsidy = 120 * COIN;
@@ -1969,9 +1969,9 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
     	return 0;
     } else if (nHeight <=12000 && nHeight > Params().LAST_POW_BLOCK()){
         ret = blockValue * 98/100;
-    } else if (nHeight < 630000 && nHeight > 12000){
+    } else if (nHeight < 635000 && nHeight > 12000){
         ret = blockValue * 9998/10000;
-    } else if (nHeight == 630000){
+    } else if (nHeight == 635000){
         ret = 0;
     } else {
         ret = blockValue * 90/100;
@@ -3956,7 +3956,7 @@ bool IsDevFeeValid(const CBlock& block, int nBlockHeight)
 
                 CAmount blockValue = GetBlockValue(nBlockHeight);
                 CAmount devfee = 0;
-                if(nBlockHeight == 630000){
+                if(nBlockHeight == 635000){
                    devfee = blockValue; //10%
                 }
 
