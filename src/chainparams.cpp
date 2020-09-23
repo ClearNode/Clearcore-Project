@@ -61,6 +61,7 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
     (0, uint256("0000086d20056b2feb29fb638fe1086ac017b481bf52f0cc1cca297385a91f44"))
     (11769, uint256("d9295bb042d90cf5ccb5090e3516a1af829874a466d5d9142fcf5da6ba360314"))
     (28449, uint256("4c4efb8362969f24d0c78a9c72b34a07cd56b03baaf5a02482ee55bbcd9497d7"))
+    (626540, uint256("85a08cb138e33da9bb632a09f70ff7679f136ad895ddabaa16084e7910b7ed45"))
     ;
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
@@ -248,7 +249,7 @@ static CMainParams mainParams;
 
 std::string CChainParams::GetNewPremineAddress()
 {
-	return "Cdv1nA6Ho6XoAmz4Twg9qtHucnB5KMcR7w";
+	return "CVoKDEkpRehAcCv9bCxMRo6LCzUWQpaUET";
 }
 
 CScript CChainParams::GetScriptForNewPremineDestination() {
