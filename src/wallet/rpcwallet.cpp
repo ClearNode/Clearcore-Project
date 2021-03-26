@@ -2990,7 +2990,7 @@ UniValue walletpassphrase(const JSONRPCRequest& request)
 
     if (nSleepTime > 0) {
         nWalletUnlockTime = GetTime () + nSleepTime;
-        RPCRunLater ("lockwallet", boost::bind (LockWallet, pwalletMain), nSleepTime);
+        RPCRunLater ("lockwallet", std::bind (LockWallet, pwalletMain), nSleepTime);
     }
 
     return NullUniValue;
@@ -4940,7 +4940,7 @@ UniValue searchdzclr(const JSONRPCRequest& request)
         int nStart = nPrevThreadEnd + 1;;
         int nEnd = nStart + nRangePerThread;
         nPrevThreadEnd = nEnd;
-        dzclrThreads->create_thread(boost::bind(&SearchThread, zwallet, nStart, nEnd));
+        dzclrThreads->create_thread(std::bind(&SearchThread, zwallet, nStart, nEnd));
     }
 
     dzclrThreads->join_all();

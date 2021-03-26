@@ -305,11 +305,11 @@ void ClientModel::subscribeToCoreSignals()
 {
     // Connect signals to client
 
-    uiInterface.ShowProgress.connect(boost::bind(ShowProgress, this, boost::placeholders::_1, boost::placeholders::_2));
-    uiInterface.NotifyNumConnectionsChanged.connect(boost::bind(NotifyNumConnectionsChanged, this, boost::placeholders::_1));
-    uiInterface.NotifyAlertChanged.connect(boost::bind(NotifyAlertChanged, this));
-    uiInterface.BannedListChanged.connect(boost::bind(BannedListChanged, this));
-    uiInterface.NotifyBlockTip.connect(boost::bind(BlockTipChanged, this, boost::placeholders::_1, boost::placeholders::_2));
+    uiInterface.ShowProgress.connect(std::bind(ShowProgress, this, boost::placeholders::_1, boost::placeholders::_2));
+    uiInterface.NotifyNumConnectionsChanged.connect(std::bind(NotifyNumConnectionsChanged, this, boost::placeholders::_1));
+    uiInterface.NotifyAlertChanged.connect(std::bind(NotifyAlertChanged, this));
+    uiInterface.BannedListChanged.connect(std::bind(BannedListChanged, this));
+    uiInterface.NotifyBlockTip.connect(std::bind(BlockTipChanged, this, boost::placeholders::_1, boost::placeholders::_2));
 
 }
 
@@ -317,11 +317,11 @@ void ClientModel::unsubscribeFromCoreSignals()
 {
     // Disconnect signals from client
 
-    uiInterface.ShowProgress.disconnect(boost::bind(ShowProgress, this, boost::placeholders::_1, boost::placeholders::_2));
-    uiInterface.NotifyNumConnectionsChanged.disconnect(boost::bind(NotifyNumConnectionsChanged, this, boost::placeholders::_1));
-    uiInterface.NotifyAlertChanged.disconnect(boost::bind(NotifyAlertChanged, this));
-    uiInterface.BannedListChanged.disconnect(boost::bind(BannedListChanged, this));
-    uiInterface.NotifyBlockTip.disconnect(boost::bind(BlockTipChanged, this, boost::placeholders::_1, boost::placeholders::_2));
+    uiInterface.ShowProgress.disconnect(std::bind(ShowProgress, this, boost::placeholders::_1, boost::placeholders::_2));
+    uiInterface.NotifyNumConnectionsChanged.disconnect(std::bind(NotifyNumConnectionsChanged, this, boost::placeholders::_1));
+    uiInterface.NotifyAlertChanged.disconnect(std::bind(NotifyAlertChanged, this));
+    uiInterface.BannedListChanged.disconnect(std::bind(BannedListChanged, this));
+    uiInterface.NotifyBlockTip.disconnect(std::bind(BlockTipChanged, this, boost::placeholders::_1, boost::placeholders::_2));
 
 }
 
