@@ -1,23 +1,23 @@
 # It is not recommended to modify this file in-place, because it will
 # be overwritten during package upgrades. If you want to add further
 # options or overwrite existing ones then use
-# $ systemctl edit azusd.service
+# $ systemctl edit clrd.service
 # See "man systemd.service" for details.
 
 # Note that almost all daemon options could be specified in
-# /etc/azus/azus.conf
+# /etc/clr/clr.conf
 
 [Unit]
-Description=AZUS daemon
+Description=CLR daemon
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/azusd -daemon -datadir=/var/lib/azus -conf=/etc/azus/azus.conf -pid=/run/azusd/azusd.pid
-# Creates /run/azusd owned by azus
-RuntimeDirectory=azusd
-User=azus
+ExecStart=/usr/bin/clrd -daemon -datadir=/var/lib/clr -conf=/etc/clr/clr.conf -pid=/run/clrd/clrd.pid
+# Creates /run/clrd owned by clr
+RuntimeDirectory=clrd
+User=clr
 Type=forking
-PIDFile=/run/azusd/azusd.pid
+PIDFile=/run/clrd/clrd.pid
 Restart=on-failure
 
 # Hardening measures

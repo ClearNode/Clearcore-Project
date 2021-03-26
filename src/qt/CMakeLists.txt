@@ -2,7 +2,7 @@ CMAKE_MINIMUM_REQUIRED(VERSION 3.10)
 
 set(QT_MINIMUM_VERSION 5.5.1)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
-set(CMAKE_AUTOUIC_SEARCH_PATHS ${CMAKE_CURRENT_SOURCE_DIR}/forms ${CMAKE_CURRENT_SOURCE_DIR}/azus/forms ${CMAKE_CURRENT_SOURCE_DIR}/azus/settings/forms)
+set(CMAKE_AUTOUIC_SEARCH_PATHS ${CMAKE_CURRENT_SOURCE_DIR}/forms ${CMAKE_CURRENT_SOURCE_DIR}/clr/forms ${CMAKE_CURRENT_SOURCE_DIR}/clr/settings/forms)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
@@ -111,80 +111,80 @@ SET(QT_SOURCES
         ${CMAKE_CURRENT_SOURCE_DIR}/transactiontablemodel.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/walletmodel.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/walletmodeltransaction.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/azusgui.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/loadingdialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/pwidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/focuseddialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/guitransactionsutils.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/snackbar.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/navmenuwidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/lockunlock.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/receivedialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/furabstractlistitemdelegate.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/txviewholder.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/qtutils.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/expandablebutton.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/topbar.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/txrow.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/addressfilterproxymodel.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/dashboardwidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/addresslabelrow.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/contactdropdownrow.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/contactsdropdown.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/optionbutton.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/mninfodialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/coldstakingmodel.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/mnmodel.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/masternodewizarddialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/mnrow.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/masternodeswidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/sendchangeaddressdialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/sendconfirmdialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/sendcustomfeedialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/sendchangeaddressdialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/sendmultirow.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/send.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/addnewaddressdialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/addnewcontactdialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/requestdialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/receivewidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/myaddressrow.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/csrow.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/addressholder.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/tooltipmenu.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/addresseswidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/defaultdialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/coldstakingwidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/settings/settingsbackupwallet.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/settings/settingsbittoolwidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/settings/settingsconsolewidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/settings/settingsdisplayoptionswidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/settings/settingsfaqwidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/settings/settingsinformationwidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/settings/settingsmainoptionswidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/settings/settingsmultisenddialog.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/settings/settingsmultisendwidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/settings/settingssignmessagewidgets.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/settings/settingswalletoptionswidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/settings/settingswalletrepairwidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/settings/settingsexportcsv.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/settings/settingswidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/welcomecontentwidget.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/splash.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/clrgui.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/loadingdialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/pwidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/focuseddialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/guitransactionsutils.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/snackbar.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/navmenuwidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/lockunlock.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/receivedialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/furabstractlistitemdelegate.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/txviewholder.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/qtutils.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/expandablebutton.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/topbar.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/txrow.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/addressfilterproxymodel.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/dashboardwidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/addresslabelrow.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/contactdropdownrow.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/contactsdropdown.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/optionbutton.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/mninfodialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/coldstakingmodel.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/mnmodel.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/masternodewizarddialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/mnrow.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/masternodeswidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/sendchangeaddressdialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/sendconfirmdialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/sendcustomfeedialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/sendchangeaddressdialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/sendmultirow.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/send.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/addnewaddressdialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/addnewcontactdialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/requestdialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/receivewidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/myaddressrow.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/csrow.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/addressholder.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/tooltipmenu.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/addresseswidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/defaultdialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/coldstakingwidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/settings/settingsbackupwallet.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/settings/settingsbittoolwidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/settings/settingsconsolewidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/settings/settingsdisplayoptionswidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/settings/settingsfaqwidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/settings/settingsinformationwidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/settings/settingsmainoptionswidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/settings/settingsmultisenddialog.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/settings/settingsmultisendwidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/settings/settingssignmessagewidgets.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/settings/settingswalletoptionswidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/settings/settingswalletrepairwidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/settings/settingsexportcsv.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/settings/settingswidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/welcomecontentwidget.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/splash.cpp
         )
 
 # Workaround until the old rpcconsole UI window is fully removed
-set_property(SOURCE ${CMAKE_CURRENT_SOURCE_DIR}/azus/settings/settingsconsolewidget.cpp PROPERTY SKIP_AUTOMOC ON)
+set_property(SOURCE ${CMAKE_CURRENT_SOURCE_DIR}/clr/settings/settingsconsolewidget.cpp PROPERTY SKIP_AUTOMOC ON)
 execute_process(
         COMMAND ${MOC_BIN} -o moc_settingsconsolewidget.cpp settingsconsolewidget.h
-        WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/azus/settings
+        WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/clr/settings
 )
 
 execute_process(
         COMMAND ${MOC_BIN} -o moc_pfborderimage.cpp pfborderimage.h
-        WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/azus
+        WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/clr
 )
-list(APPEND QT_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/azus/moc_pfborderimage.cpp)
+list(APPEND QT_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/clr/moc_pfborderimage.cpp)
 
 if (${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
     list(APPEND QT_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/macdockiconhandler.mm)
@@ -197,8 +197,8 @@ target_include_directories(qt_stuff PUBLIC ${CMAKE_SOURCE_DIR}/src
         ${CMAKE_SOURCE_DIR}/src/univalue/include
         ${CMAKE_SOURCE_DIR}/src/secp256k1/include
         ${CMAKE_CURRENT_SOURCE_DIR}
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus
-        ${CMAKE_CURRENT_SOURCE_DIR}/azus/settings
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr
+        ${CMAKE_CURRENT_SOURCE_DIR}/clr/settings
         ${OPENSSL_INCLUDE_DIR}
         ${BerkeleyDB_INCLUDE_DIRS}
         )
@@ -212,13 +212,13 @@ set_source_files_properties(${QT_TRANSLATIONS_FILES} PROPERTIES OUTPUT_LOCATION 
 QT5_ADD_TRANSLATION(QM ${QT_TRANSLATIONS_FILES})
 add_custom_target(translations_target ALL DEPENDS ${QM})
 
-QT5_ADD_RESOURCES(QRC_RESOURCE azus.qrc)
-QT5_ADD_RESOURCES(QRC_LOCALE_RESOURCE azus_locale.qrc)
+QT5_ADD_RESOURCES(QRC_RESOURCE clr.qrc)
+QT5_ADD_RESOURCES(QRC_LOCALE_RESOURCE clr_locale.qrc)
 
-add_executable(azus-qt azus.cpp ${QM} ${QRC_RESOURCE} ${QRC_LOCALE_RESOURCE})
-add_dependencies(azus-qt translations_target libunivalue libsecp256k1 libzcashrust leveldb crc32c)
-target_include_directories(azus-qt PUBLIC ${ENDIAN_INCLUDES})
-target_link_libraries(azus-qt
+add_executable(clr-qt clr.cpp ${QM} ${QRC_RESOURCE} ${QRC_LOCALE_RESOURCE})
+add_dependencies(clr-qt translations_target libunivalue libsecp256k1 libzcashrust leveldb crc32c)
+target_include_directories(clr-qt PUBLIC ${ENDIAN_INCLUDES})
+target_link_libraries(clr-qt
         qt_stuff
         univalue
         SERVER_A UTIL_A WALLET_A CLI_A COMMON_A BITCOIN_CRYPTO_A ZEROCOIN_A SAPLING_A
@@ -228,30 +228,30 @@ target_link_libraries(azus-qt
         -ldl pthread
         )
 if (${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
-    target_link_libraries(azus-qt "-framework Cocoa")
+    target_link_libraries(clr-qt "-framework Cocoa")
 endif()
 if(GMP_FOUND)
-    target_link_libraries(azus-qt ${GMP_LIBRARY})
-    target_include_directories(azus-qt PUBLIC ${GMP_INCLUDE_DIR})
+    target_link_libraries(clr-qt ${GMP_LIBRARY})
+    target_include_directories(clr-qt PUBLIC ${GMP_INCLUDE_DIR})
 endif()
 if(ZMQ_FOUND)
-    target_link_libraries(azus-qt ZMQ_A ${ZMQ_LIB})
-    target_include_directories(azus-qt PUBLIC ${ZMQ_INCLUDE_DIR})
+    target_link_libraries(clr-qt ZMQ_A ${ZMQ_LIB})
+    target_include_directories(clr-qt PUBLIC ${ZMQ_INCLUDE_DIR})
 endif()
 if (QRCODE_FOUND)
-    target_link_libraries(azus-qt ${QRCODE_LIB})
-    target_include_directories(azus-qt PUBLIC ${QRCODE_INCLUDE_DIR})
+    target_link_libraries(clr-qt ${QRCODE_LIB})
+    target_include_directories(clr-qt PUBLIC ${QRCODE_INCLUDE_DIR})
 endif()
 if(MINIUPNP_FOUND)
-    target_compile_definitions(azus-qt PUBLIC "-DSTATICLIB -DMINIUPNP_STATICLIB")
-    target_link_libraries(azus-qt ${MINIUPNP_LIBRARY})
-    target_include_directories(azus-qt PUBLIC ${MINIUPNP_INCLUDE_DIR})
+    target_compile_definitions(clr-qt PUBLIC "-DSTATICLIB -DMINIUPNP_STATICLIB")
+    target_link_libraries(clr-qt ${MINIUPNP_LIBRARY})
+    target_include_directories(clr-qt PUBLIC ${MINIUPNP_INCLUDE_DIR})
 endif()
 
-target_link_libraries(azus-qt Qt5::Gui Qt5::Core Qt5::Widgets Qt5::Network Qt5::Svg ${QT_LIBRARIES})
+target_link_libraries(clr-qt Qt5::Gui Qt5::Core Qt5::Widgets Qt5::Network Qt5::Svg ${QT_LIBRARIES})
 if (Qt5DBus_FOUND)
-    target_link_libraries(azus-qt Qt5::DBus ${QT_LIBRARIES})
+    target_link_libraries(clr-qt Qt5::DBus ${QT_LIBRARIES})
 endif()
 if (Qt5Charts_FOUND)
-    target_link_libraries(azus-qt Qt5::Charts ${QT_LIBRARIES})
+    target_link_libraries(clr-qt Qt5::Charts ${QT_LIBRARIES})
 endif()

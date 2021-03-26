@@ -1,31 +1,31 @@
 #!/bin/bash
 #
-#  azusd The PIVX core server.
+#  clrd The PIVX core server.
 #
 #
 # chkconfig: 345 80 20
-# description: azusd
-# processname: azusd
+# description: clrd
+# processname: clrd
 #
 
 # Source function library.
 . /etc/init.d/functions
 
-# you can override defaults in /etc/sysconfig/azusd, see below
-if [ -f /etc/sysconfig/azusd ]; then
-        . /etc/sysconfig/azusd
+# you can override defaults in /etc/sysconfig/clrd, see below
+if [ -f /etc/sysconfig/clrd ]; then
+        . /etc/sysconfig/clrd
 fi
 
 RETVAL=0
 
-prog=azusd
-# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/azusd
-lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/azusd}
+prog=clrd
+# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/clrd
+lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/clrd}
 
-# azusd defaults to /usr/bin/azusd, override with BITCOIND_BIN
-bitcoind=${BITCOIND_BIN-/usr/bin/azusd}
+# clrd defaults to /usr/bin/clrd, override with BITCOIND_BIN
+bitcoind=${BITCOIND_BIN-/usr/bin/clrd}
 
-# azusd opts default to -disablewallet, override with BITCOIND_OPTS
+# clrd opts default to -disablewallet, override with BITCOIND_OPTS
 bitcoind_opts=${BITCOIND_OPTS}
 
 start() {

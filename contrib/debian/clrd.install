@@ -1,3 +1,3 @@
-usr/local/bin/azusd usr/bin
-usr/local/bin/azus-cli usr/bin
-debian/examples/azus.conf etc/azus
+usr/local/bin/clrd usr/bin
+usr/local/bin/clr-cli usr/bin
+debian/examples/clr.conf etc/clr

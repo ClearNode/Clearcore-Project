@@ -1,74 +1,74 @@
 # Copyright (c) 2018-2019 The Ion developers
 # Copyright (c) 2019 The PIVX developers
-name: azus-core
+name: clr-core
 base: core18
 version: 4.3.0
-summary:   AZUS (Private – Instant – Verified – Transaction)
+summary:   CLR (Private – Instant – Verified – Transaction)
 description: |
-  AZUS is an MIT licensed,
+  CLR is an MIT licensed,
   open source, blockchain-based cryptocurrency with
   ultra fast transactions, low fees, high network decentralization, and
   Zero Knowledge cryptography proofs for industry-leading
   transaction anonymity.
 
-  - [Download](https://azus.org/wp-content/uploads/2018/10/AZUS-White.pdf) AZUS White Paper PDF
+  - [Download](https://clr.org/wp-content/uploads/2018/10/CLR-White.pdf) CLR White Paper PDF
 grade: devel
 confinement: strict
 apps:
   daemon:
-    command: azusd
+    command: clrd
     plugs: [network, network-bind, home, removable-media]
-    desktop: azusd.desktop
+    desktop: clrd.desktop
     environment:
       XDG_DATA_DIRS: $SNAP_USER_DATA:$SNAP/usr/share:$XDG_DATA_DIRS
       HOME: $SNAP_USER_COMMON
   daemon-testnet:
-    command: azusd --testnet
+    command: clrd --testnet
     plugs: [network, network-bind, home, removable-media]
-    desktop: azusd_testnet.desktop
+    desktop: clrd_testnet.desktop
     environment:
       XDG_DATA_DIRS: $SNAP_USER_DATA:$SNAP/usr/share:$XDG_DATA_DIRS
       HOME: $SNAP_USER_COMMON
   qt:
-    command: azus-qt
+    command: clr-qt
     plugs: [network, network-bind, network-status, unity7, desktop, desktop-legacy, wayland, x11, mir, opengl, home, gsettings, removable-media, screen-inhibit-control, pulseaudio, media-hub]
-    desktop: azus-qt.desktop
+    desktop: clr-qt.desktop
     environment:
       QT_XKB_CONFIG_ROOT: $SNAP_USER_DATA:$SNAP/usr/share:$QT_XKB_CONFIG_ROOT
       XDG_DATA_DIRS: $SNAP_USER_DATA:$SNAP/usr/share:$XDG_DATA_DIRS
       HOME: $SNAP_USER_COMMON
   qt-testnet:
-    command: azus-qt --testnet
+    command: clr-qt --testnet
     plugs: [network, network-bind, network-status, unity7, desktop, desktop-legacy, wayland, x11, mir, opengl, home, gsettings, removable-media, screen-inhibit-control, pulseaudio, media-hub]
-    desktop: azus-qt_testnet.desktop
+    desktop: clr-qt_testnet.desktop
     environment:
       QT_XKB_CONFIG_ROOT: $SNAP_USER_DATA:$SNAP/usr/share:$QT_XKB_CONFIG_ROOT
       XDG_DATA_DIRS: $SNAP_USER_DATA:$SNAP/usr/share:$XDG_DATA_DIRS
       HOME: $SNAP_USER_COMMON
   cli:
-    command: azus-cli
+    command: clr-cli
     plugs: [network, network-bind, home, removable-media]
     environment:
       XDG_DATA_DIRS: $SNAP_USER_DATA:$SNAP/usr/share:$XDG_DATA_DIRS
       HOME: $SNAP_USER_COMMON
   cli-testnet:
-    command: azus-cli --testnet
+    command: clr-cli --testnet
     plugs: [network, network-bind, home, removable-media]
     environment:
       XDG_DATA_DIRS: $SNAP_USER_DATA:$SNAP/usr/share:$XDG_DATA_DIRS
       HOME: $SNAP_USER_COMMON
   tx:
-    command: azus-tx
+    command: clr-tx
     plugs: [home]
   test:
-    command: test_azus
+    command: test_clr
     plugs: [home]
   testqt:
-    command: test_azus-qt
+    command: test_clr-qt
     plugs: [home]
 parts:
-  azus-core:
-    source: https://github.com/AzusNodes/AZUS
+  clr-core:
+    source: https://github.com/ClearNode/Clearcore-Project
     source-type: git
     source-tag: master
     plugin: nil
@@ -80,9 +80,9 @@ parts:
       #    project is called ioncore because ion exists already as package. For anybody
       #    offering non official release and using own SNAP, this variable should be used
       #    default value is "false", to enable it, use your projects binary prefix
-      OVERRIDEBINPREFIX="azus"
+      OVERRIDEBINPREFIX="clr"
       OVERRIDEDATADIR="false"
-      PARAMSDIR=".azus-params"
+      PARAMSDIR=".clr-params"
       OVERRIDECONF="${OVERRIDEDATADIR}"
       COPYCONF=0    # copy example config into users data folder, 1 = enabled
       JOBS=4        # 0 means off and make will run without -j
@@ -193,8 +193,8 @@ parts:
       echo "INSTALLATION OF ${BINPREF}-${SNAPCRAFT_PROJECT_VERSION}" # run make install with a prefix where to install
       echo "+++++++++++++++++++++++++++++++++++++++++++++++"
       make install prefix=${SNAPCRAFT_PART_INSTALL}
-      install -m 0644 -D -T $SNAPCRAFT_PART_BUILD/src/qt/res/icons/bitcoin.png $SNAPCRAFT_PART_INSTALL/share/pixmaps/azus.png
-      install -m 0644 -D -T $SNAPCRAFT_PART_BUILD/src/qt/res/icons/bitcoin_testnet.png $SNAPCRAFT_PART_INSTALL/share/pixmaps/azus_testnet.png
+      install -m 0644 -D -T $SNAPCRAFT_PART_BUILD/src/qt/res/icons/bitcoin.png $SNAPCRAFT_PART_INSTALL/share/pixmaps/clr.png
+      install -m 0644 -D -T $SNAPCRAFT_PART_BUILD/src/qt/res/icons/bitcoin_testnet.png $SNAPCRAFT_PART_INSTALL/share/pixmaps/clr_testnet.png
       echo "-----------------------------------------------"
       echo "+++++++++++++++++++++++++++++++++++++++++++++++"
       echo "POST INSTALL SCRIPTS OF ${BINPREF}-${SNAPCRAFT_PROJECT_VERSION}" # run make install with a prefix where to install
@@ -228,7 +228,7 @@ parts:
       fi
       echo "-----------------------------------------------"
       echo "+++++++++++++++++++++++++++++++++++++++++++++++"
-      echo "CONFIG FILE" # create .azus folder and copy example config - !!!warning!!!: do not copy as azus.conf
+      echo "CONFIG FILE" # create .clr folder and copy example config - !!!warning!!!: do not copy as clr.conf
       echo "+++++++++++++++++++++++++++++++++++++++++++++++"
       mkdir -p ${SNAP_USER_COMMON}/.${DATADIR}
       if [ $COPYCONF = 1 ]; then
