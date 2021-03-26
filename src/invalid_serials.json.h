@@ -1,4 +1,5 @@
-// Copyright (c) 2018 CLR
+// Copyright (c) 2018 The PIVX developers
+// Copyright (c) 2020 The CLR developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -1189,4 +1190,4 @@ std::string LoadInvalidSerials()
     return str;
 }
 
-#endif //CLR_INVALID_SERIALS_JSON_H
+#endif //PIVX_INVALID_SERIALS_JSON_H

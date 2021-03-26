@@ -18,7 +18,7 @@ BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/clrd}
 BITCOIND_NICE=${BITCOIND_NICE:-${NICELEVEL:-0}}
 BITCOIND_OPTS="${BITCOIND_OPTS:-${BITCOIN_OPTS}}"
 
-name="ClearCoin Core Daemon"
+name="CLR Core Daemon"
 description="CLR crypto-currency p2p network daemon"
 
 command="/usr/bin/clrd"

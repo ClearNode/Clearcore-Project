@@ -5,7 +5,7 @@
 DEFINES += ENABLE_WALLET
 
 TEMPLATE = app
-TARGET = 
+TARGET =
 DEPENDPATH += . \
               src \
               src/compat \
@@ -153,7 +153,7 @@ HEADERS += src/activemasternode.h \
            src/crypto/sph_skein.h \
            src/crypto/sph_types.h \
            src/crypto/sph_hamsi.h \
-           src/crypto/sph_fugue.h \
+           src/crypto/sph_fugue.h \           
            src/json/json_spirit.h \
            src/json/json_spirit_error_position.h \
            src/json/json_spirit_reader.h \
@@ -660,3 +660,6 @@ TRANSLATIONS += src/qt/locale/clr_bg.ts \
                 src/qt/locale/clr_vi.ts \
                 src/qt/locale/clr_zh_CN.ts \
                 src/qt/locale/clr_zh_TW.ts
+
+DISTFILES += \
+    README.md

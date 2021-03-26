@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="ic_piv"
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   version="1.1"
+   sodipodi:docname="ic-coin-clr.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata3739">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview3737"
+     showgrid="false"
+     inkscape:zoom="35.333333"
+     inkscape:cx="14.165844"
+     inkscape:cy="14.589526"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="ic_piv" />
+  <defs
+     id="defs3729">
+    <style
+       type="text/css"
+       id="style3727">
+            .cls-1{fill:#0881d6}.cls-2{fill:none}
+        </style>
+  </defs>
+  <g
+     id="Group_8935"
+     data-name="Group 8935">
+    <g
+       id="Group_8934"
+       data-name="Group 8934">
+      <path
+         id="Path_18928"
+         d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 19.25A9.25 9.25 0 1 1 21.25 12 9.25 9.25 0 0 1 12 21.25z"
+         class="cls-1"
+         data-name="Path 18928" />
+      <path
+         id="Path_18929"
+         d="M 12,3.5 C 4.4267821,3.5 0.63547307,12.655678 5.9898977,18.010102 11.344322,23.364527 20.5,19.573218 20.5,12 20.5,7.3055796 16.69442,3.5 12,3.5 Z"
+         class="cls-1"
+         data-name="Path 18929"
+         inkscape:connector-curvature="0"
+         style="fill:#0881d6"
+         sodipodi:nodetypes="ssss" />
+    </g>
+  </g>
+  <path
+     id="Rectangle_4543"
+     d="M0 0h24v24H0z"
+     class="cls-2"
+     data-name="Rectangle 4543" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:13.86800289px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.30012524;"
+     x="6.4275446"
+     y="17.042604"
+     id="text6576"
+     transform="scale(1.0060553,0.99398115)"><tspan
+       sodipodi:role="line"
+       id="tspan6574"
+       x="6.4275446"
+       y="17.042604"
+       style="stroke-width:1.30012524;fill:#ffffff;fill-opacity:1;">C</tspan></text>
+</svg>

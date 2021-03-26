@@ -1,5 +1,65 @@
 <TS language="ru" version="2.1">
 <context>
+    <name>AddNewAddressDialog</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Диалоговое окно</translation>
+    </message>
+    <message>
+        <source>New Address</source>
+        <translation>Новый адрес</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Адрес</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Нажать кнопку</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>ОТМЕНА</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>СОХРАНИТЬ</translation>
+    </message>
+</context>
+<context>
+    <name>AddNewContactDialog</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Диалоговое окно</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>ОТМЕНА</translation>
+    </message>
+    <message>
+        <source>Edit Contact</source>
+        <translation>Добавить контакт</translation>
+    </message>
+    <message>
+        <source>Set a label for the selected address</source>
+        <translation>Установить ярлык для выбранного адреса</translation>
+    </message>
+    <message>
+        <source>Enter a label for the address (e.g. Exchange)</source>
+        <translation>Введите метку для адреса (например, Биржа)</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>СОХРАНИТЬ</translation>
+    </message>
+    <message>
+        <source>Edit label for the selected address:
+%1</source>
+        <translation>Изменить ярлык для выбранного адреса:
+ %1 </translation>
+    </message>
+</context>
+<context>
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
@@ -62,12 +122,12 @@
         <translation>Адреса получения</translation>
     </message>
     <message>
-        <source>These are your CLR addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Это ваши CLR-адреса для отправки платежей. Перед отправкой монет всегда проверяйте сумму и адрес получателя.</translation>
+        <source>These are your ClearCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Это ваши ClearCoin-адреса для отправки платежей. Перед отправкой монет всегда проверяйте сумму и адрес получателя.</translation>
     </message>
     <message>
-        <source>These are your CLR addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Это ваши CLR-адреса для получения платежей. Для каждой транзакции рекомендуется использовать новый адрес получения.</translation>
+        <source>These are your ClearCoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Это ваши ClearCoin-адреса для получения платежей. Для каждой транзакции рекомендуется использовать новый адрес получения.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -99,6 +159,21 @@
     </message>
 </context>
 <context>
+    <name>AddressLabelRow</name>
+    <message>
+        <source>Form</source>
+        <translation>Вид</translation>
+    </message>
+    <message>
+        <source>Bob Allen</source>
+        <translation>Иван Петров</translation>
+    </message>
+    <message>
+        <source>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</source>
+        <translation>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</translation>
+    </message>
+</context>
+<context>
     <name>AddressTableModel</name>
     <message>
         <source>Label</source>
@@ -109,8 +184,111 @@
         <translation>Адрес</translation>
     </message>
     <message>
+        <source>Date</source>
+        <translation>Дата</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>Тип</translation>
+    </message>
+    <message>
         <source>(no label)</source>
-        <translation>(нет метки)</translation>
+        <translation>(нет ярлыка)</translation>
+    </message>
+</context>
+<context>
+    <name>AddressesWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Вид</translation>
+    </message>
+    <message>
+        <source>Contact name</source>
+        <translation>Контактное имя</translation>
+    </message>
+    <message>
+        <source>Enter address</source>
+        <translation>Ввести адрес</translation>
+    </message>
+    <message>
+        <source>Contacts</source>
+        <translation>Контакты</translation>
+    </message>
+    <message>
+        <source>You can add a new one in the options menu to the side.</source>
+        <translation>Вы можете добавить новый в меню параметров сбоку.</translation>
+    </message>
+    <message>
+        <source>No contacts yet</source>
+        <translation>Пока что нет контактов</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>СОХРАНИТЬ</translation>
+    </message>
+    <message>
+        <source>Add new contact</source>
+        <translation>Добавить новый контакт</translation>
+    </message>
+    <message>
+        <source>Generate a new address to receive tokens.</source>
+        <translation>Сгенерировать новый адрес для получения токенов.</translation>
+    </message>
+    <message>
+        <source>Invalid Contact Address</source>
+        <translation>Неверный контактный адрес</translation>
+    </message>
+    <message>
+        <source>Cannot store your own address as contact</source>
+        <translation>Невозможно сохранить ваш личный адрес в качестве контакта</translation>
+    </message>
+    <message>
+        <source>Address already stored, label: %1</source>
+        <translation>Адрес уже сохранен, ярлык: %1</translation>
+    </message>
+    <message>
+        <source>New Contact Stored</source>
+        <translation>Новый контакт сохранен</translation>
+    </message>
+    <message>
+        <source>Error Storing Contact</source>
+        <translation>Ошибка при сохранении контакта</translation>
+    </message>
+    <message>
+        <source>Contact edited</source>
+        <translation>Контакт изменен</translation>
+    </message>
+    <message>
+        <source>Contact edit failed</source>
+        <translation>Не удалось изменить контакт</translation>
+    </message>
+    <message>
+        <source>Delete Contact</source>
+        <translation>Удалить контакт</translation>
+    </message>
+    <message>
+        <source>You are just about to remove the contact:
+
+%1
+
+Are you sure?</source>
+        <translation>Вы собираетесь удалить контакт:
+
+%1
+
+Вы уверены?</translation>
+    </message>
+    <message>
+        <source>Contact Deleted</source>
+        <translation>Контакт удален</translation>
+    </message>
+    <message>
+        <source>Error deleting a contact</source>
+        <translation>Ошибка при удалении контакта</translation>
+    </message>
+    <message>
+        <source>Address copied</source>
+        <translation>Адрес скопирован</translation>
     </message>
 </context>
 <context>
@@ -120,28 +298,16 @@
         <translation>Диалоговое окно кодовой фразы</translation>
     </message>
     <message>
-        <source>Enter passphrase</source>
-        <translation>Введите кодовую фразу</translation>
+        <source>TextLabel</source>
+        <translation>Текстовая метка</translation>
     </message>
     <message>
-        <source>New passphrase</source>
-        <translation>Новая кодовая фраза</translation>
-    </message>
-    <message>
-        <source>Repeat new passphrase</source>
-        <translation>Повторить новую кодовую фразу</translation>
-    </message>
-    <message>
-        <source>Serves to disable the trivial sendmoney when OS account compromised. Provides no real security.</source>
-        <translation>Служит для отключения тривиальных сендмонэй, когда учетная запись ОС скомпрометирована. Не обеспечивает реальной безопасности. </translation>
-    </message>
-    <message>
-        <source>For anonymization, automint, and staking only</source>
-        <translation>Только для анонимности, автосоздания и хранения</translation>
+        <source>PushButton</source>
+        <translation>Нажать кнопку</translation>
     </message>
     <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>Введите новый пароль к кошельку. &lt;br/&gt;Используйте при этом десять &lt;/b&gt;или болле случайных символов &lt;/b&gt;или восем и более слов.</translation>
+        <translation>Введите новый пароль к кошельку. &lt;br/&gt;Используйте при этом десять &lt;/b&gt;или более случайных символов &lt;/b&gt;или восем и более слов.</translation>
     </message>
     <message>
         <source>Encrypt wallet</source>
@@ -150,6 +316,11 @@
     <message>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
         <translation>Для этой операции требуется кодовая фраза вашего кошелька, чтобы разблокировать кошелек.</translation>
+    </message>
+    <message>
+        <source>Unlock wallet
+for staking</source>
+        <translation>Разблокировать кошелек для стекинга</translation>
     </message>
     <message>
         <source>Unlock wallet</source>
@@ -176,20 +347,44 @@
         <translation>Подтверждение шифрования кошелька</translation>
     </message>
     <message>
-        <source>CLR will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CLRs from being stolen by malware infecting your computer.</source>
-        <translation>CLR сейчас закроется, чтобы завершить процесс шифрования. Помните, что шифрование вашего кошелька не может полностью защитить ваши CLR от кражи с использованием вредоносного ПО.</translation>
+        <source>WARNING</source>
+        <translation>ВНИМАНИЕ</translation>
+    </message>
+    <message>
+        <source>If you encrypt your wallet and lose your passphrase, you will</source>
+        <translation>Если вы зашифруете свой кошелек и потеряете парольную фразу, вы</translation>
+    </message>
+    <message>
+        <source>ENCRYPT</source>
+        <translation>РАСШИФРОВАТЬ</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>ОТМЕНА</translation>
+    </message>
+    <message>
+        <source>ClearCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CLRs from being stolen by malware infecting your computer.</source>
+        <translation>ClearCoin сейчас закроется, чтобы завершить процесс шифрования. Помните, что шифрование вашего кошелька не может полностью защитить ваши ClearCoin от кражи с использованием вредоносного ПО.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Вы действительно хотите зашифровать свой кошелек?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR CLR&lt;/b&gt;!</source>
-        <translation>Внимание: если вы зашифруете свой кошелёк и потеряете от него пароль, то вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ СВОИ CLR&lt;/b&gt;!</translation>
-    </message>
-    <message>
         <source>Wallet encrypted</source>
         <translation>Кошелек зашифрован</translation>
+    </message>
+    <message>
+        <source>WARNING:</source>
+        <translation>ПРЕДУПРЕЖДЕНИЕ:</translation>
+    </message>
+    <message>
+        <source>The caps lock key is on!</source>
+        <translation>Нажата кнопка caps lock!</translation>
+    </message>
+    <message>
+        <source>Passphrases do not match!</source>
+        <translation>Парольные фразы не совпадают!</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -200,12 +395,20 @@
         <translation>Сбой шифрования кошелька</translation>
     </message>
     <message>
+        <source>OK</source>
+        <translation>ХОРОШО</translation>
+    </message>
+    <message>
         <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
         <translation>Шифрование кошелька не удалось из-за внутренней ошибки. Ваш кошелек не был зашифрован.</translation>
     </message>
     <message>
         <source>The supplied passphrases do not match.</source>
         <translation>Введенные парольные фразы не совпадают.</translation>
+    </message>
+    <message>
+        <source>LOSE ALL OF YOUR COINS</source>
+        <translation>ЛИШИТЬСЯ ВСЕХ СВОИХ МОНЕТ</translation>
     </message>
     <message>
         <source>Wallet unlock failed</source>
@@ -223,10 +426,6 @@
         <source>Wallet passphrase was successfully changed.</source>
         <translation>Кодовая фраза кошелька успешно изменена.</translation>
     </message>
-    <message>
-        <source>Warning: The Caps Lock key is on!</source>
-        <translation>Внимание: Клавиша Caps Lock включена!</translation>
-    </message>
 </context>
 <context>
     <name>BanTableModel</name>
@@ -240,660 +439,30 @@
     </message>
 </context>
 <context>
-    <name>Bip38ToolDialog</name>
+    <name>CSRow</name>
     <message>
-        <source>BIP 38 Tool</source>
-        <translation>BIP 38 Утилита</translation>
+        <source>Form</source>
+        <translation>Вид</translation>
     </message>
     <message>
-        <source>&amp;BIP 38 Encrypt</source>
-        <translation>&amp;BIP 38 Шифрование</translation>
+        <source>Savings</source>
+        <translation>Сбережения</translation>
     </message>
     <message>
-        <source>Address:</source>
-        <translation>Адрес:</translation>
+        <source>0,00 CLR</source>
+        <translation>0.00 CLR</translation>
     </message>
     <message>
-        <source>Enter a CLR Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Введите CLR адрес, которым вы хотите зашифровать, используя BIP 38. Введите пароль в среднем поле. Нажмите "Зашифровать", чтобы создать зашиврованный секретный ключ.</translation>
+        <source>address</source>
+        <translation>адрес</translation>
     </message>
     <message>
-        <source>The CLR address to encrypt</source>
-        <translation>Адрес CLR для зашифровки</translation>
+        <source>Not Staking</source>
+        <translation>Стекинг не запущен</translation>
     </message>
     <message>
-        <source>Choose previously used address</source>
-        <translation>Выбрать ранее использованный адрес</translation>
-    </message>
-    <message>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
-    </message>
-    <message>
-        <source>Paste address from clipboard</source>
-        <translation>Вставить адрес из буфера обмена</translation>
-    </message>
-    <message>
-        <source>Alt+P</source>
-        <translation>Alt+P</translation>
-    </message>
-    <message>
-        <source>Passphrase: </source>
-        <translation>Кодовая фраза:</translation>
-    </message>
-    <message>
-        <source>Encrypted Key:</source>
-        <translation>Зашифрованный ключ:</translation>
-    </message>
-    <message>
-        <source>Copy the current signature to the system clipboard</source>
-        <translation>Копировать текущую подпись в системный буфер обмена</translation>
-    </message>
-    <message>
-        <source>Encrypt the private key for this CLR address</source>
-        <translation>Зашифровать личные ключи для этого CLR адреса </translation>
-    </message>
-    <message>
-        <source>Reset all fields</source>
-        <translation>Сбросить все поля</translation>
-    </message>
-    <message>
-        <source>The encrypted private key</source>
-        <translation>Зашифрованные личные ключи</translation>
-    </message>
-    <message>
-        <source>Decrypt the entered key using the passphrase</source>
-        <translation>Дешифрование введенных ключей с использованием кодовой фразы</translation>
-    </message>
-    <message>
-        <source>Encrypt &amp;Key</source>
-        <translation>Зашифровать &amp;Ключ</translation>
-    </message>
-    <message>
-        <source>Clear &amp;All</source>
-        <translation>Очистить &amp;Все</translation>
-    </message>
-    <message>
-        <source>&amp;BIP 38 Decrypt</source>
-        <translation>&amp;BIP 38 Дешифрование</translation>
-    </message>
-    <message>
-        <source>Enter the BIP 38 encrypted private key. Enter the passphrase in the middle box. Click Decrypt Key to compute the private key. After the key is decrypted, clicking 'Import Address' will add this private key to the wallet.</source>
-        <translation>Введите зашифрованный с помощью BIP 38 секретный ключ. Введите секретную фразу в среднем окне. Нажмите Дешифровать Ключ чтобы создать секретный ключ. Нажав на Импортировать Адрес после дешифровки, вы добавите секретный ключ к кошельку.</translation>
-    </message>
-    <message>
-        <source>Decrypt &amp;Key</source>
-        <translation>Дешифровать &amp;Ключ</translation>
-    </message>
-    <message>
-        <source>Decrypted Key:</source>
-        <translation>Дешифрованный Ключ</translation>
-    </message>
-    <message>
-        <source>Import Address</source>
-        <translation>Импортировать Адрес</translation>
-    </message>
-    <message>
-        <source>Click "Decrypt Key" to compute key</source>
-        <translation>Нажмите "Дешифровать Ключ" для генерации ключа</translation>
-    </message>
-    <message>
-        <source>The entered passphrase is invalid. </source>
-        <translation>Неправильно введена кодовая фраза.</translation>
-    </message>
-    <message>
-        <source>Allowed: 0-9,a-z,A-Z,</source>
-        <translation>Допускается: 0-9,a-z,A-Z,</translation>
-    </message>
-    <message>
-        <source>The entered address is invalid.</source>
-        <translation>Неправильно введен адрес.</translation>
-    </message>
-    <message>
-        <source>Please check the address and try again.</source>
-        <translation>Пожалуйста, проверьте адрес и попробуйте снова.</translation>
-    </message>
-    <message>
-        <source>The entered address does not refer to a key.</source>
-        <translation>Введенный адрес не связан с ключом.</translation>
-    </message>
-    <message>
-        <source>Wallet unlock was cancelled.</source>
-        <translation>Снятие блокировки кошелька было отменено.</translation>
-    </message>
-    <message>
-        <source>Private key for the entered address is not available.</source>
-        <translation>Персональный ключ для введенного адреса недоступен.</translation>
-    </message>
-    <message>
-        <source>Failed to decrypt.</source>
-        <translation>Не удалось дешифровать.</translation>
-    </message>
-    <message>
-        <source>Please check the key and passphrase and try again.</source>
-        <translation>Пожалуйста, проверьте ключ и кодовую фразу и попробуйте снова.</translation>
-    </message>
-    <message>
-        <source>Data Not Valid.</source>
-        <translation>Данные недействительны.</translation>
-    </message>
-    <message>
-        <source>Please try again.</source>
-        <translation>Пожалуйста, попробуйте снова.</translation>
-    </message>
-    <message>
-        <source>Please wait while key is imported</source>
-        <translation>Пожалуйста, дождитесь импортирования ключа</translation>
-    </message>
-    <message>
-        <source>Key Already Held By Wallet</source>
-        <translation>Ключ уже используется кошельком</translation>
-    </message>
-    <message>
-        <source>Error Adding Key To Wallet</source>
-        <translation>Ошибка при добавлении ключа к кошельку</translation>
-    </message>
-    <message>
-        <source>Successfully Added Private Key To Wallet</source>
-        <translation>Персональный ключ успешно добавлен к кошельку</translation>
-    </message>
-</context>
-<context>
-    <name>BitcoinGUI</name>
-    <message>
-        <source>Wallet</source>
-        <translation>Кошелек</translation>
-    </message>
-    <message>
-        <source>Node</source>
-        <translation>Узел</translation>
-    </message>
-    <message>
-        <source>&amp;Overview</source>
-        <translation>&amp;Обзор</translation>
-    </message>
-    <message>
-        <source>Show general overview of wallet</source>
-        <translation>Общий обзор кошелька</translation>
-    </message>
-    <message>
-        <source>&amp;Send</source>
-        <translation>&amp;Отправить</translation>
-    </message>
-    <message>
-        <source>&amp;Receive</source>
-        <translation>&amp;Получить</translation>
-    </message>
-    <message>
-        <source>&amp;Transactions</source>
-        <translation>&amp;Транзакции</translation>
-    </message>
-    <message>
-        <source>Browse transaction history</source>
-        <translation>Просмотр истории транзакций</translation>
-    </message>
-    <message>
-        <source>Privacy Actions for zCLR</source>
-        <translation>Действия конфиденциальности для зпив</translation>
-    </message>
-    <message>
-        <source>E&amp;xit</source>
-        <translation>В&amp;ыход</translation>
-    </message>
-    <message>
-        <source>Quit application</source>
-        <translation>Завершить работу</translation>
-    </message>
-    <message>
-        <source>About &amp;Qt</source>
-        <translation>О &amp;Qt</translation>
-    </message>
-    <message>
-        <source>Show information about Qt</source>
-        <translation>Показать информацию о Qt</translation>
-    </message>
-    <message>
-        <source>&amp;Options...</source>
-        <translation>&amp;Опции...</translation>
-    </message>
-    <message>
-        <source>&amp;Show / Hide</source>
-        <translation>&amp;Показать / Скрыть</translation>
-    </message>
-    <message>
-        <source>Show or hide the main Window</source>
-        <translation>Показать или скрыть основное Окно</translation>
-    </message>
-    <message>
-        <source>&amp;Encrypt Wallet...</source>
-        <translation>&amp;Зашифровать кошелек...</translation>
-    </message>
-    <message>
-        <source>Encrypt the private keys that belong to your wallet</source>
-        <translation>Зашифровать личные ключи, принадлежащие вашему кошельку</translation>
-    </message>
-    <message>
-        <source>&amp;Backup Wallet...</source>
-        <translation>&amp;Резервная копия кошелька...</translation>
-    </message>
-    <message>
-        <source>Backup wallet to another location</source>
-        <translation>Сделать резервную копию кошелька в другом месте</translation>
-    </message>
-    <message>
-        <source>&amp;Change Passphrase...</source>
-        <translation>&amp;Изменить кодовую фразу</translation>
-    </message>
-    <message>
-        <source>Change the passphrase used for wallet encryption</source>
-        <translation>Изменение кодовой фразы, используемой для шифрования кошелька</translation>
-    </message>
-    <message>
-        <source>&amp;Unlock Wallet...</source>
-        <translation>&amp;Разблокировать кошелек...</translation>
-    </message>
-    <message>
-        <source>Unlock wallet</source>
-        <translation>Снятие блокировки кошелька</translation>
-    </message>
-    <message>
-        <source>&amp;Lock Wallet</source>
-        <translation>&amp;Блокировка кошелька</translation>
-    </message>
-    <message>
-        <source>Sign &amp;message...</source>
-        <translation>Подписать &amp;сообщение...</translation>
-    </message>
-    <message>
-        <source>&amp;Verify message...</source>
-        <translation>&amp;Проверить сообщение...</translation>
-    </message>
-    <message>
-        <source>&amp;Information</source>
-        <translation>&amp;Информация</translation>
-    </message>
-    <message>
-        <source>Show diagnostic information</source>
-        <translation>Показать диагностическую информацию</translation>
-    </message>
-    <message>
-        <source>&amp;Debug console</source>
-        <translation>&amp;Консоль отладки</translation>
-    </message>
-    <message>
-        <source>Open debugging console</source>
-        <translation>Открыть консоль отладки</translation>
-    </message>
-    <message>
-        <source>&amp;Network Monitor</source>
-        <translation>&amp;Сетевой монитор</translation>
-    </message>
-    <message>
-        <source>Show network monitor</source>
-        <translation>Показать сетевой монитор</translation>
-    </message>
-    <message>
-        <source>&amp;Peers list</source>
-        <translation>&amp;Список пиров</translation>
-    </message>
-    <message>
-        <source>Show peers info</source>
-        <translation>Показать информацию о пирах</translation>
-    </message>
-    <message>
-        <source>Wallet &amp;Repair</source>
-        <translation>Ремонт &amp;кошелька</translation>
-    </message>
-    <message>
-        <source>Show wallet repair options</source>
-        <translation>Показать варианты восстановления кошелька</translation>
-    </message>
-    <message>
-        <source>Open configuration file</source>
-        <translation>Открыть файл настроек</translation>
-    </message>
-    <message>
-        <source>Show Automatic &amp;Backups</source>
-        <translation>Показать автоматические &amp;резервные копии</translation>
-    </message>
-    <message>
-        <source>Show automatically created wallet backups</source>
-        <translation>Показать автоматически созданные резервные копии кошелька</translation>
-    </message>
-    <message>
-        <source>&amp;Sending addresses...</source>
-        <translation>&amp;Адреса отправки...</translation>
-    </message>
-    <message>
-        <source>Show the list of used sending addresses and labels</source>
-        <translation>Показать список использованых адресов отправки </translation>
-    </message>
-    <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>&amp;Адреса получения...</translation>
-    </message>
-    <message>
-        <source>Show the list of used receiving addresses and labels</source>
-        <translation>Показать список использованых адресов приёма</translation>
-    </message>
-    <message>
-        <source>&amp;Multisignature creation...</source>
-        <translation>СОздание многоподписей...</translation>
-    </message>
-    <message>
-        <source>Create a new multisignature address and add it to this wallet</source>
-        <translation>Создание нового адреса многоадресной подписи и добавление его в бумажник</translation>
-    </message>
-    <message>
-        <source>&amp;Multisignature spending...</source>
-        <translation>&amp;Многоподписная трата...</translation>
-    </message>
-    <message>
-        <source>Spend from a multisignature address</source>
-        <translation>Потратить из многоподписного адреса</translation>
-    </message>
-    <message>
-        <source>&amp;Multisignature signing...</source>
-        <translation>&amp;Многоподписная подпись...</translation>
-    </message>
-    <message>
-        <source>Sign with a multisignature address</source>
-        <translation>Подпишись с многоподписным адресом</translation>
-    </message>
-    <message>
-        <source>Open &amp;URI...</source>
-        <translation>Открыть &amp;URI</translation>
-    </message>
-    <message>
-        <source>&amp;Command-line options</source>
-        <translation>&amp;Параметры командной строки</translation>
-    </message>
-    <message numerus="yes">
-        <source>Processed %n blocks of transaction history.</source>
-        <translation><numerusform>Обработано %n блоков истории транзакций</numerusform><numerusform>Обработано %n блоков истории транзакций</numerusform><numerusform>Обработано %n блоков истории транзакций</numerusform><numerusform>Обработано %n блоков истории транзакций</numerusform></translation>
-    </message>
-    <message>
-        <source>Synchronizing additional data: %p%</source>
-        <translation>Синхронизация дополнительных данных: %p%</translation>
-    </message>
-    <message>
-        <source>%1 behind. Scanning block %2</source>
-        <translation>%1 позади. Блок сканирования %2</translation>
-    </message>
-    <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt; for anonymization and staking only</source>
-        <translation>Кошелек &lt;b&gt;зашифрован&lt;/b&gt; и в настоящее время &lt;b&gt;разблокирован&lt;/b&gt; для анонимности и хранения.</translation>
-    </message>
-    <message>
-        <source>&amp;File</source>
-        <translation>&amp;Файл</translation>
-    </message>
-    <message>
-        <source>&amp;Settings</source>
-        <translation>&amp;Настройки</translation>
-    </message>
-    <message>
-        <source>&amp;Tools</source>
-        <translation>&amp;Инструменты</translation>
-    </message>
-    <message>
-        <source>&amp;Help</source>
-        <translation>&amp;Помощь</translation>
-    </message>
-    <message>
-        <source>Tabs toolbar</source>
-        <translation>Панель вкладок</translation>
-    </message>
-    <message>
-        <source>ClearCoin Core</source>
-        <translation>ClearCoin Core</translation>
-    </message>
-    <message>
-        <source>Send coins to a CLR address</source>
-        <translation>Отправить монеты на CLR адрес</translation>
-    </message>
-    <message>
-        <source>Request payments (generates QR codes and clr: URIs)</source>
-        <translation>Запросить платежи (генерирует QR-код и CLR: URI)</translation>
-    </message>
-    <message>
-        <source>&amp;Privacy</source>
-        <translation>&amp;Конфиденциальность</translation>
-    </message>
-    <message>
-        <source>&amp;Masternodes</source>
-        <translation>&amp;Мастерноды</translation>
-    </message>
-    <message>
-        <source>Browse masternodes</source>
-        <translation>Обзор мастернод</translation>
-    </message>
-    <message>
-        <source>&amp;About ClearCoin Core</source>
-        <translation>&amp;О ClearCoin Core</translation>
-    </message>
-    <message>
-        <source>Show information about ClearCoin Core</source>
-        <translation>Показать информацию о ClearCoin Core</translation>
-    </message>
-    <message>
-        <source>Modify configuration options for CLR</source>
-        <translation>Изменение параметров конфигурации CLR</translation>
-    </message>
-    <message>
-        <source>Sign messages with your CLR addresses to prove you own them</source>
-        <translation>Подписывайте сообщения вашими CLR адресами, чтобы доказать, что вы их владелец</translation>
-    </message>
-    <message>
-        <source>Verify messages to ensure they were signed with specified CLR addresses</source>
-        <translation>Проверте сообщения, чтобы убедиться, что они были подписаны указанным CLR адресом </translation>
-    </message>
-    <message>
-        <source>&amp;BIP38 tool</source>
-        <translation>&amp;BIP38 Утилита</translation>
-    </message>
-    <message>
-        <source>Encrypt and decrypt private keys using a passphrase</source>
-        <translation>Шифрование и дешифрование личных ключей с использованием кодовой фразы</translation>
-    </message>
-    <message>
-        <source>&amp;MultiSend</source>
-        <translation>&amp;MultiSend</translation>
-    </message>
-    <message>
-        <source>MultiSend Settings</source>
-        <translation>Настройки MultiSend</translation>
-    </message>
-    <message>
-        <source>Open Wallet &amp;Configuration File</source>
-        <translation>Открыть файл &amp;настроек кошелька</translation>
-    </message>
-    <message>
-        <source>Open &amp;Masternode Configuration File</source>
-        <translation>Открыть файл &amp;настроек мастернод</translation>
-    </message>
-    <message>
-        <source>Open Masternode configuration file</source>
-        <translation>Открыть файл настроек мастернод</translation>
-    </message>
-    <message>
-        <source>Open a CLR: URI or payment request</source>
-        <translation>Открыть CLR: URI или запрос платежа</translation>
-    </message>
-    <message>
-        <source>&amp;Blockchain explorer</source>
-        <translation>&amp;Обзор блокчейна</translation>
-    </message>
-    <message>
-        <source>Block explorer window</source>
-        <translation>Окно обзора блока</translation>
-    </message>
-    <message>
-        <source>Show the ClearCoin Core help message to get a list with possible CLR command-line options</source>
-        <translation>Смотрите помощь к программе, чтобы получить документацию ко всем возможным опциям комманды CLR</translation>
-    </message>
-    <message>
-        <source>ClearCoin Core client</source>
-        <translation>Клиент ClearCoin Core</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to CLR network</source>
-        <translation><numerusform>%n активных подключений к сети CLR</numerusform><numerusform>%n активных подключений к сети CLR</numerusform><numerusform>%n активных подключений к сети CLR</numerusform><numerusform>%n активных подключений к сети CLR</numerusform></translation>
-    </message>
-    <message>
-        <source>Synchronizing with network...</source>
-        <translation>Синхронизация с сетью...</translation>
-    </message>
-    <message>
-        <source>Importing blocks from disk...</source>
-        <translation>Импортирование блоков с диска...</translation>
-    </message>
-    <message>
-        <source>Reindexing blocks on disk...</source>
-        <translation>Переиндексация блоков на диске...</translation>
-    </message>
-    <message>
-        <source>No block source available...</source>
-        <translation>Источник блоков недоступен</translation>
-    </message>
-    <message>
-        <source>Up to date</source>
-        <translation>Обновление не требуется</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n hour(s)</source>
-        <translation><numerusform>%n часов</numerusform><numerusform>%n часов</numerusform><numerusform>%n часов</numerusform><numerusform>%n часов</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n day(s)</source>
-        <translation><numerusform>%n дней</numerusform><numerusform>%n дней</numerusform><numerusform>%n дней</numerusform><numerusform>%n дней</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n week(s)</source>
-        <translation><numerusform>%n недель</numerusform><numerusform>%n недель</numerusform><numerusform>%n недель</numerusform><numerusform>%n недель</numerusform></translation>
-    </message>
-    <message>
-        <source>%1 and %2</source>
-        <translation>%1 и %2</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n year(s)</source>
-        <translation><numerusform>%n лет</numerusform><numerusform>%n лет</numerusform><numerusform>%n лет</numerusform><numerusform>%n лет</numerusform></translation>
-    </message>
-    <message>
-        <source>Catching up...</source>
-        <translation>ловлю...</translation>
-    </message>
-    <message>
-        <source>Last received block was generated %1 ago.</source>
-        <translation>Последний полученный блок был сгенерирован %1 назад</translation>
-    </message>
-    <message>
-        <source>Transactions after this will not yet be visible.</source>
-        <translation>Трансакции после этой не будут видимы</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Ошибка</translation>
-    </message>
-    <message>
-        <source>Warning</source>
-        <translation>Предупреждение</translation>
-    </message>
-    <message>
-        <source>Information</source>
-        <translation>Информация</translation>
-    </message>
-    <message>
-        <source>Sent transaction</source>
-        <translation>Отправленная транзакция</translation>
-    </message>
-    <message>
-        <source>Incoming transaction</source>
-        <translation>Входящая транзакция</translation>
-    </message>
-    <message>
-        <source>Sent MultiSend transaction</source>
-        <translation>Отправленная MultiSend транзакция</translation>
-    </message>
-    <message>
-        <source>Date: %1
-Amount: %2
-Type: %3
-Address: %4
-</source>
-        <translation>Дата: %1
-Сумма: %2
-Тип: %3
-Адрес: %4
-</translation>
-    </message>
-    <message>
-        <source>Staking is active
- MultiSend: %1</source>
-        <translation>Хранение активно
-MultiSend: %1</translation>
-    </message>
-    <message>
-        <source>Active</source>
-        <translation>Активно</translation>
-    </message>
-    <message>
-        <source>Not Active</source>
-        <translation>Не активно</translation>
-    </message>
-    <message>
-        <source>Staking is not active
- MultiSend: %1</source>
-        <translation>Хранение не активно
-MultiSend: %1</translation>
-    </message>
-    <message>
-        <source>AutoMint is currently enabled and set to </source>
-        <translation>Авточеканка в данный момен включена и установлена в</translation>
-    </message>
-    <message>
-        <source>AutoMint is disabled</source>
-        <translation>Авточеканка отключена</translation>
-    </message>
-    <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
-        <translation>Кошелек &lt;b&gt;зашифрован&lt;/b&gt; и в настоящее время &lt;b&gt;разблокирован&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
-        <translation>Кошелек &lt;b&gt;зашифрован&lt;/b&gt; и в настоящее время &lt;b&gt;заблокирован&lt;/b&gt;</translation>
-    </message>
-</context>
-<context>
-    <name>BlockExplorer</name>
-    <message>
-        <source>Blockchain Explorer</source>
-        <translation>Обзор блокчейна</translation>
-    </message>
-    <message>
-        <source>Back</source>
-        <translation>Назад</translation>
-    </message>
-    <message>
-        <source>Forward</source>
-        <translation>вперед</translation>
-    </message>
-    <message>
-        <source>Address / Block / Transaction</source>
-        <translation>Адрес / Блок / Транзакция</translation>
-    </message>
-    <message>
-        <source>Search</source>
-        <translation>Поиск</translation>
-    </message>
-    <message>
-        <source>TextLabel</source>
-        <translation>Текстовая метка</translation>
-    </message>
-    <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (clr.conf).</source>
-        <translation>Будут показаны не все транзакции. Для отображения всех транзакций необходимо выставить txindex=1 в конфигурационном файле (clr.conf).</translation>
+        <source>Own delegation</source>
+        <translation>Собственная делегация</translation>
     </message>
 </context>
 <context>
@@ -901,10 +470,6 @@ MultiSend: %1</translation>
     <message>
         <source>Total: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Unknown: %5)</source>
         <translation>Общее количество: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Неизвестные: %5)</translation>
-    </message>
-    <message>
-        <source>Network Alert</source>
-        <translation>Сетевое предупреждение</translation>
     </message>
 </context>
 <context>
@@ -918,14 +483,6 @@ MultiSend: %1</translation>
         <translation>Байты:</translation>
     </message>
     <message>
-        <source>Amount:</source>
-        <translation>Сумма:</translation>
-    </message>
-    <message>
-        <source>Priority:</source>
-        <translation>Приоритет:</translation>
-    </message>
-    <message>
         <source>Fee:</source>
         <translation>Комиссия:</translation>
     </message>
@@ -934,24 +491,16 @@ MultiSend: %1</translation>
         <translation>Выбор монеты</translation>
     </message>
     <message>
+        <source>Select CLR Outputs to Spend</source>
+        <translation>Выберите CLR выходы для расходов</translation>
+    </message>
+    <message>
         <source>Dust:</source>
         <translation>Пыль:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>После комиссии:</translation>
-    </message>
-    <message>
         <source>Change:</source>
         <translation>Изменить:</translation>
-    </message>
-    <message>
-        <source>(un)select all</source>
-        <translation>выделить(снять) все</translation>
-    </message>
-    <message>
-        <source>toggle lock state</source>
-        <translation>поменять статус блокировки</translation>
     </message>
     <message>
         <source>Tree mode</source>
@@ -970,6 +519,22 @@ MultiSend: %1</translation>
         <translation>Сумма</translation>
     </message>
     <message>
+        <source>0.00 CLR</source>
+        <translation>0.00 CLR </translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>Select all</source>
+        <translation>Выбрать все</translation>
+    </message>
+    <message>
+        <source>Toggle lock state</source>
+        <translation>Переключить состояние блокировки</translation>
+    </message>
+    <message>
         <source>Received with label</source>
         <translation>Получено с меткой</translation>
     </message>
@@ -978,8 +543,12 @@ MultiSend: %1</translation>
         <translation>Полученно на адрес</translation>
     </message>
     <message>
-        <source>Type</source>
-        <translation>Тип</translation>
+        <source>After Fee: </source>
+        <translation>После комиссии:</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>ХОРОШО</translation>
     </message>
     <message>
         <source>Date</source>
@@ -992,10 +561,6 @@ MultiSend: %1</translation>
     <message>
         <source>Confirmed</source>
         <translation>Подтверждено</translation>
-    </message>
-    <message>
-        <source>Priority</source>
-        <translation>Приоритет</translation>
     </message>
     <message>
         <source>Copy address</source>
@@ -1022,36 +587,40 @@ MultiSend: %1</translation>
         <translation>Разблокировать неистраченные</translation>
     </message>
     <message>
-        <source>Copy quantity</source>
-        <translation>Копировать количество</translation>
-    </message>
-    <message>
-        <source>Copy fee</source>
-        <translation>Копировать комиссию</translation>
-    </message>
-    <message>
-        <source>Copy after fee</source>
-        <translation>Копировать после вознаграждения </translation>
-    </message>
-    <message>
-        <source>Copy bytes</source>
-        <translation>Копировать байты</translation>
-    </message>
-    <message>
-        <source>Copy priority</source>
-        <translation>Копировать приоритет</translation>
-    </message>
-    <message>
-        <source>Copy dust</source>
-        <translation>Копировать пыль</translation>
-    </message>
-    <message>
-        <source>Copy change</source>
-        <translation>Копировать изменение</translation>
+        <source>Unselect all</source>
+        <translation>Снять все</translation>
     </message>
     <message>
         <source>Please switch to "List mode" to use this function.</source>
         <translation>Для использования этой функции перейдите в "Режим списка"</translation>
+    </message>
+    <message>
+        <source>Quantity Copied</source>
+        <translation>Количество скопировано</translation>
+    </message>
+    <message>
+        <source>Amount Copied</source>
+        <translation>Сумма скопирована</translation>
+    </message>
+    <message>
+        <source>Fee Copied</source>
+        <translation>Комиссия скопирована</translation>
+    </message>
+    <message>
+        <source>After Fee Copied</source>
+        <translation>После того, как комиссия скопирована</translation>
+    </message>
+    <message>
+        <source>Bytes Copied</source>
+        <translation>Скопировано байтов</translation>
+    </message>
+    <message>
+        <source>Dust Copied</source>
+        <translation>Остаток скопирован</translation>
+    </message>
+    <message>
+        <source>Change Copied</source>
+        <translation>Скопировано сдачи</translation>
     </message>
     <message>
         <source>highest</source>
@@ -1102,6 +671,18 @@ MultiSend: %1</translation>
         <translation>да</translation>
     </message>
     <message>
+        <source>Can vary +/- %1 u%2 per input.</source>
+        <translation>Может варьироваться +/- %1 u%2 на вход.</translation>
+    </message>
+    <message>
+        <source>delegated to %1 for cold staking</source>
+        <translation>делегирован в %1 для холодного стекинга</translation>
+    </message>
+    <message>
+        <source>Select All</source>
+        <translation>Выбрать все</translation>
+    </message>
+    <message>
         <source>no</source>
         <translation>нет</translation>
     </message>
@@ -1130,12 +711,8 @@ MultiSend: %1</translation>
         <translation>Этот маркер становится красным если получаемая адресатом сумма меньше, чем %1</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 uclr per input.</source>
-        <translation>Может вариироваться +/- %1 uclr при вводе</translation>
-    </message>
-    <message>
         <source>(no label)</source>
-        <translation>(нет метки)</translation>
+        <translation>(нет ярлыка)</translation>
     </message>
     <message>
         <source>change from %1 (%2)</source>
@@ -1144,6 +721,352 @@ MultiSend: %1</translation>
     <message>
         <source>(change)</source>
         <translation>(изменить)</translation>
+    </message>
+</context>
+<context>
+    <name>ColdStakingWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Вид</translation>
+    </message>
+    <message>
+        <source>Owner address (optional, if empty a new address will be created)</source>
+        <translation>Адрес владельца (необязательно; если пусто, будет создан новый адрес)</translation>
+    </message>
+    <message>
+        <source>Total Staking:</source>
+        <translation>Общий стекинг:</translation>
+    </message>
+    <message>
+        <source>Cold Staking</source>
+        <translation>Холодный стекинг</translation>
+    </message>
+    <message>
+        <source>Staker</source>
+        <translation>Стекер</translation>
+    </message>
+    <message>
+        <source>Delegation</source>
+        <translation>Делегирование</translation>
+    </message>
+    <message>
+        <source>Delegate</source>
+        <translation>Делегировать</translation>
+    </message>
+    <message>
+        <source>Clear All</source>
+        <translation>Очистить все</translation>
+    </message>
+    <message>
+        <source>Delegated balance history</source>
+        <translation>История делегированного баланса</translation>
+    </message>
+    <message>
+        <source>No delegations yet</source>
+        <translation>Еще нет делегаций</translation>
+    </message>
+    <message>
+        <source>Total Staking: %1</source>
+        <translation>Общий стекинг: %1</translation>
+    </message>
+    <message>
+        <source>Error loading delegations: %1</source>
+        <translation>Ошибка при загрузке делегаций: %1</translation>
+    </message>
+    <message>
+        <source>You can delegate your CLRs, letting a hot node (24/7 online node)
+stake on your behalf, while you keep the keys securely offline.</source>
+        <translation>Вы можете делегировать свои CLR, позволяя горячему узлу (онлайн-узлу, работаещему 24/7) делать стекинг от вашего имени, в то время как ключи надежно хранятся в автономном режиме.</translation>
+    </message>
+    <message>
+        <source>Enter owner address</source>
+        <translation>Введите адрес владельца</translation>
+    </message>
+    <message>
+        <source>Accept CLR delegation / Delegate CLR</source>
+        <translation>Принять делегацию CLR / Делегировать CLR</translation>
+    </message>
+    <message>
+        <source>Cold Staking address</source>
+        <translation>Адрес холодного стекинга</translation>
+    </message>
+    <message>
+        <source>No receive addresses available, you can go to the receive screen and create some there!</source>
+        <translation>Нет доступных адресов получения, вы можете перейти на экран получения и создать там несколько!</translation>
+    </message>
+    <message>
+        <source>No contacts available, you can go to the contacts screen and add some there!</source>
+        <translation>Нет доступных контактов. Вы можете перейти на вкладку контактов и добавить несколько!</translation>
+    </message>
+    <message>
+        <source>Cannot send delegation, wallet locked</source>
+        <translation>Не удается отправить делегацию, кошелек заблокирован</translation>
+    </message>
+    <message>
+        <source>Cold staking is networkely disabled</source>
+        <translation>Холодный стекинг отключен в сети</translation>
+    </message>
+    <message>
+        <source>Coin Control</source>
+        <translation>Контроль Монеты</translation>
+    </message>
+    <message>
+        <source>Select %1 outputs to delegate.</source>
+        <translation>Выбрать %1 выходы для делегирования.</translation>
+    </message>
+    <message>
+        <source>Create Cold Staking Address</source>
+        <translation>Создать адрес холодного стекинга</translation>
+    </message>
+    <message>
+        <source>Creates an address to receive delegated coins
+and stake them on their owner's behalf.</source>
+        <translation>Создает адрес для получения делегированных монет
+и запускает стекинг от имени их владельца.</translation>
+    </message>
+    <message>
+        <source>My Cold Staking Addresses</source>
+        <translation>Мой адрес холодного стекинга</translation>
+    </message>
+    <message>
+        <source>List your own cold staking addresses.</source>
+        <translation>Залистить свои собственные адреса холодного стекинга.</translation>
+    </message>
+    <message>
+        <source>Invalid entry</source>
+        <translation>Неверная запись</translation>
+    </message>
+    <message>
+        <source>Invalid entry, minimum delegable amount is </source>
+        <translation>Неверная запись, минимальная делегируемая сумма</translation>
+    </message>
+    <message>
+        <source>Owner address invalid</source>
+        <translation>Неверный адрес владельца</translation>
+    </message>
+    <message>
+        <source>ALERT!</source>
+        <translation>ПРЕДУПРЕЖДЕНИЕ!</translation>
+    </message>
+    <message>
+        <source>Delegating to an external owner address!
+
+The delegated coins will NOT be spendable by this wallet.
+Spending these coins will need to be done from the wallet or
+device containing the owner address.
+
+Do you wish to proceed?</source>
+        <translation>Делегирование на внешний адрес владельца!
+
+Делегированные монеты НЕ будут потрачены этим кошельком.
+Расходовать эти монеты нужно будет с помощью кошелька или
+устройства, содержащего адрес владельца.
+Вы хотите продолжить?</translation>
+    </message>
+    <message>
+        <source>Staking address corresponds to this wallet, change it to an external node</source>
+        <translation>Адрес стекинга соответствует этому кошельку, измените его на внешний узел</translation>
+    </message>
+    <message>
+        <source>Cannot create transaction.</source>
+        <translation>Невозможно создать транзакцию.</translation>
+    </message>
+    <message>
+        <source>Coins delegated</source>
+        <translation>Монеты делегированы</translation>
+    </message>
+    <message>
+        <source>You don't have any %1 to select.</source>
+        <translation>У вас нет %1 для выбора.</translation>
+    </message>
+    <message>
+        <source>Cannot perform operation, wallet locked</source>
+        <translation>Невозможно выполнить операцию, кошелек заблокирован</translation>
+    </message>
+    <message>
+        <source>URI copied to clipboard</source>
+        <translation>URI скопирован в буфер обмена</translation>
+    </message>
+    <message>
+        <source>Address copied to clipboard</source>
+        <translation>Адрес скопирован в буфер обмена</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Копировать</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation>Редактировать</translation>
+    </message>
+    <message>
+        <source>Stake</source>
+        <translation>Стекинг</translation>
+    </message>
+    <message>
+        <source>Blacklist</source>
+        <translation>Черный список</translation>
+    </message>
+    <message>
+        <source>Edit Label</source>
+        <translation>Изменить ярлык</translation>
+    </message>
+    <message>
+        <source>Copy owner
+address</source>
+        <translation>Копировать адрес
+владельца</translation>
+    </message>
+    <message>
+        <source>Address copied</source>
+        <translation>Адрес скопирован</translation>
+    </message>
+    <message>
+        <source>Edit Cold Address Label</source>
+        <translation>Изменить ярлык холодного адреса</translation>
+    </message>
+    <message>
+        <source>Whitelist failed, please check the logs</source>
+        <translation>Добавление в белый список не удалось, пожалуйста, проверьте логи</translation>
+    </message>
+    <message>
+        <source> staking!</source>
+        <translation>стекинг пошел!</translation>
+    </message>
+    <message>
+        <source>Blacklist failed, please check the logs</source>
+        <translation>Добавление в черный список не удалось, пожалуйста, проверьте логи</translation>
+    </message>
+    <message>
+        <source> blacklisted from staking</source>
+        <translation>занесен в черный список из стекинга</translation>
+    </message>
+    <message>
+        <source>Owner address copied</source>
+        <translation>Адрес владельца скопирован</translation>
+    </message>
+    <message>
+        <source>Edit Owner Address Label</source>
+        <translation>Редактировать ярлык адреса владельца</translation>
+    </message>
+    <message>
+        <source>Address label saved</source>
+        <translation>Адрес ярлыка сохранен</translation>
+    </message>
+    <message>
+        <source>Error storing address label</source>
+        <translation>Ошибка при сохранении адресной метки</translation>
+    </message>
+</context>
+<context>
+    <name>ContactDropdownRow</name>
+    <message>
+        <source>Form</source>
+        <translation>Вид</translation>
+    </message>
+</context>
+<context>
+    <name>DashboardWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Вид</translation>
+    </message>
+    <message>
+        <source>Transactions</source>
+        <translation>Транзакции</translation>
+    </message>
+    <message>
+        <source>Staking Rewards</source>
+        <translation>Вознаграждения за стекинг</translation>
+    </message>
+    <message>
+        <source>Staking statistics</source>
+        <translation>Статистика стекинга</translation>
+    </message>
+    <message>
+        <source>View your account's history</source>
+        <translation>Обзор истории вашего аккаунта</translation>
+    </message>
+    <message>
+        <source>How to get CLR</source>
+        <translation>Как получить CLR</translation>
+    </message>
+    <message>
+        <source>Sort by</source>
+        <translation>Сортировать по</translation>
+    </message>
+    <message>
+        <source>Days</source>
+        <translation>Дней</translation>
+    </message>
+    <message>
+        <source>Months</source>
+        <translation>Месяцев</translation>
+    </message>
+    <message>
+        <source>Years</source>
+        <translation>Лет</translation>
+    </message>
+    <message>
+        <source>Filter by</source>
+        <translation>Сортировать по</translation>
+    </message>
+    <message>
+        <source>Amount of CLR.</source>
+        <translation>Сумма добытых CLR и zCLR</translation>
+    </message>
+    <message>
+        <source>Please wait until the wallet is fully synced to see your correct balance</source>
+        <translation>Для того, чтобы увидеть правильный баланс, пожалуйста, дождитесь полной синхронизации кошелька</translation>
+    </message>
+    <message>
+        <source>No transactions yet</source>
+        <translation>Пока что нет транзакций</translation>
+    </message>
+    <message>
+        <source>You can verify the staking activity in the status bar at the top right of the wallet.
+It will start automatically as soon as the wallet has enough confirmations on any unspent balances, and the wallet has synced.</source>
+        <translation>Вы можете проверить активность стекинга в статусной строке в правом верхнем углу кошелька.
+Он начнется автоматически, как только у кошелька будет достаточно подтверждений по всем неизрасходованным балансам, и как только кошелек будет синхронизирован.</translation>
+    </message>
+    <message>
+        <source>You have no staking rewards</source>
+        <translation>У вас нет вознаграждений за стекинг</translation>
+    </message>
+    <message>
+        <source>No charts library</source>
+        <translation>Нет библиотеки графиков</translation>
+    </message>
+    <message>
+        <source>Loading chart..</source>
+        <translation>Загрузка графика</translation>
+    </message>
+    <message>
+        <source>Error loading chart, invalid show option</source>
+        <translation>Ошибка при загрузке графика, неверная опция показа</translation>
+    </message>
+    <message>
+        <source>Error loading chart, invalid data</source>
+        <translation>Ошибка загрузки графика, неверные данные</translation>
+    </message>
+    <message>
+        <source>Error loading chart: %1</source>
+        <translation>Ошибка при загрузке графика: %1</translation>
+    </message>
+</context>
+<context>
+    <name>DefaultDialog</name>
+    <message>
+        <source>Form</source>
+        <translation>Вид</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>ХОРОШО</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>ОТМЕНА</translation>
     </message>
 </context>
 <context>
@@ -1185,8 +1108,8 @@ MultiSend: %1</translation>
         <translation>Изменить адрес отправки</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid CLR address.</source>
-        <translation>Введенный адрес "%1" не является CLR адресом.</translation>
+        <source>The entered address "%1" is not a valid ClearCoin address.</source>
+        <translation>Введенный адрес "%1" не является ClearCoin адресом.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1199,6 +1122,13 @@ MultiSend: %1</translation>
     <message>
         <source>New key generation failed.</source>
         <translation>Не удалось создать новый ключ.</translation>
+    </message>
+</context>
+<context>
+    <name>ExpandableButton</name>
+    <message>
+        <source>Form</source>
+        <translation>Вид</translation>
     </message>
 </context>
 <context>
@@ -1267,6 +1197,10 @@ MultiSend: %1</translation>
         <translation>Показывать загрузочную заставку при запуске (по умолчанию: %u)</translation>
     </message>
     <message>
+        <source>Hide QT staking charts on startup (default: %u)</source>
+        <translation>Скрыть график стекинга QT при запуске (по умолчанию: %u)</translation>
+    </message>
+    <message>
         <source>Set language, for example "de_DE" (default: system locale)</source>
         <translation>Задайте язык, например "de_DE"(по умолчанию: язык системы)</translation>
     </message>
@@ -1277,6 +1211,10 @@ MultiSend: %1</translation>
     <message>
         <source>Set SSL root certificates for payment request (default: -system-)</source>
         <translation>Задать корневой сертификат SSL для платежных запросов (по умолчанию: -system-)</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>ХОРОШО</translation>
     </message>
 </context>
 <context>
@@ -1294,16 +1232,24 @@ MultiSend: %1</translation>
         <translation>Поскольку это первый запуск программы, вы можете выбрать, где будут храниться данные ClearCoin Core.</translation>
     </message>
     <message>
-        <source>ClearCoin Core will download and store a copy of the CLR block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>ClearCoin Core загрузит и сохранит копию цепочки блоков CLR. Каталог будет занимать около %1GB и со временем размер будет увеличиваться. Кроме того, в этом каталоге будет храниться кошелек.</translation>
+        <source>ClearCoin Core will download and store a copy of the ClearCoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>ClearCoin Core загрузит и сохранит копию цепочки блоков ClearCoin. Каталог будет занимать около %1GB и со временем размер будет увеличиваться. Кроме того, в этом каталоге будет храниться кошелек.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
         <translation>Использовать каталог данных по умолчанию</translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
-        <translation>Использовать другой каталог данных:</translation>
+        <source>Use a custom data directory</source>
+        <translation>Используйте пользовательский каталог данных</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>ОТМЕНА</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>ХОРОШО</translation>
     </message>
     <message>
         <source>ClearCoin Core</source>
@@ -1327,501 +1273,472 @@ MultiSend: %1</translation>
     </message>
 </context>
 <context>
-    <name>MasternodeList</name>
+    <name>LoadingDialog</name>
     <message>
         <source>Form</source>
         <translation>Вид</translation>
     </message>
     <message>
-        <source>MASTERNODES</source>
-        <translation>МАСТЕРНОДЫ</translation>
+        <source>TextLabel</source>
+        <translation>Текстовая метка</translation>
     </message>
     <message>
-        <source>Note: Status of your masternodes in local wallet can potentially be slightly incorrect.&lt;br /&gt;Always wait for wallet to sync additional data and then double check from another node&lt;br /&gt;if your node should be running but you still see "MISSING" in "Status" field.</source>
-        <translation>Примечание: Состояние ваших мастернод в локальном кошельке может слегка отличаться от действительности. &lt;br /&gt;Всегда дожидайтесь окончания синхронизации дополнительных данных и затем дважды проверьте с другого узла&lt;br /&gt;если ваша нода должна работать, но в окне "Состояние" пишет "НЕАКТИВНО"</translation>
+        <source>Loading</source>
+        <translation>Загрузка</translation>
     </message>
     <message>
-        <source>Alias</source>
-        <translation>Алиас</translation>
+        <source>.</source>
+        <translation>.</translation>
+    </message>
+</context>
+<context>
+    <name>LockUnlock</name>
+    <message>
+        <source>Form</source>
+        <translation>Вид</translation>
+    </message>
+    <message>
+        <source>Unlock Wallet</source>
+        <translation>Разблокировать кошелек</translation>
+    </message>
+    <message>
+        <source>Lock Wallet</source>
+        <translation>Заблокировать кошелек</translation>
+    </message>
+    <message>
+        <source>Staking Only</source>
+        <translation>Только стекинг</translation>
+    </message>
+</context>
+<context>
+    <name>MNRow</name>
+    <message>
+        <source>Form</source>
+        <translation>Вид</translation>
+    </message>
+    <message>
+        <source>Collateral tx not found</source>
+        <translation>tx залога не найден</translation>
+    </message>
+    <message>
+        <source>Status: %1</source>
+        <translation>Статус: %1</translation>
+    </message>
+</context>
+<context>
+    <name>MasterNodeWizardDialog</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Диалоговое окно</translation>
+    </message>
+    <message>
+        <source>1</source>
+        <translation>1</translation>
+    </message>
+    <message>
+        <source>2</source>
+        <translation>2</translation>
+    </message>
+    <message>
+        <source>3</source>
+        <translation>3</translation>
+    </message>
+    <message>
+        <source>Intro</source>
+        <translation>Введение</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>Имя</translation>
     </message>
     <message>
         <source>Address</source>
         <translation>Адрес</translation>
     </message>
     <message>
-        <source>Protocol</source>
-        <translation>Протокол</translation>
+        <source>Create New Masternode Controller</source>
+        <translation>Создать новый контроллер Мастерноды</translation>
     </message>
     <message>
-        <source>Status</source>
-        <translation>Состояние</translation>
+        <source>Set Masternode Name</source>
+        <translation>Установить имя мастерноды</translation>
     </message>
     <message>
-        <source>Active</source>
-        <translation>Активно</translation>
+        <source>Set Masternode IP and Port</source>
+        <translation>Задать IP-адрес и порт Мастерноды</translation>
     </message>
     <message>
-        <source>Last Seen (UTC)</source>
-        <translation>Последний визит (UTC)</translation>
+        <source>Enter port</source>
+        <translation>Ввести порт</translation>
     </message>
     <message>
-        <source>Pubkey</source>
-        <translation>Публичный ключ</translation>
+        <source>Make sure you have this amount of coins.</source>
+        <translation>Убедитесь, что у вас есть такое количество монет.</translation>
     </message>
     <message>
-        <source>S&amp;tart alias</source>
-        <translation>З&amp;апуск алиаса</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 10,000 CLR will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;На новый пустой адрес в вашем кошельке&lt;/p&gt;&lt;p&gt; будет сделана транзакция в 10 000 CLR. &lt;/p&gt;&lt;p&gt;Адрес отмечен под именем мастерноды.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <source>Start &amp;all</source>
-        <translation>Запустить &amp;все</translation>
+        <source>Address of the node that must always be online running the actual master node.</source>
+        <translation>Адрес узла, который всегда должен быть подключен к сети, запускающий фактическую мастерноду.</translation>
     </message>
     <message>
-        <source>Start &amp;MISSING</source>
-        <translation>Запуск &amp;НЕАКТИВНЫХ</translation>
+        <source>Enter IP address</source>
+        <translation>Ввести IP-адрес</translation>
     </message>
     <message>
-        <source>&amp;Update status</source>
-        <translation>&amp;Обновить состояние</translation>
+        <source>NEXT</source>
+        <translation>ДАЛЕЕ</translation>
     </message>
     <message>
-        <source>Status will be updated automatically in (sec):</source>
-        <translation>Состояние будет автоматически обновлено через (сек):</translation>
+        <source>BACK</source>
+        <translation>НАЗАД</translation>
     </message>
     <message>
-        <source>0</source>
-        <translation>0</translation>
+        <source>address label cannot be empty</source>
+        <translation>ярлык адреса не может быть пустым</translation>
     </message>
     <message>
-        <source>Start alias</source>
-        <translation>Запуск алиаса</translation>
+        <source>IP or port cannot be empty</source>
+        <translation>IP и порт не могут быть пустыми</translation>
     </message>
     <message>
-        <source>Confirm masternode start</source>
-        <translation>Подтверждение запуска мастерноды</translation>
+        <source>Invalid IP address</source>
+        <translation>Неверный IP-адрес</translation>
     </message>
     <message>
-        <source>Are you sure you want to start masternode %1?</source>
-        <translation>Вы уверены, что хотите запустить мастерноду %1?</translation>
+        <source>Unknown error</source>
+        <translation>Неизвестная ошибка</translation>
     </message>
     <message>
-        <source>Confirm all masternodes start</source>
-        <translation>Подтвердить старт всех мастернод</translation>
+        <source>Prepare master node failed.
+
+%1
+</source>
+        <translation>Не удалось подготовить мастерноду.
+
+ %1
+</translation>
     </message>
     <message>
-        <source>Are you sure you want to start ALL masternodes?</source>
-        <translation>Вы уверены, что хотите запустить ВСЕ мастерноды?</translation>
+        <source>Invalid collateral output index</source>
+        <translation>Неверный индекс выхода коллатераля</translation>
     </message>
     <message>
-        <source>Command is not available right now</source>
-        <translation>Команда сейчас недоступна</translation>
+        <source>Master node created! Wait %1 confirmations before starting it.</source>
+        <translation>Мастернода создана! Подождите %1 подтверждений, прежде чем запустить его.</translation>
     </message>
     <message>
-        <source>You can't use this command until masternode list is synced</source>
-        <translation>Использование этой команды невозможно пока не синхронизирован список мастернод</translation>
+        <source>Cannot send collateral transaction.
+
+%1</source>
+        <translation>Не удается отправить транзакцию коллатераля.
+
+%1</translation>
     </message>
     <message>
-        <source>Confirm missing masternodes start</source>
-        <translation>Подтверждение запуска неактивных мастернод</translation>
+        <source>walletModel not set</source>
+        <translation>walletModel не установлен</translation>
     </message>
     <message>
-        <source>Are you sure you want to start MISSING masternodes?</source>
-        <translation>Вы уверены, что хотите запустить НЕАКТИВНЫЕ мастерноды?</translation>
+        <source>Invalid masternode.conf file</source>
+        <translation>Неверный файл masternode.conf</translation>
+    </message>
+    <message>
+        <source>Error parsing masternode.conf file</source>
+        <translation>Ошибка разбора файла masternode.conf</translation>
+    </message>
+    <message>
+        <source>masternode.conf file doesn't exists</source>
+        <translation>Файла masternode.cong не существует</translation>
     </message>
 </context>
 <context>
-    <name>MultiSendDialog</name>
+    <name>MasterNodesWidget</name>
     <message>
-        <source>MultiSend</source>
-        <translation>MultiSend</translation>
+        <source>Form</source>
+        <translation>Вид</translation>
     </message>
     <message>
-        <source>Enter whole numbers 1 - 100</source>
-        <translation>Введите целые числа 1 - 100</translation>
+        <source>Start All</source>
+        <translation>Запустить все</translation>
     </message>
     <message>
-        <source>Enter % to Give (1-100)</source>
-        <translation>Введите % Передачи (1-100)</translation>
+        <source>Start Inactive/s</source>
+        <translation>Запустить неактивные</translation>
     </message>
     <message>
-        <source>Enter Address to Send to</source>
-        <translation>Введите адрес для отправки</translation>
+        <source>Masternodes</source>
+        <translation>Мастерноды</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other CLR addresses after it matures.
-To Add: enter percentage to give and CLR address to add to the MultiSend vector.
-To Delete: Enter address to delete and press delete.
-MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend позволяет вам автоматически отправлять до 100% вознаграждения за мастерноды и хранение, после их созревания, на другие CLR адреса.
-Для добавления: введите передаваемый процент и CLR адрес для добавления к вектору MultiSend.
-Для удаления: введите удаляемый адрес и нажмите удалить.
-MultiSend будет неактивен до тех пор, пока вы не нажмете Включить</translation>
+        <source>Full nodes that incentivize node operators to perform the core consensus functions
+and vote on the treasury system receiving a periodic reward.</source>
+        <translation>Полные узлы, которые стимулируют операторов узлов выполнять основные консенсусные функции
+и голосовать за систему казны периодически отправляя вознаграждения.</translation>
     </message>
     <message>
-        <source>Add to MultiSend Vector</source>
-        <translation>Добавить к вектору MultiSend</translation>
+        <source>Create Masternode Controller</source>
+        <translation>Создать контроллер мастерноды</translation>
     </message>
     <message>
-        <source>Add</source>
-        <translation>Добавить</translation>
+        <source>No active Masternode yet</source>
+        <translation>Пока что нет активных мастернод</translation>
     </message>
     <message>
-        <source>Deactivate MultiSend</source>
-        <translation>Выключить MultiSend</translation>
-    </message>
-    <message>
-        <source>Deactivate</source>
-        <translation>Выключить</translation>
-    </message>
-    <message>
-        <source>Choose an address from the address book</source>
-        <translation>Выберите адрес из адресной книги</translation>
-    </message>
-    <message>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
-    </message>
-    <message>
-        <source>Percentage of stake to send</source>
-        <translation>Процент от хранящихся монет для отправки</translation>
-    </message>
-    <message>
-        <source>Percentage:</source>
-        <translation>Проценты:</translation>
-    </message>
-    <message>
-        <source>Address to send portion of stake to</source>
-        <translation>Адрес для отправки части от хранения</translation>
-    </message>
-    <message>
-        <source>Address:</source>
-        <translation>Адрес:</translation>
-    </message>
-    <message>
-        <source>Label:</source>
-        <translation>Метка:</translation>
-    </message>
-    <message>
-        <source>Enter a label for this address to add it to your address book</source>
-        <translation>Введите метку для адреса чтобы добавить в адресную книгу</translation>
-    </message>
-    <message>
-        <source>Delete Address From MultiSend Vector</source>
-        <translation>Удалить адрес из Вектора MultiSend</translation>
+        <source>Start</source>
+        <translation>Запуск</translation>
     </message>
     <message>
         <source>Delete</source>
         <translation>Удалить</translation>
     </message>
     <message>
-        <source>Activate MultiSend</source>
-        <translation>Включить MultiSend</translation>
+        <source>Info</source>
+        <translation>Информация</translation>
     </message>
     <message>
-        <source>Activate</source>
-        <translation>Включить</translation>
+        <source>Please wait until the node is fully synced</source>
+        <translation>Пожалуйста, дождитесь полной синхронизации узла</translation>
     </message>
     <message>
-        <source>View MultiSend Vector</source>
-        <translation>Посмотреть Вектор MultiSend</translation>
+        <source>Start Masternode</source>
+        <translation>Запустить мастерноду</translation>
     </message>
     <message>
-        <source>View MultiSend</source>
-        <translation>Просмотр MultiSend</translation>
-    </message>
-    <message>
-        <source>Send For Stakes</source>
-        <translation>Передавать вознаграждение от хранения</translation>
-    </message>
-    <message>
-        <source>Send For Masternode Rewards</source>
-        <translation>Передавать вознаграждение за мастерноды</translation>
-    </message>
-    <message>
-        <source>(no label)</source>
-        <translation>(нет метки)</translation>
-    </message>
-    <message>
-        <source>The entered address:
+        <source>Are you sure you want to start masternode %1?
 </source>
-        <translation>Введенный адрес:
+        <translation>Вы уверены, что хотите запустить мастерноду %1?
 </translation>
     </message>
     <message>
-        <source> is invalid.
-Please check the address and try again.</source>
-        <translation>недопустим.
-Пожалуйста, проверьте адрес и попробуйте снова.</translation>
+        <source>Cannot edit masternode, wallet locked</source>
+        <translation>Невозможно редактировать мастерноду, кошелек заблокирован</translation>
     </message>
     <message>
-        <source>The total amount of your MultiSend vector is over 100% of your stake reward
+        <source>Cannot start masternode, the collateral transaction has not been confirmed by the network yet.
+Please wait few more minutes (masternode collaterals require %1 confirmations).</source>
+        <translation>Невозможно запустить мастерноду, транзакция коллатераля еще не подтверждена сетью. Подождите еще несколько минут (для коллатералей мастерноды требуется %1 подтверждений).</translation>
+    </message>
+    <message>
+        <source>Background task is being executed, please wait</source>
+        <translation>Выполняется фоновая задача, пожалуйста, подождите</translation>
+    </message>
+    <message>
+        <source>Start ALL masternodes failed</source>
+        <translation>Не удалось запустить ВСЕ мастерноды</translation>
+    </message>
+    <message>
+        <source>Wallet unlock cancelled</source>
+        <translation>Разблокировка кошелька отменена</translation>
+    </message>
+    <message>
+        <source>Cannot perform Masternodes start</source>
+        <translation>Невозможно выполнить запуск Мастернод</translation>
+    </message>
+    <message>
+        <source>%1 Masternodes failed to start, %2 started</source>
+        <translation>Не удалось запустить %1 мастернод, запущено %2</translation>
+    </message>
+    <message>
+        <source>All Masternodes started!</source>
+        <translation>Все Мастерноды запущены!</translation>
+    </message>
+    <message>
+        <source>Cannot show Masternode information, wallet locked</source>
+        <translation>Невозможно отобразить информацию о Мастерноде, кошелек заблокирован</translation>
+    </message>
+    <message>
+        <source>Masternode data copied to the clipboard.</source>
+        <translation>Данные Мастерноды скопированы в буфер обмена.</translation>
+    </message>
+    <message>
+        <source>Not enough balance to create a masternode, 10,000 %1 required.</source>
+        <translation>Недостаточно баланса для создания мастерноды, требуется 10000 %1.</translation>
+    </message>
+    <message>
+        <source>Remote Masternode Data</source>
+        <translation>Данные удаленной мастерноды</translation>
+    </message>
+    <message>
+        <source>What is a Masternode?</source>
+        <translation>Что такое мастернода?</translation>
+    </message>
+    <message>
+        <source>FAQ explaining what Masternodes are</source>
+        <translation>FAQ, объясняющий, что такое Мастерноды</translation>
+    </message>
+    <message>
+        <source>What is a Controller?</source>
+        <translation>Что такое Контроллер?</translation>
+    </message>
+    <message>
+        <source>FAQ explaining what is a Masternode Controller</source>
+        <translation>FAQ, объясняющий, что такое Контроллер Мастерноды</translation>
+    </message>
+    <message>
+        <source>You are just about to export the required data to run a Masternode
+on a remote server to your clipboard.
+
+
+You will only have to paste the data in the clr.conf file
+of your remote server and start it, then start the Masternode using
+this controller wallet (select the Masternode in the list and press "start").
 </source>
-        <translation>Итоговое значение вектора MultiSend превышает 100% ваших вознаграждений
+        <translation>Вы собираетесь экспортировать необходимые данные для запуска мастерноды
+на удаленном сервере в буфер обмена.
+
+
+Вам необходимо только вставить данные в файл clr.conf
+вашего удаленного сервера и запустить его, а затем запустить мастерноду,
+используя этот кошелек контроллера (выберите мастерноду из списка и нажмите «Старт»).
 </translation>
     </message>
     <message>
-        <source>Please Enter 1 - 100 for percent.</source>
-        <translation>Введите 1 - 100 для указания процентов.</translation>
+        <source>Delete Masternode</source>
+        <translation>Удалить мастерноду</translation>
     </message>
     <message>
-        <source>Saved the MultiSend to memory, but failed saving properties to the database.
-</source>
-        <translation>Сохранили МультиОтправку в памяти, но не удалось сохранить свойства в базе данных.
-</translation>
+        <source>You are just about to delete Masternode:
+%1
+
+Are you sure?</source>
+        <translation>Вы собираетесь удалить мастерноду:
+%1
+
+Вы уверены?</translation>
     </message>
     <message>
-        <source>MultiSend Vector
-</source>
-        <translation>Вектор MultiSend
-</translation>
+        <source>Invalid masternode.conf file</source>
+        <translation>Неверный файл masternode.conf</translation>
     </message>
     <message>
-        <source>Removed </source>
-        <translation>Удалено</translation>
+        <source>Error parsing masternode.conf file</source>
+        <translation>Ошибка разбора файла masternode.conf</translation>
     </message>
     <message>
-        <source>Could not locate address
-</source>
-        <translation>Не удалось найти адрес
-</translation>
+        <source>masternode.conf file doesn't exists</source>
+        <translation>Файла masternode.cong не существует</translation>
+    </message>
+    <message>
+        <source>Cannot create Masternode controller, wallet locked</source>
+        <translation>Невозможно создать контроллер Мастерноды, кошелек заблокирован</translation>
+    </message>
+    <message>
+        <source>Error creating masternode</source>
+        <translation>Ошибка при создании мастерноды</translation>
     </message>
 </context>
 <context>
-    <name>MultisigDialog</name>
+    <name>MnInfoDialog</name>
     <message>
-        <source>Multisignature Address Interactions</source>
-        <translation> Многоподписные адресные взаимодействия</translation>
+        <source>Form</source>
+        <translation>Вид</translation>
     </message>
     <message>
-        <source>Create MultiSignature &amp;Address</source>
-        <translation>Создать Мультиподпись &amp;Адрес</translation>
+        <source>Masternode Information</source>
+        <translation>Информация о Мастерноде</translation>
     </message>
     <message>
-        <source>How many people must sign to verify a transaction</source>
-        <translation>Сколько людей должны подписать чтобы подтвердить транзакцию</translation>
+        <source>Public Key:</source>
+        <translation>Публичный ключ:</translation>
     </message>
     <message>
-        <source>Enter the minimum number of signatures required to sign transactions</source>
-        <translation>Введите минимальное число подписей необходимое для подписания транзакций</translation>
+        <source>Address: </source>
+        <translation>Адрес:</translation>
     </message>
     <message>
-        <source>Address Label:</source>
-        <translation>Метка адреса:</translation>
+        <source>Collaterall tx id:</source>
+        <translation>tx id залога:</translation>
     </message>
     <message>
-        <source>Add another address that could sign to verify a transaction from the multisig address.</source>
-        <translation>Добавьте еще один адрес, который может подписать, подтвержденную транзакцию с многоподписного адреса.</translation>
+        <source>Output index:</source>
+        <translation>Индекс выхода:</translation>
     </message>
     <message>
-        <source>&amp;Add Address / Key</source>
-        <translation>&amp;Добавить Адрес / Ключ</translation>
-    </message>
-    <message>
-        <source>Local addresses or public keys that can sign:</source>
-        <translation>Локальные адреса или публичные ключи кторые могут подписать:</translation>
-    </message>
-    <message>
-        <source>Create a new multisig address</source>
-        <translation>Создать новый мультиподписный адрес</translation>
-    </message>
-    <message>
-        <source>C&amp;reate</source>
-        <translation>С&amp;оздать</translation>
+        <source>1 Inputs</source>
+        <translation>1 вход</translation>
     </message>
     <message>
         <source>Status:</source>
         <translation>Статус:</translation>
     </message>
     <message>
-        <source>Use below to quickly import an address by its redeem. Don't forget to add a label before clicking import!
-Keep in mind, the wallet will rescan the blockchain to find transactions containing the new address.
-Please be patient after clicking import.</source>
-        <translation>Используйте ниже, чтобы быстро импортировать адрес пока его не погасили. Не забудьте добавить ярлык перед нажатием на импорт!
-Имейте в виду, что кошелек пересканирует блокчейн, чтобы найти транзакции, содержащие новый адрес.
-Пожалуйста, будьте терпеливы после нажатия импорта.</translation>
+        <source>Export data to run the Masternode on a remote server</source>
+        <translation>Экспорт данных для запуска Мастерноды на удаленном сервере</translation>
     </message>
     <message>
-        <source>&amp;Import Redeem</source>
-        <translation>&amp;Импорт Погашения</translation>
+        <source>Masternode public key copied</source>
+        <translation>Открытый ключ мастерноды скопирован</translation>
     </message>
     <message>
-        <source>&amp;Create MultiSignature Tx</source>
-        <translation>&amp;Создать МультиПодписное Сообщение</translation>
-    </message>
-    <message>
-        <source>Inputs:</source>
-        <translation>Ввод:</translation>
-    </message>
-    <message>
-        <source>Coin Control</source>
-        <translation>Контроль Монеты</translation>
-    </message>
-    <message>
-        <source>Quantity Selected:</source>
-        <translation>Выбранное Количество:</translation>
-    </message>
-    <message>
-        <source>0</source>
-        <translation>0</translation>
-    </message>
-    <message>
-        <source>Amount:</source>
-        <translation>Сумма:</translation>
-    </message>
-    <message>
-        <source>Add an input to fund the outputs</source>
-        <translation>Добавить вход для финансирования выходов</translation>
-    </message>
-    <message>
-        <source>Add a Raw Input</source>
-        <translation>Добавить исходный вход</translation>
-    </message>
-    <message>
-        <source>Address / Amount:</source>
-        <translation>Адрес/ Сумма:</translation>
-    </message>
-    <message>
-        <source>Add destinations to send CLR to</source>
-        <translation>Добавить назначение куда отправить CLR</translation>
-    </message>
-    <message>
-        <source>Add &amp;Destination</source>
-        <translation>Добавить &amp; Назначение</translation>
-    </message>
-    <message>
-        <source>Create a transaction object using the given inputs to the given outputs</source>
-        <translation>Создание объекта транзакции с использованием заданных входов для данных выходов</translation>
-    </message>
-    <message>
-        <source>Cr&amp;eate</source>
-        <translation>Со&amp;здать</translation>
-    </message>
-    <message>
-        <source>&amp;Sign MultiSignature Tx</source>
-        <translation>&amp; Sign MultiSignature Tx</translation>
-    </message>
-    <message>
-        <source>Transaction Hex:</source>
-        <translation>Транзакция Hex:</translation>
-    </message>
-    <message>
-        <source>Sign the transaction from this wallet or from provided private keys</source>
-        <translation>Подпишите транзакцию из этого кошелька или из предоставленных личных ключей</translation>
-    </message>
-    <message>
-        <source>S&amp;ign</source>
-        <translation>П&amp;одпись</translation>
-    </message>
-    <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;DISABLED until transaction has been signed enough times.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;ОТКЛЮЧЕНО до тех пор, пока транзакция не будет подписана достаточно раз.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <source>Co&amp;mmit</source>
-        <translation>Со&amp;вершить</translation>
-    </message>
-    <message>
-        <source>Add private keys to sign the transaction with</source>
-        <translation>Добавьте личные ключи для подписания транзакции с помощью</translation>
-    </message>
-    <message>
-        <source>Add Private &amp;Key</source>
-        <translation>Добавьте личный &amp; ключ</translation>
-    </message>
-    <message>
-        <source>Sign with only private keys (Not Recommened)</source>
-        <translation>Подписать только личными ключами ( не рекомедуется)</translation>
-    </message>
-    <message>
-        <source>Invalid Tx Hash.</source>
-        <translation>Недопустимый Tx Hash.</translation>
-    </message>
-    <message>
-        <source>Vout position must be positive.</source>
-        <translation>Позиция Vout должна быть положительной.</translation>
-    </message>
-    <message>
-        <source>Maximum possible addresses reached. (15)</source>
-        <translation>Максимально возможное количество адресов достигнуто. (15)</translation>
-    </message>
-    <message>
-        <source>Vout Position: </source>
-        <translation>Vout Position:</translation>
-    </message>
-    <message>
-        <source>Amount: </source>
-        <translation>Сумма:</translation>
-    </message>
-    <message>
-        <source>Maximum (15)</source>
-        <translation>Максимум (15)</translation>
+        <source>Collateral tx id copied</source>
+        <translation>tx Id залога скопирован</translation>
     </message>
 </context>
 <context>
-    <name>ObfuscationConfig</name>
+    <name>MyAddressRow</name>
     <message>
-        <source>Configure Obfuscation</source>
-        <translation>Параметры Перемешивания</translation>
+        <source>Form</source>
+        <translation>Вид</translation>
+    </message>
+</context>
+<context>
+    <name>NavMenuWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Вид</translation>
     </message>
     <message>
-        <source>Basic Privacy</source>
-        <translation>Базовая конфиденциальность</translation>
+        <source>HOME
+</source>
+        <translation>ГЛАВНАЯ
+</translation>
     </message>
     <message>
-        <source>High Privacy</source>
-        <translation>Повышенная конфиденциальность</translation>
+        <source>SEND
+</source>
+        <translation>ОТПРАВИТЬ
+</translation>
     </message>
     <message>
-        <source>Maximum Privacy</source>
-        <translation>Максимальная конфиденциальность</translation>
+        <source>RECEIVE
+</source>
+        <translation>ПОЛУЧИТЬ
+</translation>
     </message>
     <message>
-        <source>Please select a privacy level.</source>
-        <translation>Выберите уровень конфиденциальности.</translation>
+        <source>CONTACTS
+</source>
+        <translation>КОНТАКТЫ
+</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 CLR</source>
-        <translation>Используйте 2 разные мастерноды для смешивания средств до 10000 CLR</translation>
+        <source>MASTER
+NODES</source>
+        <translation>МАСТЕР
+НОДЫ</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 CLR</source>
-        <translation>Используйте 8 разных мастернод для смешивания средств до 10000 CLR</translation>
+        <source>COLD
+STAKING</source>
+        <translation>ХОЛОДНЫЙ
+СТЕКИНГ</translation>
     </message>
     <message>
-        <source>Use 16 separate masternodes</source>
-        <translation>Используйте 16 разных мастернод</translation>
+        <source>SETTINGS
+</source>
+        <translation>НАСТРОЙКИ
+</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 CLR to anonymize 10000 CLR</source>
-        <translation>Этот вариант является самым быстрым и будет стоить порядка ~0.025 CLR для анонимизации 10000 CLR</translation>
+        <source>V 1.0.0</source>
+        <translation>V 1.0.0 </translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 CLR to anonymize 10000 CLR</source>
-        <translation>Это средний по скорости вариант и он будет стоить около 0.05 CLR для анонимизации 10000 CLR</translation>
-    </message>
-    <message>
-        <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
-        <translation>Это самый медленный и безопасный вариант. Максимальная анонимность стоит</translation>
-    </message>
-    <message>
-        <source>0.1 CLR per 10000 CLR you anonymize.</source>
-        <translation>0.1 CLR за 10000 CLR которые вы собираетесь анонимизировать.</translation>
-    </message>
-    <message>
-        <source>Obfuscation Configuration</source>
-        <translation>Настройка Перемешивания</translation>
-    </message>
-    <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening CLR's configuration screen.</source>
-        <translation>Перемешивание было успешно выставлено на стандартные значения (%1 и 2 цикла). Вы в любой момент можете это изменить, открыв окно настройки CLR.</translation>
-    </message>
-    <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening CLR's configuration screen.</source>
-        <translation>Перемешивание было успешно выбрано как высокое (%1 и 8 циклов). Вы в любой момент можете это изменить, открыв окно настройки CLR.</translation>
-    </message>
-    <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening CLR's configuration screen.</source>
-        <translation>Перемешивание было успешно выставлено на максимальное (%1 и 16 циклов). Вы в любой момент можете это изменить, открыв окно настройки CLR.</translation>
+        <source>v%1</source>
+        <translation>v%1 </translation>
     </message>
 </context>
 <context>
@@ -1835,8 +1752,16 @@ Please be patient after clicking import.</source>
         <translation>Запросить платеж через URI или файл</translation>
     </message>
     <message>
-        <source>URI:</source>
-        <translation>URI:</translation>
+        <source>TextLabel</source>
+        <translation>Текстовая метка</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>ОТМЕНА</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>ХОРОШО</translation>
     </message>
     <message>
         <source>Select payment request file</source>
@@ -1845,6 +1770,25 @@ Please be patient after clicking import.</source>
     <message>
         <source>Select payment request file to open</source>
         <translation>Выберите файл запроса платежа чтобы его открыть</translation>
+    </message>
+    <message>
+        <source>File not found</source>
+        <translation>Файл не найден</translation>
+    </message>
+    <message>
+        <source>Parsed data too large</source>
+        <translation>Проанализированные данные слишком большие</translation>
+    </message>
+    <message>
+        <source>Invalid URI, not starting with "clr" prefix</source>
+        <translation>Неверный URI, не начинается с префикса "clr"</translation>
+    </message>
+</context>
+<context>
+    <name>OptionButton</name>
+    <message>
+        <source>Form</source>
+        <translation>Вид</translation>
     </message>
 </context>
 <context>
@@ -1882,8 +1826,8 @@ Please be patient after clicking import.</source>
         <translation>Отключив проведение неподтвержденных изменений все изменения о транзакции &lt;br/&gt;не будут использованы пока транзакция не получит хотя бы одно подтверждение.&lt;br/&gt;Также это влияет на расчет вашего баланса.</translation>
     </message>
     <message>
-        <source>Automatically open the CLR client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматически открыть клиентский порт CLR через роутер. Ваш роутер должен поддерживать UPnP, а сам сервис должен быть включен.</translation>
+        <source>Automatically open the ClearCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматически открыть клиентский порт ClearCoin через роутер. Ваш роутер должен поддерживать UPnP, а сам сервис должен быть включен.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1902,12 +1846,12 @@ Please be patient after clicking import.</source>
         <translation>Эксперт</translation>
     </message>
     <message>
-        <source>Automatically start CLR after logging in to the system.</source>
-        <translation>Автоматически запускать CLR после входа в систему.</translation>
+        <source>Automatically start ClearCoin after logging in to the system.</source>
+        <translation>Автоматически запускать ClearCoin после входа в систему.</translation>
     </message>
     <message>
-        <source>&amp;Start CLR on system login</source>
-        <translation>&amp;Запускать CLR при входе в систему</translation>
+        <source>&amp;Start ClearCoin on system login</source>
+        <translation>&amp;Запускать ClearCoin при входе в систему</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1934,14 +1878,14 @@ Please be patient after clicking import.</source>
         <translation>&amp;Сеть</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting CLR.</source>
-        <translation>Здесь можно выставить язык интерфейса. Изменения вступят в силу после перезапуска CLR.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting ClearCoin.</source>
+        <translation>Здесь можно выставить язык интерфейса. Изменения вступят в силу после перезапуска ClearCoin.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/ClearNode/Clearcore-Project-translations</source>
+https://www.transifex.com/ClearNode/ClearNode-translations</source>
         <translation>Отсутствует ваш язык или заметили незавершенный перевод? Вы можете помочь нам стать лучше:
-https://www.transifex.com/ClearNode/Clearcore-Project-translations</translation>
+https://www.transifex.com/ClearNode/ClearNode-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1954,6 +1898,14 @@ https://www.transifex.com/ClearNode/Clearcore-Project-translations</translation>
     <message>
         <source>Enable zCLR Automint</source>
         <translation>Невозможно авточеканка  zCLR</translation>
+    </message>
+    <message>
+        <source>Enable automatic zCLR minting from specific addresses</source>
+        <translation>Включить автоматическое чеканку zCLR с определенных адресов</translation>
+    </message>
+    <message>
+        <source>Enable Automint Addresses</source>
+        <translation>Включить адреса с автоматической чеканкой</translation>
     </message>
     <message>
         <source>Percentage of incoming CLR which get automatically converted to zCLR via Zerocoin Protocol (min: 10%)</source>
@@ -1976,8 +1928,8 @@ https://www.transifex.com/ClearNode/Clearcore-Project-translations</translation>
         <translation>Порог разделения доли:</translation>
     </message>
     <message>
-        <source>Connect to the CLR network through a SOCKS5 proxy.</source>
-        <translation>Подключиться к сети CLR через SOCKS5 прокси.</translation>
+        <source>Connect to the ClearCoin network through a SOCKS5 proxy.</source>
+        <translation>Подключиться к сети ClearCoin через SOCKS5 прокси.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -2028,8 +1980,8 @@ https://www.transifex.com/ClearNode/Clearcore-Project-translations</translation>
         <translation>Тема Интерфейса</translation>
     </message>
     <message>
-        <source>&amp;Unit to show amounts in:</source>
-        <translation>В каких единицах показывать сумму:</translation>
+        <source>Unit to show amounts in:</source>
+        <translation>Единица для отображения сумм в:</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -2042,6 +1994,14 @@ https://www.transifex.com/ClearNode/Clearcore-Project-translations</translation>
     <message>
         <source>Hide empty balances</source>
         <translation>Скрыть пустые балансы</translation>
+    </message>
+    <message>
+        <source>Hide orphan stakes in transaction lists</source>
+        <translation>Скрыть орфаны в списках транзакций</translation>
+    </message>
+    <message>
+        <source>Hide orphan stakes</source>
+        <translation>Скрыть орфаны</translation>
     </message>
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
@@ -2113,155 +2073,78 @@ https://www.transifex.com/ClearNode/Clearcore-Project-translations</translation>
     </message>
 </context>
 <context>
-    <name>OverviewPage</name>
+    <name>ClearCoinGUI</name>
     <message>
-        <source>Form</source>
-        <translation>Вид</translation>
+        <source>ClearCoin Core</source>
+        <translation>ClearCoin Core</translation>
     </message>
     <message>
-        <source>Available:</source>
-        <translation>Доступно:</translation>
+        <source>Wallet</source>
+        <translation>Кошелек</translation>
     </message>
     <message>
-        <source>Your current spendable balance</source>
-        <translation>Ваш текущий остаток средств</translation>
+        <source>Node</source>
+        <translation>Узел</translation>
     </message>
     <message>
-        <source>Total Balance, including all unavailable coins.</source>
-        <translation>Общий баланс включая все не доступные монеты</translation>
+        <source>&amp;Show / Hide</source>
+        <translation>&amp;Показать / Скрыть</translation>
     </message>
     <message>
-        <source>CLR Balance</source>
-        <translation>Баланс CLR</translation>
+        <source>Show or hide the main Window</source>
+        <translation>Показать или скрыть основное Окно</translation>
     </message>
     <message>
-        <source>Pending:</source>
-        <translation>В ожидании:</translation>
+        <source>E&amp;xit</source>
+        <translation>В&amp;ыход</translation>
     </message>
     <message>
-        <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
-        <translation>Транзакции, которые ещё должны быть подтверждены и не уменьшают баланс</translation>
+        <source>Quit application</source>
+        <translation>Завершить работу</translation>
     </message>
     <message>
-        <source>Immature:</source>
-        <translation>Дозревают:</translation>
+        <source>ClearCoin Core client</source>
+        <translation>Клиент ClearCoin Core</translation>
     </message>
     <message>
-        <source>Staked or masternode rewards that has not yet matured</source>
-        <translation>Награды за хранение и мастерноды, которые еще не *созрели*</translation>
+        <source>Error</source>
+        <translation>Ошибка</translation>
     </message>
     <message>
-        <source>Current locked balance in watch-only addresses</source>
-        <translation>Текущий заблокированый баланс всех наблюдаемых адресов</translation>
+        <source>Warning</source>
+        <translation>Предупреждение</translation>
     </message>
     <message>
-        <source>Your current CLR balance, unconfirmed and immature transactions included</source>
-        <translation>Ваш текущий CLR  баланс, включая неподтвержденные и незрелые транзакции</translation>
+        <source>Information</source>
+        <translation>Информация</translation>
     </message>
     <message>
-        <source>CLR Rewards</source>
-        <translation>Награды CLR</translation>
+        <source>System Message</source>
+        <translation>Системное сообщение</translation>
     </message>
     <message>
-        <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zCLR are spendable.</source>
-        <translation>Зрелые: более 20 подтверждений и более 1 чеканки одного и того же наименования после того, как оно было отчеканено. Эти zCLR можно потратить.</translation>
+        <source>Sent MultiSend transaction</source>
+        <translation>Отправленная MultiSend транзакция</translation>
     </message>
     <message>
-        <source>Unconfirmed: less than 20 confirmations
-Immature: confirmed, but less than 1 mint of the same denomination after it was minted</source>
-        <translation>Неподтверждено: менее 20 подтверждений
-Незрелый: подтвержден, но менее 1 чеканок того же наименования после того, как он был отчеканен</translation>
+        <source>Sent transaction</source>
+        <translation>Отправленная транзакция</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the CLR network after a connection is established, but this process has not completed yet.</source>
-        <translation>Возможно отображаемая информация устарела. Ваш кошелек автоматически синхронизируется с сетью CLR после установки соединения, но этот процесс еще не завершен. </translation>
+        <source>Incoming transaction</source>
+        <translation>Входящая транзакция</translation>
     </message>
     <message>
-        <source>OVERVIEW</source>
-        <translation>ОБЗОР</translation>
-    </message>
-    <message>
-        <source>Balance (including unconfirmed and immature coins)</source>
-        <translation>баланс (включая неподтвержденные и незрелые монеты)</translation>
-    </message>
-    <message>
-        <source>Balance</source>
-        <translation>баланс</translation>
-    </message>
-    <message>
-        <source>Unconfirmed transactions to watch-only addresses</source>
-        <translation>Неподтверждённые транзакции на наблюдаемые адреса</translation>
-    </message>
-    <message>
-        <source>Staked or masternode rewards in watch-only addresses that has not yet matured</source>
-        <translation>Награды за хранение и мастерноды в наблюдаемых адресах, которые еще не *созрели*</translation>
-    </message>
-    <message>
-        <source>Total:</source>
-        <translation>Всего:</translation>
-    </message>
-    <message>
-        <source>Current total balance in watch-only addresses</source>
-        <translation>Текущий баланс всех наблюдаемых адресов</translation>
-    </message>
-    <message>
-        <source>Watch-only:</source>
-        <translation>Наблюдаемый:</translation>
-    </message>
-    <message>
-        <source>Your current balance in watch-only addresses</source>
-        <translation>Ваш текущий баланс в наблюдаемых адресах</translation>
-    </message>
-    <message>
-        <source>Spendable:</source>
-        <translation>Расходуемый:</translation>
-    </message>
-    <message>
-        <source>Locked CLR or Masternode collaterals. These are excluded from zCLR minting.</source>
-        <translation>Заблокированно дополнительное обеспечение CLR или Masternode. Они исключены из чеканки zCLR.</translation>
-    </message>
-    <message>
-        <source>Locked:</source>
-        <translation>Заперто</translation>
-    </message>
-    <message>
-        <source>Unconfirmed:</source>
-        <translation>Неподтвержденный:</translation>
-    </message>
-    <message>
-        <source>Your current zCLR balance, unconfirmed and immature zCLR included.</source>
-        <translation>Ваш текущий zCLR баланс, включая неподтвержденные и незрелые транзакции</translation>
-    </message>
-    <message>
-        <source>Recent transactions</source>
-        <translation>Последние транзакции</translation>
-    </message>
-    <message>
-        <source>out of sync</source>
-        <translation>несинронизировано</translation>
-    </message>
-    <message>
-        <source>Current percentage of zCLR.
-If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
+        <source>Date: %1
+Amount: %2
+Type: %3
+Address: %4
 </source>
-        <translation>Текущий процент от zCLR.
-Если АвтоЧеканка включена, этот процент будет располагаться на настроенном проценте АвтоЧеканка  (по умолчанию = 10%).
+        <translation>Дата: %1
+Сумма: %2
+Тип: %3
+Адрес: %4
 </translation>
-    </message>
-    <message>
-        <source>AutoMint is currently enabled and set to </source>
-        <translation>Авточеканка в данный момен включена и установлена в</translation>
-    </message>
-    <message>
-        <source>To disable AutoMint add 'enablezeromint=0' in clr.conf.</source>
-        <translation>To disable AutoMint add 'enablezeromint=0' in clr.conf.</translation>
-    </message>
-    <message>
-        <source>AutoMint is currently disabled.
-To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in clr.conf</source>
-        <translation>Авточеканка  в настоящее время отключена.
-Чтобы включить Авточеканку, измените 'enablezeromint = 0' на 'enablezeromint = 1' в файле clr.conf</translation>
     </message>
 </context>
 <context>
@@ -2291,8 +2174,8 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in clr.conf</
         <translation>Не удалось запустить clr: обработчик click-to-pay </translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid CLR address or malformed URI parameters.</source>
-        <translation>URI не интерпретируется! Причиной этому может быть неверный CLR адрес или неверные параметеры URI.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid ClearCoin address or malformed URI parameters.</source>
+        <translation>URI не интерпретируется! Причиной этому может быть неверный ClearCoin адрес или неверные параметеры URI.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2369,659 +2252,7 @@ To enable AutoMint change 'enablezeromint=0' to 'enablezeromint=1' in clr.conf</
         <source>Ping Time</source>
         <translation>Время отклика</translation>
     </message>
-</context>
-<context>
-    <name>PrivacyDialog</name>
-    <message>
-        <source>Zerocoin Actions:</source>
-        <translation>Действия Zerocoin </translation>
-    </message>
-    <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the CLR network after a connection is established, but this process has not completed yet.</source>
-        <translation>Возможно отображаемая информация устарела. Ваш кошелек автоматически синхронизируется с сетью CLR после установки соединения, но этот процесс еще не завершен. </translation>
-    </message>
-    <message>
-        <source>Mint Zerocoin</source>
-        <translation>Создать Zerocoin</translation>
-    </message>
-    <message>
-        <source>0</source>
-        <translation>0</translation>
-    </message>
-    <message>
-        <source>zCLR</source>
-        <translation>zCLR</translation>
-    </message>
-    <message>
-        <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
-        <translation>Доступными для чеканки являются монеты, которые подтверждены, а не заблокированы или заложены в коллекцию Masternode.</translation>
-    </message>
-    <message>
-        <source>Available for Minting:</source>
-        <translation>Доступный для чеканки</translation>
-    </message>
-    <message>
-        <source>0.000 000 00 CLR</source>
-        <translation>0.000 000 00 CLR</translation>
-    </message>
-    <message>
-        <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
-        <translation>Сброс базы данных кошелька Zerocoin. Удаляете транзакции, которые не попадают в цепочку.</translation>
-    </message>
-    <message>
-        <source>Reset</source>
-        <translation>Сброс</translation>
-    </message>
-    <message>
-        <source>Coin Control...</source>
-        <translation>Контроль Монеты...</translation>
-    </message>
-    <message>
-        <source>Quantity:</source>
-        <translation>Количество:</translation>
-    </message>
-    <message>
-        <source>Amount:</source>
-        <translation>Сумма:</translation>
-    </message>
-    <message>
-        <source>Rescan the complete blockchain for  Zerocoin mints and their meta-data.</source>
-        <translation>Пересканировать  завершенную блокчейн для Zerocoin  чеканки и мета данных</translation>
-    </message>
-    <message>
-        <source>ReScan</source>
-        <translation>Пересканирование</translation>
-    </message>
-    <message>
-        <source>Status and/or Mesages from the last Mint Action.</source>
-        <translation>статус и / или сообщения от последней чеканки.</translation>
-    </message>
-    <message>
-        <source>PRIVACY</source>
-        <translation>КОНФИДЕНЦИАЛЬНОСТЬ</translation>
-    </message>
-    <message>
-        <source>Enter an amount of CLR to convert to zCLR</source>
-        <translation>Введите сумму в CLR для  конвертации в zCLR</translation>
-    </message>
-    <message>
-        <source>zCLR Control</source>
-        <translation>Контроль zCLR</translation>
-    </message>
-    <message>
-        <source>zCLR Selected:</source>
-        <translation>Выбрано zCLR:</translation>
-    </message>
-    <message>
-        <source>Quantity Selected:</source>
-        <translation>Выбранное Количество:</translation>
-    </message>
-    <message>
-        <source>Spend Zerocoin. Without 'Pay To:' address creates payments to yourself.</source>
-        <translation>Потратить Zerocoin. Без адреса «Оплатить кому» вы сами создаете платежи.</translation>
-    </message>
-    <message>
-        <source>Spend Zerocoin</source>
-        <translation>Потратить Zerocoin</translation>
-    </message>
-    <message>
-        <source>Available (mature and spendable) zCLR for spending</source>
-        <translation>Доступный (зрелый и расходуемый) zCLR для расходов</translation>
-    </message>
-    <message>
-        <source>Available Balance:</source>
-        <translation>Доступный Баланс :</translation>
-    </message>
-    <message>
-        <source>Available (mature and spendable) zCLR for spending
-
-zCLR are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</source>
-        <translation>Доступный (зрелый и затратный) zCLR для расходов
-
-zCLR are mature when they have more than 20 confirmations AND more than 2 mints of the same denomination after them were minted</translation>
-    </message>
-    <message>
-        <source>0 zCLR</source>
-        <translation>0 zCLR</translation>
-    </message>
-    <message>
-        <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
-        <translation>Уровень безопасности для транзакций Zerocoin. Больше лучше, но требуется больше времени и ресурсов.</translation>
-    </message>
-    <message>
-        <source>Security Level:</source>
-        <translation>Уровень безопасности:</translation>
-    </message>
-    <message>
-        <source>Security Level 1 - 100 (default: 42)</source>
-        <translation>Уровень безопасности 1-100 ( по умолчанию: 42)</translation>
-    </message>
-    <message>
-        <source>Pay &amp;To:</source>
-        <translation>Оплатить &amp;кому:</translation>
-    </message>
-    <message>
-        <source>The CLR address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>Адрес CLR для отправки платежа. Создает локальный платеж себе, когда он пуст.</translation>
-    </message>
-    <message>
-        <source>Choose previously used address</source>
-        <translation>Выбрать ранее использованный адрес</translation>
-    </message>
-    <message>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
-    </message>
-    <message>
-        <source>Paste address from clipboard</source>
-        <translation>Вставить адрес из буфера обмена</translation>
-    </message>
-    <message>
-        <source>Alt+P</source>
-        <translation>Alt+P</translation>
-    </message>
-    <message>
-        <source>&amp;Label:</source>
-        <translation>&amp;Метка:</translation>
-    </message>
-    <message>
-        <source>Enter a label for this address to add it to the list of used addresses</source>
-        <translation>Введите метку для этого адреса, чтобы добавить ее в список используемых адресов</translation>
-    </message>
-    <message>
-        <source>A&amp;mount:</source>
-        <translation>С&amp;умма:</translation>
-    </message>
-    <message>
-        <source>Convert Change to Zerocoin (might cost additional fees)</source>
-        <translation>Преобразование изменений в Zerocoin (может стоить дополнительные сборы)</translation>
-    </message>
-    <message>
-        <source>If checked, the wallet tries to minimize the returning change instead of minimizing the number of spent denominations.</source>
-        <translation>Если этот флажок установлен, кошелек пытается минимизировать возвращаемое изменение, а не минимизировать количество потраченных купюр.</translation>
-    </message>
-    <message>
-        <source>Minimize Change</source>
-        <translation>Сведение к минимуму изменений</translation>
-    </message>
-    <message>
-        <source>Information about the available Zerocoin funds.</source>
-        <translation>Информация о доступных фондах Зерокоина.</translation>
-    </message>
-    <message>
-        <source>Zerocoin Stats:</source>
-        <translation>Zerocoin Stats:</translation>
-    </message>
-    <message>
-        <source>Total Balance including unconfirmed and immature zCLR</source>
-        <translation>Общий баланс, включая неподтвержденные и незрелые zCLR</translation>
-    </message>
-    <message>
-        <source>Total Zerocoin  Balance:</source>
-        <translation>Общий баланс Zerocoin:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 1:</source>
-        <translation>Номинал со значением 1:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 1:</source>
-        <translation>Номинал со значением 1:</translation>
-    </message>
-    <message>
-        <source>Unconfirmed: less than 20 confirmations
-Immature: confirmed, but less than 1 mint of the same denomination after it was minted</source>
-        <translation>Неподтверждено: менее 20 подтверждений
-Незрелый: подтвержден, но менее 1 чеканок того же наименования после того, как он был отчеканен</translation>
-    </message>
-    <message>
-        <source>Show the current status of automatic zCLR minting.
-
-To change the status (restart required):
-- enable: add 'enablezeromint=1' to clr.conf
-- disable: add 'enablezeromint=0' to clr.conf
-
-To change the percentage (no restart required):
-- menu Settings-&gt;Options-&gt;Percentage of autominted zCLR
-
-</source>
-        <translation>Показать текущий статус автоматической чеканки zCLR.
-
-Чтобы изменить статус (требуется перезагрузка):
-- включить: добавить 'enablezeromint = 1' в clr.conf
-- отключить: добавить 'enablezeromint = 0' в clr.conf
-
-Чтобы изменить процент (не требуется перезагрузка):
-- меню Настройки-&gt; Параметры-&gt; Процент авторизованного zCLR</translation>
-    </message>
-    <message>
-        <source>AutoMint Status</source>
-        <translation>Состояние автообмена</translation>
-    </message>
-    <message>
-        <source>Global Supply:</source>
-        <translation>Общая поставка</translation>
-    </message>
-    <message>
-        <source>Denom. 1:</source>
-        <translation>Номинал 1:</translation>
-    </message>
-    <message>
-        <source>Denom. 5:</source>
-        <translation>Номинал 5:</translation>
-    </message>
-    <message>
-        <source>Denom. 10:</source>
-        <translation>Номинал 10:</translation>
-    </message>
-    <message>
-        <source>Denom. 50:</source>
-        <translation>Номинал 50:</translation>
-    </message>
-    <message>
-        <source>Denom. 100:</source>
-        <translation>Номинал 100:</translation>
-    </message>
-    <message>
-        <source>Denom. 500:</source>
-        <translation>Номинал 500:</translation>
-    </message>
-    <message>
-        <source>Denom. 1000:</source>
-        <translation>Номинал 1000:</translation>
-    </message>
-    <message>
-        <source>Denom. 5000:</source>
-        <translation>Номинал 5000:</translation>
-    </message>
-    <message>
-        <source>0 x</source>
-        <translation>0 x</translation>
-    </message>
-    <message>
-        <source>Denominations with value 5:</source>
-        <translation>Номинал со значением 5:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 5:</source>
-        <translation>Номинал со значением 5:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 10:</source>
-        <translation>Номинал со значением 10:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 10:</source>
-        <translation>Номинал со значением 10:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 50:</source>
-        <translation>Номинал со значением 50:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 50:</source>
-        <translation>Номинал со значением 50:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 100:</source>
-        <translation>Номинал со значением 100:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 100:</source>
-        <translation>Номинал со значением 100:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 500:</source>
-        <translation>Номинал со значением 500:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 500:</source>
-        <translation>Номинал со значением 500:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 1000:</source>
-        <translation>Номинал со значением 1000:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 1000:</source>
-        <translation>Номинал со значением 1000:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 5000:</source>
-        <translation>Номинал со значением 5000:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 5000:</source>
-        <translation>Номинал со значением 5000:</translation>
-    </message>
-    <message>
-        <source>Priority:</source>
-        <translation>Приоритет:</translation>
-    </message>
-    <message>
-        <source>TextLabel</source>
-        <translation>Текстовая метка</translation>
-    </message>
-    <message>
-        <source>Fee:</source>
-        <translation>Комиссия:</translation>
-    </message>
-    <message>
-        <source>Dust:</source>
-        <translation>Пыль:</translation>
-    </message>
-    <message>
-        <source>no</source>
-        <translation>нет</translation>
-    </message>
-    <message>
-        <source>Bytes:</source>
-        <translation>Байты:</translation>
-    </message>
-    <message>
-        <source>Insufficient funds!</source>
-        <translation>Недостаточно средств</translation>
-    </message>
-    <message>
-        <source>Coins automatically selected</source>
-        <translation>Монеты автоматически выбираются</translation>
-    </message>
-    <message>
-        <source>medium</source>
-        <translation>промежуточный</translation>
-    </message>
-    <message>
-        <source>Coin Control Features</source>
-        <translation>Особенности управления монетами</translation>
-    </message>
-    <message>
-        <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
-        <translation>Если это активировано, но адрес изменения пуст или недействителен, изменение будет отправлено на вновь сгенерированный адрес.</translation>
-    </message>
-    <message>
-        <source>Custom change address</source>
-        <translation>Пользовательский адрес изменения</translation>
-    </message>
-    <message>
-        <source>Amount After Fee:</source>
-        <translation>Сумма после оплаты:</translation>
-    </message>
-    <message>
-        <source>Change:</source>
-        <translation>Изменить:</translation>
-    </message>
-    <message>
-        <source>out of sync</source>
-        <translation>несинронизировано</translation>
-    </message>
-    <message>
-        <source>Mint Status: Okay</source>
-        <translation>Статус чеканки  ОК</translation>
-    </message>
-    <message>
-        <source>Copy quantity</source>
-        <translation>Копировать количество</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Копировать сумму</translation>
-    </message>
-    <message>
-        <source>Starting ResetMintZerocoin: rescanning complete blockchain, this will need up to 30 minutes depending on your hardware.
-Please be patient...</source>
-        <translation>Запуск ResetMintZerocoin: повторное сканирование полной блок-цепи, это потребует до 30 минут в зависимости от вашего оборудования.
-Будьте терпеливы ...</translation>
-    </message>
-    <message>
-        <source>Spending Zerocoin.
-Computationally expensive, might need several minutes depending on the selected Security Level and your hardware.
-Please be patient...</source>
-        <translation>Расходы Zerocoin.
-Вычислительно дорого, может потребоваться несколько минут в зависимости от выбранного уровня безопасности и вашего оборудования.
-Пожалуйста, будьте терпеливы...</translation>
-    </message>
-    <message>
-        <source>) needed.
-Maximum allowed: </source>
-        <translation>) необходимо.
-Максимально допустимое:</translation>
-    </message>
-    <message>
-        <source>zCLR Spend #: </source>
-        <translation>zCLR Тратить #: </translation>
-    </message>
-    <message>
-        <source>zCLR Mint</source>
-        <translation>чеканка zCLR</translation>
-    </message>
-    <message>
-        <source> &lt;b&gt;enabled&lt;/b&gt;.</source>
-        <translation> &lt;b&gt;включен&lt;/b&gt;.</translation>
-    </message>
-    <message>
-        <source> &lt;b&gt;disabled&lt;/b&gt;.</source>
-        <translation> &lt;b&gt;отключен&lt;/b&gt;.</translation>
-    </message>
-    <message>
-        <source> Configured target percentage: &lt;b&gt;</source>
-        <translation> Настроенный целевой процент: &lt;b&gt;</translation>
-    </message>
-    <message>
-        <source>zCLR is currently disabled due to maintenance.</source>
-        <translation>zCLR в настоящее время отключен от обслуживания.</translation>
-    </message>
-    <message>
-        <source>zCLR is currently undergoing maintenance.</source>
-        <translation>В настоящее время zCLR проходит техническое обслуживание.</translation>
-    </message>
-    <message>
-        <source>Denom. with value &lt;b&gt;1&lt;/b&gt;:</source>
-        <translation>Номинал со значением &lt;b&gt;1&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. with value &lt;b&gt;5&lt;/b&gt;:</source>
-        <translation>Номинал со значением &lt;b&gt;5&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. with value &lt;b&gt;10&lt;/b&gt;:</source>
-        <translation>Номинал со значением &lt;b&gt;10&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. with value &lt;b&gt;50&lt;/b&gt;:</source>
-        <translation>Номинал со значением &lt;b&gt;50&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. with value &lt;b&gt;100&lt;/b&gt;:</source>
-        <translation>Номинал со значением &lt;b&gt;100&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. with value &lt;b&gt;500&lt;/b&gt;:</source>
-        <translation>Номинал со значением &lt;b&gt;500&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. with value &lt;b&gt;1000&lt;/b&gt;:</source>
-        <translation>Номинал со значением &lt;b&gt;1000&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. with value &lt;b&gt;5000&lt;/b&gt;:</source>
-        <translation>Номинал со значением &lt;b&gt;5000&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>AutoMint Status:</source>
-        <translation>Статус АвтоЧеканки:</translation>
-    </message>
-    <message>
-        <source>Denom. &lt;b&gt;1&lt;/b&gt;:</source>
-        <translation>Номинал &lt;b&gt;1&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. &lt;b&gt;5&lt;/b&gt;:</source>
-        <translation>Номинал&lt;b&gt;5&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. &lt;b&gt;10&lt;/b&gt;:</source>
-        <translation>Номинал &lt;b&gt;10&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. &lt;b&gt;50&lt;/b&gt;:</source>
-        <translation>Номинал &lt;b&gt;50&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. &lt;b&gt;100&lt;/b&gt;:</source>
-        <translation>Номинал &lt;b&gt;100&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. &lt;b&gt;500&lt;/b&gt;:</source>
-        <translation>Номинал &lt;b&gt;500&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. &lt;b&gt;1000&lt;/b&gt;:</source>
-        <translation>Номинал &lt;b&gt;1000&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Denom. &lt;b&gt;5000&lt;/b&gt;:</source>
-        <translation>Номинал&lt;b&gt;5000&lt;/b&gt;:</translation>
-    </message>
-    <message>
-        <source>Error: Your wallet is locked. Please enter the wallet passphrase first.</source>
-        <translation>Ошибка. Ваш кошелек заблокирован. Сначала введите кодовую фразу кошелька.</translation>
-    </message>
-    <message>
-        <source>Message: Enter an amount &gt; 0.</source>
-        <translation>Сообщение: Введите сумму&gt; 0.</translation>
-    </message>
-    <message>
-        <source>Minting </source>
-        <translation>Создание</translation>
-    </message>
-    <message>
-        <source>Successfully minted </source>
-        <translation>Создан успешно</translation>
-    </message>
-    <message>
-        <source> zCLR in </source>
-        <translation> zCLR в</translation>
-    </message>
-    <message>
-        <source> sec. Used denominations:
-</source>
-        <translation>сек. Испльзованы номинации:
-</translation>
-    </message>
-    <message>
-        <source>Duration: </source>
-        <translation>Продолжительность:</translation>
-    </message>
-    <message>
-        <source> sec.
-</source>
-        <translation>сек.
-</translation>
-    </message>
-    <message>
-        <source>Starting ResetSpentZerocoin: </source>
-        <translation>Запуск ResetSpentZerocoin:</translation>
-    </message>
-    <message>
-        <source>No 'Pay To' address provided, creating local payment</source>
-        <translation>Не предоставляется адрес «Pay To», создающий местный платеж</translation>
-    </message>
-    <message>
-        <source>Invalid ClearCoin address</source>
-        <translation>неправильный CLR адрес</translation>
-    </message>
-    <message>
-        <source>Invalid Send Amount</source>
-        <translation>Недействительная сумма отправки</translation>
-    </message>
-    <message>
-        <source>Confirm additional Fees</source>
-        <translation>Подтверждение дополнительных сборов</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to send?&lt;br /&gt;&lt;br /&gt;</source>
-        <translation>Вы действительно хотите отправить?&lt;br /&gt;&lt;br /&gt;</translation>
-    </message>
-    <message>
-        <source> to address </source>
-        <translation>адресовать</translation>
-    </message>
-    <message>
-        <source> to a newly generated (unused and therefore anonymous) local address &lt;br /&gt;</source>
-        <translation>к вновь созданному (неиспользуемому и поэтому анонимному) локальному адресу &lt;br /&gt;</translation>
-    </message>
-    <message>
-        <source>with Security Level </source>
-        <translation>с безопасным уровнем</translation>
-    </message>
-    <message>
-        <source>Confirm send coins</source>
-        <translation>Подтвердить отправку монет</translation>
-    </message>
-    <message>
-        <source>Version 1 zCLR require a security level of 100 to successfully spend.</source>
-        <translation>Для версии 1 zCLR требуется уровень безопасности 100, который можно успешно тратить.</translation>
-    </message>
-    <message>
-        <source>Failed to spend zCLR</source>
-        <translation>Не удалось провести zCLR</translation>
-    </message>
-    <message>
-        <source>Failed to fetch mint associated with serial hash</source>
-        <translation>Не удалось получить чеканку, связанную с серийным хэшем</translation>
-    </message>
-    <message>
-        <source>Too much inputs (</source>
-        <translation>Слишком много входов (</translation>
-    </message>
-    <message>
-        <source>
-Either mint higher denominations (so fewer inputs are needed) or reduce the amount to spend.</source>
-        <translation>
-Либо чеканятся монеты с  высоким номиналом (поэтому требуется меньше ресурсов), либо уменьшите сумму, которую нужно потратить.</translation>
-    </message>
-    <message>
-        <source>Spend Zerocoin failed with status = </source>
-        <translation>Провести Zerocoin не удалось со статусом =</translation>
-    </message>
-    <message numerus="yes">
-        <source>PrivacyDialog</source>
-        <comment>Enter an amount of CLR to convert to zCLR</comment>
-        <translation><numerusform>PrivacyDialog</numerusform><numerusform>PrivacyDialog</numerusform><numerusform>PrivacyDialog</numerusform><numerusform>PrivacyDialog</numerusform></translation>
-    </message>
-    <message>
-        <source>denomination: </source>
-        <translation>наименование:</translation>
-    </message>
-    <message>
-        <source>serial: </source>
-        <translation>последовательный:</translation>
-    </message>
-    <message>
-        <source>Spend is 1 of : </source>
-        <translation>Расход 1 из :</translation>
-    </message>
-    <message>
-        <source>value out: </source>
-        <translation>ценность:</translation>
-    </message>
-    <message>
-        <source>address: </source>
-        <translation>Адрес:</translation>
-    </message>
-    <message>
-        <source>Sending successful, return code: </source>
-        <translation>Отправка успешного кода возврата:</translation>
-    </message>
-    <message>
-        <source>txid: </source>
-        <translation>txid: </translation>
-    </message>
-    <message>
-        <source>fee: </source>
-        <translation>Комиссия:</translation>
-    </message>
-</context>
+    </context>
 <context>
     <name>QObject</name>
     <message>
@@ -3029,8 +2260,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Сумма</translation>
     </message>
     <message>
-        <source>Enter a CLR address (e.g. %1)</source>
-        <translation>Введите адрес CLR (например %1)</translation>
+        <source>Enter ClearCoin address (e.g. %1)</source>
+        <translation>Введите адрес ClearCoin (например, %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -3072,24 +2303,197 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <source>%1 ms</source>
         <translation>%1 мс</translation>
     </message>
-</context>
-<context>
-    <name>QRImageWidget</name>
     <message>
-        <source>&amp;Save Image...</source>
-        <translation>&amp;Сохранить изображение</translation>
+        <source>A fatal error occurred. ClearCoin can no longer continue safely and will quit.</source>
+        <translation>Произошла фатальная ошибка. ClearCoin больше не может безопасно продолжать работу и завершит работу.</translation>
     </message>
     <message>
-        <source>&amp;Copy Image</source>
-        <translation>&amp;Копировать изображение</translation>
+        <source>ClearCoin Core</source>
+        <translation>ClearCoin Core</translation>
     </message>
     <message>
-        <source>Save QR Code</source>
-        <translation>Сохранить QR-код</translation>
+        <source>Error: Specified data directory "%1" does not exist.</source>
+        <translation>Ошибка: указанного каталогп данных "%1" не существует.</translation>
     </message>
     <message>
-        <source>PNG Image (*.png)</source>
-        <translation>Изображение в формате PNG (*.png)</translation>
+        <source>Error: Cannot parse configuration file: %1. Only use key=value syntax.</source>
+        <translation>Ошибка: невозможно проанализировать файл конфигурации: %1. Используйте только синтаксис key=value.</translation>
+    </message>
+    <message>
+        <source>Error: Invalid combination of -regtest and -testnet.</source>
+        <translation>Ошибка: неправильная комбинация -regtest и -testnet.</translation>
+    </message>
+    <message>
+        <source>Error reading masternode configuration file: %1</source>
+        <translation>Ошибка чтения файла конфигурации мастерноды: %1</translation>
+    </message>
+    <message>
+        <source>ClearCoin Core didn't yet exit safely...</source>
+        <translation>ClearCoin Core еще не вышел безопасно...</translation>
+    </message>
+    <message>
+        <source>Contact</source>
+        <translation>Контакты</translation>
+    </message>
+    <message>
+        <source>Receiving</source>
+        <translation>Получающий</translation>
+    </message>
+    <message>
+        <source>Delegator</source>
+        <translation>Делегатор</translation>
+    </message>
+    <message>
+        <source>Delegable</source>
+        <translation>Делегируемый</translation>
+    </message>
+    <message>
+        <source>Cold Staking</source>
+        <translation>Холодный стекинг</translation>
+    </message>
+    <message>
+        <source>Cold Staking Contact</source>
+        <translation>Контакт холодного стекинга</translation>
+    </message>
+    <message>
+        <source>Hidden</source>
+        <translation>Спрятан</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Неизвестно</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>все</translation>
+    </message>
+    <message>
+        <source>Contacts</source>
+        <translation>Контакты</translation>
+    </message>
+    <message>
+        <source>Staking Contacts</source>
+        <translation>Контакты стекинга</translation>
+    </message>
+    <message>
+        <source>Date desc</source>
+        <translation>Дата по убыванию</translation>
+    </message>
+    <message>
+        <source>Date asc</source>
+        <translation>Дата по возрастанию</translation>
+    </message>
+    <message>
+        <source>Amount desc</source>
+        <translation>Сумма по убыванию</translation>
+    </message>
+    <message>
+        <source>Amount asc</source>
+        <translation>Сумма по возрастанию</translation>
+    </message>
+    <message>
+        <source>Received</source>
+        <translation>Принято</translation>
+    </message>
+    <message>
+        <source>Sent</source>
+        <translation>Отправлено</translation>
+    </message>
+    <message>
+        <source>Mined</source>
+        <translation>заминированный</translation>
+    </message>
+    <message>
+        <source>Minted</source>
+        <translation>Чеканка</translation>
+    </message>
+    <message>
+        <source>MN reward</source>
+        <translation>Вознаграждение от MN</translation>
+    </message>
+    <message>
+        <source>To yourself</source>
+        <translation>Самому себе</translation>
+    </message>
+    <message>
+        <source>Cold stakes</source>
+        <translation>Холодные стекинг ставки</translation>
+    </message>
+    <message>
+        <source>Hot stakes</source>
+        <translation>Горячие стекинг ставки</translation>
+    </message>
+    <message>
+        <source>Delegated</source>
+        <translation>Делегирован</translation>
+    </message>
+    <message>
+        <source>Delegations</source>
+        <translation>Делегирования</translation>
+    </message>
+    <message>
+        <source>by Label</source>
+        <translation>по метке</translation>
+    </message>
+    <message>
+        <source>by Address</source>
+        <translation>по адресу</translation>
+    </message>
+    <message>
+        <source>by Date</source>
+        <translation>по дате</translation>
+    </message>
+    <message>
+        <source>Jan</source>
+        <translation>Январь</translation>
+    </message>
+    <message>
+        <source>Feb</source>
+        <translation>Февраль</translation>
+    </message>
+    <message>
+        <source>Mar</source>
+        <translation>Март</translation>
+    </message>
+    <message>
+        <source>Apr</source>
+        <translation>Апрель</translation>
+    </message>
+    <message>
+        <source>May</source>
+        <translation>Май</translation>
+    </message>
+    <message>
+        <source>Jun</source>
+        <translation>Июнь</translation>
+    </message>
+    <message>
+        <source>Jul</source>
+        <translation>Июль</translation>
+    </message>
+    <message>
+        <source>Aug</source>
+        <translation>Август</translation>
+    </message>
+    <message>
+        <source>Sep</source>
+        <translation>Сентябрь</translation>
+    </message>
+    <message>
+        <source>Oct</source>
+        <translation>Октябрь</translation>
+    </message>
+    <message>
+        <source>Nov</source>
+        <translation>Ноябрь</translation>
+    </message>
+    <message>
+        <source>Dec</source>
+        <translation>Декабрь</translation>
+    </message>
+    <message>
+        <source>Address with no label</source>
+        <translation>Адрес без метки</translation>
     </message>
 </context>
 <context>
@@ -3143,10 +2547,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Протокол отладки</translation>
     </message>
     <message>
-        <source>Using OpenSSL version</source>
-        <translation>Используемая версия OpenSSL</translation>
-    </message>
-    <message>
         <source>Build date</source>
         <translation>Дата сборки</translation>
     </message>
@@ -3167,12 +2567,20 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Блокчейн</translation>
     </message>
     <message>
-        <source>Open the CLR debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Открыть протокол отладки CLR. Это может занять некоторе время, если файл протокола очень большой.</translation>
+        <source>Open the ClearCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Открыть протокол отладки ClearCoin. Это может занять некоторе время, если файл протокола очень большой.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
         <translation>Количество мастернод</translation>
+    </message>
+    <message>
+        <source>Data Directory</source>
+        <translation>Каталог данных</translation>
+    </message>
+    <message>
+        <source>Last block hash</source>
+        <translation>Hash последнего блока</translation>
     </message>
     <message>
         <source>&amp;Console</source>
@@ -3384,8 +2792,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Вывод:</translation>
     </message>
     <message>
-        <source>Welcome to the CLR RPC console.</source>
-        <translation>Добро пожаловать в окружение CLR RPC.</translation>
+        <source>Welcome to the ClearCoin RPC console.</source>
+        <translation>Добро пожаловать в окружение ClearCoin RPC.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -3436,12 +2844,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Подтвердить повторную синхронизацию Blockchain</translation>
     </message>
     <message>
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Используйте стрелки вверх и вниз для навигации по истории, и &lt;b&gt;Ctrl-L&lt;/b&gt; для очистки экрана.</translation>
+        <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
+        <translation>Используйте стрелки вверх и вниз для навигации в разделе истории и %1 для очистки экрана.</translation>
     </message>
     <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
         <translation>Введите &lt;b&gt;help&lt;/b&gt; для просмотра доступных команд.</translation>
+    </message>
+    <message>
+        <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramifications of a command.</source>
+        <translation>ВНИМАНИЕ: активизировались мошенники, которые предлагают пользователям вводить здесь команды и воруя содержимое их кошелька. Не используйте эту консоль без полного понимания последствий команды.</translation>
     </message>
     <message>
         <source>%1 B</source>
@@ -3493,149 +2905,117 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>ReceiveCoinsDialog</name>
+    <name>ReceiveDialog</name>
     <message>
-        <source>Reuse one of the previously used receiving addresses.&lt;br&gt;Reusing addresses has security and privacy issues.&lt;br&gt;Do not use this unless re-generating a payment request made before.</source>
-        <translation>Повторное использование одного из ранее использованных принимающих адресов.&lt;br&gt;Реализация адресов имеет проблемы с безопасностью и конфиденциальностью.&lt;br&gt;Не используйте это, если повторно не генерируете запрос на платеж, сделанный ранее.</translation>
+        <source>Dialog</source>
+        <translation>Диалоговое окно</translation>
     </message>
     <message>
-        <source>R&amp;euse an existing receiving address (not recommended)</source>
-        <translation>R &amp; euse существующего адреса получателя (не рекомендуется)</translation>
+        <source>My Address</source>
+        <translation>Мой адрес</translation>
     </message>
     <message>
-        <source>&amp;Message:</source>
-        <translation>&amp;Сообщение:</translation>
+        <source>COPY</source>
+        <translation>КОПИРОВАТЬ</translation>
     </message>
     <message>
-        <source>An optional label to associate with the new receiving address.</source>
-        <translation>Дополнительный ярлык для связи с новым адресом приема.</translation>
-    </message>
-    <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the CLR network.</source>
-        <translation>Необязательное сообщение для присоединения к платежному запросу, которое будет отображаться при открытии запроса. Примечание. Сообщение не будет отправлено с оплатой через сеть CLR.</translation>
-    </message>
-    <message>
-        <source>RECEIVE</source>
-        <translation>ПОЛУЧАТЬ</translation>
-    </message>
-    <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the CLR network.</source>
-        <translation>Необязательное сообщение для присоединения к платежному запросу, которое будет отображаться при открытии запроса. &lt;br&gt;Примечание. Сообщение не будет отправлено с оплатой через сеть CLR.</translation>
-    </message>
-    <message>
-        <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
-        <translation>Используйте эту форму для запроса платежей. Все поля являются  &lt;b&gt;необязательными&lt;/b&gt;.</translation>
-    </message>
-    <message>
-        <source>&amp;Label:</source>
-        <translation>&amp;Метка:</translation>
-    </message>
-    <message>
-        <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
-        <translation>Необязательная сумма для запроса. Оставьте это пустое или ноль, чтобы не запрашивать определенную сумму.</translation>
-    </message>
-    <message>
-        <source>&amp;Amount:</source>
-        <translation>&amp;Количество:</translation>
-    </message>
-    <message>
-        <source>&amp;Request payment</source>
-        <translation>&amp;Запрос платежа</translation>
-    </message>
-    <message>
-        <source>Clear all fields of the form.</source>
-        <translation>Очистить все поля этой формы.</translation>
-    </message>
-    <message>
-        <source>Clear</source>
-        <translation>Очистить</translation>
-    </message>
-    <message>
-        <source>Requested payments history</source>
-        <translation>Запрос истории платежей</translation>
-    </message>
-    <message>
-        <source>Show the selected request (does the same as double clicking an entry)</source>
-        <translation>Показать этот выбранный запрос (или просто сделайте двойной клик за запись)</translation>
-    </message>
-    <message>
-        <source>Show</source>
-        <translation>Показать</translation>
-    </message>
-    <message>
-        <source>Remove the selected entries from the list</source>
-        <translation>Удалить эти выбранные записи из этого списка</translation>
-    </message>
-    <message>
-        <source>Remove</source>
-        <translation>Удалить</translation>
-    </message>
-    <message>
-        <source>Copy label</source>
-        <translation>Копировать метку</translation>
-    </message>
-    <message>
-        <source>Copy message</source>
-        <translation>Скопировать сообщение</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Копировать сумму</translation>
+        <source>CANCEL</source>
+        <translation>ОТМЕНА</translation>
     </message>
 </context>
 <context>
-    <name>ReceiveRequestDialog</name>
+    <name>ReceiveWidget</name>
     <message>
-        <source>QR Code</source>
-        <translation>QR код</translation>
+        <source>Form</source>
+        <translation>Вид</translation>
     </message>
     <message>
-        <source>Copy &amp;URI</source>
-        <translation>Скопировать &amp;URI</translation>
+        <source>No address</source>
+        <translation>Нет адресов</translation>
     </message>
     <message>
-        <source>Copy &amp;Address</source>
-        <translation>Скопировать &amp;Адрес</translation>
+        <source>Scan the QR code or copy the address to receive CLR</source>
+        <translation>Сканируйте QR-код или скопируйте адрес для получения CLR</translation>
     </message>
     <message>
-        <source>&amp;Save Image...</source>
-        <translation>&amp;Сохранить изображение</translation>
+        <source>Add Label</source>
+        <translation>Добавить ярлык</translation>
     </message>
     <message>
-        <source>Request payment to %1</source>
-        <translation>Запрос платежа в %1</translation>
+        <source>Generate Address</source>
+        <translation>Генерировать адрес</translation>
     </message>
     <message>
-        <source>Payment information</source>
-        <translation>Платежная информация</translation>
+        <source>Copy</source>
+        <translation>Копировать</translation>
     </message>
     <message>
-        <source>URI</source>
-        <translation>URI</translation>
+        <source>Receive</source>
+        <translation>Получить</translation>
     </message>
     <message>
-        <source>Address</source>
-        <translation>Адрес</translation>
+        <source>My Addresses</source>
+        <translation>Мои адреса</translation>
     </message>
     <message>
-        <source>Amount</source>
-        <translation>Сумма</translation>
+        <source>List your own addresses</source>
+        <translation>Записать мои собственные адреса</translation>
     </message>
     <message>
-        <source>Label</source>
-        <translation>Метка</translation>
+        <source>Create Request</source>
+        <translation>Создать запрос</translation>
     </message>
     <message>
-        <source>Message</source>
-        <translation>Сообщение</translation>
+        <source>Request payment with a fixed amount</source>
+        <translation>Запросить оплату с фиксированной суммой</translation>
     </message>
     <message>
-        <source>Resulting URI too long, try to reduce the text for label / message.</source>
-        <translation>Слишком длинный URI, попробуйте уменьшить текст для метки / сообщения.</translation>
+        <source>No available address, try unlocking the wallet</source>
+        <translation>Нет доступного адреса, попробуйте разблокировать кошелек</translation>
     </message>
     <message>
-        <source>Error encoding URI into QR Code.</source>
-        <translation>Ошибка при кодировании URI в QR код.</translation>
+        <source>Error generating address</source>
+        <translation>Ошибка при генерации адреса</translation>
+    </message>
+    <message>
+        <source>Edit Label</source>
+        <translation>Изменить ярлык</translation>
+    </message>
+    <message>
+        <source>Edit Address Label</source>
+        <translation>Изменить адрес ярлыка</translation>
+    </message>
+    <message>
+        <source>Address label saved</source>
+        <translation>Адрес ярлыка сохранен</translation>
+    </message>
+    <message>
+        <source>Error storing address label</source>
+        <translation>Ошибка при сохранении адресной метки</translation>
+    </message>
+    <message>
+        <source>Cannot create new address, wallet locked</source>
+        <translation>Невозможно создать новый адрес, кошелек заблокирован</translation>
+    </message>
+    <message>
+        <source>New address created</source>
+        <translation>Создан новый адрес</translation>
+    </message>
+    <message>
+        <source>Address copied</source>
+        <translation>Адрес скопирован</translation>
+    </message>
+    <message>
+        <source>Cannot perform operation, wallet locked</source>
+        <translation>Невозможно выполнить операцию, кошелек заблокирован</translation>
+    </message>
+    <message>
+        <source>URI copied to clipboard</source>
+        <translation>URI скопирован в буфер обмена</translation>
+    </message>
+    <message>
+        <source>Address copied to clipboard</source>
+        <translation>Адрес скопирован в буфер обмена</translation>
     </message>
 </context>
 <context>
@@ -3653,12 +3033,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Сообщение</translation>
     </message>
     <message>
+        <source>Address</source>
+        <translation>Адрес</translation>
+    </message>
+    <message>
         <source>Amount</source>
         <translation>Сумма</translation>
     </message>
     <message>
         <source>(no label)</source>
-        <translation>(нет метки)</translation>
+        <translation>(нет ярлыка)</translation>
     </message>
     <message>
         <source>(no message)</source>
@@ -3670,511 +3054,1385 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>SendCoinsDialog</name>
+    <name>RequestDialog</name>
     <message>
-        <source>Send Coins</source>
-        <translation>Отправить Монеты</translation>
+        <source>Dialog</source>
+        <translation>Диалоговое окно</translation>
     </message>
     <message>
-        <source>SEND</source>
-        <translation>отправить</translation>
+        <source>Amount</source>
+        <translation>Сумма</translation>
     </message>
     <message>
-        <source>Coin Control Features</source>
-        <translation>Особенности управления монетами</translation>
+        <source>CLR</source>
+        <translation>CLR</translation>
     </message>
     <message>
-        <source>Insufficient funds!</source>
-        <translation>Недостаточно средств</translation>
+        <source>Instead of sharing only a ClearCoin address, you can create a payment request, bundling up more information</source>
+        <translation>Вместо того, чтобы делиться только адресом ClearCoin, вы можете создать запрос на оплату, связывая больше информации</translation>
     </message>
     <message>
-        <source>Quantity:</source>
-        <translation>Количество:</translation>
+        <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
+        <translation>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </translation>
     </message>
     <message>
-        <source>Bytes:</source>
-        <translation>Байты:</translation>
+        <source>COPY ADDRESS</source>
+        <translation>КОПИРОВАТЬ АДРЕС</translation>
     </message>
     <message>
-        <source>Amount:</source>
-        <translation>Сумма:</translation>
+        <source>COPY URL</source>
+        <translation>КОПИРОВАТЬ URL</translation>
     </message>
     <message>
-        <source>Priority:</source>
-        <translation>Приоритет:</translation>
+        <source>CANCEL</source>
+        <translation>ОТМЕНА</translation>
     </message>
     <message>
-        <source>medium</source>
-        <translation>промежуточный</translation>
+        <source>Label</source>
+        <translation>Метка</translation>
     </message>
     <message>
-        <source>Fee:</source>
-        <translation>Комиссия:</translation>
+        <source>Description (optional)</source>
+        <translation>Описание (необязательно)</translation>
     </message>
     <message>
-        <source>Dust:</source>
-        <translation>Пыль:</translation>
+        <source>New Payment Request</source>
+        <translation>Новый запрос на оплату</translation>
     </message>
     <message>
-        <source>no</source>
-        <translation>нет</translation>
+        <source>Enter a label for the address</source>
+        <translation>Введите метку для адреса</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>После комиссии:</translation>
+        <source>Enter description</source>
+        <translation>Введите описание</translation>
     </message>
     <message>
-        <source>Change:</source>
-        <translation>Изменить:</translation>
+        <source>Error</source>
+        <translation>Ошибка</translation>
     </message>
     <message>
-        <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
-        <translation>Если это активировано, но адрес изменения пуст или недействителен, изменение будет отправлено на вновь сгенерированный адрес.</translation>
+        <source>GENERATE</source>
+        <translation>ГЕНЕРИРОВАТЬ</translation>
     </message>
     <message>
-        <source>Custom change address</source>
-        <translation>Пользовательский адрес изменения</translation>
+        <source>Creates an address to receive coin delegations and be able to stake them.</source>
+        <translation>Создает адрес для приема делегированных монет и возможности их стекить.</translation>
     </message>
     <message>
-        <source>Split UTXO</source>
-        <translation>Разделить UTXO</translation>
+        <source>New Cold Staking Address</source>
+        <translation>Новый адрес для холодного стекинга</translation>
     </message>
     <message>
-        <source># of outputs</source>
-        <translation># выходов</translation>
+        <source>Amount (optional)</source>
+        <translation>Сумма (необязательно)</translation>
     </message>
     <message>
-        <source>UTXO Size:</source>
-        <translation>UTXO Размер:</translation>
+        <source>Address label cannot be empty</source>
+        <translation>Метка адреса не может быть пустой</translation>
     </message>
     <message>
-        <source>0 CLR</source>
-        <translation>0 CLR</translation>
+        <source>Invalid amount</source>
+        <translation>Недопустимая сумма</translation>
     </message>
     <message>
-        <source>Transaction Fee:</source>
-        <translation>Комиссия за транзакцию:</translation>
+        <source>Request for </source>
+        <translation>Запрос для</translation>
     </message>
     <message>
-        <source>Choose...</source>
-        <translation>Выберите:</translation>
+        <source>Cold Staking Address Generated</source>
+        <translation>Адрес холодного стекинга сгенерирован</translation>
+    </message>
+</context>
+<context>
+    <name>SendChangeAddressDialog</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Диалоговое окно</translation>
     </message>
     <message>
-        <source>collapse fee-settings</source>
-        <translation>коллапс</translation>
+        <source>CANCEL</source>
+        <translation>ОТМЕНА</translation>
     </message>
     <message>
-        <source>Minimize</source>
-        <translation>Свернуть</translation>
+        <source>Custom Change Address</source>
+        <translation>Смена адреса</translation>
     </message>
     <message>
-        <source>per kilobyte</source>
-        <translation>за килобайт</translation>
+        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" ClearCoin address</source>
+        <translation>Остаточная часть значения, полученного от значения входов минус выходов, идет на «изменение» адреса ClearCoin</translation>
     </message>
     <message>
-        <source>total at least</source>
-        <translation>не менее</translation>
+        <source>SAVE</source>
+        <translation>СОХРАНИТЬ</translation>
     </message>
     <message>
-        <source>(read the tooltip)</source>
-        <translation>(читать всплывающую подсказку)</translation>
+        <source>RESET</source>
+        <translation>СБРОС</translation>
     </message>
     <message>
-        <source>Custom:</source>
-        <translation>Таможня:</translation>
+        <source>Invalid address</source>
+        <translation>Неверный адрес</translation>
     </message>
     <message>
-        <source>(Smart fee not initialized yet. This usually takes a few blocks...)</source>
-        <translation>(Умный платеж еще не инициализирован. Обычно это занимает несколько блоков....)</translation>
+        <source>Cannot use cold staking addresses for change</source>
+        <translation>Невозможно использовать адреса холодного стекинга для изменения</translation>
     </message>
+</context>
+<context>
+    <name>SendCustomFeeDialog</name>
     <message>
-        <source>SwiftX</source>
-        <translation>SwiftX</translation>
-    </message>
-    <message>
-        <source>Confirmation time:</source>
-        <translation>Количество подтверждений:</translation>
-    </message>
-    <message>
-        <source>Open Coin Control...</source>
-        <translation>Открытый контроль монеты</translation>
-    </message>
-    <message>
-        <source>Coins automatically selected</source>
-        <translation>Монеты автоматически выбираются</translation>
-    </message>
-    <message>
-        <source>If the custom fee is set to 1000 uCLRs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCLRs in fee,&lt;br /&gt;while "at least" pays 1000 uCLRs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Если пользовательская плата установлена в 1000 uCLRs, а транзакция составляет всего 250 байт, тогда «за килобайт» платит только 250 uCLRs,&lt;br /&gt;а «по крайней мере» платит 1000 uCLR. Для транзакций, превышающих килобайт, оплата за килобайт</translation>
-    </message>
-    <message>
-        <source>If the custom fee is set to 1000 uCLRs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uCLRs in fee,&lt;br /&gt;while "total at least" pays 1000 uCLRs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Если пользовательская плата установлена в 1000 uCLRs, а транзакция составляет всего 250 байт, тогда «за килобайт» платит только 250 uCLRs,&lt;br /&gt;а «по крайней мере» платит 1000 uCLR. Для транзакций, превышающих килобайт, оплата за килобайт</translation>
-    </message>
-    <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for CLR transactions than the network can process.</source>
-        <translation>Платить только минимальную плату просто отлично, если в блоке меньше объема транзакции, чем места в блоке.&lt;br /&gt; Но имейте в виду, что это может закончиться никогда не подтверждающей транзакцией, если будет больше спроса на транзакции CLR, чем сеть может обрабатывать.</translation>
-    </message>
-    <message>
-        <source>normal</source>
-        <translation>нормально</translation>
-    </message>
-    <message>
-        <source>fast</source>
-        <translation>быстро</translation>
+        <source>Form</source>
+        <translation>Вид</translation>
     </message>
     <message>
         <source>Recommended</source>
         <translation>рекомендуемые</translation>
     </message>
     <message>
-        <source>Send as zero-fee transaction if possible</source>
-        <translation>Отправляйте  транзакции с нулевой оплатой, если возможно</translation>
+        <source>CLR/kilobyte</source>
+        <translation>CLR/килобайт</translation>
     </message>
     <message>
-        <source>(confirmation may take longer)</source>
-        <translation>(подтверждение может занять больше времени)</translation>
+        <source>0.00 KB</source>
+        <translation>0.00 KB</translation>
     </message>
     <message>
-        <source>Confirm the send action</source>
-        <translation>Подтвердите действие отправки</translation>
+        <source>Customize the transaction fee, depending on the fee value your transaction might be included faster in the blockchain</source>
+        <translation>Настройте комиссию за транзакцию. В зависимости от величины комиссии, ваша транзакция может быть быстрее включена в блокчейн</translation>
     </message>
     <message>
-        <source>S&amp;end</source>
-        <translation>S&amp;end</translation>
+        <source>Custom</source>
+        <translation>Настроенная</translation>
     </message>
     <message>
-        <source>Clear all fields of the form.</source>
-        <translation>Очистить все поля этой формы.</translation>
+        <source>CANCEL</source>
+        <translation>ОТМЕНА</translation>
     </message>
     <message>
-        <source>Clear &amp;All</source>
-        <translation>Очистить &amp;Все</translation>
+        <source>Customize Fee</source>
+        <translation>Настройка комиссии</translation>
     </message>
     <message>
-        <source>Send to multiple recipients at once</source>
-        <translation>Отправить сразу нескольким получателям</translation>
+        <source>Normal</source>
+        <translation>Нормальная</translation>
     </message>
     <message>
-        <source>Add &amp;Recipient</source>
-        <translation>Добавить &amp;Получателя</translation>
+        <source>Slow</source>
+        <translation>Медленная</translation>
     </message>
     <message>
-        <source>Anonymized CLR</source>
-        <translation>Анонимный CLR</translation>
+        <source>Fast</source>
+        <translation>Быстрая</translation>
     </message>
     <message>
-        <source>Balance:</source>
-        <translation>Баланс:</translation>
+        <source>SAVE</source>
+        <translation>СОХРАНИТЬ</translation>
     </message>
     <message>
-        <source>Copy quantity</source>
-        <translation>Копировать количество</translation>
+        <source>Fee too high. Must be below: %1</source>
+        <translation>Комиссия слишком высокая. Должно быть ниже: %1</translation>
     </message>
     <message>
-        <source>Copy amount</source>
-        <translation>Копировать сумму</translation>
-    </message>
-    <message>
-        <source>Copy fee</source>
-        <translation>Копировать комиссию</translation>
-    </message>
-    <message>
-        <source>Copy after fee</source>
-        <translation>Копировать после вознаграждения </translation>
-    </message>
-    <message>
-        <source>Copy bytes</source>
-        <translation>Копировать байты</translation>
-    </message>
-    <message>
-        <source>Copy priority</source>
-        <translation>Копировать приоритет</translation>
-    </message>
-    <message>
-        <source>Copy dust</source>
-        <translation>Копировать пыль</translation>
-    </message>
-    <message>
-        <source>Copy change</source>
-        <translation>Копировать изменение</translation>
-    </message>
-    <message>
-        <source>The split block tool does not work when sending to outside addresses. Try again.</source>
-        <translation>Инструмент разделения блоков не работает при отправке на внешние адреса. Попробуй еще раз.</translation>
-    </message>
-    <message>
-        <source>The split block tool does not work with multiple addresses. Try again.</source>
-        <translation>Инструмент разделения блоков не работает с несколькими адресами. Попробуй еще раз.</translation>
-    </message>
-    <message>
-        <source>Warning: Invalid CLR address</source>
-        <translation>Предупреждение: неправильный CLR адрес</translation>
-    </message>
-    <message>
-        <source>%1 to %2</source>
-        <translation>%1 до %2</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to send?</source>
-        <translation>Вы уверены, что хотите отправить?</translation>
-    </message>
-    <message>
-        <source>are added as transaction fee</source>
-        <translation>добавляются как плата за транзакцию</translation>
-    </message>
-    <message>
-        <source>Total Amount = &lt;b&gt;%1&lt;/b&gt;&lt;br /&gt;= %2</source>
-        <translation>Итого = &lt;b&gt;%1&lt;/b&gt;&lt;br /&gt;= %2</translation>
-    </message>
-    <message>
-        <source>Confirm send coins</source>
-        <translation>Подтвердить отправку монет</translation>
-    </message>
-    <message>
-        <source>A fee %1 times higher than %2 per kB is considered an insanely high fee.</source>
-        <translation>Плата в %1 раз выше, чем %2 за КБ, считается безумно высокой.</translation>
-    </message>
-    <message numerus="yes">
-        <source>Estimated to begin confirmation within %n block(s).</source>
-        <translation><numerusform>Предполагается начать подтверждение в пределах %n блоков.</numerusform><numerusform>Предполагается начать подтверждение в пределах %n блоков.</numerusform><numerusform>Предполагается начать подтверждение в пределах %n блоков.</numerusform><numerusform>Предполагается начать подтверждение в пределах %n блоков.</numerusform></translation>
-    </message>
-    <message>
-        <source>The recipient address is not valid, please recheck.</source>
-        <translation>Адрес получателя недействителен, повторите проверку.</translation>
-    </message>
-    <message>
-        <source>using SwiftX</source>
-        <translation>используйте SwiftX</translation>
-    </message>
-    <message>
-        <source> split into %1 outputs using the UTXO splitter.</source>
-        <translation>разделить на %1 выходы с использованием разделителя UTXO.</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;(%1 of %2 entries displayed)&lt;/b&gt;</source>
-        <translation>&lt;b&gt;(%1 из %2 отображаемых записей)&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>The amount to pay must be larger than 0.</source>
-        <translation>Сумма для платежа должна быть больше, чем 0.</translation>
-    </message>
-    <message>
-        <source>The amount exceeds your balance.</source>
-        <translation>Сумма превышает ваш баланс.</translation>
-    </message>
-    <message>
-        <source>The total exceeds your balance when the %1 transaction fee is included.</source>
-        <translation>Сумма превышает ваш баланс, когда включена комиссия за транзакцию %1.</translation>
-    </message>
-    <message>
-        <source>Duplicate address found, can only send to each address once per send operation.</source>
-        <translation>Дублированный адрес найден, можно отправлять только на каждый адрес один раз за операцию отправки.</translation>
-    </message>
-    <message>
-        <source>Transaction creation failed!</source>
-        <translation>Не удалось создать транзакцию!</translation>
-    </message>
-    <message>
-        <source>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Сделка была отклонена! Это может произойти, если некоторые из монет в вашем кошельке уже были потрачены, например, если вы использовали копию wallet.dat и монеты были потрачены в копии, но не отмечены как потраченные здесь.</translation>
-    </message>
-    <message>
-        <source>Error: The wallet was unlocked only to anonymize coins.</source>
-        <translation>Ошибка: кошелек был разблокирован только для анонимизации монет.</translation>
-    </message>
-    <message>
-        <source>Error: The wallet was unlocked only to anonymize coins. Unlock canceled.</source>
-        <translation>Ошибка: кошелек был разблокирован только для анонимизации монет. Разблокировка отменена.</translation>
-    </message>
-    <message>
-        <source>Pay only the minimum fee of %1</source>
-        <translation>Платите только минимальный взнос %1</translation>
-    </message>
-    <message>
-        <source>Warning: Unknown change address</source>
-        <translation>Предупреждение: Неизвестный адрес </translation>
-    </message>
-    <message>
-        <source>(no label)</source>
-        <translation>(нет метки)</translation>
+        <source>Fee too low. Must be at least: %1</source>
+        <translation>Комиссия слишком низкая. Должно быть не менее: %1</translation>
     </message>
 </context>
 <context>
-    <name>SendCoinsEntry</name>
+    <name>SendMultiRow</name>
     <message>
-        <source>This is a normal payment.</source>
-        <translation>Это нормальный платеж.</translation>
+        <source>Form</source>
+        <translation>Вид</translation>
     </message>
     <message>
-        <source>Pay &amp;To:</source>
-        <translation>Оплатить &amp;кому:</translation>
+        <source>Enter address</source>
+        <translation>Ввести адрес</translation>
     </message>
     <message>
-        <source>The CLR address to send the payment to</source>
-        <translation>Адрес CLR для отправки платежа</translation>
+        <source>Address label (optional)</source>
+        <translation>Метка адреса (по желанию)</translation>
     </message>
     <message>
-        <source>Choose previously used address</source>
-        <translation>Выбрать ранее использованный адрес</translation>
-    </message>
-    <message>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
-    </message>
-    <message>
-        <source>Paste address from clipboard</source>
-        <translation>Вставить адрес из буфера обмена</translation>
-    </message>
-    <message>
-        <source>Alt+P</source>
-        <translation>Alt+P</translation>
-    </message>
-    <message>
-        <source>Remove this entry</source>
-        <translation>Удалить эту запись</translation>
-    </message>
-    <message>
-        <source>&amp;Label:</source>
-        <translation>&amp;Метка:</translation>
-    </message>
-    <message>
-        <source>Enter a label for this address to add it to the list of used addresses</source>
-        <translation>Введите метку для этого адреса, чтобы добавить ее в список используемых адресов</translation>
-    </message>
-    <message>
-        <source>A&amp;mount:</source>
-        <translation>С&amp;умма:</translation>
-    </message>
-    <message>
-        <source>Message:</source>
-        <translation>Сообщение:</translation>
-    </message>
-    <message>
-        <source>A message that was attached to the CLR: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the CLR network.</source>
-        <translation>Сообщение, которое было прикреплено к URI CLR: URI, который будет сохранен с транзакцией для вашей справки. Примечание. Это сообщение не будет отправлено через сеть CLR.</translation>
-    </message>
-    <message>
-        <source>This is an unverified payment request.</source>
-        <translation>Это запрос непроверенных платежей.</translation>
-    </message>
-    <message>
-        <source>Pay To:</source>
-        <translation>Платить:</translation>
-    </message>
-    <message>
-        <source>Memo:</source>
-        <translation>Напоминание:</translation>
-    </message>
-    <message>
-        <source>This is a verified payment request.</source>
-        <translation>Это подтвержденный платеж.</translation>
-    </message>
-    <message>
-        <source>Enter a label for this address to add it to your address book</source>
-        <translation>Введите метку для адреса чтобы добавить в адресную книгу</translation>
+        <source>Enter label</source>
+        <translation>Введите метку</translation>
     </message>
 </context>
 <context>
-    <name>ShutdownWindow</name>
+    <name>SendWidget</name>
     <message>
-        <source>ClearCoin Core is shutting down...</source>
-        <translation>ClearCoin Core выключается...</translation>
+        <source>Total remaining from the selected UTXO</source>
+        <translation>Всего осталось от выбранного UTXO</translation>
     </message>
     <message>
-        <source>Do not shut down the computer until this window disappears.</source>
-        <translation>Не выключайте этот компьютер пока это окно не исчезнет.</translation>
+        <source>Warning!</source>
+        <translation>Предупреждение!</translation>
+    </message>
+    <message>
+        <source>The change address doesn't belong to this wallet.
+
+Do you want to continue?</source>
+        <translation>Смена адреса не относится к этому кошельку.
+
+Хотите продолжить?</translation>
+    </message>
+    <message>
+        <source>Customize Fee</source>
+        <translation>Настройка комиссии</translation>
+    </message>
+    <message>
+        <source>Maximum amount of outputs reached</source>
+        <translation>Достигнуто максимальное количество выходов</translation>
+    </message>
+    <message>
+        <source>Invalid entry, previous entries must be valid before add a new one</source>
+        <translation>Неверная запись. Прежде чем добавить новую запись, предыдущие записи должны быть действительными</translation>
+    </message>
+    <message>
+        <source>Possibly spend coins delegated for cold-staking (currently available: %1</source>
+        <translation>Возможно потратить монеты, выделенные для холодного стекинга (в настоящее время доступно: %1</translation>
+    </message>
+    <message>
+        <source>Invalid entry</source>
+        <translation>Неверная запись</translation>
+    </message>
+    <message>
+        <source>No set recipients</source>
+        <translation>Нет установленных получателей</translation>
+    </message>
+    <message>
+        <source>Cannot send, wallet locked</source>
+        <translation>Невозможно отправить, так как кошелек заблокирован.</translation>
+    </message>
+    <message>
+        <source>Cannot create transaction.</source>
+        <translation>Невозможно создать транзакцию.</translation>
+    </message>
+    <message>
+        <source>WARNING:
+Transaction spends a cold-stake delegation, voiding it.
+These coins will no longer be cold-staked.</source>
+        <translation>ПРЕДУПРЕЖДЕНИЕ:
+Транзакция тратит делегацию холодного стекинга, аннулируя ее.
+Холодного стекинга этих монет больше не будет.</translation>
+    </message>
+    <message>
+        <source>Transaction sent</source>
+        <translation>Транзакция отправлена</translation>
+    </message>
+    <message>
+        <source>Address label update failed for address: %1</source>
+        <translation>Не удалось обновить метку адреса для адреса: %1</translation>
+    </message>
+    <message>
+        <source>Invalid URI</source>
+        <translation>Неверный URI</translation>
+    </message>
+    <message>
+        <source>Invalid address in URI</source>
+        <translation>Неверный адрес в URI</translation>
+    </message>
+    <message>
+        <source>Custom Fee %1</source>
+        <translation>Сбор по выбору %1</translation>
+    </message>
+    <message>
+        <source>Coin Control</source>
+        <translation>Контроль Монеты</translation>
+    </message>
+    <message>
+        <source>Select the source of the coins</source>
+        <translation>Выберите источник монет</translation>
+    </message>
+    <message>
+        <source>Change Address</source>
+        <translation>Изменить адрес</translation>
+    </message>
+    <message>
+        <source>Customize the change address</source>
+        <translation>Настройте адрес изменения</translation>
+    </message>
+    <message>
+        <source>Open URI</source>
+        <translation>Открыть URI</translation>
+    </message>
+    <message>
+        <source>Parse a payment request</source>
+        <translation>Анализ запроса на оплату</translation>
+    </message>
+    <message>
+        <source>Unlocked remaining</source>
+        <translation>Остается разблокированным</translation>
+    </message>
+    <message>
+        <source>You don't have any %1 to select.</source>
+        <translation>У вас нет %1 для выбора.</translation>
+    </message>
+    <message>
+        <source>No contacts available, you can go to the contacts screen and add some there!</source>
+        <translation>Нет доступных контактов. Вы можете перейти на вкладку контактов и добавить несколько!</translation>
+    </message>
+    <message>
+        <source>Save contact</source>
+        <translation>Сохранить контакт</translation>
+    </message>
+    <message>
+        <source>Address field is empty</source>
+        <translation>Поле адреса пустое</translation>
+    </message>
+    <message>
+        <source>Invalid address</source>
+        <translation>Неверный адрес</translation>
+    </message>
+    <message>
+        <source>Cannot store your own address as contact</source>
+        <translation>Невозможно сохранить ваш личный адрес в качестве контакта</translation>
+    </message>
+    <message>
+        <source>Update Contact</source>
+        <translation>Обновить контакт</translation>
+    </message>
+    <message>
+        <source>Create New Contact</source>
+        <translation>Создать новый контакт</translation>
+    </message>
+    <message>
+        <source>New Contact Stored</source>
+        <translation>Новый контакт сохранен</translation>
+    </message>
+    <message>
+        <source>Error Storing Contact</source>
+        <translation>Ошибка при сохранении контакта</translation>
     </message>
 </context>
 <context>
-    <name>SignVerifyMessageDialog</name>
+    <name>SettingsBackupWallet</name>
     <message>
-        <source>Signatures - Sign / Verify a Message</source>
-        <translation>Подписи - Подпишите / подтвердите сообщение</translation>
+        <source>Form</source>
+        <translation>Вид</translation>
     </message>
     <message>
-        <source>&amp;Sign Message</source>
-        <translation>&amp;Вход в систему</translation>
+        <source>Change Wallet Passphrase</source>
+        <translation>Изменить фразовый пароль кошелька</translation>
     </message>
     <message>
-        <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Вы можете подписывать сообщения с вашими адресами, чтобы доказать, что вы ими владеете. Будьте осторожны, чтобы не подписывать ничего неопределенного, поскольку фишинг-атаки могут попытаться обмануть вас, подписав вашу личность на них. Подпишите только полные подробные заявления, с которыми вы согласны.</translation>
+        <source>Where</source>
+        <translation>Где</translation>
     </message>
     <message>
-        <source>The CLR address to sign the message with</source>
-        <translation>Адрес CLR для подписи сообщения с помощью</translation>
+        <source>Keep your wallet safe by doing regular backups and storing your backup file externally.
+This option creates a wallet.dat file that can be used to recover your whole balance (transactions and addresses) on another device</source>
+        <translation>Держите свой кошелек в безопасности, регулярно создавая резервные копии и сохраняя файл резервной копии вне системы.
+Эта опция создает файл wallet.dat, который можно использовать для восстановления всего вашего баланса (транзакций и адресов) на другом устройстве.</translation>
     </message>
     <message>
-        <source>Choose previously used address</source>
-        <translation>Выбрать ранее использованный адрес</translation>
+        <source>Select folder...</source>
+        <translation>Выберите папку...</translation>
     </message>
     <message>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
+        <source>This will decrypt the whole wallet data and encrypt it back with the new passphrase.
+Remember to write it down and store it safely, otherwise you might lose access to your funds</source>
+        <translation>Это расшифрует все данные кошелька и зашифрует их с новой парольной фразой.
+Заапишите ее и храните в безопасности, иначе вы можете потерять доступ к своим средствам.</translation>
     </message>
     <message>
-        <source>Paste address from clipboard</source>
-        <translation>Вставить адрес из буфера обмена</translation>
+        <source>Change Passphrase</source>
+        <translation>Изменить фразовый пароль</translation>
     </message>
     <message>
-        <source>Alt+P</source>
-        <translation>Alt+P</translation>
+        <source>Backup Wallet</source>
+        <translation>Резервная копия кошелька</translation>
     </message>
     <message>
-        <source>Enter the message you want to sign here</source>
-        <translation>Введите сообщение, которое вы хотите подписать здесь.</translation>
+        <source>Wallet Data (*.dat)</source>
+        <translation>Данные кошелька (* .dat)</translation>
+    </message>
+    <message>
+        <source>Backup created</source>
+        <translation>Резервная копия сделана</translation>
+    </message>
+    <message>
+        <source>Backup creation failed</source>
+        <translation>Не удалось создать резервную копию</translation>
+    </message>
+    <message>
+        <source>Please select a folder to export the backup first.</source>
+        <translation>Для экспорта резервной копии сначала выберите папку.</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsBitToolWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Вид</translation>
+    </message>
+    <message>
+        <source>Import Address</source>
+        <translation>Импортировать Адрес</translation>
+    </message>
+    <message>
+        <source>BIP38 Tool</source>
+        <translation>Инструмент BIP38</translation>
+    </message>
+    <message>
+        <source>Encrypt your ClearCoin addresses (key pair actually) using BIP38 encryption.
+Using this mechanism you can share your keys without middle-man risk, only need to store your passphrase safely</source>
+        <translation>Зашифруйте свои адреса ClearCoin (фактически, пару ключей), используя шифрование BIP38.
+С помощью этого механизма вы можете делиться своими ключами без риска посредника, вам нужно только безопасно хранить вашу парольную фразу</translation>
+    </message>
+    <message>
+        <source>Encrypt</source>
+        <translation>Зашифровать</translation>
+    </message>
+    <message>
+        <source>Decrypt</source>
+        <translation>Расшифровать</translation>
+    </message>
+    <message>
+        <source>Encrypted key</source>
+        <translation>Зашифрованный ключ</translation>
+    </message>
+    <message>
+        <source>Enter a encrypted key</source>
+        <translation>Ввести зашифрованный ключ</translation>
+    </message>
+    <message>
+        <source>Passphrase</source>
+        <translation>Фразовый пароль</translation>
+    </message>
+    <message>
+        <source>Decrypted address result</source>
+        <translation>Расшифрованный результат адреса</translation>
+    </message>
+    <message>
+        <source>Decrypted Address</source>
+        <translation>Расшифрованный адрес</translation>
+    </message>
+    <message>
+        <source>DECRYPT KEY</source>
+        <translation>Расшифровать ключ</translation>
+    </message>
+    <message>
+        <source>ClearCoin address</source>
+        <translation>Адрес ClearCoin</translation>
+    </message>
+    <message>
+        <source>Enter address</source>
+        <translation>Ввести адрес</translation>
+    </message>
+    <message>
+        <source>Enter passphrase</source>
+        <translation>Введите кодовую фразу</translation>
+    </message>
+    <message>
+        <source>Encrypted Key</source>
+        <translation>Зашифрованный ключ</translation>
+    </message>
+    <message>
+        <source>ENCRYPT</source>
+        <translation>РАСШИФРОВАТЬ</translation>
+    </message>
+    <message>
+        <source>CLEAR ALL</source>
+        <translation>ОЧИСТИТЬ ВСЕ</translation>
+    </message>
+    <message>
+        <source>Enter a passphrase</source>
+        <translation>Введите парольную фразу</translation>
+    </message>
+    <message>
+        <source>CLEAR</source>
+        <translation>ОЧИСТИТЬ</translation>
+    </message>
+    <message>
+        <source>The entered passphrase is invalid. </source>
+        <translation>Неправильно введена кодовая фраза.</translation>
+    </message>
+    <message>
+        <source>Allowed: 0-9,a-z,A-Z,</source>
+        <translation>Допускается: 0-9,a-z,A-Z,</translation>
+    </message>
+    <message>
+        <source>The entered address is invalid.</source>
+        <translation>Неправильно введен адрес.</translation>
+    </message>
+    <message>
+        <source>Please check the address and try again.</source>
+        <translation>Пожалуйста, проверьте адрес и попробуйте снова.</translation>
+    </message>
+    <message>
+        <source>The entered address does not refer to a key.</source>
+        <translation>Введенный адрес не связан с ключом.</translation>
+    </message>
+    <message>
+        <source>Wallet unlock was cancelled.</source>
+        <translation>Снятие блокировки кошелька было отменено.</translation>
+    </message>
+    <message>
+        <source>Private key for the entered address is not available.</source>
+        <translation>Персональный ключ для введенного адреса недоступен.</translation>
+    </message>
+    <message>
+        <source>Address encrypted.</source>
+        <translation>Адрес зашифрован.</translation>
+    </message>
+    <message>
+        <source>No addresses available, you can go to the receive screen and add some there!</source>
+        <translation>Нет доступных адресов. Вы можете перейти на вкладку получения и добавить!</translation>
+    </message>
+    <message>
+        <source>Failed to decrypt.</source>
+        <translation>Не удалось дешифровать.</translation>
+    </message>
+    <message>
+        <source>Please check the key and passphrase and try again.</source>
+        <translation>Пожалуйста, проверьте ключ и кодовую фразу и попробуйте снова.</translation>
+    </message>
+    <message>
+        <source>Data Not Valid.</source>
+        <translation>Данные недействительны.</translation>
+    </message>
+    <message>
+        <source>Please try again.</source>
+        <translation>Пожалуйста, попробуйте снова.</translation>
+    </message>
+    <message>
+        <source>Please wait while key is imported</source>
+        <translation>Пожалуйста, дождитесь импортирования ключа</translation>
+    </message>
+    <message>
+        <source>Cannot import address, key already held by the wallet</source>
+        <translation>Нельзя импортировать адрес. Ключ уже удерживается кошельком</translation>
+    </message>
+    <message>
+        <source>Error adding key to the wallet</source>
+        <translation>Ошибка при добавлении ключа к кошельку</translation>
+    </message>
+    <message>
+        <source>Successfully added private key to the wallet</source>
+        <translation>Закрытый ключ успешно добавлен в кошелек</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsConsoleWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Вид</translation>
+    </message>
+    <message>
+        <source>Console</source>
+        <translation>Консоль</translation>
+    </message>
+    <message>
+        <source>Console input</source>
+        <translation>Консольный вход</translation>
+    </message>
+    <message>
+        <source>Open Debug File</source>
+        <translation>Открыть файл отладки</translation>
+    </message>
+    <message>
+        <source>Command Line Options</source>
+        <translation>Параметры командной строки</translation>
+    </message>
+    <message>
+        <source>Clear history</source>
+        <translation>Очистить историю</translation>
+    </message>
+    <message>
+        <source>Cannot open debug file.
+Verify that you have installed a predetermined text editor.</source>
+        <translation>Не удается открыть файл отладки.
+Убедитесь, что вы установили заранее установленный текстовый редактор.</translation>
+    </message>
+    <message>
+        <source>Welcome to the ClearCoin RPC console.</source>
+        <translation>Добро пожаловать в окружение ClearCoin RPC.</translation>
+    </message>
+    <message>
+        <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
+        <translation>Используйте стрелки вверх и вниз для навигации в разделе истории и %1 для очистки экрана.</translation>
+    </message>
+    <message>
+        <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
+        <translation>Введите &lt;b&gt;help&lt;/b&gt; для просмотра доступных команд.</translation>
+    </message>
+    <message>
+        <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramifications of a command.</source>
+        <translation>ВНИМАНИЕ: активизировались мошенники, которые предлагают пользователям вводить здесь команды и воруя содержимое их кошелька. Не используйте эту консоль без полного понимания последствий команды.</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsDisplayOptionsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Вид</translation>
+    </message>
+    <message>
+        <source>Hide stake charts in the dashboard</source>
+        <translation>Скрыть график стекинга на панели инструментов</translation>
+    </message>
+    <message>
+        <source>Reset to default</source>
+        <translation>Сбросить настройки по умолчанию</translation>
+    </message>
+    <message>
+        <source>Discard changes</source>
+        <translation>Отменить изменения</translation>
+    </message>
+    <message>
+        <source>Display</source>
+        <translation>Дисплей</translation>
+    </message>
+    <message>
+        <source>Customize the display view options</source>
+        <translation>Настройте параметры просмотра</translation>
+    </message>
+    <message>
+        <source>Language</source>
+        <translation>Язык</translation>
+    </message>
+    <message>
+        <source>Unit to show amount</source>
+        <translation>Единица для показа суммы</translation>
+    </message>
+    <message>
+        <source>Decimal digits</source>
+        <translation>Десятичная разрядность</translation>
+    </message>
+    <message>
+        <source>Third party transactions URLs</source>
+        <translation>URL транзакций третьих лиц</translation>
+    </message>
+    <message>
+        <source>Hide empty balances</source>
+        <translation>Скрыть пустые балансы</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>СОХРАНИТЬ</translation>
+    </message>
+    <message>
+        <source>default</source>
+        <translation>по-умолчанию</translation>
+    </message>
+    <message>
+        <source>Options reset succeed</source>
+        <translation>Сброс настроек выполнен успешно</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsExportCSV</name>
+    <message>
+        <source>Form</source>
+        <translation>Вид</translation>
+    </message>
+    <message>
+        <source>Export Accounting</source>
+        <translation>Экспорт учета</translation>
+    </message>
+    <message>
+        <source>Export your wallet's accounting data to a csv file.</source>
+        <translation>Экспорт учетных данных вашего кошелька в CSV-файл.</translation>
+    </message>
+    <message>
+        <source>Where</source>
+        <translation>Где</translation>
+    </message>
+    <message>
+        <source>Select folder...</source>
+        <translation>Выберите папку...</translation>
+    </message>
+    <message>
+        <source>Export Address Book</source>
+        <translation>Экспорт адресной книги</translation>
+    </message>
+    <message>
+        <source>Export CSV</source>
+        <translation>Экспорт CSV</translation>
+    </message>
+    <message>
+        <source>Export Address List</source>
+        <translation>Экспорт списка адресов</translation>
+    </message>
+    <message>
+        <source>ClearCoin_tx_csv_export(*.csv)</source>
+        <translation>ClearCoin_tx_csv_export(*.csv)</translation>
+    </message>
+    <message>
+        <source>ClearCoin_addresses_csv_export(*.csv)</source>
+        <translation>ClearCoin_addresses_csv_export(*.csv)</translation>
+    </message>
+    <message>
+        <source>Please select a folder to export the csv file first.</source>
+        <translation>Пожалуйста, сначало выберите папку для экспорта файла CSV.</translation>
+    </message>
+    <message>
+        <source>Confirmed</source>
+        <translation>Подтверждено</translation>
+    </message>
+    <message>
+        <source>Watch-only</source>
+        <translation>смотреть только</translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation>Дата</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>Тип</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Метка</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Адрес</translation>
+    </message>
+    <message>
+        <source>ID</source>
+        <translation>Номер</translation>
+    </message>
+    <message>
+        <source>Exporting Successful
+The transaction history was successfully saved to %1.</source>
+        <translation>Экспорт выполнен успешно.
+История транзакций была успешно сохранена в %1.</translation>
+    </message>
+    <message>
+        <source>Exporting Failed
+There was an error trying to save the transaction history to %1.</source>
+        <translation>Экспорт не удался. Произошла ошибка при попытке сохранить историю транзакций в %1.</translation>
+    </message>
+    <message>
+        <source>No available addresses to export under the selected filter</source>
+        <translation>Нет доступных адресов для экспорта под выбранным фильтром</translation>
+    </message>
+    <message>
+        <source>Exporting Successful
+The address book was successfully saved to %1.</source>
+        <translation>Экспорт выполнен успешно.
+Адресная книга успешно сохранена в %1.</translation>
+    </message>
+    <message>
+        <source>Exporting Failed
+There was an error trying to save the address list to %1. Please try again.</source>
+        <translation>Экспорт не удался.
+Произошла ошибка при попытке сохранить список адресов в %1. Пожалуйста, попробуйте еще раз.</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsFaqWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Вид</translation>
+    </message>
+    <message>
+        <source>1) What is ClearCoin?</source>
+        <translation>1) Что такое ClearCoin?</translation>
+    </message>
+    <message>
+        <source>2) Why are my CLR unspendable?</source>
+        <translation>2) Почему мои CLR невозможно потратить?</translation>
+    </message>
+    <message>
+        <source>https://PIVX.org/</source>
+        <translation>https://PIVX.org/</translation>
+    </message>
+    <message>
+        <source>1</source>
+        <translation>1</translation>
+    </message>
+    <message>
+        <source>What is ClearCoin?</source>
+        <translation>Что такое ClearCoin?</translation>
+    </message>
+    <message>
+        <source>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           ClearCoin is a form of digital online money using blockchain technology
+                           that can be easily transferred globally, instantly, and with near
+                           zero fees.  ClearCoin incorporates market leading security &amp;
+                           privacy and is also the first PoS (Proof of Stake) Cryptocurrency
+                           to implement ZeroCoin(zCLR) and Zerocoin staking.
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           ClearCoin utilizes a Proof of Stake (PoS) consensus system algorithm,
+                           allowing all owners of ClearCoin to participate in earning block rewards
+                           while securing the network with full node wallets, as well as to
+                           run Masternodes to create and vote on proposals.
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </source>
+        <translation>
+&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+ClearCoin - это форма цифровых онлайн-денег, использующая технологию блокчейн,
+которая может быть легко переведена по всему миру, мгновенно и с практически
+нулевой комиссией. ClearCoin включает в себя лидирующую на рынке защиту и
+«конфиденциальность», а также является первой PoS криптовалютой (Proof of Stake),
+в которой реализована система стекинга ZeroCoin (zCLR) и Zerocoin.
+&lt;/p&gt;&lt;p align="justify"&gt;
+ClearCoin использует консенсус PoS (Proof of Stake), позволяя всем владельцам ClearCoin участвовать в заработке вознаграждений
+при этом обеспечивая безопасность сети с помощью кошельков с полными узлами, а также позволяет
+запускать мастерноды для создания предложений и голосования по ним.
+&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <source>2</source>
+        <translation>2</translation>
+    </message>
+    <message>
+        <source>Why are my CLR unspendable?</source>
+        <translation>Почему мои CLR невозможно потратить?</translation>
+    </message>
+    <message>
+        <source>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           Newly received ClearCoin requires 6 confirmations on the network
+                           to become eligible for spending which can take ~6 minutes.
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           Your ClearCoin wallet also needs to be completely synchronized
+                           to see and spend balances on the network.
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </source>
+        <translation>
+&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+Недавно полученным ClearCoin требуется 6 подтверждений в сети,
+чтобы получить право быть расходуемыми. Это может занять примерно 6 минут.
+&lt;/p&gt;&lt;p align="justify"&gt;
+Ваш кошелек ClearCoin также должен быть полностью синхронизирован,
+чтобы видеть баланс и расходовать его в сети.
+ &lt;/p&gt;&lt;/body&gt;&lt;/html&gt; </translation>
+    </message>
+    <message>
+        <source>3</source>
+        <translation>3</translation>
+    </message>
+    <message>
+        <source>How do I stake CLR?</source>
+        <translation>Как мне запустить стекинг CLR?</translation>
+    </message>
+    <message>
+        <source>4</source>
+        <translation>4</translation>
+    </message>
+    <message>
+        <source>5</source>
+        <translation>5</translation>
+    </message>
+    <message>
+        <source>6</source>
+        <translation>6</translation>
+    </message>
+    <message>
+        <source>Where should I go if I need support?</source>
+        <translation>Куда мне обратиться, если мне нужна поддержка?</translation>
+    </message>
+    <message>
+        <source>What is a Masternode?</source>
+        <translation>Что такое мастернода?</translation>
+    </message>
+    <message>
+        <source>What is a Masternode Controller?</source>
+        <translation>Что такое контроллер Мастерноды?
+
+ </translation>
+    </message>
+    <message>
+        <source>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           A masternode is a computer running a full node ClearCoin core wallet with a
+                           requirement of 10,000 CLR secured collateral to provide extra services
+                           to the network and in return, receive a portion of the block reward
+                           regularly.  These services include:
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+
+                           &lt;ul&gt;
+                           &lt;li&gt;Instant transactions (SwiftX)&lt;/li&gt;
+                           &lt;li&gt;A decentralized governance (Proposal Voting)&lt;/li&gt;
+                           &lt;li&gt;A decentralized budgeting system (Treasury)&lt;/li&gt;
+                           &lt;li&gt;Validation of transactions within each block&lt;/li&gt;
+                           &lt;li&gt;Act as an additional full node in the network&lt;/li&gt;
+                           &lt;/ul&gt;
+
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           For providing such services, masternodes are also paid a certain portion
+                           of reward for each block. This can serve as a passive income to the
+                           masternode owners minus their running cost.
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+
+                           Masternode Perks:
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           &lt;ul&gt;
+                           &lt;li&gt;Participate in ClearCoin Governance&lt;/li&gt;
+                           &lt;li&gt;Earn Masternode Rewards&lt;/li&gt;
+                           &lt;li&gt;Commodity option for future sale&lt;/li&gt;
+                           &lt;li&gt;Help secure the ClearCoin network&lt;/li&gt;
+                           &lt;/ul&gt;
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+
+                           Requirements:
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           &lt;ul&gt;
+                           &lt;li&gt;10,000 CLR per single Masternode instance&lt;/li&gt;
+                           &lt;li&gt;Must be stored in a core wallet&lt;/li&gt;
+                           &lt;li&gt;Need dedicated IP address&lt;/li&gt;
+                           &lt;li&gt;Masternode wallet to remain online&lt;/li&gt;
+                           &lt;/ul&gt;
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </source>
+        <translation>
+Мастернода - это компьютер, на котором запущен базовый кошелек ClearCoin с полным узлом и для которого требуется обеспечение в 10000 CLR для обеспечения дополнительных услуг сети и, в свою очередь, регулярного получения части вознаграждения за блок. Эти услуги в себя включают:
+
+Мгновенные транзакции (SwiftX)
+Децентрализованное управление (Голосование по предложениям)
+Децентрализованная система бюджетирования (Казначейство)
+Проверка транзакций в каждом блоке.
+Выступление в качестве дополнительного полного узла в сети.
+
+Для предоставления таких услуг мастернодам также выплачивается определенная часть вознаграждений за каждый блок. Это может служить пассивным доходом для владельцев мастернод за вычетом их эксплуатационных расходов.
+
+Привилегии мастерноды:
+
+Участие в управлении ClearCoin
+Получение вознаграждений за мастерноду
+Товарные опционы для будущей продажи
+Помощь в защите сети ClearCoin
+
+Требования:
+
+10 000 CLR для каждой мастерноды
+Должен храниться в основном кошельке
+Требуется выделенный IP-адрес
+Кошелек мастерноды должен оставаться в сети</translation>
+    </message>
+    <message>
+        <source>Frequently Asked Questions</source>
+        <translation>Часто задаваемые вопросы</translation>
+    </message>
+    <message>
+        <source>3) How do I stake CLR?</source>
+        <translation>3) Как мне запустить стекинг CLR?</translation>
+    </message>
+    <message>
+        <source>4) Where I should go if I need support?</source>
+        <translation>4) Куда я могу обратиться, если мне нужна поддержка?</translation>
+    </message>
+    <message>
+        <source>5) What is a Masternode?</source>
+        <translation>5) Что такое Мастернода?</translation>
+    </message>
+    <message>
+        <source>6) What is a Masternode Controller?</source>
+        <translation>6) Что такое Контроллер Мастерноды?</translation>
+    </message>
+    <message>
+        <source>You can read more here</source>
+        <translation>Вы можете прочитать подробнее здесь</translation>
+    </message>
+    <message>
+        <source>Exit</source>
+        <translation>Выход</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsInformationWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Вид</translation>
+    </message>
+    <message>
+        <source>Network Monitor</source>
+        <translation>Сетевой монитор</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>Информация</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>Основное</translation>
+    </message>
+    <message>
+        <source>Client Version:</source>
+        <translation>Версия Клиента:</translation>
+    </message>
+    <message>
+        <source>BerkeleyDB version:</source>
+        <translation>Версия BerkeleyDB:</translation>
+    </message>
+    <message>
+        <source>Datadir:</source>
+        <translation>Datadir:</translation>
+    </message>
+    <message>
+        <source>Startup time:</source>
+        <translation>Время запуска:</translation>
+    </message>
+    <message>
+        <source>Connections:</source>
+        <translation>Соединения:</translation>
+    </message>
+    <message>
+        <source>Number of Masternodes:</source>
+        <translation>Число Мастернод:</translation>
+    </message>
+    <message>
+        <source>Current number of blocks:</source>
+        <translation>Текущее количество блоков:</translation>
+    </message>
+    <message>
+        <source>Last block time:</source>
+        <translation>Время последнего блока:</translation>
+    </message>
+    <message>
+        <source>Last block hash:</source>
+        <translation>Хэш последнего блока:</translation>
+    </message>
+    <message>
+        <source>Current number of transactions:</source>
+        <translation>Текущее количество транзакций:</translation>
+    </message>
+    <message>
+        <source>User Agent:</source>
+        <translation>Пользовательский агент:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Сеть</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Имя:</translation>
+    </message>
+    <message>
+        <source>Blockchain</source>
+        <translation>Блокчейн</translation>
+    </message>
+    <message>
+        <source>Memory Pool</source>
+        <translation>Пул памяти</translation>
+    </message>
+    <message>
+        <source>Main</source>
+        <translation>Главная</translation>
+    </message>
+    <message>
+        <source>Wallet Conf</source>
+        <translation>Конфигурация кошелька</translation>
+    </message>
+    <message>
+        <source>Backups</source>
+        <translation>Резервные копии</translation>
+    </message>
+    <message>
+        <source>No information</source>
+        <translation>Нет информации</translation>
+    </message>
+    <message>
+        <source>Unable to open backups folder</source>
+        <translation>Невозможно открыть папку резервных копий</translation>
+    </message>
+    <message>
+        <source>Unable to open clr.conf with default application</source>
+        <translation>Невозможно открыть clr.conf с приложением по умолчанию</translation>
+    </message>
+    <message>
+        <source>In:</source>
+        <translation>Ввод:</translation>
+    </message>
+    <message>
+        <source>Out:</source>
+        <translation>Вывод:</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsMainOptionsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Вид</translation>
+    </message>
+    <message>
+        <source>Window</source>
+        <translation>Окно</translation>
+    </message>
+    <message>
+        <source>Customize the application window options</source>
+        <translation>Настройте параметры окна приложения</translation>
+    </message>
+    <message>
+        <source>Reset to default</source>
+        <translation>Сбросить настройки по умолчанию</translation>
+    </message>
+    <message>
+        <source>Discard changes</source>
+        <translation>Отменить изменения</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>СОХРАНИТЬ</translation>
+    </message>
+    <message>
+        <source>Main</source>
+        <translation>Главная</translation>
+    </message>
+    <message>
+        <source>Customize the main application options</source>
+        <translation>Настройка основных параметров приложения</translation>
+    </message>
+    <message>
+        <source>Size of database cache</source>
+        <translation>Размер кеша базы данных</translation>
+    </message>
+    <message>
+        <source>Number of script verification threads</source>
+        <translation>Количество потоков проверки скрипта</translation>
+    </message>
+    <message>
+        <source>Start ClearCoin on system login</source>
+        <translation>Запускать ClearCoin при входе в систему</translation>
+    </message>
+    <message>
+        <source>Minimize to the tray instead of the taskbar</source>
+        <translation>Свернуть в трей вместо панели задач</translation>
+    </message>
+    <message>
+        <source>Minimize on close</source>
+        <translation>Свернуть или закрыть</translation>
+    </message>
+    <message>
+        <source>Reset Options</source>
+        <translation>Сбросить параметры</translation>
+    </message>
+    <message>
+        <source>You are just about to reset the app's options to the default values.
+
+Are you sure?
+</source>
+        <translation>Вы собираетесь сбросить параметры приложения
+
+к настройкам по умолчанию. Вы уверены?
+</translation>
+    </message>
+    <message>
+        <source>Options reset succeed</source>
+        <translation>Сброс настроек выполнен успешно</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsMultisendDialog</name>
+    <message>
+        <source>Form</source>
+        <translation>Вид</translation>
+    </message>
+    <message>
+        <source>Transaction Details</source>
+        <translation>Детали транзакции</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>Текстовая метка</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>ОТМЕНА</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>СОХРАНИТЬ</translation>
+    </message>
+    <message>
+        <source>New recipient for multisend</source>
+        <translation>Новый получатель для мультиотправки</translation>
+    </message>
+    <message>
+        <source>Address Label (optional)</source>
+        <translation>Лейбл Адреса (необязательно)</translation>
+    </message>
+    <message>
+        <source>Enter label to be saved with this address</source>
+        <translation>Введите лейбл для сохранения с этим адресом</translation>
+    </message>
+    <message>
+        <source>Percentage</source>
+        <translation>Процент</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsMultisendWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Вид</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>Текстовая метка</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>Недоступно</translation>
+    </message>
+    <message>
+        <source>CheckBox</source>
+        <translation>Флажок</translation>
+    </message>
+    <message>
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other ClearCoin addresses after it matures.</source>
+        <translation>MultiSend позволяет автоматически отправлять до 100% ваших вознаграждений от стекинга или мастернод в список других адресов ClearCoin после его созревания.</translation>
+    </message>
+    <message>
+        <source>Active</source>
+        <translation>Активно</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>Отключить</translation>
+    </message>
+    <message>
+        <source>No active recipient yet</source>
+        <translation>Пока нет активных получателей</translation>
+    </message>
+    <message>
+        <source>Send stakes</source>
+        <translation>Отправить вознаграждения за стекинг</translation>
+    </message>
+    <message>
+        <source>Send masternode rewards</source>
+        <translation>Отправить вознаграждения за мастерноду</translation>
+    </message>
+    <message>
+        <source>ADD RECIPIENT</source>
+        <translation>ДОБАВИТЬ ПОЛУЧАТЕЛЯ</translation>
+    </message>
+    <message>
+        <source>CLEAR ALL</source>
+        <translation>ОЧИСТИТЬ ВСЕ</translation>
+    </message>
+    <message>
+        <source>Cannot perform operation, wallet locked</source>
+        <translation>Невозможно выполнить операцию, кошелек заблокирован</translation>
+    </message>
+    <message>
+        <source>Clear succeed</source>
+        <translation>Очистка успешно завершена</translation>
+    </message>
+    <message>
+        <source>Clear all failed, could not locate address in wallet file</source>
+        <translation>Полная очистка не удалась. Не удалось найти адрес в файле кошелька</translation>
+    </message>
+    <message>
+        <source>Cannot add multisend recipient, wallet locked</source>
+        <translation>Невозможно добавить получателя мультисендинга, кошелек заблокирован</translation>
+    </message>
+    <message>
+        <source>The entered address: %1 is invalid.
+Please check the address and try again.</source>
+        <translation>Введенный адрес: %1 неверен.
+Пожалуйста, проверьте адрес и попробуйте еще раз.</translation>
+    </message>
+    <message>
+        <source>Invalid percentage, please enter values from 1 to 100.</source>
+        <translation>Неверный процент, введите значения от 1 до 100.</translation>
+    </message>
+    <message>
+        <source>The total amount of your MultiSend vector is over 100% of your stake reward</source>
+        <translation>Общая сумма вашего вектора MultiSend превышает 100% ваших вознаграждения за стекинг</translation>
+    </message>
+    <message>
+        <source>Error saving  MultiSend, failed saving properties to the database.</source>
+        <translation>Ошибка при сохранении MultiSend. Не удалось сохранить свойства в базе данных.</translation>
+    </message>
+    <message>
+        <source>Unable to activate MultiSend, no available recipients</source>
+        <translation>Невозможно активировать MultiSend. Нет доступных получателей</translation>
+    </message>
+    <message>
+        <source>Unable to activate MultiSend
+Check one or both of the check boxes to send on stake and/or masternode rewards</source>
+        <translation>Невозможно активировать MultiSend.
+Проверьте один или оба флажка для отправки вознаграждений за стекинг и / или мастерноду.</translation>
+    </message>
+    <message>
+        <source>MultiSend activated but writing settings to DB failed</source>
+        <translation>MultiSend активирован, но запись настроек в DB не удалась</translation>
+    </message>
+    <message>
+        <source>MultiSend activated</source>
+        <translation>MultiSend активирован</translation>
+    </message>
+    <message>
+        <source>First multiSend address invalid</source>
+        <translation>Первый адрес мультиотправки неверен</translation>
+    </message>
+    <message>
+        <source>MultiSend deactivated but writing settings to DB failed</source>
+        <translation>MultiSend деактивирован, но запись настроек в DB не удалась </translation>
+    </message>
+    <message>
+        <source>MultiSend deactivated</source>
+        <translation>MultiSend деактивирован </translation>
+    </message>
+</context>
+<context>
+    <name>SettingsSignMessageWidgets</name>
+    <message>
+        <source>Form</source>
+        <translation>Вид</translation>
+    </message>
+    <message>
+        <source>Sign/Verify Message</source>
+        <translation>Подписать/верифицировать сообщение</translation>
+    </message>
+    <message>
+        <source>Sign</source>
+        <translation>Подписать</translation>
+    </message>
+    <message>
+        <source>Verify</source>
+        <translation>Верифицировать</translation>
+    </message>
+    <message>
+        <source>Write message here...</source>
+        <translation>Напишите сообщение здесь...</translation>
+    </message>
+    <message>
+        <source>Select mode</source>
+        <translation>Выбрать режим</translation>
+    </message>
+    <message>
+        <source>Message</source>
+        <translation>Сообщение</translation>
+    </message>
+    <message>
+        <source>ClearCoin address or contact label</source>
+        <translation>ClearCoin адрес или лейбл контакта</translation>
+    </message>
+    <message>
+        <source>Enter address</source>
+        <translation>Ввести адрес</translation>
     </message>
     <message>
         <source>Signature</source>
         <translation>Подпись</translation>
     </message>
     <message>
-        <source>Copy the current signature to the system clipboard</source>
-        <translation>Копировать текущую подпись в системный буфер обмена</translation>
+        <source>SIGN</source>
+        <translation>ПОДПИСАТЬ</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this CLR address</source>
-        <translation>Подпишите сообщение, чтобы подтвердить свой адрес CLR</translation>
+        <source>CLEAR ALL</source>
+        <translation>ОЧИСТИТЬ ВСЕ</translation>
     </message>
     <message>
-        <source>The CLR address the message was signed with</source>
-        <translation>Адрес CLR, которым подписано сообщение</translation>
-    </message>
-    <message>
-        <source>Verify the message to ensure it was signed with the specified CLR address</source>
-        <translation>Проверте сообщение, чтобы убедиться, что оно было подписано указанным CLR адресом </translation>
-    </message>
-    <message>
-        <source>Sign &amp;Message</source>
-        <translation>Подпись &amp;Сообщение</translation>
-    </message>
-    <message>
-        <source>Reset all sign message fields</source>
-        <translation>Сбросить все поля сообщений</translation>
-    </message>
-    <message>
-        <source>Clear &amp;All</source>
-        <translation>Очистить &amp;Все</translation>
-    </message>
-    <message>
-        <source>&amp;Verify Message</source>
-        <translation>&amp;Проверить сообщение</translation>
+        <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Вы можете подписывать сообщения с вашими адресами, чтобы доказать, что вы ими владеете. Будьте осторожны, чтобы не подписывать ничего неопределенного, поскольку фишинг-атаки могут попытаться обмануть вас, подписав вашу личность на них. Подпишите только полные подробные заявления, с которыми вы согласны.</translation>
     </message>
     <message>
         <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
         <translation>Введите адрес подписи, сообщение (убедитесь, что вы скопировали разрывы строк, пробелы, табуляции и т. Д.) И подпись ниже, чтобы проверить сообщение. Будьте внимательны, чтобы не читать больше в подписи, чем в самом подписанном сообщении, чтобы избежать обмана с помощью атаки</translation>
     </message>
     <message>
-        <source>Verify &amp;Message</source>
-        <translation>Проверить  &amp;сообщение</translation>
-    </message>
-    <message>
-        <source>Reset all verify message fields</source>
-        <translation>Сбросить все поля подтверждения</translation>
-    </message>
-    <message>
-        <source>Click "Sign Message" to generate signature</source>
-        <translation>Нажмите «Sign Message» для создания подписи</translation>
+        <source>VERIFY</source>
+        <translation>ВЕРИФИЦИРОВАТЬ</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -4224,32 +4482,556 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <source>Message verified.</source>
         <translation>Сообщение подтверждено.</translation>
     </message>
+    <message>
+        <source>No addresses available, you can go to the receive screen and add some there!</source>
+        <translation>Нет доступных адресов. Вы можете перейти на вкладку получения и добавить!</translation>
+    </message>
 </context>
 <context>
-    <name>SplashScreen</name>
+    <name>SettingsWalletOptionsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Вид</translation>
+    </message>
+    <message>
+        <source>Reset to default</source>
+        <translation>Сбросить настройки по умолчанию</translation>
+    </message>
+    <message>
+        <source>Discard changes</source>
+        <translation>Отменить изменения</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Кошелек</translation>
+    </message>
+    <message>
+        <source>Customize the internal wallet options</source>
+        <translation>Настройте параметры внутреннего кошелька</translation>
+    </message>
+    <message>
+        <source>Stake split threshold</source>
+        <translation>Порог разделения стекинга</translation>
+    </message>
+    <message>
+        <source>Spend unconfirmed change</source>
+        <translation>Проведите неподтвержденные изменения</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Сеть</translation>
+    </message>
+    <message>
+        <source>Customize the node network options</source>
+        <translation>Настройте параметры сети узла</translation>
+    </message>
+    <message>
+        <source>Connect through SOCKS5 proxy (default proxy)</source>
+        <translation>Подключиться через прокси SOCKS5 (прокси по умолчанию)</translation>
+    </message>
+    <message>
+        <source>Proxy IP</source>
+        <translation>IP прокси</translation>
+    </message>
+    <message>
+        <source>Port</source>
+        <translation>Порт</translation>
+    </message>
+    <message>
+        <source>Enter port</source>
+        <translation>Ввести порт</translation>
+    </message>
+    <message>
+        <source>Enter proxy IP</source>
+        <translation>Ввести IP прокси:</translation>
+    </message>
+    <message>
+        <source>Map port using UPnP</source>
+        <translation>Карта порта с использованием UPnP</translation>
+    </message>
+    <message>
+        <source>Allow incoming connections</source>
+        <translation>Разрешить входящие подключения</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>СОХРАНИТЬ</translation>
+    </message>
+    <message>
+        <source>Options reset succeed</source>
+        <translation>Сброс настроек выполнен успешно</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsWalletRepairWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Вид</translation>
+    </message>
+    <message>
+        <source>Wallet Repair</source>
+        <translation>Ремонт кошелька</translation>
+    </message>
+    <message>
+        <source>Upgrade wallet to latest format on startup. (Note: this is NOT an update of the wallet itself)</source>
+        <translation>При запуске обновлять кошелек до последнего формата. (Примечание: это НЕ обновление самого кошелька)</translation>
+    </message>
+    <message>
+        <source>The buttons below will restart the wallet with command-line options to repair this wallet, fix issues with corrupt blockchain files or missing/obsolete transactions</source>
+        <translation>Кнопки ниже перезапустят кошелек с параметрами командной строки для восстановления этого кошелька, исправления проблем с поврежденными файлами блокчейна или отсутствующими / устаревшими транзакциями</translation>
+    </message>
+    <message>
+        <source>Salvage wallet</source>
+        <translation>Кошелёк для сбора</translation>
+    </message>
+    <message>
+        <source>Attempt to recover private keys from a corrupt wallet.dat</source>
+        <translation>Попытка восстановить секретные ключи из поврежденного файла wallet.dat</translation>
+    </message>
+    <message>
+        <source>Rescan blockchain file</source>
+        <translation>Повторно сканировать файл блокчена</translation>
+    </message>
+    <message>
+        <source>Rescan the blockchain for missing wallet transactions</source>
+        <translation>Пересканируйте блокчейн для поиска пропущенных транзакций кошелька</translation>
+    </message>
+    <message>
+        <source>Recover transactions 1</source>
+        <translation>Востановление транзакций 1</translation>
+    </message>
+    <message>
+        <source>Recover transactions from blockchain (keep-meta-data, e.g. account owner)</source>
+        <translation>Восстановление транзакций из блокчейна (keep-meta-data, например, владелец аккаунта)</translation>
+    </message>
+    <message>
+        <source>Recover transactions 2</source>
+        <translation>Востановление транзакций 2</translation>
+    </message>
+    <message>
+        <source>Recover transactions from blockchain (drop meta-data)</source>
+        <translation>Восстановление транзакций из цепочки блоков (drop meta-data)</translation>
+    </message>
+    <message>
+        <source>Upgrade wallet format</source>
+        <translation>Обновить формат кошелька</translation>
+    </message>
+    <message>
+        <source>Rebuild index</source>
+        <translation>Пересоздать индекс</translation>
+    </message>
+    <message>
+        <source>Rebuild blockchain index from current blk000???.dat files</source>
+        <translation>Перестроить индекс блокчейна из текущих файлов blk000???.dat</translation>
+    </message>
+    <message>
+        <source>Delete local blockchain</source>
+        <translation>Удалить локальный блокчейн</translation>
+    </message>
+    <message>
+        <source>Deletes all local blockchain folders so the wallet synchronizes from scratch</source>
+        <translation>Удаляет все локальные папки блокчейна, поэтому кошелек синхронизируется с нуля</translation>
+    </message>
+    <message>
+        <source>This will delete your local blockchain folders and the wallet will synchronize the complete Blockchain from scratch.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>Удаляет все локальные папки с цепочкой, чтобы кошелек синхронизировался с нуля.&lt;br /&gt;&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>This needs quite some time and downloads a lot of data.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>Это требует довольно много времени чтобы загрузить большое количество данных.&lt;br /&gt;&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>Your transactions and funds will be visible again after the download has completed.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>После завершения загрузки ваши транзакции и средства будут снова видны.&lt;br /&gt;&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>Do you want to continue?.&lt;br /&gt;</source>
+        <translation>Вы хотите продолжить?&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>Confirm resync Blockchain</source>
+        <translation>Подтвердить повторную синхронизацию Blockchain</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Вид</translation>
+    </message>
+    <message>
+        <source>Wallet Data</source>
+        <translation>Данные кошелька</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Кошелек</translation>
+    </message>
+    <message>
+        <source>Multisend</source>
+        <translation>Multisend</translation>
+    </message>
+    <message>
+        <source>Export Accounting</source>
+        <translation>Экспорт учета</translation>
+    </message>
+    <message>
+        <source>Tools</source>
+        <translation>Инструменты</translation>
+    </message>
+    <message>
+        <source>Sign/Verify Message</source>
+        <translation>Подписать/верифицировать сообщение</translation>
+    </message>
+    <message>
+        <source>BIP38 Tool</source>
+        <translation>Инструмент BIP38</translation>
+    </message>
+    <message>
+        <source>Options</source>
+        <translation>Настройки</translation>
+    </message>
+    <message>
+        <source>Main</source>
+        <translation>Главная</translation>
+    </message>
+    <message>
+        <source>Display</source>
+        <translation>Дисплей</translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation>Отладка</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>Информация</translation>
+    </message>
+    <message>
+        <source>Console</source>
+        <translation>Консоль</translation>
+    </message>
+    <message>
+        <source>Wallet Repair</source>
+        <translation>Ремонт кошелька</translation>
+    </message>
+    <message>
+        <source>Help</source>
+        <translation>Помощь</translation>
+    </message>
+    <message>
+        <source>FAQ</source>
+        <translation>ЧаВо</translation>
+    </message>
+    <message>
+        <source>About ClearCoin</source>
+        <translation>О ClearCoin</translation>
+    </message>
+    <message>
+        <source>Settings</source>
+        <translation>Настройки</translation>
+    </message>
+    <message>
+        <source>Confirm options reset</source>
+        <translation>Подтвердить сброс настроек</translation>
+    </message>
+    <message>
+        <source>Client restart required to activate changes.</source>
+        <translation>Для применения изменений требуется перезапуск клиента.</translation>
+    </message>
+    <message>
+        <source>Client will be shutdown, do you want to proceed?</source>
+        <translation>Клиент будет закрыт, вы хотите продолжить?</translation>
+    </message>
+    <message>
+        <source>Stake Split too low, it shall be either &gt;= %1 or equal to 0 (to disable stake splitting)</source>
+        <translation>Разделение стекинга слишком низкое, оно должно быть либо &gt;= %1, либо равно 0 (чтобы отключить разделение стекинга)</translation>
+    </message>
+    <message>
+        <source>Restart required</source>
+        <translation>Необходима перезагрузка</translation>
+    </message>
+    <message>
+        <source>Your wallet needs to be restarted to apply the changes
+</source>
+        <translation>Чтобы изменения вступили в силу, ваш кошелек необходимо перезагрузить
+</translation>
+    </message>
+    <message>
+        <source>Restart Now</source>
+        <translation>Перезагрузить сейчас</translation>
+    </message>
+    <message>
+        <source>Restart Later</source>
+        <translation>Перезагрузить позже</translation>
+    </message>
+    <message>
+        <source>Options will be applied on next wallet restart</source>
+        <translation>Параметры будут применены при следующем перезапуске кошелька</translation>
+    </message>
+    <message>
+        <source>Options stored</source>
+        <translation>Опции сохранены</translation>
+    </message>
+    <message>
+        <source>Options store failed</source>
+        <translation>Сохранение опций не удалось</translation>
+    </message>
+    <message>
+        <source>Discard Unsaved Changes</source>
+        <translation>Отменить несохраненные изменения</translation>
+    </message>
+    <message>
+        <source>You are just about to discard all of your unsaved options.
+
+Are you sure?
+</source>
+        <translation>Вы собираетесь отказаться от всех несохраненных опций.
+
+Вы уверены?
+</translation>
+    </message>
+</context>
+<context>
+    <name>ShutdownWindow</name>
+    <message>
+        <source>ClearCoin Core is shutting down...</source>
+        <translation>ClearCoin Core выключается...</translation>
+    </message>
+    <message>
+        <source>Do not shut down the computer until this window disappears.</source>
+        <translation>Не выключайте этот компьютер пока это окно не исчезнет.</translation>
+    </message>
+</context>
+<context>
+    <name>SnackBar</name>
+    <message>
+        <source>Form</source>
+        <translation>Вид</translation>
+    </message>
+    <message>
+        <source>Contact Stored</source>
+        <translation>Контакт сохранен</translation>
+    </message>
+</context>
+<context>
+    <name>Splash</name>
+    <message>
+        <source>Form</source>
+        <translation>Вид</translation>
+    </message>
+    <message>
+        <source>Loading…</source>
+        <translation>Загрузка...</translation>
+    </message>
     <message>
         <source>ClearCoin Core</source>
         <translation>ClearCoin Core</translation>
     </message>
-    <message>
-        <source>Version %1</source>
-        <translation>Версия %1</translation>
-    </message>
-    <message>
-        <source>The Bitcoin Core developers</source>
-        <translation>Разработчики Bitcoin Core</translation>
-    </message>
-    <message>
-        <source>The Dash Core developers</source>
-        <translation>Разработчики Dash Core</translation>
-    </message>
-    <message>
-        <source>The ClearCoin Core developers</source>
-        <translation>Разработчики ClearCoin Core</translation>
-    </message>
+</context>
+<context>
+    <name>SplashScreen</name>
     <message>
         <source>[testnet]</source>
         <translation>[тестовая сеть]</translation>
+    </message>
+</context>
+<context>
+    <name>TooltipMenu</name>
+    <message>
+        <source>Form</source>
+        <translation>Вид</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Копировать</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation>Редактировать</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation>Удалить</translation>
+    </message>
+    <message>
+        <source>Last</source>
+        <translation>Последняя</translation>
+    </message>
+</context>
+<context>
+    <name>TopBar</name>
+    <message>
+        <source>Form</source>
+        <translation>Вид</translation>
+    </message>
+    <message>
+        <source>Available</source>
+        <translation>Доступный</translation>
+    </message>
+    <message>
+        <source>Pending</source>
+        <translation>В ожидании</translation>
+    </message>
+    <message>
+        <source>Immature</source>
+        <translation>Незрелый</translation>
+    </message>
+    <message>
+        <source>Wallet Unlocked for staking</source>
+        <translation>Кошелек разблокирован для стекинга</translation>
+    </message>
+    <message>
+        <source>Error generating address</source>
+        <translation>Ошибка при генерации адреса</translation>
+    </message>
+    <message>
+        <source>Address Copied</source>
+        <translation>Адрес скопирован</translation>
+    </message>
+    <message>
+        <source>Staking active</source>
+        <translation>Стекинг активен</translation>
+    </message>
+    <message>
+        <source>Staking not active</source>
+        <translation>Стекинг не активен</translation>
+    </message>
+    <message>
+        <source>Synchronized - Block: %1</source>
+        <translation>Синхронизировано - Блок: %1</translation>
+    </message>
+    <message>
+        <source>%1 and %2</source>
+        <translation>%1 и %2</translation>
+    </message>
+    <message>
+        <source>Wallet Upgrade</source>
+        <translation>Обновление кошелька</translation>
+    </message>
+    <message>
+        <source>Upgrading to HD wallet will improve
+the wallet's reliability and security.
+
+
+NOTE: after the upgrade, a new
+backup will be created.
+</source>
+        <translation>Обновление до HD-кошелька улучшит
+надежность и безопасность кошелька.
+
+
+ПРИМЕЧАНИЕ: после обновления будет создана новая
+резервная копия.
+</translation>
+    </message>
+    <message>
+        <source>Upgrade Wallet</source>
+        <translation>Обновить кошелек</translation>
+    </message>
+    <message>
+        <source>Wallet unlock cancelled</source>
+        <translation>Разблокировка кошелька отменена</translation>
+    </message>
+    <message>
+        <source>Tor Active: %1</source>
+        <translation>Активные Tor: %1</translation>
+    </message>
+    <message>
+        <source>Tor Disabled</source>
+        <translation>Tor отключен</translation>
+    </message>
+    <message>
+        <source>FAQ</source>
+        <translation>ЧаВо</translation>
+    </message>
+    <message>
+        <source>Upgrade to HD Wallet</source>
+        <translation>Обновить до HD кошелька</translation>
+    </message>
+    <message>
+        <source>No Connection</source>
+        <translation>Нет соединения</translation>
+    </message>
+    <message>
+        <source>Staking Disabled</source>
+        <translation>Стекинг отключен</translation>
+    </message>
+    <message>
+        <source>Cold Staking Disabled</source>
+        <translation>Холодный стекинг отключен</translation>
+    </message>
+    <message>
+        <source> %54 Synchronizing..</source>
+        <translation>Синхронизировано %54.. </translation>
+    </message>
+    <message>
+        <source>Light Theme</source>
+        <translation>Дневной режим</translation>
+    </message>
+    <message>
+        <source>Dark Theme</source>
+        <translation>Ночной режим</translation>
+    </message>
+    <message>
+        <source>Wallet Locked </source>
+        <translation>Кошелек заблокирован</translation>
+    </message>
+    <message>
+        <source>Wallet Locked</source>
+        <translation>Кошелек заблокирован</translation>
+    </message>
+    <message>
+        <source>Wallet Unlocked</source>
+        <translation>Кошелек разблокирован</translation>
+    </message>
+    <message>
+        <source>Wallet Unencrypted</source>
+        <translation>Кошелек не зашифрован</translation>
+    </message>
+    <message>
+        <source>Available (Locked included)</source>
+        <translation>Доступно (включая заблокированное)</translation>
+    </message>
+    <message>
+        <source>The wallet has been successfully upgraded to HD.</source>
+        <translation>Кошелек был успешно обновлен до HD.</translation>
+    </message>
+    <message>
+        <source>It is advised to make a backup.</source>
+        <translation>Рекомендуется сделать резервную копию.</translation>
+    </message>
+    <message>
+        <source>Do you wish to backup now?</source>
+        <translation>Вы хотите сделать резервную копию сейчас?</translation>
+    </message>
+    <message>
+        <source>Backup Wallet</source>
+        <translation>Резервная копия кошелька</translation>
+    </message>
+    <message>
+        <source>Wallet Data (*.dat)</source>
+        <translation>Данные кошелька (* .dat)</translation>
+    </message>
+    <message>
+        <source>Backup created</source>
+        <translation>Резервная копия сделана</translation>
+    </message>
+    <message>
+        <source>Backup creation failed</source>
+        <translation>Не удалось создать резервную копию</translation>
+    </message>
+    <message>
+        <source>no file selected</source>
+        <translation>файл не выбран</translation>
+    </message>
+    <message>
+        <source>Wallet upgraded successfully, but no backup created.</source>
+        <translation>Кошелек успешно обновлен, но резервная копия не создана.</translation>
+    </message>
+    <message>
+        <source>Upgrade Wallet Error</source>
+        <translation>Ошибка обновления кошелька</translation>
     </message>
 </context>
 <context>
@@ -4257,204 +5039,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>KB/s</source>
         <translation>КБ/с</translation>
-    </message>
-</context>
-<context>
-    <name>TransactionDesc</name>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>Открыть для  %n блоков</numerusform><numerusform>Открыть для  %n блоков</numerusform><numerusform>Открыть для  %n блоков</numerusform><numerusform>Открыть для  %n блоков</numerusform></translation>
-    </message>
-    <message>
-        <source>Open until %1</source>
-        <translation>Открыть до %1</translation>
-    </message>
-    <message>
-        <source>conflicted</source>
-        <translation>противоречивый</translation>
-    </message>
-    <message>
-        <source>%1/offline</source>
-        <translation>%1/ не в сети</translation>
-    </message>
-    <message>
-        <source>%1/unconfirmed</source>
-        <translation>%1/ неподтвержденный</translation>
-    </message>
-    <message>
-        <source>%1 confirmations</source>
-        <translation>%1 подтверждения</translation>
-    </message>
-    <message>
-        <source>%1/offline (verified via SwiftX)</source>
-        <translation>%1 / офлайн (проверено через SwiftX)</translation>
-    </message>
-    <message>
-        <source>%1/confirmed (verified via SwiftX)</source>
-        <translation>%1 / подтверждено (проверено через SwiftX)</translation>
-    </message>
-    <message>
-        <source>%1 confirmations (verified via SwiftX)</source>
-        <translation>%1 подтверждений (проверено через SwiftX)</translation>
-    </message>
-    <message>
-        <source>%1/offline (SwiftX verification in progress - %2 of %3 signatures)</source>
-        <translation>%1 / офлайн (проверка SwiftX - %2 %3 подписей)</translation>
-    </message>
-    <message>
-        <source>%1/confirmed (SwiftX verification in progress - %2 of %3 signatures )</source>
-        <translation>%1 / подтверждено (выполняется проверка SwiftX - %2 %3 подписей)</translation>
-    </message>
-    <message>
-        <source>%1 confirmations (SwiftX verification in progress - %2 of %3 signatures)</source>
-        <translation>%1 подтверждений (Проверка SwiftX в процессе - %2 %3 подписи)</translation>
-    </message>
-    <message>
-        <source>%1/offline (SwiftX verification failed)</source>
-        <translation>%1 / офлайн (проверка SwiftX не выполнена)</translation>
-    </message>
-    <message>
-        <source>%1/confirmed (SwiftX verification failed)</source>
-        <translation>%1 / подтверждено (проверка SwiftX не выполнена)</translation>
-    </message>
-    <message>
-        <source>Status</source>
-        <translation>Состояние</translation>
-    </message>
-    <message>
-        <source>, has not been successfully broadcast yet</source>
-        <translation>, еще не была успешно передана</translation>
-    </message>
-    <message numerus="yes">
-        <source>, broadcast through %n node(s)</source>
-        <translation><numerusform>, передается через %n узлов</numerusform><numerusform>, передается через %n узлов</numerusform><numerusform>, передается через %n узлов</numerusform><numerusform>, передается через %n узлов</numerusform></translation>
-    </message>
-    <message>
-        <source>Date</source>
-        <translation>Дата</translation>
-    </message>
-    <message>
-        <source>Source</source>
-        <translation>Источник</translation>
-    </message>
-    <message>
-        <source>Generated</source>
-        <translation>Сформировано</translation>
-    </message>
-    <message>
-        <source>From</source>
-        <translation>От</translation>
-    </message>
-    <message>
-        <source>unknown</source>
-        <translation>неизвестно</translation>
-    </message>
-    <message>
-        <source>To</source>
-        <translation>Кому</translation>
-    </message>
-    <message>
-        <source>own address</source>
-        <translation>собственный адрес</translation>
-    </message>
-    <message>
-        <source>watch-only</source>
-        <translation>смотреть только</translation>
-    </message>
-    <message>
-        <source>label</source>
-        <translation>метка</translation>
-    </message>
-    <message>
-        <source>Credit</source>
-        <translation>Кредит</translation>
-    </message>
-    <message numerus="yes">
-        <source>matures in %n more block(s)</source>
-        <translation><numerusform>созревает в %n блоков</numerusform><numerusform>созревает в %n блоков</numerusform><numerusform>созревает в %n блоков</numerusform><numerusform>созревает в %n блоков</numerusform></translation>
-    </message>
-    <message>
-        <source>not accepted</source>
-        <translation>не принимаются</translation>
-    </message>
-    <message>
-        <source>Debit</source>
-        <translation>Дебит</translation>
-    </message>
-    <message>
-        <source>Total debit</source>
-        <translation>Общий дебет</translation>
-    </message>
-    <message>
-        <source>Total credit</source>
-        <translation>Общий кредит</translation>
-    </message>
-    <message>
-        <source>Transaction fee</source>
-        <translation>Комиссия за транзакцию</translation>
-    </message>
-    <message>
-        <source>Net amount</source>
-        <translation>Чистая сумма</translation>
-    </message>
-    <message>
-        <source>Message</source>
-        <translation>Сообщение</translation>
-    </message>
-    <message>
-        <source>Comment</source>
-        <translation>Комментарий</translation>
-    </message>
-    <message>
-        <source>Transaction ID</source>
-        <translation>Номер транзакции</translation>
-    </message>
-    <message>
-        <source>Output index</source>
-        <translation>Выходной индекс</translation>
-    </message>
-    <message>
-        <source>Merchant</source>
-        <translation>коммерсант</translation>
-    </message>
-    <message>
-        <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Сгенерированные монеты должны созреть %1 блоков, прежде чем они могут быть потрачены. Когда вы сгенерировали этот блок, он будет передан в сеть, которая будет добавлена в цепочку блоков. Если ему не удастся войти в цепочку, его состояние изменится на «не принято», и оно не будет потрачено. Иногда это может произойти, если другой узел генерирует блок за несколько секунд.</translation>
-    </message>
-    <message>
-        <source>Debug information</source>
-        <translation>Отладочная информация</translation>
-    </message>
-    <message>
-        <source>Transaction</source>
-        <translation>Транзакция</translation>
-    </message>
-    <message>
-        <source>Inputs</source>
-        <translation>входы</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Сумма</translation>
-    </message>
-    <message>
-        <source>true</source>
-        <translation>истина</translation>
-    </message>
-    <message>
-        <source>false</source>
-        <translation>ложь</translation>
-    </message>
-</context>
-<context>
-    <name>TransactionDescDialog</name>
-    <message>
-        <source>Transaction details</source>
-        <translation>Детали транзакции</translation>
-    </message>
-    <message>
-        <source>This pane shows a detailed description of the transaction</source>
-        <translation>На этой панели отображается подробное описание транзакции</translation>
     </message>
 </context>
 <context>
@@ -4471,17 +5055,9 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <source>Address</source>
         <translation>Адрес</translation>
     </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>Открыть для %n блоков</numerusform><numerusform>Открыть для %n блоков</numerusform><numerusform>Открыть для %n блоков</numerusform><numerusform>Открыть для  %n блоков</numerusform></translation>
-    </message>
     <message>
         <source>Open until %1</source>
         <translation>Открыть до %1</translation>
-    </message>
-    <message>
-        <source>Offline</source>
-        <translation>не в сети</translation>
     </message>
     <message>
         <source>Unconfirmed</source>
@@ -4504,10 +5080,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Незрелые (%1 подтверждения будут доступны после %2)</translation>
     </message>
     <message>
-        <source>This block was not received by any other nodes and will probably not be accepted!</source>
-        <translation>Этот блок не был принят никакими другими узлами и, вероятно, не будет принят!</translation>
-    </message>
-    <message>
         <source>Received with</source>
         <translation>Получено с</translation>
     </message>
@@ -4520,60 +5092,24 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Получен от</translation>
     </message>
     <message>
-        <source>Received via Obfuscation</source>
-        <translation>Получено через обфускацию</translation>
+        <source>%1 Stake</source>
+        <translation>%1 Стекинга</translation>
     </message>
     <message>
-        <source>CLR Stake</source>
-        <translation>Доля CLR</translation>
+        <source>z%1 Stake</source>
+        <translation>z%1 Стекинга</translation>
     </message>
     <message>
-        <source>zCLR Stake</source>
-        <translation>Доля zCLR</translation>
+        <source>%1 Cold Stake</source>
+        <translation>%1 Холодного стекинга</translation>
     </message>
     <message>
-        <source>Obfuscation Denominate</source>
-        <translation>Обфускация</translation>
+        <source>%1 Stake on behalf of</source>
+        <translation>%1 Стекинга от имени</translation>
     </message>
     <message>
-        <source>Obfuscation Collateral Payment</source>
-        <translation>Обфускационный Сопутствующий платеж</translation>
-    </message>
-    <message>
-        <source>Obfuscation Make Collateral Inputs</source>
-        <translation>Обфускация</translation>
-    </message>
-    <message>
-        <source>Obfuscation Create Denominations</source>
-        <translation>Обфускация Создание конфессий</translation>
-    </message>
-    <message>
-        <source>Converted CLR to zCLR</source>
-        <translation>Преобразованный CLR в zCLR</translation>
-    </message>
-    <message>
-        <source>Spent zCLR</source>
-        <translation>потраченный zCLR</translation>
-    </message>
-    <message>
-        <source>Received CLR from zCLR</source>
-        <translation>Полученный CLR от zCLR</translation>
-    </message>
-    <message>
-        <source>Minted Change as zCLR from zCLR Spend</source>
-        <translation>созданная  замена  zCLR из потраенного zCLR </translation>
-    </message>
-    <message>
-        <source>Converted zCLR to CLR</source>
-        <translation>Преобразованный zCLR to CLR</translation>
-    </message>
-    <message>
-        <source>Anonymous (zCLR Transaction)</source>
-        <translation>Анонимный (транзакция zCLR)</translation>
-    </message>
-    <message>
-        <source>Anonymous (zCLR Stake)</source>
-        <translation>Анонимный (ставка zCLR)</translation>
+        <source>Stake delegation</source>
+        <translation>Делегация стекинга</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -4588,16 +5124,44 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Оплата себе</translation>
     </message>
     <message>
+        <source>Stake delegation spent by</source>
+        <translation>Делегация стекинга потрачена</translation>
+    </message>
+    <message>
         <source>Mined</source>
         <translation>заминированный</translation>
     </message>
     <message>
-        <source>Obfuscated</source>
-        <translation>затемненный</translation>
+        <source>Converted %1 to z%1</source>
+        <translation>%1 преобразовано в z%1 </translation>
+    </message>
+    <message>
+        <source>Spent z%1</source>
+        <translation>Потрачено z%1</translation>
+    </message>
+    <message>
+        <source>Received %1 from z%1</source>
+        <translation>Получено %1 из z%1</translation>
+    </message>
+    <message>
+        <source>Minted Change as z%1 from z%1 Spend</source>
+        <translation>Изменить отчеканенные, как z %1 от потраченных z %1 </translation>
+    </message>
+    <message>
+        <source>Converted z%1 to %1</source>
+        <translation>z%1 преобразовано в %1</translation>
     </message>
     <message>
         <source>watch-only</source>
         <translation>смотреть только</translation>
+    </message>
+    <message>
+        <source>Anonymous</source>
+        <translation>Анонимный</translation>
+    </message>
+    <message>
+        <source>No information</source>
+        <translation>Нет информации</translation>
     </message>
     <message>
         <source>(n/a)</source>
@@ -4629,192 +5193,113 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>TransactionView</name>
+    <name>TxDetailDialog</name>
     <message>
-        <source>All</source>
-        <translation>все</translation>
+        <source>Form</source>
+        <translation>Вид</translation>
     </message>
     <message>
-        <source>Today</source>
-        <translation>Сегодня</translation>
-    </message>
-    <message>
-        <source>This week</source>
-        <translation>Эта неделя</translation>
-    </message>
-    <message>
-        <source>This month</source>
-        <translation>Этот месяц</translation>
-    </message>
-    <message>
-        <source>Last month</source>
-        <translation>Последний месяц</translation>
-    </message>
-    <message>
-        <source>This year</source>
-        <translation>Этот год</translation>
-    </message>
-    <message>
-        <source>Range...</source>
-        <translation>Диапазон...</translation>
-    </message>
-    <message>
-        <source>Most Common</source>
-        <translation>наиболее общий</translation>
-    </message>
-    <message>
-        <source>Received with</source>
-        <translation>Получено с</translation>
-    </message>
-    <message>
-        <source>Sent to</source>
-        <translation>Отправить</translation>
-    </message>
-    <message>
-        <source>To yourself</source>
-        <translation>Самому себе</translation>
-    </message>
-    <message>
-        <source>Mined</source>
-        <translation>заминированный</translation>
-    </message>
-    <message>
-        <source>Minted</source>
-        <translation>Чеканка</translation>
-    </message>
-    <message>
-        <source>Masternode Reward</source>
-        <translation>Вознаграждение Мастерноды</translation>
-    </message>
-    <message>
-        <source>Zerocoin Mint</source>
-        <translation>чеканка Zerocoin</translation>
-    </message>
-    <message>
-        <source>Zerocoin Spend</source>
-        <translation>Потратить Zerocoin </translation>
-    </message>
-    <message>
-        <source>Zerocoin Spend to Self</source>
-        <translation>Потратить Zerocoin  на себя</translation>
-    </message>
-    <message>
-        <source>Other</source>
-        <translation>другие</translation>
-    </message>
-    <message>
-        <source>Enter address or label to search</source>
-        <translation>Введите адрес или имя для поиска</translation>
-    </message>
-    <message>
-        <source>Min amount</source>
-        <translation>Минимальная сумма</translation>
-    </message>
-    <message>
-        <source>Copy address</source>
-        <translation>Копировать адрес</translation>
-    </message>
-    <message>
-        <source>Copy label</source>
-        <translation>Копировать метку</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Копировать сумму</translation>
-    </message>
-    <message>
-        <source>Copy transaction ID</source>
-        <translation>Копировать ID транзакции</translation>
-    </message>
-    <message>
-        <source>Edit label</source>
-        <translation>Редактировать имя</translation>
-    </message>
-    <message>
-        <source>Show transaction details</source>
+        <source>Transaction Details</source>
         <translation>Детали транзакции</translation>
     </message>
     <message>
-        <source>Export Transaction History</source>
-        <translation>Экспорт истории транзакций</translation>
+        <source>Total amount</source>
+        <translation>Общая сумма</translation>
     </message>
     <message>
-        <source>Comma separated file (*.csv)</source>
-        <translation>Файл формата csv</translation>
+        <source>Previous Transaction</source>
+        <translation>Предыдущие транзакции</translation>
     </message>
     <message>
-        <source>Confirmed</source>
-        <translation>Подтверждено</translation>
+        <source>Output Index</source>
+        <translation>Индекс выхода</translation>
     </message>
     <message>
-        <source>Watch-only</source>
-        <translation>смотреть только</translation>
+        <source>D7VFR83SQbie…BhjcWJtcfip5krte2Z </source>
+        <translation>D7VFR83SQbie…BhjcWJtcfip5krte2Z</translation>
     </message>
     <message>
-        <source>Date</source>
-        <translation>Дата</translation>
-    </message>
-    <message>
-        <source>Type</source>
-        <translation>Тип</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Метка</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Адрес</translation>
+        <source>May 25, 2017</source>
+        <translation>25 мая, 2017</translation>
     </message>
     <message>
         <source>ID</source>
         <translation>Номер</translation>
     </message>
     <message>
-        <source>Exporting Failed</source>
-        <translation>Ошибка экспорта</translation>
+        <source>Sending to</source>
+        <translation>Отправка в</translation>
     </message>
     <message>
-        <source>There was an error trying to save the transaction history to %1.</source>
-        <translation>При попытке сохранить историю транзакций в %1 произошла ошибка.</translation>
+        <source>Coin inputs</source>
+        <translation>Входы монеты</translation>
     </message>
     <message>
-        <source>Exporting Successful</source>
-        <translation>Экспортирование произошло успешно</translation>
+        <source>Fee</source>
+        <translation>Комиссия</translation>
     </message>
     <message>
-        <source>Received CLR from zCLR</source>
-        <translation>Полученный CLR от zCLR</translation>
+        <source>Size</source>
+        <translation>Размер</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zCLR</source>
-        <translation>Потратить Zerocoin, Преобразовать в zCLR</translation>
+        <source>Change address</source>
+        <translation>Изменить адрес</translation>
     </message>
     <message>
-        <source>The transaction history was successfully saved to %1.</source>
-        <translation>История транзакций была успешно сохранена в %1.</translation>
+        <source>Spendable</source>
+        <translation>Расходуемый</translation>
     </message>
     <message>
-        <source>Range:</source>
-        <translation>диапазон</translation>
+        <source>Confirmations</source>
+        <translation>Подтверждения</translation>
     </message>
     <message>
-        <source>to</source>
-        <translation>в</translation>
+        <source>Status</source>
+        <translation>Состояние</translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation>Дата</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>Текстовая метка</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>ОТМЕНА</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>ХОРОШО</translation>
+    </message>
+    <message>
+        <source>Confirm Your Transaction</source>
+        <translation>Подтвердить вашу транзакцию</translation>
+    </message>
+    <message>
+        <source>SEND</source>
+        <translation>отправить</translation>
+    </message>
+    <message>
+        <source>ID copied</source>
+        <translation>ID скопирован</translation>
+    </message>
+    <message>
+        <source>Delegating to</source>
+        <translation>Делегирование в</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Неизвестно</translation>
     </message>
 </context>
 <context>
-    <name>UnitDisplayStatusBarControl</name>
+    <name>TxRow</name>
     <message>
-        <source>Unit to show amounts in. Click to select another unit.</source>
-        <translation>Блок , чтобы отобразить суммы. Нажмите, чтобы выбрать другое устройство.</translation>
-    </message>
-</context>
-<context>
-    <name>WalletFrame</name>
-    <message>
-        <source>No wallet has been loaded.</source>
-        <translation>Кошелек не загружен.</translation>
+        <source>Form</source>
+        <translation>Вид</translation>
     </message>
 </context>
 <context>
@@ -4824,62 +5309,88 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Отправить Монеты</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 CLR.</source>
-        <translation>SwiftX не поддерживает отправку значений, которые еще высоки. В настоящее время транзакции ограничены %1 CLR.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 %2.</source>
+        <translation>SwiftX пока не поддерживает отправку таких высоких значений. Транзакции в настоящее время ограничены %1 %2.</translation>
+    </message>
+    <message>
+        <source>Transaction creation failed!
+%1</source>
+        <translation>Ошибка при создании транзакции! %1</translation>
+    </message>
+    <message>
+        <source>The size of the transaction is too big.
+Select fewer inputs with coin control.</source>
+        <translation>Размер транзакции слишком велик.
+Выберите меньше входов с контролем монет.</translation>
     </message>
 </context>
 <context>
-    <name>WalletView</name>
+    <name>WelcomeContentWidget</name>
     <message>
-        <source>HISTORY</source>
-        <translation>ИСТОРИЯ</translation>
+        <source>1</source>
+        <translation>1</translation>
     </message>
     <message>
-        <source>&amp;Export</source>
-        <translation>&amp;Экспорт</translation>
+        <source>2</source>
+        <translation>2</translation>
     </message>
     <message>
-        <source>Export the data in the current tab to a file</source>
-        <translation>Экспортировать данные с текущей вкладки в файл</translation>
+        <source>3</source>
+        <translation>3</translation>
     </message>
     <message>
-        <source>Selected amount:</source>
-        <translation>Выбранная сумма:</translation>
+        <source>4</source>
+        <translation>4</translation>
     </message>
     <message>
-        <source>Backup Wallet</source>
-        <translation>Резервная копия кошелька</translation>
+        <source>Language</source>
+        <translation>Язык</translation>
     </message>
     <message>
-        <source>Wallet Data (*.dat)</source>
-        <translation>Данные кошелька (* .dat)</translation>
-    </message>
-</context>
-<context>
-    <name>ZClrControlDialog</name>
-    <message>
-        <source>Select zCLR to Spend</source>
-        <translation>Выберите zCLR чтобы потратить</translation>
+        <source>Welcome</source>
+        <translation>Добро пожаловать</translation>
     </message>
     <message>
-        <source>Quantity</source>
-        <translation>Количество</translation>
+        <source>Privacy</source>
+        <translation>Конфиденциальность</translation>
     </message>
     <message>
-        <source>0</source>
-        <translation>0</translation>
+        <source>Masternodes</source>
+        <translation>Мастерноды</translation>
     </message>
     <message>
-        <source>zCLR</source>
-        <translation>zCLR</translation>
+        <source>Select your language</source>
+        <translation>Выбрать язык</translation>
     </message>
     <message>
-        <source>Select/Deselect All</source>
-        <translation>Выбрать / Отменить выбор</translation>
+        <source>Welcome to
+ClearCoin Core Wallet</source>
+        <translation>Добро пожаловать
+в основной кошелек ClearCoin</translation>
     </message>
     <message>
-        <source>Is Spendable</source>
-        <translation>Расходы</translation>
+        <source>ClearCoin is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
+        <translation>ClearCoin - самая инновационная в мире технология на основе блокчейна Proof of Stake. Разработана командой опытных разработчиков и криптографов.</translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - ClearCoin believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Как говорится в нашем манифесте: конфиденциальность является не подлежащим обсуждению основным правом человека; это дает пользователям свободу делиться своими данными в любое время и с кем угодно, ведь ClearCoin верит в собственный суверенитет.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <source>The masternode network is ClearCoin's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
+        <translation>Сеть мастернод - это сеть второго уровня ClearCoin поверх блокчейна, которая позволяет нашему ДАО обеспечивать децентрализованное управление и казначейство.</translation>
+    </message>
+    <message>
+        <source>How ClearCoin respects your privacy?</source>
+        <translation>Как ClearCoin уважает вашу конфиденциальность?</translation>
+    </message>
+    <message>
+        <source>What is a Masternode?</source>
+        <translation>Что такое мастернода?</translation>
+    </message>
+    <message>
+        <source>default</source>
+        <translation>по-умолчанию</translation>
     </message>
 </context>
 <context>
@@ -4903,10 +5414,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
         <translation>Привяжите к указанному адресу для прослушивания соединений JSON-RPC. Используйте [host]: обозначение порта для IPv6. Эта опция может быть указана несколько раз (по умолчанию: привязка ко всем интерфейсам)</translation>
-    </message>
-    <message>
-        <source>Calculated accumulator checkpoint is not what is recorded by block index</source>
-        <translation>Расчетная контрольная точка  не является тем, что регистрируется блочным индексом</translation>
     </message>
     <message>
         <source>Cannot obtain a lock on data directory %s. ClearCoin Core is probably already running.</source>
@@ -4937,16 +5444,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Распространяется по лицензии программного обеспечения MIT, см. Сопроводительный файл COPYING или &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zCLR minting (0-1, default: %u)</source>
-        <translation>Включить автоматическое резервное копирование кошелька, запускаемое после каждого чеканки zCLR (0-1, по умолчанию: %u)</translation>
-    </message>
-    <message>
-        <source>Enable or disable staking functionality for CLR inputs (0-1, default: %u)</source>
-        <translation>Включение или отключение функций разбивки для входов CLR (0-1, по умолчанию: %u)</translation>
-    </message>
-    <message>
-        <source>Enable or disable staking functionality for zCLR inputs (0-1, default: %u)</source>
-        <translation>Включение или отключение функций разбивки для входов zCLR (0-1, по умолчанию: %u)</translation>
+        <source>Enable cold staking functionality (0-1, default: %u). Disabled if staking=0</source>
+        <translation>Включить функцию холодного стекинга (0-1, по умолчанию:%u). Отключено, если стекинг = 0</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -4969,6 +5468,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Ошибка: обнаружен неподдерживаемый аргумент -socks. Настройка версии SOCKS больше невозможна, поддерживаются только прокси SOCKS5.</translation>
     </message>
     <message>
+        <source>Exclude debugging information for a category. Can be used in conjunction with -debug=1 to output debug logs for all categories except one or more specified categories.</source>
+        <translation>Исключить отладочную информацию для категории. Может использоваться вместе с -debug=1 для вывода журналов отладки для всех категорий, кроме одной или нескольких указанных категорий.</translation>
+    </message>
+    <message>
         <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
         <translation>Выполните команду, когда получено соответствующее предупреждение, или мы видим очень длинную развилку (%s в cmd заменяется сообщением)</translation>
     </message>
@@ -4981,20 +5484,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Выполнить команду, когда лучший блок изменяется (%s в cmd заменяется блочным хэшем)</translation>
     </message>
     <message>
-        <source>Fees (in CLR/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Тарифы (в CLR / Kb), меньшие, чем это, считаются нулевой комиссией за ретрансляцию (по умолчанию: %s)</translation>
-    </message>
-    <message>
-        <source>Fees (in CLR/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Плата (в CLR / Kb) меньше этого считается нулевой комиссией за создание транзакции (по умолчанию: %s)</translation>
-    </message>
-    <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
         <translation>Сбросить активность базы данных из пула памяти в журнал диска каждый &lt;n&gt; мегабайт (по умолчанию: %u)</translation>
-    </message>
-    <message>
-        <source>Found unconfirmed denominated outputs, will wait till they confirm to continue.</source>
-        <translation>Найденные неподтвержденные деноминированные выходы будут ждать, пока они подтвердят, что они будут продолжены.</translation>
     </message>
     <message>
         <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
@@ -5013,10 +5504,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Недопустимая сумма для -maxtxfee =&lt;amount&gt;: '%s' (должна быть минимальная плата %s для предотвращения застревания транзакций)</translation>
     </message>
     <message>
-        <source>Keep the specified amount available for spending at all times (default: 0)</source>
-        <translation>Держите указанную сумму доступной для расходов в любое время (по умолчанию: 0)</translation>
-    </message>
-    <message>
         <source>Log transaction priority and fee per kB when mining blocks (default: %u)</source>
         <translation>Приоритет транзакции журнала и плата за kB при выполнении блоков добычи (по умолчанию: %u)</translation>
     </message>
@@ -5025,8 +5512,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Поддерживание полного индекса транзакции, используемого вызовом rvc getrawtransaction (по умолчанию: %u)</translation>
     </message>
     <message>
+        <source>Maximum average size of an index occurrence in the block spam filter (default: %u)</source>
+        <translation>Максимально средний размер входа индекса в фильтр нежелательной почты (по умолчанию:%u)</translation>
+    </message>
+    <message>
         <source>Maximum size of data in data carrier transactions we relay and mine (default: %u)</source>
         <translation>Максимальный размер данных в транзакциях передачи данных, которые мы передаем,  (по умолчанию: %u)</translation>
+    </message>
+    <message>
+        <source>Maximum size of the list of indexes in the block spam filter (default: %u)</source>
+        <translation>Максимальный размер списка индексов в фильтре нежелательной почты (по умолчанию:%u)</translation>
     </message>
     <message>
         <source>Maximum total fees to use in a single wallet transaction, setting too low may abort large transactions (default: %s)</source>
@@ -5037,16 +5532,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Количество секунд, чтобы не допустить повторного подключения неверных пользователей (по умолчанию: %u)</translation>
     </message>
     <message>
-        <source>Obfuscation uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
-        <translation>Obfuscation использует точные деноминированные суммы для отправки средств, вам просто нужно будет анонимизировать еще несколько монет.</translation>
-    </message>
-    <message>
         <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
         <translation>Выходная информация отладки (по умолчанию: %u, поставка &lt;category&gt; необязательна)</translation>
-    </message>
-    <message>
-        <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect)</source>
-        <translation>Запрос для одноранговых адресов через DNS-поиск, если он имеет низкий адрес (по умолчанию: 1, если не подключено)</translation>
     </message>
     <message>
         <source>Randomize credentials for every proxy connection. This enables Tor stream isolation (default: %u)</source>
@@ -5081,24 +5568,20 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Поддержка фильтрации блоков и транзакций с фильтрами цветения (по умолчанию: %u)</translation>
     </message>
     <message>
+        <source>The block database contains a block which appears to be from the future. This may be due to your computer's date and time being set incorrectly. Only rebuild the block database if you are sure that your computer's date and time are correct</source>
+        <translation>База данных блоков содержит блок, который показывается, как из будущего. Это может быть связано с неправильной настройкой даты и времени на вашем компьютере. Перестройте базу данных блоков только в том случае, если вы уверены, что дата и время вашего компьютера указаны верно</translation>
+    </message>
+    <message>
         <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
         <translation>Этот продукт включает программное обеспечение, разработанное OpenSSL Project для использования в OpenSSL Toolkit &lt;https://www.openssl.org/&gt; и криптографическом программном обеспечении, написанном Эриком Яном и программным обеспечением UPnP, написанным Томасом Бернардом.</translation>
     </message>
     <message>
+        <source>Total length of network version string (%i) exceeds maximum length (%i). Reduce the number or size of uacomments.</source>
+        <translation>Общая длина строки версии сети (%i) превышает максимальную длину (%i). Уменьшите количество или размер uacomments.</translation>
+    </message>
+    <message>
         <source>Unable to bind to %s on this computer. ClearCoin Core is probably already running.</source>
         <translation>Не удалось привязать к %s на этом компьютере. ClearCoin Core, вероятно, уже запущен.</translation>
-    </message>
-    <message>
-        <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
-        <translation>Не удалось найти достаточное количество средств, предназначенных для обфускации, для этой транзакции.</translation>
-    </message>
-    <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 CLR.</source>
-        <translation>Невозможно найти достаточное количество средств, не предназначенных для обфускации, для этой транзакции, которые не равны 10000 CLR.</translation>
-    </message>
-    <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 CLR.</source>
-        <translation>Не удалось найти достаточное количество средств для этой транзакции, которые не равны 10000 CLR.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5125,14 +5608,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Предупреждение: Мы, похоже, не полностью согласны с нашими сверстниками! Возможно, вам потребуется обновить или другие узлы, возможно, потребуется обновить.</translation>
     </message>
     <message>
-        <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
-        <translation>Предупреждение: ошибка чтения wallet.dat! Все ключи читаются правильно, но данные транзакции или записи адресной книги могут отсутствовать или некорректны.</translation>
-    </message>
-    <message>
-        <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
-        <translation>Предупреждение: wallet.dat поврежден, данные спасены! Исходный wallet.dat сохранен как кошелек. {Timestamp} .bak в %s; если ваш баланс или транзакции неверны, вам следует восстановить резервную копию.</translation>
-    </message>
-    <message>
         <source>Whitelist peers connecting from the given netmask or IP address. Can be specified multiple times.</source>
         <translation>Список белых списков, соединяющихся с данной сетевой маской или IP-адресом. Может быть указано несколько раз.</translation>
     </message>
@@ -5145,28 +5620,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Вы должны указать в  строке приложенный ключ. Пожалуйста, обратитесь к документации для получения справки</translation>
     </message>
     <message>
-        <source>(32628 could be used only on mainnet)</source>
-        <translation>(32628 можно использовать только в сети)</translation>
-    </message>
-    <message>
         <source>(default: %s)</source>
         <translation>(неуплата: %s)</translation>
     </message>
     <message>
-        <source>(default: 1)</source>
-        <translation>(неуплата: 1)</translation>
-    </message>
-    <message>
-        <source>(must be 32628 for mainnet)</source>
-        <translation>(должен быть 32628 для mainet)</translation>
-    </message>
-    <message>
         <source>Accept command line and JSON-RPC commands</source>
         <translation>Принять командную строку и команды JSON-RPC</translation>
-    </message>
-    <message>
-        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
-        <translation>Принять соединения извне (по умолчанию: 1, если нет -proxy или -connect)</translation>
     </message>
     <message>
         <source>Accept public REST requests (default: %u)</source>
@@ -5177,20 +5636,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Добавьте узел для подключения и попытку сохранить соединение открытым</translation>
     </message>
     <message>
-        <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
-        <translation>Разрешить поиск в DNS для -addnode, -seednode и -connect</translation>
-    </message>
-    <message>
-        <source>Already have that input.</source>
-        <translation>Уже есть этот вход.</translation>
-    </message>
-    <message>
         <source>Always query for peer addresses via DNS lookup (default: %u)</source>
         <translation>Всегда запрашивать одноранговые адреса через DNS-поиск (по умолчанию: %u)</translation>
     </message>
     <message>
-        <source>Attempt to recover private keys from a corrupt wallet.dat</source>
-        <translation>Попытка восстановить секретные ключи из поврежденного файла wallet.dat</translation>
+        <source>Append comment to the user agent string</source>
+        <translation>Добавить комментарий к строке агента пользователя</translation>
     </message>
     <message>
         <source>Automatically create Tor hidden service (default: %d)</source>
@@ -5199,50 +5650,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>Block creation options:</source>
         <translation>Варианты создания блока:</translation>
-    </message>
-    <message>
-        <source>Calculating missing accumulators...</source>
-        <translation>Вычисление недостающих аккумуляторов ...</translation>
-    </message>
-    <message>
-        <source>Can't denominate: no compatible inputs left.</source>
-        <translation>Невозможно обозначить: никаких совместимых входов не осталось.</translation>
-    </message>
-    <message>
-        <source>Can't find random Masternode.</source>
-        <translation>Невозможно найти случайного Мастернода.</translation>
-    </message>
-    <message>
-        <source>Can't mix while sync in progress.</source>
-        <translation>Невозможно перемешать во время синхронизации.</translation>
-    </message>
-    <message>
-        <source>Cannot downgrade wallet</source>
-        <translation>Нельзя понизить кошелек</translation>
-    </message>
-    <message>
-        <source>Cannot resolve -bind address: '%s'</source>
-        <translation>Не удается разрешить -включить адрес: '%s'</translation>
-    </message>
-    <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
-        <translation>Не удается разрешить -externalip адрес: '%s'</translation>
-    </message>
-    <message>
-        <source>Cannot resolve -whitebind address: '%s'</source>
-        <translation>Не удается разрешить -whitebind адрес: '%s'</translation>
-    </message>
-    <message>
-        <source>Cannot write default address</source>
-        <translation>Невозможно записать адрес по умолчанию</translation>
-    </message>
-    <message>
-        <source>Collateral not valid.</source>
-        <translation>Залог недействителен.</translation>
-    </message>
-    <message>
-        <source>Connect only to the specified node(s)</source>
-        <translation>Подключитесь только к указанному узлу (узлам)</translation>
     </message>
     <message>
         <source>Connect through SOCKS5 proxy</source>
@@ -5289,10 +5696,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Отключить уведомления ОС для входящих транзакций (по умолчанию: %u)</translation>
     </message>
     <message>
-        <source>Disable safemode, override a real safe mode event (default: %u)</source>
-        <translation>Отключить безопасный режим, переопределить реальное событие безопасного режима (по умолчанию: %u)</translation>
-    </message>
-    <message>
         <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
         <translation>Откройте собственный IP-адрес (по умолчанию: 1 при прослушивании и без -externalip)</translation>
     </message>
@@ -5309,10 +5712,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Загрузка выполнена</translation>
     </message>
     <message>
-        <source>Enable automatic Zerocoin minting (0-1, default: %u)</source>
-        <translation>Включить автоматическую чистку Zerocoin (0-1, по умолчанию: %u)</translation>
-    </message>
-    <message>
         <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
         <translation>Включить публикацию хеш-транзакции (заблокированной через SwiftX) в &lt;address&gt;</translation>
     </message>
@@ -5323,14 +5722,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>Enable the client to act as a masternode (0-1, default: %u)</source>
         <translation>Разрешить клиенту действовать как мастернод (0-1, по умолчанию: %u)</translation>
-    </message>
-    <message>
-        <source>Entries are full.</source>
-        <translation>Записи заполнены.</translation>
-    </message>
-    <message>
-        <source>Error connecting to Masternode.</source>
-        <translation>Ошибка подключения к Masternode.</translation>
     </message>
     <message>
         <source>Error initializing block database</source>
@@ -5345,18 +5736,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Ошибка загрузки базы данных блоков</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat</source>
-        <translation>Ошибка при загрузке wallet.dat</translation>
-    </message>
-    <message>
-        <source>Error loading wallet.dat: Wallet corrupted</source>
-        <translation>Ошибка при загрузке wallet.dat: Кошелек поврежден</translation>
-    </message>
-    <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of ClearCoin Core</source>
-        <translation>Ошибка загрузки wallet.dat: Кошелек требует более новой версии ClearCoin Core</translation>
-    </message>
-    <message>
         <source>Error opening block database</source>
         <translation>Ошибка открытия базы данных блоков</translation>
     </message>
@@ -5365,8 +5744,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Ошибка чтения из базы данных, завершение работы.</translation>
     </message>
     <message>
-        <source>Error recovering public key.</source>
-        <translation>Ошибка при восстановлении открытого ключа.</translation>
+        <source>Error writing zerocoinDB to disk</source>
+        <translation>Ошибка записи zerocoinDB на диск</translation>
     </message>
     <message>
         <source>Error</source>
@@ -5375,10 +5754,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>Error: A fatal internal error occured, see debug.log for details</source>
         <translation>Ошибка: произошла фатальная внутренняя ошибка, подробности см. В файле debug.log.</translation>
-    </message>
-    <message>
-        <source>Error: Can't select current denominated inputs</source>
-        <translation>Ошибка: невозможно выбрать текущие входы</translation>
     </message>
     <message>
         <source>Error: Disk space is low!</source>
@@ -5393,40 +5768,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Ошибка: кошелек заблокирован, невозможно создать транзакцию!</translation>
     </message>
     <message>
-        <source>Error: You already have pending entries in the Obfuscation pool</source>
-        <translation>Ошибка. У вас уже есть ожидающие записи в пуле Obfuscation.</translation>
-    </message>
-    <message>
-        <source>Failed to calculate accumulator checkpoint</source>
-        <translation>Не удалось вычислить контрольную точку аккумулятора</translation>
-    </message>
-    <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>Не удалось прослушивать любой порт. Используйте -listen = 0, если вы этого хотите.</translation>
     </message>
     <message>
-        <source>Failed to read block</source>
-        <translation>Не удалось прочитать блок</translation>
-    </message>
-    <message>
-        <source>Fee (in CLR/kB) to add to transactions you send (default: %s)</source>
-        <translation>Плата (в CLR / kB) для добавления к транзакциям, которые вы отправляете (по умолчанию: %s)</translation>
-    </message>
-    <message>
-        <source>Finalizing transaction.</source>
-        <translation>Завершение транзакции.</translation>
+        <source>Failed to parse host:port string</source>
+        <translation>Не удалось проанализировать хост: строка порта</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
         <translation>Режим принудительной защиты (по умолчанию: %u)</translation>
-    </message>
-    <message>
-        <source>Found enough users, signing ( waiting %s )</source>
-        <translation>Найдено достаточно пользователей, подписывание (ожидание %s)</translation>
-    </message>
-    <message>
-        <source>Found enough users, signing ...</source>
-        <translation>Нашел достаточно пользователей, подписал ...</translation>
     </message>
     <message>
         <source>Generate coins (default: %u)</source>
@@ -5453,14 +5804,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Включить IP-адреса в отладочном выходе (по умолчанию: %u)</translation>
     </message>
     <message>
-        <source>Incompatible mode.</source>
-        <translation>Несовместимый режим.</translation>
-    </message>
-    <message>
-        <source>Incompatible version.</source>
-        <translation>Несовместимая версия.</translation>
-    </message>
-    <message>
         <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
         <translation>Неправильный или не обнаруженный блок генезиса. Неверный каталог данных для сети?</translation>
     </message>
@@ -5471,10 +5814,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>Initialization sanity check failed. ClearCoin Core is shutting down.</source>
         <translation>Инициализация проверки работоспособности не удалась. ClearCoin Core отключается.</translation>
-    </message>
-    <message>
-        <source>Input is not valid.</source>
-        <translation>Недопустимый ввод.</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -5489,28 +5828,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Недопустимый -онионный адрес или имя хоста: '%s'</translation>
     </message>
     <message>
-        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
-        <translation>Недопустимая сумма для -maxtxfee =&lt;amount&gt;: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
-        <translation>Недопустимая сумма для -minrelaytxfee&lt;amount&gt;: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -mintxfee=&lt;amount&gt;: '%s'</source>
-        <translation>Недопустимая сумма для -mintxfee =&lt;amount&gt;: '%s'</translation>
-    </message>
-    <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
         <translation>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (должен быть не менее%s)</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
-        <translation>Недопустимая сумма для -paytxfee =&lt;amount&gt;: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -reservebalance=&lt;amount&gt;</source>
-        <translation>Недопустимая сумма для -reservebalance =&lt;amount&gt;</translation>
     </message>
     <message>
         <source>Invalid amount</source>
@@ -5525,24 +5844,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Недопустимая сетевая маска, указанная в -whitelist: '%s'</translation>
     </message>
     <message>
-        <source>Invalid port detected in masternode.conf</source>
-        <translation>Неверный порт обнаружен в файле masternode.conf</translation>
-    </message>
-    <message>
-        <source>Invalid private key.</source>
-        <translation>Недопустимый закрытый ключ.</translation>
-    </message>
-    <message>
-        <source>Invalid script detected.</source>
-        <translation>Обнаружен неверный сценарий.</translation>
-    </message>
-    <message>
-        <source>Percentage of automatically minted Zerocoin  (1-100, default: %u)</source>
-        <translation>Процент автоматически отчеканенного Zerocoin (1-100, по умолчанию: %u)</translation>
-    </message>
-    <message>
-        <source>Reindex the CLR and zCLR money supply statistics</source>
-        <translation>Reindex статистика денежной массы CLR и zCLR</translation>
+        <source>Recalculating CLR supply...</source>
+        <translation>Перерасчет предложения CLR...</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -5565,36 +5868,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Это предварительная версия сборки - используйте на свой страх и риск - не используйте для ставок или коммерческих приложений!</translation>
     </message>
     <message>
-        <source> mints deleted
-</source>
-        <translation>удалены монеты
-</translation>
-    </message>
-    <message>
-        <source> mints updated, </source>
-        <translation>монеты обновлены,</translation>
-    </message>
-    <message>
-        <source> unconfirmed transactions removed
-</source>
-        <translation>удалены неподтвержденные транзакции
-</translation>
-    </message>
-    <message>
-        <source>Disable all CLR specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>Отключите все специфические функции CLR (Masternodes, Zerocoin, SwiftX, Бюджетирование) (0-1, по умолчанию: %u)</translation>
+        <source>Disable all ClearCoin specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Отключите все специфические функции ClearCoin (Masternodes, Zerocoin, SwiftX, Бюджетирование) (0-1, по умолчанию: %u)</translation>
     </message>
     <message>
         <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
         <translation>Включить SwiftX, показать подтверждения для заблокированных транзакций (bool, default: %s)</translation>
-    </message>
-    <message>
-        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Ошибка: транзакция была отклонена! Это может произойти, если некоторые из монет в вашем кошельке уже были потрачены, например, если вы использовали копию кошелька. Dat и монеты были потрачены в копии, но не отмечены как потраченные здесь.</translation>
-    </message>
-    <message>
-        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
-        <translation>Ошибка. Для этой транзакции требуется комиссия за транзакцию не менее %s из-за ее количества, сложности или использования недавно полученных средств!</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
@@ -5613,14 +5892,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>В редких случаях трата с 7 монетами превышает наш максимально допустимый размер транзакции, пожалуйста, попробуйте потратить, используя 6 или менее монет</translation>
     </message>
     <message>
-        <source>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</source>
-        <translation>Предпочтительный номинал для автоматически чеканившегося Zerocoin (1/5/10/50/100/500/1000/5000), 0 без предпочтений. default: %u)</translation>
-    </message>
-    <message>
-        <source>Specify custom backup path to add a copy of any automatic zCLR backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Укажите собственный путь резервного копирования, чтобы добавить копию любой автоматической резервной копии zCLR. Если задано как dir, каждая резервная копия генерирует файл с отметкой времени. Если он установлен как файл, он будет переписывать в этот файл каждую резервную копию. Если также установлен резервный путь, произойдет 4 резервных копии</translation>
-    </message>
-    <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
         <translation>Укажите собственный путь резервного копирования, чтобы добавить копию любой резервной копии кошелька. Если задано как dir, каждая резервная копия генерирует файл с отметкой времени. Если он установлен как файл, он будет переписывать в этот файл каждую резервную копию.</translation>
     </message>
@@ -5637,8 +5908,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Попытка принудительного восстановления блокады</translation>
     </message>
     <message>
-        <source>CoinSpend: Accumulator witness does not verify</source>
-        <translation>CoinSpend: Свидетель Аккумулятора не проверяет</translation>
+        <source>Cannot create public spend input</source>
+        <translation>Невозможно создать вход публичных расходов</translation>
     </message>
     <message>
         <source>Display the stake modifier calculations in the debug.log file.</source>
@@ -5677,16 +5948,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Ошибка: нет действительного utxo!</translation>
     </message>
     <message>
-        <source>Failed to create mint</source>
-        <translation>Не удалось создать монетный двор</translation>
-    </message>
-    <message>
-        <source>Failed to deserialize</source>
-        <translation>Не удалось десериализовать</translation>
-    </message>
-    <message>
-        <source>Failed to find Zerocoins in wallet.dat</source>
-        <translation>Не удалось найти Zerocoins в файле wallet.dat</translation>
+        <source>Failed to parse public spend</source>
+        <translation>Не удалось разобрать публичные расходы</translation>
     </message>
     <message>
         <source>Failed to select a zerocoin</source>
@@ -5701,20 +5964,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Не удалось записать серийный номер монеты в кошелек</translation>
     </message>
     <message>
+        <source>Invalid amount for -%s=&lt;amount&gt;: '%s'</source>
+        <translation>Недопустимая сумма для -%s = &lt;amount&gt;: '%s'</translation>
+    </message>
+    <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
         <translation>Непрерывные  &lt;n&gt; транзакции в памяти (по умолчанию: %u)</translation>
-    </message>
-    <message>
-        <source>Last Obfuscation was too recent.</source>
-        <translation>Последняя обфускация была слишком поздней.</translation>
-    </message>
-    <message>
-        <source>Last successful Obfuscation action was too recent.</source>
-        <translation>Последняя успешная операция обфускации была совсем недавно.</translation>
-    </message>
-    <message>
-        <source>Limit size of signature cache to &lt;n&gt; entries (default: %u)</source>
-        <translation>Ограничить размер кэша подписи &lt;n&gt; для записей (по умолчанию: %u)</translation>
     </message>
     <message>
         <source>Line: %d</source>
@@ -5731,6 +5986,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>Loading addresses...</source>
         <translation>Загрузка адресов ...</translation>
+    </message>
+    <message>
+        <source>Loading banlist...</source>
+        <translation>Загрузка банлиста...</translation>
     </message>
     <message>
         <source>Loading block index...</source>
@@ -5753,20 +6012,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Загрузка ...</translation>
     </message>
     <message>
-        <source>Loading wallet... (%3.2f %%)</source>
-        <translation>Загрузка кошелька ... (%3.2f %%)</translation>
-    </message>
-    <message>
         <source>Loading wallet...</source>
         <translation>Загрузка кошелька ...</translation>
     </message>
     <message>
         <source>Location of the auth cookie (default: data dir)</source>
         <translation>Расположение файла cookie auth (по умолчанию: data dir)</translation>
-    </message>
-    <message>
-        <source>Lock is already in place.</source>
-        <translation>Блокировка уже установлена.</translation>
     </message>
     <message>
         <source>Lock masternodes from masternode configuration file (default: %u)</source>
@@ -5777,20 +6028,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Lookup (): Invalid -proxy адрес или имя хоста: '%s'</translation>
     </message>
     <message>
+        <source>MNs synchronization pending...</source>
+        <translation>Ожидается синхронизация Мастернод...</translation>
+    </message>
+    <message>
         <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>
         <translation>Поддерживать большинство  &lt;n&gt; соединений со сверстниками (по умолчанию: %u)</translation>
     </message>
     <message>
         <source>Masternode options:</source>
         <translation>Параметры Masternode:</translation>
-    </message>
-    <message>
-        <source>Masternode queue is full.</source>
-        <translation>Очередь Masternode заполнена.</translation>
-    </message>
-    <message>
-        <source>Masternode:</source>
-        <translation>Мастернода:</translation>
     </message>
     <message>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
@@ -5805,76 +6052,24 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>чеканка не превратила его в блокчейн</translation>
     </message>
     <message>
-        <source>Missing input transaction information.</source>
-        <translation>Отсутствует входная информация о транзакции.</translation>
-    </message>
-    <message>
-        <source>Mixing in progress...</source>
-        <translation>Выполняется микширование ...</translation>
-    </message>
-    <message>
-        <source>Need address because change is not exact</source>
-        <translation>Нужен адрес, потому что изменение не является точным</translation>
-    </message>
-    <message>
         <source>Need to specify a port with -whitebind: '%s'</source>
         <translation>Необходимо указать порт с -whitebind: '%s'</translation>
-    </message>
-    <message>
-        <source>No Masternodes detected.</source>
-        <translation>Мастерноды не найдены.</translation>
-    </message>
-    <message>
-        <source>No compatible Masternode found.</source>
-        <translation>Совпадающий Матернод не найден.</translation>
-    </message>
-    <message>
-        <source>No funds detected in need of denominating.</source>
-        <translation>Не обнаружено средств, требующих деноминации.</translation>
-    </message>
-    <message>
-        <source>No matching denominations found for mixing.</source>
-        <translation>Соответствующие наименования для смешивания не найдены.</translation>
     </message>
     <message>
         <source>Node relay options:</source>
         <translation>Варианты реле узла:</translation>
     </message>
     <message>
-        <source>Non-standard public key detected.</source>
-        <translation>Обнаружен нестандартный открытый ключ.</translation>
-    </message>
-    <message>
-        <source>Not compatible with existing transactions.</source>
-        <translation>Не совместим с существующими транзакциями.</translation>
-    </message>
-    <message>
         <source>Not enough file descriptors available.</source>
         <translation>Недостаточно доступных дескрипторов файлов.</translation>
-    </message>
-    <message>
-        <source>Not in the Masternode list.</source>
-        <translation>Не в списке Masternode.</translation>
-    </message>
-    <message>
-        <source>Number of automatic wallet backups (default: 10)</source>
-        <translation>Количество резервных копий автоматического кошелька (по умолчанию: 10)</translation>
     </message>
     <message>
         <source>Number of custom location backups to retain (default: %d)</source>
         <translation>Количество резервных копий пользовательского местоположения для сохранения (по умолчанию: %d)</translation>
     </message>
     <message>
-        <source>Obfuscation is idle.</source>
-        <translation>Обфускация простаивает.</translation>
-    </message>
-    <message>
-        <source>Obfuscation request complete:</source>
-        <translation>Запрос об обфускации завершен:</translation>
-    </message>
-    <message>
-        <source>Obfuscation request incomplete:</source>
-        <translation>Запрос об обфускации неполный:</translation>
+        <source>On first run, create a legacy wallet instead of a HD wallet</source>
+        <translation>При первом запуске создайте предыдущий кошелек вместо HD-кошелька</translation>
     </message>
     <message>
         <source>Only accept block chain matching built-in checkpoints (default: %u)</source>
@@ -5893,6 +6088,22 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Пароль для подключений JSON-RPC</translation>
     </message>
     <message>
+        <source>Peers are being disconnected due time differences.</source>
+        <translation>Пиры отключены из-за разницы во времени.</translation>
+    </message>
+    <message>
+        <source>Unable to find transaction containing mint %s</source>
+        <translation>Не удалось найти транзакцию, содержащую чеканку %s</translation>
+    </message>
+    <message>
+        <source>Unable to find transaction containing mint, txHash: %s</source>
+        <translation>Не удалось найти транзакцию, содержащую чеканку, txHash: %s</translation>
+    </message>
+    <message>
+        <source>Use block spam filter (default: %u)</source>
+        <translation>Использовать блок спам-фильтр (по умолчанию: %u)</translation>
+    </message>
+    <message>
         <source>isValid(): Invalid -proxy address or hostname: '%s'</source>
         <translation>isValid (): Invalid -proxy адрес или имя хоста: '%s'</translation>
     </message>
@@ -5901,12 +6112,150 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Подготовка к повторной синхронизации ...</translation>
     </message>
     <message>
+        <source>Connect only to the specified node(s); -noconnect or -connect=0 alone to disable automatic connections</source>
+        <translation>Подключаться только к указанному узлу(ам); -noconnect или -connect = 0 отдельно для отключения автоматического соединения</translation>
+    </message>
+    <message>
+        <source>Do not accept transactions if any ancestor would have &lt;n&gt; or more in-mempool descendants (default: %u)</source>
+        <translation>Не принимать транзакции, если у какой-либо истории будет &lt;n&gt; или больше в -mempool (по умолчанию: %u)</translation>
+    </message>
+    <message>
+        <source>Do not accept transactions if any ancestor would have more than &lt;n&gt; kilobytes of in-mempool descendants (default: %u).</source>
+        <translation>Не принимайте транзакции, если у любой истории было бы больше чем &lt;n&gt; килобайтов в -mempool (по умолчанию: %u).</translation>
+    </message>
+    <message>
+        <source>Do not accept transactions if number of in-mempool ancestors is &lt;n&gt; or more (default: %u)</source>
+        <translation>Не принимать транзакции, если число истории в -mempool &lt;n&gt; или больше (по умолчанию: %u)</translation>
+    </message>
+    <message>
+        <source>Do not accept transactions whose size with all in-mempool ancestors exceeds &lt;n&gt; kilobytes (default: %u)</source>
+        <translation>Не принимать транзакции, размер которых со всей историей в -mempool превышает &lt;n&gt; килобайтов (по умолчанию: %u)</translation>
+    </message>
+    <message>
+        <source>Do not keep transactions in the mempool longer than &lt;n&gt; hours (default: %u)</source>
+        <translation>Не хранить транзакции в mempool дольше, чем &lt;n&gt; часов (по умолчанию: %u)</translation>
+    </message>
+    <message>
+        <source>Fees (in %s/Kb) smaller than this are considered zero fee for relaying, mining and transaction creation (default: %s)</source>
+        <translation>Комиссия (в %s/Кб), меньше чем это, считаются с нулевой комиссией за ретрансляцию, майнинг и создание транзакций (по умолчанию: %s)</translation>
+    </message>
+    <message>
+        <source>Fees (in %s/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Комиссия (в %s/Кбайт) меньше этого значения считается с нулевой комиссией за создание транзакции (по умолчанию: %s)</translation>
+    </message>
+    <message>
+        <source>Minimum positive amount (in CLR) allowed by GUI and RPC for the stake split threshold (default: %s)</source>
+        <translation>Минимальная положительная сумма (в CLR), разрешенная GUI и RPC для порога разделения стекинга (по умолчанию: %s)</translation>
+    </message>
+    <message>
+        <source>Please check that your computer's date and time are correct! If your clock is wrong ClearCoin Core will not work properly.</source>
+        <translation>Пожалуйста, проверьте правильность даты и времени на вашем компьютере! Если ваши часы не точны, ClearCoin Core не будет работать должным образом.</translation>
+    </message>
+    <message>
+        <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect/-noconnect)</source>
+        <translation>Запросить адреса одноранговых узлов через DNS-поиск, если мало адресов (по умолчанию: 1, если -connect / -noconnect)</translation>
+    </message>
+    <message>
+        <source>Specify location of debug log file: this can be an absolute path or a path relative to the data directory (default: %s)</source>
+        <translation>Укажите местоположение файла журнала отладки: это может быть абсолютный путь или путь относительно каталога данных (по умолчанию: %s)</translation>
+    </message>
+    <message>
+        <source>WARNING: The transaction has been signed and recorded, so the wallet will try to re-send it. Use 'abandontransaction' to cancel it. (txid: %s)</source>
+        <translation>ВНИМАНИЕ: транзакция была подписана и записана, поэтому кошелек попытается отправить ее повторно. Используйте 'abandontransaction' для ее отмены. (txid: %s)</translation>
+    </message>
+    <message>
+        <source>(must be %d for %s-net)</source>
+        <translation>(должно быть %d для %s-net)</translation>
+    </message>
+    <message>
+        <source>Active Masternode not initialized.</source>
+        <translation>Активный Мастернода не инициализирована.</translation>
+    </message>
+    <message>
+        <source>Allows deprecated RPC method(s) to be used</source>
+        <translation>Позволяет использовать устаревшие метод(ы) RPC</translation>
+    </message>
+    <message>
+        <source>Can't generate a change-address key. Please call keypoolrefill first.</source>
+        <translation>Невозможно сгенерировать ключ изменения адреса. Пожалуйста, сначала позвоните в keypoolrefill.</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -%s address: '%s'</source>
+        <translation>Не удается разрешить -%s адрес: '%s'</translation>
+    </message>
+    <message>
+        <source>Change index out of range</source>
+        <translation>Изменить индекс вне диапазона</translation>
+    </message>
+    <message>
+        <source>Error: -listen must be true if -masternode is set.</source>
+        <translation>Ошибка: -listen должен быть истинным, если установлена -masternode.</translation>
+    </message>
+    <message>
+        <source>Error: -maxmempool must be at least %d MB</source>
+        <translation>Ошибка: -maxmempool должен быть не менее %d МБ</translation>
+    </message>
+    <message>
+        <source>Error: Invalid port %d for running a masternode.</source>
+        <translation>Ошибка: неверный порт %d для запуска мастерноды.</translation>
+    </message>
+    <message>
+        <source>Failed to accept tx in the memory pool (reason: %s)
+</source>
+        <translation>Не удалось принять tx в пул памяти (причина: %s)
+</translation>
+    </message>
+    <message>
+        <source>Fee (in %s/kB) to add to transactions you send (default: %s)</source>
+        <translation>Комиссия (в %s/кБ) для добавления к отправляемым транзакциям (по умолчанию: %s)</translation>
+    </message>
+    <message>
+        <source>Invalid -masternodeaddr address: %s</source>
+        <translation>Неверный адрес -masternodeaddr: %s</translation>
+    </message>
+    <message>
+        <source>Invalid port %d detected in masternode.conf</source>
+        <translation>В masternode.conf обнаружен неверный порт %d</translation>
+    </message>
+    <message>
+        <source>Invalid status error.</source>
+        <translation>Неверная ошибка статуса.</translation>
+    </message>
+    <message>
+        <source>Keep the transaction memory pool below &lt;n&gt; megabytes (default: %u)</source>
+        <translation>Хранить пул памяти транзакций ниже &lt;n&gt; мегабайтов (по умолчанию: %u)</translation>
+    </message>
+    <message>
+        <source>Keypool ran out, please call keypoolrefill first, or unlock the wallet.</source>
+        <translation>Keypool закончился, пожалуйста, сначала позвоните в keypoolrefill или разблокируйте кошелек.</translation>
+    </message>
+    <message>
+        <source>Limit size of signature cache to &lt;n&gt; MiB (default: %u)</source>
+        <translation>Ограничить размер кэша подписи до &lt;n&gt; МБ (по умолчанию: %u)</translation>
+    </message>
+    <message>
+        <source>Masternodes are required to run on port %d for %s-net</source>
+        <translation>Мастерноды должны работать на порте %d для %s-net</translation>
+    </message>
+    <message>
+        <source>Need destination or change address because change is not exact</source>
+        <translation>Необходимо место назначения или изменение адреса, потому что изменение не является точным</translation>
+    </message>
+    <message>
+        <source>No error</source>
+        <translation>Нет ошибки</translation>
+    </message>
+    <message>
         <source>Prepend debug output with timestamp (default: %u)</source>
         <translation>Подготовить вывод отладки с отметкой времени (по умолчанию: %u)</translation>
     </message>
     <message>
         <source>Print version and exit</source>
         <translation>Версия для печати и выхода</translation>
+    </message>
+    <message>
+        <source>Pubcoin not found in mint tx</source>
+        <translation>Pubcoin не найден в чеканке tx</translation>
     </message>
     <message>
         <source>RPC server options:</source>
@@ -5925,12 +6274,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Перестроить индекс цепочки блоков из текущих файлов blk000 ?? .dat</translation>
     </message>
     <message>
-        <source>Receive and display P2P network alerts (default: %u)</source>
-        <translation>Получение и отображение оповещений сети P2P (по умолчанию: %u)</translation>
-    </message>
-    <message>
-        <source>Reindex the accumulator database</source>
-        <translation>Reindex база данных аккумулятора</translation>
+        <source>Reindex the %s and z%s money supply statistics</source>
+        <translation>Переиндексировать статистику денежной массы %s и z%s</translation>
     </message>
     <message>
         <source>Relay and mine data carrier transactions (default: %u)</source>
@@ -5949,14 +6294,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Повторное сканирование ...</translation>
     </message>
     <message>
-        <source>ResetMintZerocoin finished: </source>
-        <translation>ResetMintZerocoin завершен:</translation>
-    </message>
-    <message>
-        <source>ResetSpentZerocoin finished: </source>
-        <translation>ResetSpentZerocoin завершен:</translation>
-    </message>
-    <message>
         <source>Run a thread to flush wallet periodically (default: %u)</source>
         <translation>Запустите поток, чтобы периодически очищать кошелек (по умолчанию: %u)</translation>
     </message>
@@ -5967,14 +6304,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
         <translation>Отправлять транзакции как транзакции с нулевой оплатой, если это возможно (по умолчанию: %u)</translation>
-    </message>
-    <message>
-        <source>Session not complete!</source>
-        <translation>Сессия не завершена!</translation>
-    </message>
-    <message>
-        <source>Session timed out.</source>
-        <translation>Время сеанса истекло.</translation>
     </message>
     <message>
         <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
@@ -6021,14 +6350,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Сжать файл debug.log при запуске клиента (по умолчанию: 1, когда нет -debug)</translation>
     </message>
     <message>
-        <source>Signing failed.</source>
-        <translation>Сбой подписи.</translation>
-    </message>
-    <message>
-        <source>Signing timed out.</source>
-        <translation>Подписание закончилось.</translation>
-    </message>
-    <message>
         <source>Signing transaction failed</source>
         <translation>Не удалось подписать транзакцию</translation>
     </message>
@@ -6069,24 +6390,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Проводить неподтвержденные изменения при отправке транзакций (по умолчанию: %u)</translation>
     </message>
     <message>
-        <source>Staking options:</source>
-        <translation>Варианты ставок:</translation>
-    </message>
-    <message>
         <source>Stop running after importing blocks from disk (default: %u)</source>
         <translation>Прекратить работу после импорта блоков с диска (по умолчанию: %u)</translation>
-    </message>
-    <message>
-        <source>Submitted following entries to masternode: %u / %d</source>
-        <translation>Представлены следующие записи в masternode: %u / %d</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
-        <translation>Отправлено в masternode, ожидая большего количества записей (%u / %d) %s</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting in queue %s</source>
-        <translation>Отправлено в masternode, ожидая в очереди %s</translation>
     </message>
     <message>
         <source>Synchronization failed</source>
@@ -6095,10 +6400,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <source>Synchronization finished</source>
         <translation>Синхронизация завершена</translation>
-    </message>
-    <message>
-        <source>Synchronization pending...</source>
-        <translation>Ожидается синхронизация ...</translation>
     </message>
     <message>
         <source>Synchronizing budgets...</source>
@@ -6117,24 +6418,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Синхронизация спорков ...</translation>
     </message>
     <message>
-        <source>Syncing CLR wallet...</source>
-        <translation>Синхронизация CLR кошелька ...</translation>
+        <source>Syncing zCLR wallet...</source>
+        <translation>Синхронизация zCLR кошелька ...</translation>
     </message>
     <message>
-        <source>The coin spend has been used</source>
-        <translation>Расходы на монеты использовались</translation>
-    </message>
-    <message>
-        <source>The new spend coin transaction did not verify</source>
-        <translation>Новая транзакция с мошенничеством не подтвердила</translation>
-    </message>
-    <message>
-        <source>The selected mint coin is an invalid coin</source>
-        <translation>Выбранная монетка - недействительна</translation>
-    </message>
-    <message>
-        <source>The transaction did not verify</source>
-        <translation>Транзакция не подтверждена</translation>
+        <source>The threshold value cannot be less than %s</source>
+        <translation>Пороговое значение не может быть меньше, чем %s</translation>
     </message>
     <message>
         <source>This help message</source>
@@ -6149,8 +6438,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Это предназначено для инструментов тестирования регрессии и разработки приложений.</translation>
     </message>
     <message>
-        <source>This is not a Masternode.</source>
-        <translation>Это не Мастернод.</translation>
+        <source>This is not a masternode. 'local' option disabled.</source>
+        <translation>Это не мастернода. Опция 'local' отключена.</translation>
+    </message>
+    <message>
+        <source>This is not a masternode.</source>
+        <translation>Это не мастернода.</translation>
     </message>
     <message>
         <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
@@ -6185,16 +6478,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Суммы транзакций должны быть положительными</translation>
     </message>
     <message>
-        <source>Transaction created successfully.</source>
-        <translation>Транзакция создана успешно.</translation>
-    </message>
-    <message>
-        <source>Transaction fees are too high.</source>
-        <translation>Сборы за транзакцию слишком высоки.</translation>
-    </message>
-    <message>
-        <source>Transaction not valid.</source>
-        <translation>Транзакция недействительна.</translation>
+        <source>Transaction canceled.</source>
+        <translation>Транзакция отменена.</translation>
     </message>
     <message>
         <source>Transaction too large for fee policy</source>
@@ -6205,14 +6490,6 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Слишком большая транзакция</translation>
     </message>
     <message>
-        <source>Transmitting final transaction.</source>
-        <translation>Передача окончательной транзакции.</translation>
-    </message>
-    <message>
-        <source>Try to spend with a higher security level to include more coins</source>
-        <translation>Попытайтесь провести с более высоким уровнем безопасности, чтобы включить больше монет</translation>
-    </message>
-    <message>
         <source>Trying to spend an already spent serial #, try again.</source>
         <translation>Пытаясь потратить уже потраченный серийный номер #, попробуйте еще раз.</translation>
     </message>
@@ -6221,8 +6498,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Невозможно связать %s на этом компьютере (связать возвращенную ошибку %s)</translation>
     </message>
     <message>
-        <source>Unable to find transaction containing mint</source>
-        <translation>Не удалось найти транзакцию, содержащую монетный двор</translation>
+        <source>Unable to generate keys</source>
+        <translation>Невозможно сгенерировать ключи</translation>
     </message>
     <message>
         <source>Unable to sign spork message, wrong key?</source>
@@ -6237,8 +6514,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Неизвестная сеть, указанная в -onlynet: '%s'</translation>
     </message>
     <message>
-        <source>Unknown state: id = %u</source>
-        <translation>Неизвестное состояние: id = %u</translation>
+        <source>Unsupported logging category %s=%s.</source>
+        <translation>Неподдерживаемая категория протоколирования %s =%s.</translation>
     </message>
     <message>
         <source>Upgrade wallet to latest format</source>
@@ -6249,16 +6526,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Используйте UPnP для отображения порта прослушивания (по умолчанию: %u)</translation>
     </message>
     <message>
-        <source>Use UPnP to map the listening port (default: 1 when listening)</source>
-        <translation>Используйте UPnP для отображения порта прослушивания (по умолчанию: 1 при прослушивании)</translation>
-    </message>
-    <message>
-        <source>Use a custom max chain reorganization depth (default: %u)</source>
-        <translation>Используйте настраиваемую максимальную глубину реорганизации цепочки (по умолчанию: %u)</translation>
-    </message>
-    <message>
         <source>Use the test network</source>
         <translation>Использовать тестовую сеть</translation>
+    </message>
+    <message>
+        <source>User Agent comment (%s) contains unsafe characters.</source>
+        <translation>Комментарий агента пользователя (%s) содержит небезопасные символы.</translation>
     </message>
     <message>
         <source>Username for JSON-RPC connections</source>
@@ -6266,11 +6539,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>Value is below the smallest available denomination (= 1) of zCLR</source>
-        <translation>Значение ниже наименьшего доступного номинала (= 1) zCLR</translation>
-    </message>
-    <message>
-        <source>Value more than Obfuscation pool maximum allows.</source>
-        <translation>Максимальное значение больше, чем позволяет пул перекрытий Obfuscation.</translation>
+        <translation>Значение ниже наименьшего доступного номинала (= 1) zClr</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -6281,16 +6550,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Проверка кошелька ...</translation>
     </message>
     <message>
-        <source>Version 1 zCLR require a security level of 100 to successfully spend.</source>
-        <translation>Для версии 1 zCLR требуется уровень безопасности 100, который можно успешно тратить.</translation>
-    </message>
-    <message>
         <source>Wallet %s resides outside data directory %s</source>
         <translation>Кошелек %s находится за пределами каталога данных %s</translation>
-    </message>
-    <message>
-        <source>Wallet is locked.</source>
-        <translation>Кошелек заблокирован.</translation>
     </message>
     <message>
         <source>Wallet needed to be rewritten: restart ClearCoin Core to complete</source>
@@ -6321,24 +6582,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Предупреждение. Неподдерживаемый аргумент -debugnet игнорируется, используйте -debug = net.</translation>
     </message>
     <message>
-        <source>Will retry...</source>
-        <translation>Будет повторять ...</translation>
-    </message>
-    <message>
         <source>You don't have enough Zerocoins in your wallet</source>
         <translation>У вас недостаточно Zerocoins в вашем кошельке</translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
         <translation>Вам нужно перестроить базу данных с помощью -reindex для изменения -txindex</translation>
-    </message>
-    <message>
-        <source>Your entries added successfully.</source>
-        <translation>Ваши записи добавлены успешно</translation>
-    </message>
-    <message>
-        <source>Your transaction was accepted into the pool!</source>
-        <translation>Ваша транзакция была принята в пул!</translation>
     </message>
     <message>
         <source>Zapping all transactions from wallet...</source>
@@ -6349,6 +6598,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Опции уведомления ZeroMQ:</translation>
     </message>
     <message>
+        <source>Zerocoin minting available only on regtest</source>
+        <translation>Чеканка zerocoin доступна только на regtest</translation>
+    </message>
+    <message>
         <source>Zerocoin options:</source>
         <translation>Варианты Zerocoin:</translation>
     </message>
@@ -6356,9 +6609,52 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <source>on startup</source>
         <translation>на старте</translation>
     </message>
+</context>
+<context>
+    <name>send</name>
     <message>
-        <source>wallet.dat corrupt, salvage failed</source>
-        <translation>wallet.dat коррумпирован, сбор не выполнен</translation>
+        <source>Form</source>
+        <translation>Вид</translation>
+    </message>
+    <message>
+        <source>Send</source>
+        <translation>Отправить</translation>
+    </message>
+    <message>
+        <source>Send public coins (CLR)</source>
+        <translation>Отправить монеты (CLR)</translation>
+    </message>
+    <message>
+        <source>ClearCoin address or contact label</source>
+        <translation>ClearCoin адрес или лейбл контакта</translation>
+    </message>
+    <message>
+        <source>Amount</source>
+        <translation>Сумма</translation>
+    </message>
+    <message>
+        <source>Customize fee</source>
+        <translation>Настройка комиссии</translation>
+    </message>
+    <message>
+        <source>Clear all</source>
+        <translation>Очистить все</translation>
+    </message>
+    <message>
+        <source>Add recipient</source>
+        <translation>Добавить получателя</translation>
+    </message>
+    <message>
+        <source>Total to send</source>
+        <translation>Общая сумма к отправке</translation>
+    </message>
+    <message>
+        <source>Reset to default</source>
+        <translation>Сбросить настройки по умолчанию</translation>
+    </message>
+    <message>
+        <source>Include delegated</source>
+        <translation>Включить делегированного</translation>
     </message>
 </context>
 </TS>

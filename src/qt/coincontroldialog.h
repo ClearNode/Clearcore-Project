@@ -1,5 +1,6 @@
 // Copyright (c) 2011-2013 The Bitcoin developers
-// Copyright (c) 2017 CLR
+// Copyright (c) 2017-2020 The PIVX developers
+// Copyright (c) 2020 The CLEARCOIN developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -7,6 +8,7 @@
 #define BITCOIN_QT_COINCONTROLDIALOG_H
 
 #include "amount.h"
+#include "qt/clr/snackbar.h"
 
 #include <QAbstractButton>
 #include <QAction>
@@ -43,26 +45,30 @@ class CoinControlDialog : public QDialog
     Q_OBJECT
 
 public:
-    explicit CoinControlDialog(QWidget* parent = nullptr, bool fMultisigEnabled = false);
+    explicit CoinControlDialog(QWidget* parent = nullptr, bool _forDelegation = false);
     ~CoinControlDialog();
 
     void setModel(WalletModel* model);
     void updateDialogLabels();
+    void updateLabels();
+    void updateView();
+    void refreshDialog();
+    void clearPayAmounts();
+    void addPayAmount(const CAmount& amount);
 
-    // static because also called from sendcoinsdialog
-    static void updateLabels(WalletModel*, QDialog*);
     static QString getPriorityLabel(double dPriority, double mempoolEstimatePriority);
 
-    static QList<CAmount> payAmounts;
-    static CCoinControl* coinControl;
-    static int nSplitBlockDummy;
+    CCoinControl* coinControl;
 
 private:
     Ui::CoinControlDialog* ui;
+    SnackBar *snackBar = nullptr;
     WalletModel* model;
     int sortColumn;
     Qt::SortOrder sortOrder;
-    bool fMultisigEnabled;
+    bool forDelegation;
+    QList<CAmount> payAmounts{};
+    unsigned int nSelectableInputs{0};
 
     QMenu* contextMenu;
     QTreeWidgetItem* contextMenuItem;
@@ -70,24 +76,23 @@ private:
     QAction* lockAction;
     QAction* unlockAction;
 
+    void updatePushButtonSelectAll(bool checked);
     void sortView(int, Qt::SortOrder);
-    void updateView();
+    void inform(const QString& text);
 
     enum {
         COLUMN_CHECKBOX,
         COLUMN_AMOUNT,
         COLUMN_LABEL,
         COLUMN_ADDRESS,
-        COLUMN_TYPE,
         COLUMN_DATE,
         COLUMN_CONFIRMATIONS,
-        COLUMN_PRIORITY,
         COLUMN_TXHASH,
         COLUMN_VOUT_INDEX,
     };
     friend class CCoinControlWidgetItem;
 
-private slots:
+private Q_SLOTS:
     void showMenu(const QPoint&);
     void copyAmount();
     void copyLabel();
@@ -100,14 +105,12 @@ private slots:
     void clipboardFee();
     void clipboardAfterFee();
     void clipboardBytes();
-    void clipboardPriority();
     void clipboardLowOutput();
     void clipboardChange();
     void radioTreeMode(bool);
     void radioListMode(bool);
     void viewItemChanged(QTreeWidgetItem*, int);
     void headerSectionClicked(int);
-    void buttonBoxClicked(QAbstractButton*);
     void buttonSelectAllClicked();
     void buttonToggleLockClicked();
     void updateLabelLocked();
