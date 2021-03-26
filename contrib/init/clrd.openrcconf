@@ -1,25 +1,25 @@
-# /etc/conf.d/clrd: config file for /etc/init.d/clrd
+# /etc/conf.d/azusd: config file for /etc/init.d/azusd
 
 # Config file location
-#BITCOIND_CONFIGFILE="/etc/clr/clr.conf"
+#BITCOIND_CONFIGFILE="/etc/azus/azus.conf"
 
 # What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
-#BITCOIND_PIDDIR="/var/run/clrd"
+#BITCOIND_PIDDIR="/var/run/azusd"
 
 # What filename to give the pidfile
-#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/clrd.pid"
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/azusd.pid"
 
-# Where to write clrd data (be mindful that the blockchain is large)
-#BITCOIND_DATADIR="/var/lib/clrd"
+# Where to write azusd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/azusd"
 
-# User and group to own clrd process
-#BITCOIND_USER="clr"
-#BITCOIND_GROUP="clr"
+# User and group to own azusd process
+#BITCOIND_USER="azus"
+#BITCOIND_GROUP="azus"
 
-# Path to clrd executable
-#BITCOIND_BIN="/usr/bin/clrd"
+# Path to azusd executable
+#BITCOIND_BIN="/usr/bin/azusd"
 
-# Nice value to run clrd under
+# Nice value to run azusd under
 #BITCOIND_NICE=0
 
 # Additional options (avoid -conf and -datadir, use flags above)

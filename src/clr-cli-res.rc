@@ -17,13 +17,13 @@ BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
             VALUE "CompanyName",        "ClearCoin"
-            VALUE "FileDescription",    "Clr-cli (OSS RPC client for ClearCoin)"
+            VALUE "FileDescription",    "ClearCoin-cli (OSS RPC client for ClearCoin)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "clr-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
             VALUE "OriginalFilename",   "clr-cli.exe"
-            VALUE "ProductName",        "Clr-cli"
+            VALUE "ProductName",        "ClearCoin-cli"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

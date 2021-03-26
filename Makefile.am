@@ -48,13 +48,24 @@ DIST_SHARE = \
            $(top_srcdir)/share/genbuild.sh \
            $(top_srcdir)/share/rpcauth
 
+DIST_CARGO = \
+           $(top_srcdir)/.cargo/config.offline \
+           $(top_srcdir)/Cargo.lock \
+           $(top_srcdir)/Cargo.toml \
+           $(top_srcdir)/rust-toolchain \
+           $(top_srcdir)/util/fetch-params.sh
+
 BIN_CHECKS=$(top_srcdir)/contrib/devtools/symbol-check.py \
            $(top_srcdir)/contrib/devtools/security-check.py
 
-WINDOWS_PACKAGING = $(top_srcdir)/share/pixmaps/bitcoin.ico \
+WINDOWS_PACKAGING = $(top_srcdir)/share/pixmaps/clr.ico \
   $(top_srcdir)/share/pixmaps/nsis-header.bmp \
   $(top_srcdir)/share/pixmaps/nsis-wizard.bmp \
   $(top_srcdir)/doc/README_windows.txt
+
+LINUX_PACKAGING = $(top_srcdir)/share/pixmaps/clr16.xpm \
+  $(top_srcdir)/share/pixmaps/clr32.xpm \
+  $(top_srcdir)/share/pixmaps/clr128.png
 
 OSX_PACKAGING = $(OSX_DEPLOY_SCRIPT) $(OSX_FANCY_PLIST) $(OSX_INSTALLER_ICONS) \
   $(top_srcdir)/contrib/macdeploy/$(OSX_BACKGROUND_SVG) \
@@ -169,7 +180,7 @@ $(BITCOIN_CLI_BIN): FORCE
 	$(MAKE) -C src $(@F)
 
 if USE_LCOV
-LCOV_FILTER_PATTERN=-p "/usr/include/" -p "src/leveldb/" -p "src/univalue" -p "src/secp256k1"
+LCOV_FILTER_PATTERN=-p "/usr/include/" -p "/usr/lib/" -p "src/leveldb/" -p "src/crc32c/" -p "src/univalue" -p "src/secp256k1"
 
 baseline.info:
 	$(LCOV) -c -i -d $(abs_builddir)/src -o $@
@@ -216,7 +227,10 @@ endif
 
 dist_noinst_SCRIPTS = autogen.sh
 
-EXTRA_DIST = $(DIST_SHARE) test/functional/test_runner.py test/functional $(DIST_CONTRIB) $(DIST_DOCS) $(WINDOWS_PACKAGING) $(OSX_PACKAGING) $(BIN_CHECKS)
+EXTRA_DIST = $(DIST_SHARE) $(DIST_CONTRIB) $(DIST_DOCS) $(DIST_CARGO) $(WINDOWS_PACKAGING) $(LINUX_PACKAGING) $(OSX_PACKAGING) $(BIN_CHECKS)
+
+EXTRA_DIST += \
+    test/functional
 
 EXTRA_DIST += \
     test/util/bitcoin-util-test.py \
@@ -238,6 +252,7 @@ EXTRA_DIST += \
     test/util/data/txcreatescript1.json \
     test/util/data/txcreatesign.hex \
     test/util/data/txcreatesign.json \
+    test/util/data/pre_hd_wallet.dat \
     test/util/rpcauth-test.py
 
 CLEANFILES = $(OSX_DMG) $(BITCOIN_WIN_INSTALLER)
@@ -263,5 +278,5 @@ clean-docs:
 
 clean-local: clean-docs
 	rm -rf coverage_percent.txt test_clr.coverage/ total.coverage/ test/tmp/ cache/ $(OSX_APP)
-	rm -rf test/functional/__pycache__ test/functional/test_framework/__pycache__ test/cache
+	rm -rf test/functional/__pycache__ test/functional/test_framework/__pycache__ test/cache share/rpcauth/__pycache__
 

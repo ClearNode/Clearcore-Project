@@ -1,1 +1,2 @@
-contrib/clrd.bash-completion	clrd
+contrib/azusd.bash-completion	azusd
+contrib/azus-cli.bash-completion azus-cli

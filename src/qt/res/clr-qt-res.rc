@@ -19,8 +19,8 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "CLR"
-            VALUE "FileDescription",    "ClearCoin Core (OSS GUI client for CLR)"
+            VALUE "CompanyName",        "ClearCoin"
+            VALUE "FileDescription",    "ClearCoin Core (OSS GUI client for ClearCoin)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "clr-qt"
             VALUE "LegalCopyright",     COPYRIGHT_STR
