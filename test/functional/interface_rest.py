@@ -4,7 +4,7 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Test the REST API."""
 
-from test_framework.test_framework import ClearCoinTestFramework
+from test_framework.test_framework import BitcoinTestFramework
 from test_framework.util import *
 from struct import *
 from io import BytesIO
@@ -40,7 +40,7 @@ def http_post_call(host, port, path, requestdata = '', response_object = 0):
 
     return conn.getresponse().read()
 
-class RESTTest (ClearCoinTestFramework):
+class RESTTest (BitcoinTestFramework):
     FORMAT_SEPARATOR = "."
 
     def set_test_params(self):
@@ -49,7 +49,7 @@ class RESTTest (ClearCoinTestFramework):
 
     def setup_network(self, split=False):
         super().setup_network()
-        connect_nodes(self.nodes[0], 2)
+        connect_nodes_bi(self.nodes, 0, 2)
 
     def run_test(self):
         url = urllib.parse.urlparse(self.nodes[0].url)
@@ -210,9 +210,9 @@ class RESTTest (ClearCoinTestFramework):
         # compare with block header
         response_header = http_get_call(url.hostname, url.port, '/rest/headers/1/'+bb_hash+self.FORMAT_SEPARATOR+"bin", True)
         assert_equal(response_header.status, 200)
-        assert_equal(int(response_header.getheader('content-length')), 80)
+        assert_equal(int(response_header.getheader('content-length')), 112)
         response_header_str = response_header.read()
-        assert_equal(response_str[0:80], response_header_str)
+        assert_equal(response_str[0:112], response_header_str)
 
         # check block hex format
         response_hex = http_get_call(url.hostname, url.port, '/rest/block/'+bb_hash+self.FORMAT_SEPARATOR+"hex", True)

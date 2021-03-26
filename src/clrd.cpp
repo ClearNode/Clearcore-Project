@@ -1,23 +1,24 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2019 The PIVX developers
+// Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2019 The CLEARCOIN developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "clientversion.h"
-#include "fs.h"
 #include "init.h"
 #include "main.h"
 #include "masternodeconfig.h"
 #include "noui.h"
 #include "rpc/server.h"
-#include "guiinterface.h"
+#include "ui_interface.h"
 #include "util.h"
 #include "httpserver.h"
 #include "httprpc.h"
 
 #include <boost/algorithm/string/predicate.hpp>
+#include <boost/filesystem.hpp>
 #include <boost/thread.hpp>
 
 #include <stdio.h>
@@ -28,8 +29,8 @@
  *
  * \section intro_sec Introduction
  *
- * This is the developer documentation of the reference client for an experimental new digital currency called PIVX (http://www.azus.org),
- * which enables instant payments to anyone, anywhere in the world. PIVX uses peer-to-peer technology to operate
+ * This is the developer documentation of the reference client for an experimental new digital currency called CLR (http://www.clearnodes.com),
+ * which enables instant payments to anyone, anywhere in the world. CLR uses peer-to-peer technology to operate
  * with no central authority: managing transactions and issuing money are carried out collectively by the network.
  *
  * The software is a community-driven open source project, released under the MIT license.
@@ -62,18 +63,18 @@ bool AppInit(int argc, char* argv[])
     //
     // Parameters
     //
-    // If Qt is used, parameters/azus.conf are parsed in qt/azus.cpp's main()
+    // If Qt is used, parameters/clr.conf are parsed in qt/clr.cpp's main()
     ParseParameters(argc, argv);
 
     // Process help and version before taking care about datadir
     if (mapArgs.count("-?") || mapArgs.count("-help") || mapArgs.count("-version")) {
-        std::string strUsage = _("Azus Core Daemon") + " " + _("version") + " " + FormatFullVersion() + "\n";
+        std::string strUsage = _("ClearCoin Core Daemon") + " " + _("version") + " " + FormatFullVersion() + "\n";
 
         if (mapArgs.count("-version")) {
             strUsage += LicenseInfo();
         } else {
             strUsage += "\n" + _("Usage:") + "\n" +
-                        "  azusd [options]                     " + _("Start Azus Core Daemon") + "\n";
+                        "  clrd [options]                     " + _("Start ClearCoin Core Daemon") + "\n";
 
             strUsage += "\n" + HelpMessage(HMM_BITCOIND);
         }
@@ -83,13 +84,13 @@ bool AppInit(int argc, char* argv[])
     }
 
     try {
-        if (!fs::is_directory(GetDataDir(false))) {
+        if (!boost::filesystem::is_directory(GetDataDir(false))) {
             fprintf(stderr, "Error: Specified data directory \"%s\" does not exist.\n", mapArgs["-datadir"].c_str());
             return false;
         }
         try {
             ReadConfigFile(mapArgs, mapMultiArgs);
-        } catch (const std::exception& e) {
+        } catch (std::exception& e) {
             fprintf(stderr, "Error reading configuration file: %s\n", e.what());
             return false;
         }
@@ -109,17 +110,17 @@ bool AppInit(int argc, char* argv[])
         // Command-line RPC
         bool fCommandLine = false;
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "azus:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "clr:"))
                 fCommandLine = true;
 
         if (fCommandLine) {
-            fprintf(stderr, "Error: There is no RPC client functionality in azusd anymore. Use the azus-cli utility instead.\n");
+            fprintf(stderr, "Error: There is no RPC client functionality in clrd anymore. Use the clr-cli utility instead.\n");
             exit(1);
         }
 #ifndef WIN32
         fDaemon = GetBoolArg("-daemon", false);
         if (fDaemon) {
-            fprintf(stdout, "AZUS server starting\n");
+            fprintf(stdout, "CLR server starting\n");
 
             // Daemonize
             pid_t pid = fork();
@@ -140,11 +141,8 @@ bool AppInit(int argc, char* argv[])
 #endif
         SoftSetBoolArg("-server", true);
 
-        // Set this early so that parameter interactions go to console
-        InitLogging();
-        InitParameterInteraction();
         fRet = AppInit2();
-    } catch (const std::exception& e) {
+    } catch (std::exception& e) {
         PrintExceptionContinue(&e, "AppInit()");
     } catch (...) {
         PrintExceptionContinue(NULL, "AppInit()");
@@ -164,7 +162,7 @@ int main(int argc, char* argv[])
 {
     SetupEnvironment();
 
-    // Connect azusd signal handlers
+    // Connect clrd signal handlers
     noui_connect();
 
     return (AppInit(argc, argv) ? 0 : 1);

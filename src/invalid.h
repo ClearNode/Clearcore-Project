@@ -1,12 +1,12 @@
 // Copyright (c) 2018 The PIVX developers
-// Copyright (c) 2020 The CLEARCOIN developers
+// Copyright (c) 2019 The CLEARCOIN developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef ClearCoin_INVALID_H
-#define ClearCoin_INVALID_H
+#ifndef CLR_INVALID_H
+#define CLR_INVALID_H
 
-#endif //PIVX_INVALID_H
+#endif //CLR_INVALID_H
 
 #include <libzerocoin/bignum.h>
 #include <univalue/include/univalue.h>

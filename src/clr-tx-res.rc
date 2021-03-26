@@ -16,8 +16,8 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "ClearCoin"
-            VALUE "FileDescription",    "clr-tx (CLI ClearCoin transaction editor utility)"
+            VALUE "CompanyName",        "CLR"
+            VALUE "FileDescription",    "clr-tx (CLI CLR transaction editor utility)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "clr-tx"
             VALUE "LegalCopyright",     COPYRIGHT_STR

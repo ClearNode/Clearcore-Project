@@ -1,5 +1,6 @@
 // Copyright (c) 2011-2013 The Bitcoin developers
-// Copyright (c) 2017-2019 The PIVX developers
+// Copyright (c) 2017 The PIVX developers
+// Copyright (c) 2019 The CLEARCOIN developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -7,7 +8,7 @@
 
 QValueComboBox::QValueComboBox(QWidget* parent) : QComboBox(parent), role(Qt::UserRole)
 {
-    connect(this, static_cast<void (QComboBox::*)(int)>(&QComboBox::currentIndexChanged), this, &QValueComboBox::handleSelectionChanged);
+    connect(this, SIGNAL(currentIndexChanged(int)), this, SLOT(handleSelectionChanged(int)));
 }
 
 QVariant QValueComboBox::value() const
@@ -27,5 +28,5 @@ void QValueComboBox::setRole(int role)
 
 void QValueComboBox::handleSelectionChanged(int idx)
 {
-    Q_EMIT valueChanged();
+    emit valueChanged();
 }

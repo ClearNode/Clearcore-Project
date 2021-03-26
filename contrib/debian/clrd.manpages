@@ -1,2 +1,2 @@
-doc/man/azusd.1
-doc/man/azus-cli.1
+debian/manpages/clrd.1
+debian/manpages/clr.conf.5

@@ -1,11 +1,12 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2016-2018 The PIVX developers
+// Copyright (c) 2019 The CLEARCOIN developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef ClearCoin_PUBKEY_H
-#define ClearCoin_PUBKEY_H
+#ifndef CLR_PUBKEY_H
+#define CLR_PUBKEY_H
 
 #include "hash.h"
 #include "serialize.h"
@@ -33,10 +34,10 @@ public:
     /**
      * secp256k1:
      */
-    static constexpr unsigned int PUBLIC_KEY_SIZE             = 65;
-    static constexpr unsigned int COMPRESSED_PUBLIC_KEY_SIZE  = 33;
-    static constexpr unsigned int SIGNATURE_SIZE              = 72;
-    static constexpr unsigned int COMPACT_SIGNATURE_SIZE      = 65;
+    static const unsigned int PUBLIC_KEY_SIZE             = 65;
+    static const unsigned int COMPRESSED_PUBLIC_KEY_SIZE  = 33;
+    static const unsigned int SIGNATURE_SIZE              = 72;
+    static const unsigned int COMPACT_SIGNATURE_SIZE      = 65;
     /**
      * see www.keylength.com
      * script supports up to 75 for single byte push
@@ -69,11 +70,6 @@ private:
     }
 
 public:
-
-    bool static ValidSize(const std::vector<unsigned char> &vch) {
-      return vch.size() > 0 && GetLen(vch[0]) == vch.size();
-    }
-
     //! Construct an invalid public key.
     CPubKey()
     {
@@ -127,15 +123,19 @@ public:
     }
 
     //! Implement serialization, as if this was a byte vector.
+    unsigned int GetSerializeSize(int nType, int nVersion) const
+    {
+        return size() + 1;
+    }
     template <typename Stream>
-    void Serialize(Stream& s) const
+    void Serialize(Stream& s, int nType, int nVersion) const
     {
         unsigned int len = size();
         ::WriteCompactSize(s, len);
         s.write((char*)vch, len);
     }
     template <typename Stream>
-    void Unserialize(Stream& s)
+    void Unserialize(Stream& s, int nType, int nVersion)
     {
         unsigned int len = ::ReadCompactSize(s);
         if (len <= PUBLIC_KEY_SIZE) {
@@ -264,4 +264,4 @@ public:
     ~ECCVerifyHandle();
 };
 
-#endif // PIVX_PUBKEY_H
+#endif // CLR_PUBKEY_H

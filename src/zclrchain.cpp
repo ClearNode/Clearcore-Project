@@ -1,25 +1,20 @@
-// Copyright (c) 2018-2020 The PIVX developers
-// Copyright (c) 2020 The CLEARCOIN developers
+// Copyright (c) 2018 The PIVX developers
+// Copyright (c) 2019 The CLEARCOIN developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "zclrchain.h"
-
-#include "guiinterface.h"
 #include "invalid.h"
 #include "main.h"
 #include "txdb.h"
-#include "wallet/wallet.h"
-#include "zclr/zclrmodule.h"
+#include "ui_interface.h"
 
 // 6 comes from OPCODE (1) + vch.size() (1) + BIGNUM size (4)
 #define SCRIPT_OFFSET 6
 // For Script size (BIGNUM/Uint256 size)
 #define BIGNUM_SIZE   4
 
-std::map<libzerocoin::CoinDenomination, int64_t> mapZerocoinSupply;
-
-bool BlockToMintValueVector(const CBlock& block, const libzerocoin::CoinDenomination denom, std::vector<CBigNum>& vValues)
+bool BlockToMintValueVector(const CBlock& block, const libzerocoin::CoinDenomination denom, vector<CBigNum>& vValues)
 {
     for (const CTransaction& tx : block.vtx) {
         if(!tx.HasZerocoinMintOutputs())
@@ -30,7 +25,7 @@ bool BlockToMintValueVector(const CBlock& block, const libzerocoin::CoinDenomina
                 continue;
 
             CValidationState state;
-            libzerocoin::PublicCoin coin(Params().GetConsensus().Zerocoin_Params(false));
+            libzerocoin::PublicCoin coin(Params().Zerocoin_Params(false));
             if(!TxOutToPublicCoin(txOut, coin, state))
                 return false;
 
@@ -74,7 +69,7 @@ bool BlockToPubcoinList(const CBlock& block, std::list<libzerocoin::PublicCoin>&
                 continue;
 
             CValidationState state;
-            libzerocoin::PublicCoin pubCoin(Params().GetConsensus().Zerocoin_Params(false));
+            libzerocoin::PublicCoin pubCoin(Params().Zerocoin_Params(false));
             if(!TxOutToPublicCoin(txOut, pubCoin, state))
                 return false;
 
@@ -116,7 +111,7 @@ bool BlockToZerocoinMintList(const CBlock& block, std::list<CZerocoinMint>& vMin
                 continue;
 
             CValidationState state;
-            libzerocoin::PublicCoin pubCoin(Params().GetConsensus().Zerocoin_Params(false));
+            libzerocoin::PublicCoin pubCoin(Params().Zerocoin_Params(false));
             if(!TxOutToPublicCoin(txOut, pubCoin, state))
                 return false;
 
@@ -158,7 +153,7 @@ void FindMints(std::vector<CMintMeta> vMintsToFind, std::vector<CMintMeta>& vMin
         }
 
         //see if this mint is spent
-        uint256 hashTxSpend;
+        uint256 hashTxSpend = 0;
         bool fSpent = zerocoinDB->ReadCoinSpend(meta.hashSerial, hashTxSpend);
 
         //if marked as spent, check that it actually made it into the chain
@@ -186,7 +181,7 @@ void FindMints(std::vector<CMintMeta> vMintsToFind, std::vector<CMintMeta>& vMin
         for (auto& out : tx.vout) {
             if (!out.IsZerocoinMint())
                 continue;
-            libzerocoin::PublicCoin pubcoin(Params().GetConsensus().Zerocoin_Params(meta.nVersion < libzerocoin::PrivateCoin::PUBKEY_VERSION));
+            libzerocoin::PublicCoin pubcoin(Params().Zerocoin_Params(meta.nVersion < libzerocoin::PrivateCoin::PUBKEY_VERSION));
             CValidationState state;
             TxOutToPublicCoin(out, pubcoin, state);
             if (GetPubCoinHash(pubcoin.getValue()) == meta.hashPubcoin && pubcoin.getDenomination() != meta.denom) {
@@ -210,21 +205,32 @@ void FindMints(std::vector<CMintMeta> vMintsToFind, std::vector<CMintMeta>& vMin
     }
 }
 
+int GetZerocoinStartHeight()
+{
+    return Params().Zerocoin_StartHeight();
+}
+
 bool GetZerocoinMint(const CBigNum& bnPubcoin, uint256& txHash)
 {
-    txHash = UINT256_ZERO;
+    txHash = 0;
     return zerocoinDB->ReadCoinMint(bnPubcoin, txHash);
 }
 
 bool IsPubcoinInBlockchain(const uint256& hashPubcoin, uint256& txid)
 {
-    txid.SetNull();
+    txid = 0;
     return zerocoinDB->ReadCoinMint(hashPubcoin, txid);
+}
+
+bool IsSerialKnown(const CBigNum& bnSerial)
+{
+    uint256 txHash = 0;
+    return zerocoinDB->ReadCoinSpend(bnSerial, txHash);
 }
 
 bool IsSerialInBlockchain(const CBigNum& bnSerial, int& nHeightTx)
 {
-    uint256 txHash;
+    uint256 txHash = 0;
     // if not in zerocoinDB then its not in the blockchain
     if (!zerocoinDB->ReadCoinSpend(bnSerial, txHash))
         return false;
@@ -240,7 +246,7 @@ bool IsSerialInBlockchain(const uint256& hashSerial, int& nHeightTx, uint256& tx
 
 bool IsSerialInBlockchain(const uint256& hashSerial, int& nHeightTx, uint256& txidSpend, CTransaction& tx)
 {
-    txidSpend.SetNull();
+    txidSpend = 0;
     // if not in zerocoinDB then its not in the blockchain
     if (!zerocoinDB->ReadCoinSpend(hashSerial, txidSpend))
         return false;
@@ -250,25 +256,17 @@ bool IsSerialInBlockchain(const uint256& hashSerial, int& nHeightTx, uint256& tx
 
 std::string ReindexZerocoinDB()
 {
-    AssertLockHeld(cs_main);
-
     if (!zerocoinDB->WipeCoins("spends") || !zerocoinDB->WipeCoins("mints")) {
         return _("Failed to wipe zerocoinDB");
     }
 
     uiInterface.ShowProgress(_("Reindexing zerocoin database..."), 0);
 
-    // initialize supply to 0
-    mapZerocoinSupply.clear();
-    for (auto& denom : libzerocoin::zerocoinDenomList) mapZerocoinSupply.insert(std::make_pair(denom, 0));
-
-    const Consensus::Params& consensus = Params().GetConsensus();
-    const int zc_start_height = consensus.vUpgrades[Consensus::UPGRADE_ZC].nActivationHeight;
-    CBlockIndex* pindex = chainActive[zc_start_height];
+    CBlockIndex* pindex = chainActive[Params().Zerocoin_StartHeight()];
     std::vector<std::pair<libzerocoin::CoinSpend, uint256> > vSpendInfo;
     std::vector<std::pair<libzerocoin::PublicCoin, uint256> > vMintInfo;
     while (pindex) {
-        uiInterface.ShowProgress(_("Reindexing zerocoin database..."), std::max(1, std::min(99, (int)((double)(pindex->nHeight - zc_start_height) / (double)(chainActive.Height() - zc_start_height) * 100))));
+        uiInterface.ShowProgress(_("Reindexing zerocoin database..."), std::max(1, std::min(99, (int)((double)(pindex->nHeight - Params().Zerocoin_StartHeight()) / (double)(chainActive.Height() - Params().Zerocoin_StartHeight()) * 100))));
 
         if (pindex->nHeight % 1000 == 0)
             LogPrintf("Reindexing zerocoin : block %d...\n", pindex->nHeight);
@@ -277,8 +275,6 @@ std::string ReindexZerocoinDB()
         if (!ReadBlockFromDisk(block, pindex)) {
             return _("Reindexing zerocoin failed");
         }
-        // update supply
-        UpdateZClearCoinupplyConnect(block, pindex, true);
 
         for (const CTransaction& tx : block.vtx) {
             for (unsigned int i = 0; i < tx.vin.size(); i++) {
@@ -290,21 +286,11 @@ std::string ReindexZerocoinDB()
                     //Record Serials
                     if (tx.HasZerocoinSpendInputs()) {
                         for (auto& in : tx.vin) {
-                            bool isPublicSpend = in.IsZerocoinPublicSpend();
-                            if (!in.IsZerocoinSpend() && !isPublicSpend)
+                            if (!in.IsZerocoinSpend())
                                 continue;
-                            if (isPublicSpend) {
-                                libzerocoin::ZerocoinParams* params = consensus.Zerocoin_Params(false);
-                                PublicCoinSpend publicSpend(params);
-                                CValidationState state;
-                                if (!ZCLRModule::ParseZerocoinPublicSpend(in, tx, state, publicSpend)){
-                                    return _("Failed to parse public spend");
-                                }
-                                vSpendInfo.push_back(std::make_pair(publicSpend, txid));
-                            } else {
-                                libzerocoin::CoinSpend spend = TxInToZerocoinSpend(in);
-                                vSpendInfo.push_back(std::make_pair(spend, txid));
-                            }
+
+                            libzerocoin::CoinSpend spend = TxInToZerocoinSpend(in);
+                            vSpendInfo.push_back(make_pair(spend, txid));
                         }
                     }
 
@@ -315,10 +301,9 @@ std::string ReindexZerocoinDB()
                                 continue;
 
                             CValidationState state;
-                            const bool v1params = !consensus.NetworkUpgradeActive(pindex->nHeight, Consensus::UPGRADE_ZC_V2);
-                            libzerocoin::PublicCoin coin(consensus.Zerocoin_Params(v1params));
+                            libzerocoin::PublicCoin coin(Params().Zerocoin_Params(pindex->nHeight < Params().Zerocoin_Block_V2_Start()));
                             TxOutToPublicCoin(out, coin, state);
-                            vMintInfo.push_back(std::make_pair(coin, txid));
+                            vMintInfo.push_back(make_pair(coin, txid));
                         }
                     }
                 }
@@ -353,24 +338,31 @@ bool RemoveSerialFromDB(const CBigNum& bnSerial)
 
 libzerocoin::CoinSpend TxInToZerocoinSpend(const CTxIn& txin)
 {
-    CDataStream serializedCoinSpend = ZCLRModule::ScriptSigToSerializedSpend(txin.scriptSig);
-    return libzerocoin::CoinSpend(serializedCoinSpend);
+    // extract the CoinSpend from the txin
+    std::vector<char, zero_after_free_allocator<char> > dataTxIn;
+    dataTxIn.insert(dataTxIn.end(), txin.scriptSig.begin() + BIGNUM_SIZE, txin.scriptSig.end());
+    CDataStream serializedCoinSpend(dataTxIn, SER_NETWORK, PROTOCOL_VERSION);
+
+    libzerocoin::ZerocoinParams* paramsAccumulator = Params().Zerocoin_Params(chainActive.Height() < Params().Zerocoin_Block_V2_Start());
+    libzerocoin::CoinSpend spend(Params().Zerocoin_Params(true), paramsAccumulator, serializedCoinSpend);
+
+    return spend;
 }
 
 bool TxOutToPublicCoin(const CTxOut& txout, libzerocoin::PublicCoin& pubCoin, CValidationState& state)
 {
     CBigNum publicZerocoin;
-    std::vector<unsigned char> vchZeroMint;
+    vector<unsigned char> vchZeroMint;
     vchZeroMint.insert(vchZeroMint.end(), txout.scriptPubKey.begin() + SCRIPT_OFFSET,
                        txout.scriptPubKey.begin() + txout.scriptPubKey.size());
     publicZerocoin.setvch(vchZeroMint);
 
     libzerocoin::CoinDenomination denomination = libzerocoin::AmountToZerocoinDenomination(txout.nValue);
-    LogPrint(BCLog::LEGACYZC, "%s : denomination %d for pubcoin %s\n", __func__, denomination, publicZerocoin.GetHex());
+    LogPrint("zero", "%s ZCPRINT denomination %d pubcoin %s\n", __func__, denomination, publicZerocoin.GetHex());
     if (denomination == libzerocoin::ZQ_ERROR)
         return state.DoS(100, error("TxOutToPublicCoin : txout.nValue is not correct"));
 
-    libzerocoin::PublicCoin checkPubCoin(Params().GetConsensus().Zerocoin_Params(false), publicZerocoin, denomination);
+    libzerocoin::PublicCoin checkPubCoin(Params().Zerocoin_Params(false), publicZerocoin, denomination);
     pubCoin = checkPubCoin;
 
     return true;
@@ -385,11 +377,10 @@ std::list<libzerocoin::CoinDenomination> ZerocoinSpendListFromBlock(const CBlock
             continue;
 
         for (const CTxIn& txin : tx.vin) {
-            bool isPublicSpend = txin.IsZerocoinPublicSpend();
-            if (!txin.IsZerocoinSpend() && !isPublicSpend)
+            if (!txin.IsZerocoinSpend())
                 continue;
 
-            if (fFilterInvalid && !isPublicSpend) {
+            if (fFilterInvalid) {
                 libzerocoin::CoinSpend spend = TxInToZerocoinSpend(txin);
                 if (invalid_out::ContainsSerial(spend.getCoinSerialNumber()))
                     continue;
@@ -400,121 +391,5 @@ std::list<libzerocoin::CoinDenomination> ZerocoinSpendListFromBlock(const CBlock
         }
     }
     return vSpends;
-}
-
-int64_t GetZerocoinSupply()
-{
-    AssertLockHeld(cs_main);
-
-    if (mapZerocoinSupply.empty())
-        return 0;
-
-    int64_t nTotal = 0;
-    for (auto& denom : libzerocoin::zerocoinDenomList) {
-        nTotal += libzerocoin::ZerocoinDenominationToAmount(denom) * mapZerocoinSupply.at(denom);
-    }
-    return nTotal;
-}
-
-bool UpdateZClearCoinupplyConnect(const CBlock& block, CBlockIndex* pindex, bool fJustCheck)
-{
-    AssertLockHeld(cs_main);
-
-    const Consensus::Params& consensus = Params().GetConsensus();
-    if (!consensus.NetworkUpgradeActive(pindex->nHeight, Consensus::UPGRADE_ZC))
-        return true;
-
-    //Add mints to zCLR supply (mints are forever disabled after last checkpoint)
-    if (pindex->nHeight < consensus.height_last_ZC_AccumCheckpoint) {
-        std::list<CZerocoinMint> listMints;
-        std::set<uint256> setAddedToWallet;
-        BlockToZerocoinMintList(block, listMints, true);
-        for (const CZerocoinMint& m : listMints) {
-            mapZerocoinSupply.at(m.GetDenomination())++;
-            //Remove any of our own mints from the mintpool
-            if (!fJustCheck && pwalletMain) {
-                if (pwalletMain->IsMyMint(m.GetValue())) {
-                    pwalletMain->UpdateMint(m.GetValue(), pindex->nHeight, m.GetTxHash(), m.GetDenomination());
-                    // Add the transaction to the wallet
-                    int posInBlock = 0;
-                    for (posInBlock = 0; posInBlock < (int)block.vtx.size(); posInBlock++) {
-                        auto& tx = block.vtx[posInBlock];
-                        uint256 txid = tx.GetHash();
-                        if (setAddedToWallet.count(txid))
-                            continue;
-                        if (txid == m.GetTxHash()) {
-                            CWalletTx wtx(pwalletMain, tx);
-                            wtx.nTimeReceived = block.GetBlockTime();
-                            wtx.SetMerkleBranch(pindex, posInBlock);
-                            pwalletMain->AddToWallet(wtx);
-                            setAddedToWallet.insert(txid);
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    //Remove spends from zCLR supply
-    std::list<libzerocoin::CoinDenomination> listDenomsSpent = ZerocoinSpendListFromBlock(block, true);
-    for (const libzerocoin::CoinDenomination& denom : listDenomsSpent) {
-        mapZerocoinSupply.at(denom)--;
-        // zerocoin failsafe
-        if (mapZerocoinSupply.at(denom) < 0)
-            return error("Block contains zerocoins that spend more than are in the available supply to spend");
-    }
-
-    // Update Wrapped Serials amount
-    // A one-time event where only the zCLR supply was off (due to serial duplication off-chain on main net)
-    if (Params().NetworkID() == CBaseChainParams::MAIN && pindex->nHeight == consensus.height_last_ZC_WrappedSerials + 1) {
-        for (const libzerocoin::CoinDenomination& denom : libzerocoin::zerocoinDenomList)
-            mapZerocoinSupply.at(denom) += GetWrapppedSerialInflation(denom);
-    }
-
-    for (const libzerocoin::CoinDenomination& denom : libzerocoin::zerocoinDenomList)
-        LogPrint(BCLog::LEGACYZC, "%s coins for denomination %d pubcoin %s\n", __func__, denom, mapZerocoinSupply.at(denom));
-
-    return true;
-}
-
-bool UpdateZClearCoinupplyDisconnect(const CBlock& block, CBlockIndex* pindex)
-{
-    AssertLockHeld(cs_main);
-
-    const Consensus::Params& consensus = Params().GetConsensus();
-    if (!consensus.NetworkUpgradeActive(pindex->nHeight, Consensus::UPGRADE_ZC))
-        return true;
-
-    // Undo Update Wrapped Serials amount
-    // A one-time event where only the zCLR supply was off (due to serial duplication off-chain on main net)
-    if (Params().NetworkID() == CBaseChainParams::MAIN && pindex->nHeight == consensus.height_last_ZC_WrappedSerials + 1) {
-        for (const libzerocoin::CoinDenomination& denom : libzerocoin::zerocoinDenomList)
-            mapZerocoinSupply.at(denom) -= GetWrapppedSerialInflation(denom);
-    }
-
-    // Re-add spends to zCLR supply
-    std::list<libzerocoin::CoinDenomination> listDenomsSpent = ZerocoinSpendListFromBlock(block, true);
-    for (const libzerocoin::CoinDenomination& denom : listDenomsSpent) {
-        mapZerocoinSupply.at(denom)++;
-    }
-
-    // Remove mints from zCLR supply (mints are forever disabled after last checkpoint)
-    if (pindex->nHeight < consensus.height_last_ZC_AccumCheckpoint) {
-        std::list<CZerocoinMint> listMints;
-        std::set<uint256> setAddedToWallet;
-        BlockToZerocoinMintList(block, listMints, true);
-        for (const CZerocoinMint& m : listMints) {
-            const libzerocoin::CoinDenomination denom = m.GetDenomination();
-            mapZerocoinSupply.at(denom)--;
-            // zerocoin failsafe
-            if (mapZerocoinSupply.at(denom) < 0)
-                return error("Block contains zerocoins that spend more than are in the available supply to spend");
-        }
-    }
-
-    for (const libzerocoin::CoinDenomination& denom : libzerocoin::zerocoinDenomList)
-        LogPrint(BCLog::LEGACYZC, "%s coins for denomination %d pubcoin %s\n", __func__, denom, mapZerocoinSupply.at(denom));
-
-    return true;
 }
 

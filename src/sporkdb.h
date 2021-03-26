@@ -1,15 +1,16 @@
-// Copyright (c) 2017-2019 The PIVX developers
+// Copyright (c) 2017 The PIVX developers
+// Copyright (c) 2019 The CLEARCOIN developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef ClearCoin_CSPORKDB_H
-#define ClearCoin_CSPORKDB_H
+#ifndef CLR_CSPORKDB_H
+#define CLR_CSPORKDB_H
 
-#include "fs.h"
-#include "dbwrapper.h"
+#include <boost/filesystem/path.hpp>
+#include "leveldbwrapper.h"
 #include "spork.h"
 
-class CSporkDB : public CDBWrapper
+class CSporkDB : public CLevelDBWrapper
 {
 public:
     CSporkDB(size_t nCacheSize, bool fMemory = false, bool fWipe = false);
@@ -19,10 +20,10 @@ private:
     void operator=(const CSporkDB&);
 
 public:
-    bool WriteSpork(const SporkId nSporkId, const CSporkMessage& spork);
-    bool ReadSpork(const SporkId nSporkId, CSporkMessage& spork);
-    bool SporkExists(const SporkId nSporkId);
+    bool WriteSpork(const int nSporkId, const CSporkMessage& spork);
+    bool ReadSpork(const int nSporkId, CSporkMessage& spork);
+    bool SporkExists(const int nSporkId);
 };
 
 
-#endif //PIVX_CSPORKDB_H
+#endif //CLR_CSPORKDB_H

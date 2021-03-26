@@ -32,10 +32,6 @@ void InterruptHTTPServer();
 /** Stop HTTP server */
 void StopHTTPServer();
 
-/** Change logging level for libevent. Removes BCLog::LIBEVENT from log categories if
- * libevent doesn't support debug logging.*/
-bool UpdateHTTPServerLogging(bool enable);
-
 /** Handler for requests to a certain HTTP path */
 typedef std::function<void(HTTPRequest* req, const std::string &)> HTTPRequestHandler;
 /** Register handler for prefix.
@@ -86,7 +82,7 @@ public:
 
     /**
      * Get the request header specified by hdr, or an empty string.
-     * Return an pair (isPresent,std::string).
+     * Return an pair (isPresent,string).
      */
     std::pair<bool, std::string> GetHeader(const std::string& hdr);
 

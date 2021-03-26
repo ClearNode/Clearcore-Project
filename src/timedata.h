@@ -1,6 +1,4 @@
 // Copyright (c) 2014 The Bitcoin developers
-// Copyright (c) 2019-2020 The PIVX developers
-// Copyright (c) 2020 The CLEARCOIN developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -14,7 +12,7 @@
 
 class CNetAddr;
 
-/**
+/** 
  * Median filter over a stream of values.
  * Returns the median of the last N numbers
  */
@@ -71,13 +69,8 @@ public:
 };
 
 /** Functions to keep track of adjusted P2P time */
-inline int64_t abs64(int64_t n) { return (n >= 0 ? n : -n); }
 int64_t GetTimeOffset();
 int64_t GetAdjustedTime();
-void AddTimeData(const CNetAddr& ip, int64_t nTime, int nOffsetLimit);
-
-// Time Protocol V2
-int64_t GetTimeSlot(const int64_t nTime);
-int64_t GetCurrentTimeSlot();
+void AddTimeData(const CNetAddr& ip, int64_t nTime);
 
 #endif // BITCOIN_TIMEDATA_H

@@ -1,13 +1,12 @@
 [Desktop Entry]
-Version=1.0
-Name=ClearCoin Core
-Comment=ClearCoin P2P Cryptocurrency
-Comment[fr]=ClearCoin, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=ClearCoin, eşten eşe kriptografik sanal para birimi
+Encoding=UTF-8
+Name=CLR
+Comment=CLR P2P Cryptocurrency
+Comment[fr]=CLR, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=CLR, eşten eşe kriptografik sanal para birimi
 Exec=clr-qt %u
 Terminal=false
 Type=Application
 Icon=clr128
 MimeType=x-scheme-handler/clr;
 Categories=Office;Finance;
-StartupWMClass=ClearCoin-qt

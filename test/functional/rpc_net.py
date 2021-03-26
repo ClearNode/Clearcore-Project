@@ -7,27 +7,23 @@
 Tests correspond to code in rpc/net.cpp.
 """
 
-from test_framework.test_framework import ClearCoinTestFramework
+from test_framework.test_framework import BitcoinTestFramework
 from test_framework.util import (
     assert_equal,
     assert_greater_than_or_equal,
     assert_raises_rpc_error,
-    connect_nodes,
+    connect_nodes_bi,
     disconnect_nodes,
     p2p_port,
     wait_until,
 )
 
-class NetTest(ClearCoinTestFramework):
+class NetTest(BitcoinTestFramework):
     def set_test_params(self):
         self.setup_clean_chain = True
         self.num_nodes = 2
 
     def run_test(self):
-        self.log.info("Connect nodes both way")
-        connect_nodes(self.nodes[0], 1)
-        connect_nodes(self.nodes[1], 0)
-
         self._test_connection_count()
         self._test_getnettotals()
         self._test_getnetworkinginfo()
@@ -35,6 +31,7 @@ class NetTest(ClearCoinTestFramework):
         #self._test_getpeerinfo()
 
     def _test_connection_count(self):
+        # connect_nodes_bi connects each node to the other
         assert_equal(self.nodes[0].getconnectioncount(), 2)
 
     def _test_getnettotals(self):
@@ -71,9 +68,7 @@ class NetTest(ClearCoinTestFramework):
         # Wait a bit for all sockets to close
         wait_until(lambda: self.nodes[0].getnetworkinfo()['connections'] == 0, timeout=3)
 
-        self.log.info("Connect nodes both way")
-        connect_nodes(self.nodes[0], 1)
-        connect_nodes(self.nodes[1], 0)
+        connect_nodes_bi(self.nodes, 0, 1)
         assert_equal(self.nodes[0].getnetworkinfo()['connections'], 2)
 
     def _test_getaddednodeinfo(self):

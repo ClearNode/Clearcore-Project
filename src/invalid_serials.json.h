@@ -1,12 +1,11 @@
-// Copyright (c) 2018 The PIVX developers
-// Copyright (c) 2020 The AZUS developers
+// Copyright (c) 2018 CLR
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 
 
-#ifndef AZUS_INVALID_SERIALS_JSON_H
-#define AZUS_INVALID_SERIALS_JSON_H
+#ifndef CLR_INVALID_SERIALS_JSON_H
+#define CLR_INVALID_SERIALS_JSON_H
 
 #include <string>
 
@@ -1190,4 +1189,4 @@ std::string LoadInvalidSerials()
     return str;
 }
 
-#endif //PIVX_INVALID_SERIALS_JSON_H
+#endif //CLR_INVALID_SERIALS_JSON_H

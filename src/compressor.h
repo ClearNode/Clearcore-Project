@@ -1,6 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
-// Copyright (c) 2017-2019 The PIVX developers
+// Copyright (c) 2017 The PIVX developers
+// Copyright (c) 2019 The CLEARCOIN developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -58,8 +59,17 @@ protected:
 public:
     CScriptCompressor(CScript& scriptIn) : script(scriptIn) {}
 
+    unsigned int GetSerializeSize(int nType, int nVersion) const
+    {
+        std::vector<unsigned char> compr;
+        if (Compress(compr))
+            return compr.size();
+        unsigned int nSize = script.size() + nSpecialScripts;
+        return script.size() + VARINT(nSize).GetSerializeSize(nType, nVersion);
+    }
+
     template <typename Stream>
-    void Serialize(Stream& s) const
+    void Serialize(Stream& s, int nType, int nVersion) const
     {
         std::vector<unsigned char> compr;
         if (Compress(compr)) {
@@ -72,7 +82,7 @@ public:
     }
 
     template <typename Stream>
-    void Unserialize(Stream& s)
+    void Unserialize(Stream& s, int nType, int nVersion)
     {
         unsigned int nSize = 0;
         s >> VARINT(nSize);
@@ -83,14 +93,8 @@ public:
             return;
         }
         nSize -= nSpecialScripts;
-        if (nSize > MAX_SCRIPT_SIZE) {
-            // Overly long script, replace with a short invalid one
-            script << OP_RETURN;
-            s.ignore(nSize);
-        } else {
-            script.resize(nSize);
-            s >> REF(CFlatData(script));
-        }
+        script.resize(nSize);
+        s >> REF(CFlatData(script));
     }
 };
 
@@ -109,7 +113,7 @@ public:
     ADD_SERIALIZE_METHODS;
 
     template <typename Stream, typename Operation>
-    inline void SerializationOp(Stream& s, Operation ser_action)
+    inline void SerializationOp(Stream& s, Operation ser_action, int nType, int nVersion)
     {
         if (!ser_action.ForRead()) {
             uint64_t nVal = CompressAmount(txout.nValue);

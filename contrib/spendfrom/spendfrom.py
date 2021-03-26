@@ -35,9 +35,9 @@ def check_json_precision():
 def determine_db_dir():
     """Return the default location of the clr data directory"""
     if platform.system() == "Darwin":
-        return os.path.expanduser("~/Library/Application Support/ClearCoin/")
+        return os.path.expanduser("~/Library/Application Support/CLR/")
     elif platform.system() == "Windows":
-        return os.path.join(os.environ['APPDATA'], "ClearCoin")
+        return os.path.join(os.environ['APPDATA'], "CLR")
     return os.path.expanduser("~/.clr")
 
 def read_bitcoin_config(dbdir):
@@ -67,7 +67,7 @@ def connect_JSON(config):
     testnet = config.get('testnet', '0')
     testnet = (int(testnet) > 0)  # 0/1 in config file, convert to True/False
     if not 'rpcport' in config:
-        config['rpcport'] = 50325 if testnet else 50323
+        config['rpcport'] = 32527 if testnet else 32627
     connect = "http://%s:%s@127.0.0.1:%s"%(config['rpcuser'], config['rpcpassword'], config['rpcport'])
     try:
         result = ServiceProxy(connect)

@@ -1,6 +1,4 @@
 // Copyright (c) 2012-2014 The Bitcoin developers
-// Copyright (c) 2019 The PIVX developers
-// Copyright (c) 2020 The CLEARCOIN developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -44,7 +42,7 @@ public:
                 map.erase(rmap.begin()->second);
                 rmap.erase(rmap.begin());
             }
-            rmap.insert(std::make_pair(x.second, ret.first));
+            rmap.insert(make_pair(x.second, ret.first));
         }
         return;
     }
@@ -74,7 +72,7 @@ public:
             if (it->second == itTarget) {
                 rmap.erase(it);
                 itTarget->second = v;
-                rmap.insert(std::make_pair(v, itTarget));
+                rmap.insert(make_pair(v, itTarget));
                 return;
             }
         // Shouldn't ever get here

@@ -1,6 +1,5 @@
 ---
 name: "clr-win-signer"
-distro: "ubuntu"
 suites:
 - "bionic"
 architectures:
@@ -10,15 +9,13 @@ packages:
 - "libssl1.0-dev"
 - "autoconf"
 remotes:
-- "url": "https://github.com/ClearNode/ClearCoin-detached-sigs.git"
+- "url": "https://github.com/ClearNode/CLR-detached-sigs.git"
   "dir": "signature"
 files:
 - "osslsigncode-1.7.1.tar.gz"
 - "osslsigncode-Backports-to-1.7.1.patch"
 - "clr-win-unsigned.tar.gz"
 script: |
-  set -e -o pipefail
-
   BUILD_DIR=`pwd`
   SIGDIR=${BUILD_DIR}/signature/win
   UNSIGNED_DIR=${BUILD_DIR}/unsigned

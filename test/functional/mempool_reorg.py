@@ -8,15 +8,17 @@ Test re-org scenarios with a mempool that contains transactions
 that spend (directly or indirectly) coinbase transactions.
 """
 
-from test_framework.test_framework import ClearCoinTestFramework
+from test_framework.test_framework import BitcoinTestFramework
 from test_framework.util import *
 import time
 
 # Create one-input, one-output, no-fee transaction:
-class MempoolCoinbaseTest(ClearCoinTestFramework):
+class MempoolCoinbaseTest(BitcoinTestFramework):
     def set_test_params(self):
         self.num_nodes = 2
         self.extra_args = [["-checkmempool"]] * 2
+
+    alert_filename = None  # Set by setup_network
 
     def run_test(self):
         # Start with a 200 block chain
@@ -72,8 +74,9 @@ class MempoolCoinbaseTest(ClearCoinTestFramework):
         spend_101_id = self.nodes[0].sendrawtransaction(spend_101_raw)
         spend_102_1_id = self.nodes[0].sendrawtransaction(spend_102_1_raw)
 
-        assert_equal(set(self.nodes[0].getrawmempool()), {spend_101_id, spend_102_1_id})
         self.sync_all()
+
+        assert_equal(set(self.nodes[0].getrawmempool()), {spend_101_id, spend_102_1_id})
 
         for node in self.nodes:
             node.invalidateblock(last_block[0])
@@ -88,7 +91,6 @@ class MempoolCoinbaseTest(ClearCoinTestFramework):
 
         # mempool should be empty.
         assert_equal(set(self.nodes[0].getrawmempool()), set())
-        self.sync_all()
 
 if __name__ == '__main__':
     MempoolCoinbaseTest().main()

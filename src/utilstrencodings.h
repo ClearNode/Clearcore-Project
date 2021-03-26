@@ -1,6 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
-// Copyright (c) 2017-2019 The PIVX developers
+// Copyright (c) 2017 The PIVX developers
+// Copyright (c) 2019 The CLEARCOIN developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -40,16 +41,6 @@ enum SafeChars
 * @return           A new string without unsafe chars
 */
 std::string SanitizeString(const std::string& str, int rule = SAFE_CHARS_DEFAULT);
-
-/**
-* Check URL format for conformance for validity to a defined pattern
-* @param[in] strURL   The string to be processed for validity
-* @param[in] stdErr   A string that will be loaded with any validation error message
-* @param[in] maxSize  An unsigned int, defaulted to 64, to restrict the length
-* @return             A bool, true if valid, false if not (reason in stdErr)
-*/
-bool validateURL(std::string strURL, std::string& strErr, unsigned int maxSize = 64);
-
 std::vector<unsigned char> ParseHex(const char* psz);
 std::vector<unsigned char> ParseHex(const std::string& str);
 signed char HexDigit(char c);
@@ -148,47 +139,5 @@ bool TimingResistantEqual(const T& a, const T& b)
         accumulator |= a[i] ^ b[i % b.size()];
     return accumulator == 0;
 }
-
-/**
-  * Convert from one power-of-2 number base to another.
-  *
-  * Examples using ConvertBits<8, 5, true>():
-  * 000000 -> 0000000000
-  * 202020 -> 0400100200
-  * 757575 -> 0e151a170a
-  * abcdef -> 150f061e1e
-  * ffffff -> 1f1f1f1f1e
-  */
-template<int frombits, int tobits, bool pad, typename O, typename I>
-bool ConvertBits(const O& outfn, I it, I end) {
-    size_t acc = 0;
-    size_t bits = 0;
-    constexpr size_t maxv = (1 << tobits) - 1;
-    constexpr size_t max_acc = (1 << (frombits + tobits - 1)) - 1;
-    while (it != end) {
-        acc = ((acc << frombits) | *it) & max_acc;
-        bits += frombits;
-        while (bits >= tobits) {
-            bits -= tobits;
-            outfn((acc >> bits) & maxv);
-        }
-        ++it;
-    }
-    if (pad) {
-        if (bits) outfn((acc << (tobits - bits)) & maxv);
-    } else if (bits >= frombits || ((acc << (tobits - bits)) & maxv)) {
-        return false;
-    }
-    return true;
-}
-
-
-/** Parse number as fixed point according to JSON number syntax.
-  * See http://json.org/number.gif
-  * @returns true on success, false on error.
-  * @note The result must be in the range (-10^18,10^18), otherwise an overflow error will trigger.
-  */
-bool ParseFixedPoint(const std::string &val, int decimals, int64_t *amount_out);
-
 
 #endif // BITCOIN_UTILSTRENCODINGS_H

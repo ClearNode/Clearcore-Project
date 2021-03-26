@@ -1,5 +1,6 @@
 // Copyright (c) 2011-2013 The Bitcoin developers
-// Copyright (c) 2017-2019 The PIVX developers
+// Copyright (c) 2017-2018 The PIVX developers
+// Copyright (c) 2019 The CLEARCOIN developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -7,22 +8,17 @@
 #define BITCOIN_QT_ASKPASSPHRASEDIALOG_H
 
 #include <QDialog>
-#include "qt/clr/prunnable.h"
-#include "allocators.h"
-#include <QCheckBox>
 
 class WalletModel;
-class ClearCoinGUI;
 
 namespace Ui
 {
 class AskPassphraseDialog;
-class QCheckBox;
 }
 
 /** Multifunctional dialog to ask for passphrases. Used for encryption, unlocking, and changing the passphrase.
  */
-class AskPassphraseDialog : public QDialog, public Runnable
+class AskPassphraseDialog : public QDialog
 {
     Q_OBJECT
 
@@ -44,6 +40,8 @@ public:
         ToggleLock,     /** Toggle wallet lock state */
         ChangePass,     /** Change passphrase */
         Send_CLR,       /** Send CLR */
+        Send_zCLR,      /** Send zCLR */
+        Mint_zCLR,      /** Mint zCLR */
         BIP_38,         /** BIP38 menu */
         Multi_Sig,      /** Multi-Signature dialog */
         Sign_Message,   /** Sign/verify message dialog */
@@ -53,8 +51,7 @@ public:
     explicit AskPassphraseDialog(Mode mode, QWidget* parent, WalletModel* model, Context context);
     ~AskPassphraseDialog();
 
-    void showEvent(QShowEvent *event) override;
-    void accept() override;
+    void accept();
 
 private:
     Ui::AskPassphraseDialog* ui;
@@ -62,25 +59,13 @@ private:
     WalletModel* model;
     Context context;
     bool fCapsLock;
-    SecureString newpassCache = "";
 
-    void updateWarningsLabel();
-    void run(int type) override;
-    void onError(QString error, int type) override;
-    QCheckBox *btnWatch;
-
-    void initWatch(QWidget *parent);
-
-private Q_SLOTS:
-    void onWatchClicked();
+private slots:
     void textChanged();
-    void warningMessage();
-    void errorEncryptingWallet();
-    bool openStandardDialog(QString title = "", QString body = "", QString okBtn = "OK", QString cancelBtn = "");
 
 protected:
-    bool event(QEvent* event) override ;
-    bool eventFilter(QObject* object, QEvent* event) override;
+    bool event(QEvent* event);
+    bool eventFilter(QObject* object, QEvent* event);
 };
 
 #endif // BITCOIN_QT_ASKPASSPHRASEDIALOG_H
