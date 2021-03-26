@@ -694,6 +694,7 @@ void WalletModel::subscribeToCoreSignals()
 {
     // Connect signals to wallet
 
+
     wallet->NotifyStatusChanged.connect(std::bind(&NotifyKeyStoreStatusChanged, this, boost::placeholders::_1));
     wallet->NotifyAddressBookChanged.connect(std::bind(NotifyAddressBookChanged, this, boost::placeholders::_1, boost::placeholders::_2, boost::placeholders::_3, boost::placeholders::_4, boost::placeholders::_5, boost::placeholders::_6));
     wallet->NotifyTransactionChanged.connect(std::bind(NotifyTransactionChanged, this, boost::placeholders::_1, boost::placeholders::_2, boost::placeholders::_3));
@@ -701,11 +702,13 @@ void WalletModel::subscribeToCoreSignals()
     wallet->NotifyWatchonlyChanged.connect(std::bind(NotifyWatchonlyChanged, this, boost::placeholders::_1));
     wallet->NotifyWalletBacked.connect(std::bind(NotifyWalletBacked, this, boost::placeholders::_1, boost::placeholders::_2));
 
+
 }
 
 void WalletModel::unsubscribeFromCoreSignals()
 {
     // Disconnect signals from wallet
+
 
     wallet->NotifyStatusChanged.disconnect(std::bind(&NotifyKeyStoreStatusChanged, this, boost::placeholders::_1));
     wallet->NotifyAddressBookChanged.disconnect(std::bind(NotifyAddressBookChanged, this, boost::placeholders::_1, boost::placeholders::_2, boost::placeholders::_3, boost::placeholders::_4, boost::placeholders::_5, boost::placeholders::_6));
@@ -713,6 +716,7 @@ void WalletModel::unsubscribeFromCoreSignals()
     wallet->ShowProgress.disconnect(std::bind(ShowProgress, this, boost::placeholders::_1, boost::placeholders::_2));
     wallet->NotifyWatchonlyChanged.disconnect(std::bind(NotifyWatchonlyChanged, this, boost::placeholders::_1));
     wallet->NotifyWalletBacked.disconnect(std::bind(NotifyWalletBacked, this, boost::placeholders::_1, boost::placeholders::_2));
+
 
 }
 

@@ -305,6 +305,7 @@ void ClientModel::subscribeToCoreSignals()
 {
     // Connect signals to client
 
+
     uiInterface.ShowProgress.connect(std::bind(ShowProgress, this, boost::placeholders::_1, boost::placeholders::_2));
     uiInterface.NotifyNumConnectionsChanged.connect(std::bind(NotifyNumConnectionsChanged, this, boost::placeholders::_1));
     uiInterface.NotifyAlertChanged.connect(std::bind(NotifyAlertChanged, this));
@@ -316,6 +317,7 @@ void ClientModel::subscribeToCoreSignals()
 void ClientModel::unsubscribeFromCoreSignals()
 {
     // Disconnect signals from client
+
 
     uiInterface.ShowProgress.disconnect(std::bind(ShowProgress, this, boost::placeholders::_1, boost::placeholders::_2));
     uiInterface.NotifyNumConnectionsChanged.disconnect(std::bind(NotifyNumConnectionsChanged, this, boost::placeholders::_1));

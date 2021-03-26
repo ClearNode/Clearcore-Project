@@ -689,7 +689,9 @@ void ClearCoinGUI::subscribeToCoreSignals()
 {
     // Connect signals to client
 
+
     uiInterface.ThreadSafeMessageBox.connect(std::bind(ThreadSafeMessageBox, this, boost::placeholders::_1, boost::placeholders::_2, boost::placeholders::_3));
+
 
 }
 
@@ -697,6 +699,8 @@ void ClearCoinGUI::unsubscribeFromCoreSignals()
 {
     // Disconnect signals from client
 
+
     uiInterface.ThreadSafeMessageBox.disconnect(std::bind(ThreadSafeMessageBox, this, boost::placeholders::_1, boost::placeholders::_2, boost::placeholders::_3));
+
 
 }

@@ -63,12 +63,16 @@ void RPCServer::OnStopped(std::function<void ()> slot)
 
 void RPCServer::OnPreCommand(std::function<void (const CRPCCommand&)> slot)
 {
+
     g_rpcSignals.PreCommand.connect(std::bind(slot, boost::placeholders::_1));
+
 }
 
 void RPCServer::OnPostCommand(std::function<void (const CRPCCommand&)> slot)
 {
+
     g_rpcSignals.PostCommand.connect(std::bind(slot, boost::placeholders::_1));
+
 }
 
 void RPCTypeCheck(const UniValue& params,
@@ -569,7 +573,9 @@ std::vector<std::string> CRPCTable::listCommands() const
 
     std::transform( mapCommands.begin(), mapCommands.end(),
                    std::back_inserter(commandList),
+
                    std::bind(&commandMap::value_type::first,boost::placeholders::_1) );
+
     return commandList;
 }
 

@@ -15,6 +15,7 @@ CMainSignals& GetMainSignals()
 
 void RegisterValidationInterface(CValidationInterface* pwalletIn) {
 
+
 // XX42 g_signals.EraseTransaction.connect(std::bind(&CValidationInterface::EraseFromWallet, pwalletIn, boost::placeholders::_1));
     g_signals.UpdatedBlockTip.connect(std::bind(&CValidationInterface::UpdatedBlockTip, pwalletIn, boost::placeholders::_1));
     g_signals.SyncTransaction.connect(std::bind(&CValidationInterface::SyncTransaction, pwalletIn, boost::placeholders::_1, boost::placeholders::_2, boost::placeholders::_3));
@@ -38,6 +39,7 @@ void UnregisterValidationInterface(CValidationInterface* pwalletIn) {
     g_signals.SyncTransaction.disconnect(std::bind(&CValidationInterface::SyncTransaction, pwalletIn, boost::placeholders::_1, boost::placeholders::_2, boost::placeholders::_3));
     g_signals.UpdatedBlockTip.disconnect(std::bind(&CValidationInterface::UpdatedBlockTip, pwalletIn, boost::placeholders::_1));
 // XX42    g_signals.EraseTransaction.disconnect(std::bind(&CValidationInterface::EraseFromWallet, pwalletIn, boost::placeholders::_1));
+
 
 }
 
