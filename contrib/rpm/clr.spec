@@ -24,18 +24,18 @@ URL:		https://clearnodes.com/
 Source0:	https://clearnodes.com/bin/clr-core-%{version}/clr-%{version}.tar.gz
 Source1:	http://download.oracle.com/berkeley-db/db-%{bdbv}.NC.tar.gz
 
-Source10:	https://raw.githubusercontent.com/ClearNode/Clearcore-Project/v%{version}/contrib/debian/examples/clr.conf
+Source10:	https://raw.githubusercontent.com/ClearNode/ClearCoin/v%{version}/contrib/debian/examples/clr.conf
 
 #man pages
-Source20:	https://raw.githubusercontent.com/ClearNode/Clearcore-Project/v%{version}/doc/man/clrd.1
-Source21:	https://raw.githubusercontent.com/ClearNode/Clearcore-Project/v%{version}/doc/man/clr-cli.1
-Source22:	https://raw.githubusercontent.com/ClearNode/Clearcore-Project/v%{version}/doc/man/clr-qt.1
+Source20:	https://raw.githubusercontent.com/ClearNode/ClearCoin/v%{version}/doc/man/clrd.1
+Source21:	https://raw.githubusercontent.com/ClearNode/ClearCoin/v%{version}/doc/man/clr-cli.1
+Source22:	https://raw.githubusercontent.com/ClearNode/ClearCoin/v%{version}/doc/man/clr-qt.1
 
 #selinux
-Source30:	https://raw.githubusercontent.com/ClearNode/Clearcore-Project/v%{version}/contrib/rpm/clr.te
+Source30:	https://raw.githubusercontent.com/ClearNode/ClearCoin/v%{version}/contrib/rpm/clr.te
 # Source31 - what about clr-tx and bench_clr ???
-Source31:	https://raw.githubusercontent.com/ClearNode/Clearcore-Project/v%{version}/contrib/rpm/clr.fc
-Source32:	https://raw.githubusercontent.com/ClearNode/Clearcore-Project/v%{version}/contrib/rpm/clr.if
+Source31:	https://raw.githubusercontent.com/ClearNode/ClearCoin/v%{version}/contrib/rpm/clr.fc
+Source32:	https://raw.githubusercontent.com/ClearNode/ClearCoin/v%{version}/contrib/rpm/clr.if
 
 Source100:	https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg
 

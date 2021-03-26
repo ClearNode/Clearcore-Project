@@ -1,15 +1,15 @@
-# bash programmable completion for clrd(1) and clr-qt(1)
+# bash programmable completion for azusd(1) and azus-qt(1)
 # Copyright (c) 2012-2016 The Bitcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-_clrd() {
+_azusd() {
     local cur prev words=() cword
-    local clrd
+    local azusd
 
-    # save and use original argument to invoke clrd for -help
+    # save and use original argument to invoke azusd for -help
     # it might not be in $PATH
-    clrd="$1"
+    azusd="$1"
 
     COMPREPLY=()
     _get_comp_words_by_ref -n = cur prev words cword
@@ -33,7 +33,7 @@ _clrd() {
             # only parse -help if sensible
             if [[ -z "$cur" || "$cur" =~ ^- ]]; then
                 local helpopts
-                helpopts=$($clrd -help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
+                helpopts=$($azusd -help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
                 COMPREPLY=( $( compgen -W "$helpopts" -- "$cur" ) )
             fi
 
@@ -45,7 +45,7 @@ _clrd() {
             ;;
     esac
 } &&
-complete -F _clrd clrd clr-qt
+complete -F _azusd azusd azus-qt
 
 # Local variables:
 # mode: shell-script

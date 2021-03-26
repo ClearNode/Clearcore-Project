@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 13.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 14948)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="ic_empty_Dark_transactions"
+   x="0px"
+   y="0px"
+   width="100px"
+   height="100px"
+   viewBox="0 0 100 100"
+   enable-background="new 0 0 100 100"
+   xml:space="preserve"
+   sodipodi:docname="img-empty-dark-transactions.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"><metadata
+   id="metadata12510"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs12508" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1920"
+   inkscape:window-height="1017"
+   id="namedview12506"
+   showgrid="false"
+   inkscape:zoom="2.36"
+   inkscape:cx="50"
+   inkscape:cy="50"
+   inkscape:window-x="-8"
+   inkscape:window-y="-8"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="ic_empty_Dark_transactions" />
+<g
+   id="Group_9036">
+	<linearGradient
+   id="Path_18988_1_"
+   gradientUnits="userSpaceOnUse"
+   x1="50.0005"
+   y1="74"
+   x2="50.0005"
+   y2="26.0005">
+		<stop
+   offset="0"
+   style="stop-color:#000000"
+   id="stop12457" />
+		<stop
+   offset="1"
+   style="stop-color:#fffffe"
+   id="stop12459" />
+	</linearGradient>
+	<path
+   id="Path_18988"
+   fill="url(#Path_18988_1_)"
+   d="M50,26c-13.255,0-24,10.745-24,24s10.745,24,24,24s24-10.745,24-24   S63.255,26,50,26z M50,68c-9.941,0-18-8.059-18-18c0-9.941,8.059-18,18-18c9.941,0,18,8.059,18,18C68,59.941,59.941,68,50,68z" />
+	<g
+   id="Group_9035">
+		<g
+   id="Group_9034">
+			<linearGradient
+   id="Path_18990_1_"
+   gradientUnits="userSpaceOnUse"
+   x1="50.0005"
+   y1="69"
+   x2="50.0005"
+   y2="31.0005">
+				<stop
+   offset="0"
+   style="stop-color:#000000"
+   id="stop12463" />
+				<stop
+   offset="1"
+   style="stop-color:#fffffe"
+   id="stop12465" />
+			</linearGradient>
+			<path
+   id="Path_18990"
+   fill="url(#Path_18990_1_)"
+   d="M50,31c-10.494,0-19,8.507-19,19s8.506,19,19,19c10.494,0,19-8.507,19-19     C68.988,39.511,60.488,31.012,50,31z M50,67c-9.389,0-17-7.611-17-17s7.611-17,17-17s17,7.611,17,17     C66.99,59.385,59.385,66.989,50,67z" />
+			<linearGradient
+   id="Rectangle_4693_1_"
+   gradientUnits="userSpaceOnUse"
+   x1="84"
+   y1="60"
+   x2="84"
+   y2="56">
+				<stop
+   offset="0"
+   style="stop-color:#000000"
+   id="stop12469" />
+				<stop
+   offset="1"
+   style="stop-color:#fffffe"
+   id="stop12471" />
+			</linearGradient>
+			<path
+   id="Rectangle_4693"
+   fill="url(#Rectangle_4693_1_)"
+   d="M83,56h2v4h-2V56z" />
+			<linearGradient
+   id="Rectangle_4694_1_"
+   gradientUnits="userSpaceOnUse"
+   x1="84"
+   y1="52"
+   x2="84"
+   y2="44.0005">
+				<stop
+   offset="0"
+   style="stop-color:#000000"
+   id="stop12475" />
+				<stop
+   offset="1"
+   style="stop-color:#fffffe"
+   id="stop12477" />
+			</linearGradient>
+			<path
+   id="Rectangle_4694"
+   fill="url(#Rectangle_4694_1_)"
+   d="M83,44h2v8h-2V44z" />
+			<linearGradient
+   id="Rectangle_4695_1_"
+   gradientUnits="userSpaceOnUse"
+   x1="16"
+   y1="56"
+   x2="16"
+   y2="48.0005">
+				<stop
+   offset="0"
+   style="stop-color:#000000"
+   id="stop12481" />
+				<stop
+   offset="1"
+   style="stop-color:#fffffe"
+   id="stop12483" />
+			</linearGradient>
+			<path
+   id="Rectangle_4695"
+   fill="url(#Rectangle_4695_1_)"
+   d="M15,48h2v8h-2V48z" />
+			<linearGradient
+   id="Rectangle_4696_1_"
+   gradientUnits="userSpaceOnUse"
+   x1="16"
+   y1="44"
+   x2="16"
+   y2="40">
+				<stop
+   offset="0"
+   style="stop-color:#000000"
+   id="stop12487" />
+				<stop
+   offset="1"
+   style="stop-color:#fffffe"
+   id="stop12489" />
+			</linearGradient>
+			<path
+   id="Rectangle_4696"
+   fill="url(#Rectangle_4696_1_)"
+   d="M15,40h2v4h-2V40z" />
+			<linearGradient
+   id="Path_18991_1_"
+   gradientUnits="userSpaceOnUse"
+   x1="50.0005"
+   y1="93.5439"
+   x2="50.0005"
+   y2="6.4565">
+				<stop
+   offset="0"
+   style="stop-color:#000000"
+   id="stop12493" />
+				<stop
+   offset="1"
+   style="stop-color:#fffffe"
+   id="stop12495" />
+			</linearGradient>
+			<path
+   id="Path_18991"
+   fill="url(#Path_18991_1_)"
+   d="M95.162,71H85v-7h-2v9h7.838L76,90.456L61.162,73H68v-2h-4.461     c11.607-7.467,14.964-22.928,7.498-34.535c-6.39-9.933-18.859-14.036-29.898-9.839L24,6.456L4.838,29H15v7h2v-9H9.162L24,9.544     L38.838,27H32v2h4.461c-11.607,7.466-14.964,22.928-7.498,34.535c6.389,9.933,18.859,14.036,29.898,9.839L76,93.544L95.162,71z      M27,50c0-12.703,10.297-23,23-23c12.703,0,23,10.297,23,23c0,12.703-10.297,23-23,23C37.303,72.986,27.014,62.697,27,50z" />
+		</g>
+	</g>
+</g>
+<path
+   id="Rectangle_4697"
+   fill="none"
+   d="M0,0h100v100H0V0z" />
+
+<text
+   xml:space="preserve"
+   style="font-style:normal;font-weight:normal;font-size:32.10743332px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#505050;fill-opacity:1;stroke:url(#meshgradient7270);stroke-width:3.00999999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+   x="35.33477"
+   y="64.357323"
+   id="text6576"
+   transform="scale(1.0473187,0.95481919)"><tspan
+     sodipodi:role="line"
+     id="tspan6574"
+     x="35.33477"
+     y="64.357323"
+     style="fill:#505050;fill-opacity:1;stroke:url(#meshgradient7270);stroke-width:3.00999999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">C</tspan></text>
+</svg>

@@ -5,19 +5,19 @@
 # See "man systemd.service" for details.
 
 # Note that almost all daemon options could be specified in
-# /etc/clr/clr.conf
+# /etc/azus/azus.conf
 
 [Unit]
-Description=CLR daemon
+Description=AZUS daemon
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/clrd -daemon -conf=/etc/clr/clr.conf -pid=/run/clrd/clrd.pid
-# Creates /run/clrd owned by clr
-RuntimeDirectory=clrd
-User=clr
+ExecStart=/usr/bin/azusd -daemon -conf=/etc/azus/azus.conf -pid=/run/azusd/azusd.pid
+# Creates /run/azusd owned by azus
+RuntimeDirectory=azusd
+User=azus
 Type=forking
-PIDFile=/run/clrd/clrd.pid
+PIDFile=/run/azusd/azusd.pid
 Restart=on-failure
 
 # Hardening measures
