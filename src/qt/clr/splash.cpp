@@ -79,7 +79,9 @@ static void ShowProgress(Splash* splash, const std::string& title, int nProgress
 #ifdef ENABLE_WALLET
 static void ConnectWallet(Splash* splash, CWallet* wallet){
 
+
     wallet->ShowProgress.connect(boost::bind(ShowProgress, splash, boost::placeholders::_1, boost::placeholders::_2));
+
 
 }
 #endif

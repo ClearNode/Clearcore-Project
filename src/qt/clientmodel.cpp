@@ -170,10 +170,12 @@ void ClientModel::stopMasternodesTimer()
     }
 }
 
+
 void ClientModel::updateNumConnections(int numConnections)
 {
     Q_EMIT numConnectionsChanged(numConnections);
 }
+
 
 void ClientModel::updateAlert()
 {
