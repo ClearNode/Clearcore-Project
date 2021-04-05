@@ -662,9 +662,7 @@ void TorController::protocolinfo_cb(TorControlConnection& _conn, const TorContro
         } else if (methods.count("NULL")) {
             LogPrint(BCLog::TOR, "tor: Using NULL authentication\n");
 
-
             _conn.Command("AUTHENTICATE", boost::bind(&TorController::auth_cb, this, boost::placeholders::_1, boost::placeholders::_2));
-
 
         } else if (methods.count("SAFECOOKIE")) {
             // Cookie: hexdump -e '32/1 "%02x""\n"'  ~/.tor/control_auth_cookie

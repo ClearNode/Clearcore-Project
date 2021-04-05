@@ -270,8 +270,9 @@ inline int64_t GetMasterNodeCollateral(int nHeight){
     // Mainnet/Testnet block reward reduction schedule
     const int nLast = 1000000;
     if (nHeight > nLast)   return 650000;
-    if (nHeight > 850000)  return 550000;
-    if (nHeight > 900000)  return 600000;
+    if (nHeight > 910000)  return 600000;
+
+
     return 500000;
 }
 
