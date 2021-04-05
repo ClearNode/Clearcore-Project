@@ -271,6 +271,8 @@ inline int64_t GetMasterNodeCollateral(int nHeight){
     const int nLast = 1000000;
     if (nHeight > nLast)   return 650000;
     if (nHeight > 910000)  return 600000;
+
+
     return 500000;
 }
 
